@@ -53,6 +53,31 @@
     <key>ru</key>
     <value>Используется для хранения общих настроек для информационных баз корреспондентов обмена.</value>
   </explanation>
+  <resources uuid="0d190f8b-87c5-4dd1-bcfb-609ec3a44f72">
+    <name>ВерсияКорреспондента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия корреспондента</value>
+    </synonym>
+    <comment>Версия конфигурации информационной базы-корреспондента</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>16</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Версия конфигурации информационной базы-корреспондента</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
   <resources uuid="e40f53de-c27b-4e74-8241-f784d7ca5c84">
     <name>ВыполнитьКорректировкуИнформацииСопоставления</name>
     <synonym>
@@ -65,44 +90,6 @@
     <toolTip>
       <key>ru</key>
       <value>Признак необходимости выполнения корректировки информации сопоставления в процессе обмена данными.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="ef38b84d-277e-48c2-8826-330132eb6807">
-    <name>НачальнаяВыгрузкаДанных</name>
-    <synonym>
-      <key>ru</key>
-      <value>Начальная выгрузка данных</value>
-    </synonym>
-    <comment>Признак начальной выгрузки данных</comment>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Используется для универсальных обменов данными.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="67a50910-059a-4724-84e0-c21bc3ac74c2">
-    <name>УдалитьПользовательДляСинхронизацииДанных</name>
-    <synonym>
-      <key>ru</key>
-      <value>(не используется) Пользователь для синхронизации данных</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Пользователи</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Пользователь от имени которого выполняется синхронизация данных с заданным узлом</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -129,6 +116,54 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="95705445-29b4-4d51-857b-a9cf161a3cc6">
+    <name>ИмяПланаОбменаКорреспондента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя плана обмена корреспондента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c1b000a1-8094-4a06-805f-b84d4e9c6dc0">
+    <name>ИспользоватьНастройкиПодключенияВМоделиСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать настройки подключения в модели сервиса</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9388e5d5-3a02-4019-a060-141f8a3bb055">
+    <name>ИспользоватьСценарииВМоделиСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать сценарии в модели сервиса</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="d9f76f2f-2b32-4986-8987-a585f831d951">
     <name>НастройкаЗавершена</name>
     <synonym>
@@ -141,6 +176,25 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ef38b84d-277e-48c2-8826-330132eb6807">
+    <name>НачальнаяВыгрузкаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальная выгрузка данных</value>
+    </synonym>
+    <comment>Признак начальной выгрузки данных</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для универсальных обменов данными.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
@@ -157,54 +211,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="2e37c7d0-b97f-4c72-821e-b2bb77fb3140">
-    <name>СообщениеДляСопоставленияДанных</name>
-    <synonym>
-      <key>ru</key>
-      <value>Сообщение для сопоставления данных</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>36</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Уникальный идентификатор сообщения с данными для сопоставления</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </resources>
-  <resources uuid="0d190f8b-87c5-4dd1-bcfb-609ec3a44f72">
-    <name>ВерсияКорреспондента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Версия корреспондента</value>
-    </synonym>
-    <comment>Версия конфигурации информационной базы-корреспондента</comment>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>16</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Версия конфигурации информационной базы-корреспондента</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
   </resources>
   <resources uuid="53a2f4b2-e8ea-4347-b4c7-b73f4ea8f9b7">
     <name>ОбнаруженоЗацикливание</name>
@@ -236,36 +242,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="9388e5d5-3a02-4019-a060-141f8a3bb055">
-    <name>ИспользоватьСценарииВМоделиСервиса</name>
-    <synonym>
-      <key>ru</key>
-      <value>Использовать сценарии в модели сервиса</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="c1b000a1-8094-4a06-805f-b84d4e9c6dc0">
-    <name>ИспользоватьНастройкиПодключенияВМоделиСервиса</name>
-    <synonym>
-      <key>ru</key>
-      <value>Использовать настройки подключения в модели сервиса</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="5eb1717c-3696-48bb-88a9-b667ea687860">
     <name>СинхронизацияНедоступна</name>
     <synonym>
@@ -281,18 +257,42 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="95705445-29b4-4d51-857b-a9cf161a3cc6">
-    <name>ИмяПланаОбменаКорреспондента</name>
+  <resources uuid="2e37c7d0-b97f-4c72-821e-b2bb77fb3140">
+    <name>СообщениеДляСопоставленияДанных</name>
     <synonym>
       <key>ru</key>
-      <value>Имя плана обмена корреспондента</value>
+      <value>Сообщение для сопоставления данных</value>
     </synonym>
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>150</length>
+        <length>36</length>
       </stringQualifiers>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уникальный идентификатор сообщения с данными для сопоставления</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="67a50910-059a-4724-84e0-c21bc3ac74c2">
+    <name>УдалитьПользовательДляСинхронизацииДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Пользователь для синхронизации данных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь от имени которого выполняется синхронизация данных с заданным узлом</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
@@ -345,6 +345,72 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="0efdbcc2-e5a8-4b00-a72a-2823fb0b2658">
+    <name>ПереходНаWS_КонечнаяТочка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переход на WS, конечная точка</value>
+    </synonym>
+    <type>
+      <types>DefinedType.КонечнаяТочкаОбменаСообщениями</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1e20958d-79dc-4c53-b09f-e627c6463fca">
+    <name>ПереходНаWS_КонечнаяТочкаКорреспондента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переход на WS, конечная точка корреспондента</value>
+    </synonym>
+    <type>
+      <types>DefinedType.КонечнаяТочкаОбменаСообщениями</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0fa7190d-bafd-4113-a623-9d7d818f70c7">
+    <name>ПереходНаWS_ОбластьДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переход на WS, область данных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>7</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ed1b3c28-99be-49e9-90eb-81e24c8323a5">
+    <name>ПереходНаWS_Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переход на WS, этап</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="ee49981d-91f6-4002-9205-b8a53e6f54e0">
     <name>Префикс</name>
     <synonym>
@@ -382,72 +448,6 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
-  </attributes>
-  <attributes uuid="ed1b3c28-99be-49e9-90eb-81e24c8323a5">
-    <name>ПереходНаWS_Этап</name>
-    <synonym>
-      <key>ru</key>
-      <value>Переход на WS, этап</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>1</precision>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="1e20958d-79dc-4c53-b09f-e627c6463fca">
-    <name>ПереходНаWS_КонечнаяТочкаКорреспондента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Переход на WS, конечная точка корреспондента</value>
-    </synonym>
-    <type>
-      <types>DefinedType.КонечнаяТочкаОбменаСообщениями</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="0efdbcc2-e5a8-4b00-a72a-2823fb0b2658">
-    <name>ПереходНаWS_КонечнаяТочка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Переход на WS, конечная точка</value>
-    </synonym>
-    <type>
-      <types>DefinedType.КонечнаяТочкаОбменаСообщениями</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="0fa7190d-bafd-4113-a623-9d7d818f70c7">
-    <name>ПереходНаWS_ОбластьДанных</name>
-    <synonym>
-      <key>ru</key>
-      <value>Переход на WS, область данных</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>7</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <dimensions uuid="5251e744-666e-48a0-a5b4-9cef313c7631">
     <name>УзелИнформационнойБазы</name>

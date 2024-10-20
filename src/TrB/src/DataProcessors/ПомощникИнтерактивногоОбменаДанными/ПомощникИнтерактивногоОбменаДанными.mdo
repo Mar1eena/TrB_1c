@@ -521,20 +521,20 @@
       <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
   </tabularSections>
-  <forms uuid="e7100f2b-d169-4635-ab87-7a2225ff12ee">
-    <name>Форма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="c0804a4a-64d5-457f-a542-8e5badccbdf1">
     <name>ВыгрузкаДанныхДляСопоставления</name>
     <synonym>
       <key>ru</key>
       <value>Выгрузка данных для сопоставления</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e7100f2b-d169-4635-ab87-7a2225ff12ee">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

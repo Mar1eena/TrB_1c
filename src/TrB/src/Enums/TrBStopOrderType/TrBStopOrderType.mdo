@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84f69e47-5b42-4d1c-a57d-b2a18fb657ba">
+  <producedTypes>
+    <refType typeId="e40c5dab-00f5-47a9-8e06-b7c51631c1af" valueTypeId="7c566c9a-d94b-48d8-b6f6-734ff59a5764"/>
+    <listType typeId="be0a83dd-e25e-4fe5-b78d-c967c60443f6" valueTypeId="01f701ef-bfcd-444c-b495-970c5ed54a4a"/>
+    <managerType typeId="47b99d05-2778-4f09-b654-ac670708568d" valueTypeId="0fb2d698-6f2d-4d5b-9a95-33fe30fab799"/>
+  </producedTypes>
+  <name>TrBStopOrderType</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип стоп-заявки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

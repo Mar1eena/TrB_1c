@@ -24,6 +24,20 @@
     <procedureName>ПолучитьПланыОбменаКонфигурации</procedureName>
     <dataLockControlMode>Managed</dataLockControlMode>
   </operations>
+  <operations uuid="3f1578ba-3d55-4eff-bbdd-6329dd5060d5">
+    <name>Ping</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ping</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>Ping</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </operations>
   <operations uuid="3adcceea-867e-4b88-a633-4f8d4ccb43c0">
     <name>PrepareExchangeExecution</name>
     <synonym>
@@ -171,19 +185,5 @@
       <nillable>true</nillable>
       <transferDirection>Out</transferDirection>
     </parameters>
-  </operations>
-  <operations uuid="3f1578ba-3d55-4eff-bbdd-6329dd5060d5">
-    <name>Ping</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ping</value>
-    </synonym>
-    <xdtoReturningValueType>
-      <name>string</name>
-      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
-    </xdtoReturningValueType>
-    <nillable>true</nillable>
-    <procedureName>Ping</procedureName>
-    <dataLockControlMode>Managed</dataLockControlMode>
   </operations>
 </mdclass:WebService>

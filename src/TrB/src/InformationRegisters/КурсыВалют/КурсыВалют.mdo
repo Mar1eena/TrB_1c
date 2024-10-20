@@ -76,26 +76,6 @@
     <key>ru</key>
     <value>Курс валюты</value>
   </recordPresentation>
-  <resources uuid="95aec7d2-179b-4ea3-a3df-3d737b713564">
-    <name>Курс</name>
-    <synonym>
-      <key>ru</key>
-      <value>Курс</value>
-    </synonym>
-    <type>
-      <types>DefinedType.КурсВалюты</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Курс валюты</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="4bd1cae4-d5b5-444e-9cf5-67a969714293">
     <name>Кратность</name>
     <synonym>
@@ -122,6 +102,26 @@
     <fillValue xsi:type="core:NumberValue">
       <value>1</value>
     </fillValue>
+  </resources>
+  <resources uuid="95aec7d2-179b-4ea3-a3df-3d737b713564">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <type>
+      <types>DefinedType.КурсВалюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Курс валюты</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <dimensions uuid="b1a330d7-9b88-44e9-aba6-41ce5e5e669c">
     <name>Валюта</name>

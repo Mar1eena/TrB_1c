@@ -194,6 +194,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="b5ea4aff-11be-4232-94a2-cb92801b6c49">
+    <name>ПроверкаПечатныхФорм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка печатных форм</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="707a8a49-fec5-454c-9e80-c3da829d395c">
     <name>РедактированиеМакета</name>
     <synonym>
@@ -205,15 +214,6 @@
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="b5ea4aff-11be-4232-94a2-cb92801b6c49">
-    <name>ПроверкаПечатныхФорм</name>
-    <synonym>
-      <key>ru</key>
-      <value>Проверка печатных форм</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

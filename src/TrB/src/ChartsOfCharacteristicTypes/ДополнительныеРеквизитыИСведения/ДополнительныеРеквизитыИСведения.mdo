@@ -158,6 +158,21 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="73cc5b8b-4cba-4988-b2c6-d974dde9723d">
+    <name>ВидСвойств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид свойств</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСвойств</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="fe926c88-d792-4db3-abcf-3c94dfdcc407">
     <name>ВладелецДополнительныхЗначений</name>
     <synonym>
@@ -692,6 +707,21 @@
     </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="1b9bbdb1-b8c0-4459-8b5c-656055482f00">
+    <name>ЦветСвойств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет свойств</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЦветаСвойств</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="1a4ed7cf-3294-4a5c-9650-75b61d6b2531">
     <name>ЭтоДополнительноеСведение</name>
     <synonym>
@@ -709,36 +739,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:BooleanValue"/>
     <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="73cc5b8b-4cba-4988-b2c6-d974dde9723d">
-    <name>ВидСвойств</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вид свойств</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ВидыСвойств</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="1b9bbdb1-b8c0-4459-8b5c-656055482f00">
-    <name>ЦветСвойств</name>
-    <synonym>
-      <key>ru</key>
-      <value>Цвет свойств</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ЦветаСвойств</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -972,43 +972,11 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <forms uuid="f82d5bd6-4c74-4c23-978c-565aae3d752a">
-    <name>ФормаЭлемента</name>
+  <forms uuid="74880ac4-bdd3-48e6-82a0-a2103da42723">
+    <name>ВыборРеквизита</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="7fba41a5-4faa-412b-b367-b30ced0314c0">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="37333d0b-3589-4b8b-bf6c-e605e0287b66">
-    <name>РазблокированиеРеквизитов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Разблокирование реквизитов</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="1813c469-da20-46a6-8947-6815b66f64c1">
-    <name>ИзменениеНастройкиСвойства</name>
-    <synonym>
-      <key>ru</key>
-      <value>Изменение настройки свойства</value>
+      <value>Выбор реквизита</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -1027,12 +995,44 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="74880ac4-bdd3-48e6-82a0-a2103da42723">
-    <name>ВыборРеквизита</name>
+  <forms uuid="1813c469-da20-46a6-8947-6815b66f64c1">
+    <name>ИзменениеНастройкиСвойства</name>
     <synonym>
       <key>ru</key>
-      <value>Выбор реквизита</value>
+      <value>Изменение настройки свойства</value>
     </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="37333d0b-3589-4b8b-bf6c-e605e0287b66">
+    <name>РазблокированиеРеквизитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разблокирование реквизитов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7fba41a5-4faa-412b-b367-b30ced0314c0">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f82d5bd6-4c74-4c23-978c-565aae3d752a">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

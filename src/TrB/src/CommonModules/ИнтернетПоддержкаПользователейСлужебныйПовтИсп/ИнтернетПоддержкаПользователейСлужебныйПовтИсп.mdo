@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="438e8773-3706-4c5f-9f6c-817e99f4fb73">
+  <name>ИнтернетПоддержкаПользователейСлужебныйПовтИсп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интернет поддержка пользователей служебный повт исп</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

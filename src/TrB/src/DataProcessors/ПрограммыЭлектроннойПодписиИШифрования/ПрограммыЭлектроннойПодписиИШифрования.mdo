@@ -19,15 +19,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="8b0fb329-098b-46db-8766-bc034d6f20a8">
-    <name>УстановкаПрограммКриптопровайдеров</name>
-    <synonym>
-      <key>ru</key>
-      <value>Установка программ криптопровайдеров</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="c630e43c-98a6-4059-9b14-25d267410ba6">
     <name>УстановкаCryptoProCSPРегистрационныеДанные</name>
     <synonym>
@@ -51,6 +42,15 @@
     <synonym>
       <key>ru</key>
       <value>Установка криптопровайдера: Информация о дистрибутиве</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8b0fb329-098b-46db-8766-bc034d6f20a8">
+    <name>УстановкаПрограммКриптопровайдеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установка программ криптопровайдеров</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

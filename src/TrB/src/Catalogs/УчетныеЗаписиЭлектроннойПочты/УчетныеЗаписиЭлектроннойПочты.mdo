@@ -128,6 +128,21 @@
   <defaultObjectForm>Catalog.УчетныеЗаписиЭлектроннойПочты.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.УчетныеЗаписиЭлектроннойПочты.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.УчетныеЗаписиЭлектроннойПочты.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="e9939b36-bceb-40e2-a182-1d5cc248f353">
+    <name>АвторизацияСПомощьюПочтовогоСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Авторизация с помощью почтового сервиса</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="9846e2f6-d82a-42a6-bf50-2a9cdf750a8f">
     <name>АдресЭлектроннойПочты</name>
     <synonym>
@@ -150,6 +165,26 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="784475ff-eec5-462a-a511-ba31f8374c2e">
+    <name>ВладелецУчетнойЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец почты</value>
+    </synonym>
+    <comment>АПК:58</comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Владелец персональной электронной почты</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -202,6 +237,24 @@
       <value></value>
     </fillValue>
     <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="619d3ac6-40fe-485d-a407-fe065f16b186">
+    <name>ИмяПочтовогоСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя почтового сервиса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -299,6 +352,26 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="94bc76ae-72a0-418f-98c4-ae0a0326a2da">
+    <name>ОтправлятьСкрытыеКопииПисемНаЭтотАдрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлять скрытые копии писем на этот адрес</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если включен, то в получатели скрытых копий всех исходящих писем будет добавляться этот почтовый адрес.
+Рекомендуется включать при отсутствии штатных возможностей для хранения отправленных писем на почтовом сервере.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -423,6 +496,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="b5b56a64-5550-4da9-8872-d42ab871d21c">
+    <name>ПриОтправкеПисемТребуетсяАвторизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>При отправке писем требуется авторизация</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="f7e73257-fae1-465a-ae74-faaa0273a416">
     <name>ПротоколВходящейПочты</name>
     <synonym>
@@ -517,126 +605,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="94bc76ae-72a0-418f-98c4-ae0a0326a2da">
-    <name>ОтправлятьСкрытыеКопииПисемНаЭтотАдрес</name>
-    <synonym>
-      <key>ru</key>
-      <value>Отправлять скрытые копии писем на этот адрес</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Если включен, то в получатели скрытых копий всех исходящих писем будет добавляться этот почтовый адрес.
-Рекомендуется включать при отсутствии штатных возможностей для хранения отправленных писем на почтовом сервере.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="784475ff-eec5-462a-a511-ba31f8374c2e">
-    <name>ВладелецУчетнойЗаписи</name>
-    <synonym>
-      <key>ru</key>
-      <value>Владелец почты</value>
-    </synonym>
-    <comment>АПК:58</comment>
-    <type>
-      <types>CatalogRef.Пользователи</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Владелец персональной электронной почты</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="b5b56a64-5550-4da9-8872-d42ab871d21c">
-    <name>ПриОтправкеПисемТребуетсяАвторизация</name>
-    <synonym>
-      <key>ru</key>
-      <value>При отправке писем требуется авторизация</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="e9939b36-bceb-40e2-a182-1d5cc248f353">
-    <name>АвторизацияСПомощьюПочтовогоСервиса</name>
-    <synonym>
-      <key>ru</key>
-      <value>Авторизация с помощью почтового сервиса</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="619d3ac6-40fe-485d-a407-fe065f16b186">
-    <name>ИмяПочтовогоСервиса</name>
-    <synonym>
-      <key>ru</key>
-      <value>Имя почтового сервиса</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>200</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <forms uuid="ecaa0af8-549c-4c07-82ff-1c4e02ff15b8">
-    <name>ФормаВыбора</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма выбора</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="45a8c780-c067-40d7-bbe9-81f854aacf7a">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="57885cac-059a-4a08-aa2c-43b116d2c777">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="c0403df4-b1f2-4d7e-adb5-9ed881c1359b">
     <name>ПомощникНастройкиУчетнойЗаписи</name>
     <synonym>
@@ -666,6 +634,38 @@
       <key>ru</key>
       <value>Проверка настроек почты</value>
     </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ecaa0af8-549c-4c07-82ff-1c4e02ff15b8">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="45a8c780-c067-40d7-bbe9-81f854aacf7a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="57885cac-059a-4a08-aa2c-43b116d2c777">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

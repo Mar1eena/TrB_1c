@@ -49,24 +49,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="5d76a28c-5d6c-49cb-8b91-2527e8d06aba">
-    <name>Href</name>
-    <synonym>
-      <key>ru</key>
-      <value>Href</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </resources>
   <resources uuid="688d86cd-1044-4b77-bb63-2c05aaafbcd0">
     <name>Etag</name>
     <synonym>
@@ -85,49 +67,23 @@
       <value></value>
     </fillValue>
   </resources>
-  <resources uuid="f1efef30-8651-4728-becd-abe3f9026a43">
-    <name>УникальныйИдентификатор1С</name>
+  <resources uuid="5d76a28c-5d6c-49cb-8b91-2527e8d06aba">
+    <name>Href</name>
     <synonym>
       <key>ru</key>
-      <value>Уникальный идентификатор 1С</value>
+      <value>Href</value>
     </synonym>
     <type>
-      <types>UUID</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="c2612e22-4f0d-4713-b4eb-decd9780d088">
-    <name>ЭтоФайл</name>
-    <synonym>
-      <key>ru</key>
-      <value>Это файл</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="11b1410f-8e14-4b2f-8890-177f4875020e">
-    <name>ЭтоВладелецФайла</name>
-    <synonym>
-      <key>ru</key>
-      <value>Это владелец файла</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
   </resources>
   <resources uuid="2276b2b0-1705-4014-956f-5087e9dd5c1e">
     <name>ВладелецФайла</name>
@@ -149,18 +105,19 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <indexing>Index</indexing>
   </resources>
-  <resources uuid="f72b9d4b-7196-45a3-9349-e32fc91e875a">
-    <name>Синхронизирован</name>
+  <resources uuid="529c8887-f691-4ba8-aeaf-937858d61c30">
+    <name>ДатаСинхронизацииЗавершение</name>
     <synonym>
       <key>ru</key>
-      <value>Синхронизирован</value>
+      <value>Дата синхронизации завершение</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>Date</types>
+      <dateQualifiers/>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Признак синхронизации файла.</value>
+      <value>Дата и время завершения последней синхронизации файла</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -188,26 +145,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="529c8887-f691-4ba8-aeaf-937858d61c30">
-    <name>ДатаСинхронизацииЗавершение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата синхронизации завершение</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Дата и время завершения последней синхронизации файла</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="43435d30-8c25-4757-9a29-9173415959ff">
     <name>НомерСеанса</name>
     <synonym>
@@ -224,6 +161,69 @@
       <key>ru</key>
       <value>Номер сеанса, в котором выполнялся запуск синхронизации файлов (для отбора событий в журнале регистрации)</value>
     </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f72b9d4b-7196-45a3-9349-e32fc91e875a">
+    <name>Синхронизирован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синхронизирован</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак синхронизации файла.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f1efef30-8651-4728-becd-abe3f9026a43">
+    <name>УникальныйИдентификатор1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уникальный идентификатор 1С</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="11b1410f-8e14-4b2f-8890-177f4875020e">
+    <name>ЭтоВладелецФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это владелец файла</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c2612e22-4f0d-4713-b4eb-decd9780d088">
+    <name>ЭтоФайл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это файл</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>

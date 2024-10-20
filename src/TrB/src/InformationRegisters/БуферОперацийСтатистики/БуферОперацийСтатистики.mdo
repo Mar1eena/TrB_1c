@@ -51,17 +51,22 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="23f93492-59f5-491b-8708-45096934c7e6">
-    <name>ОперацияСтатистики</name>
+  <resources uuid="450a36cb-9bc1-4c5b-ae21-0e023f3eb951">
+    <name>Значение</name>
     <synonym>
       <key>ru</key>
-      <value>Операция статистики</value>
+      <value>Значение</value>
     </synonym>
     <type>
-      <types>UUID</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
@@ -93,22 +98,17 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="450a36cb-9bc1-4c5b-ae21-0e023f3eb951">
-    <name>Значение</name>
+  <resources uuid="23f93492-59f5-491b-8708-45096934c7e6">
+    <name>ОперацияСтатистики</name>
     <synonym>
       <key>ru</key>
-      <value>Значение</value>
+      <value>Операция статистики</value>
     </synonym>
     <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-        <scale>3</scale>
-      </numberQualifiers>
+      <types>UUID</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>

@@ -55,6 +55,26 @@
     </pages>
   </help>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="791d7289-b188-4120-a5f5-f5eb1fd675bf">
+    <name>ДатаПоследнегоИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последнего изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата изменения текущего состояния оригинала</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="3343cb0c-0f80-4ef9-9871-3db9f2299186">
     <name>Состояние</name>
     <synonym>
@@ -75,26 +95,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
     <indexing>Index</indexing>
-  </resources>
-  <resources uuid="791d7289-b188-4120-a5f5-f5eb1fd675bf">
-    <name>ДатаПоследнегоИзменения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата последнего изменения</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Дата изменения текущего состояния оригинала</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <attributes uuid="e996d749-1aa5-4fe5-b87b-3d8d06144d93">
     <name>АвторИзменения</name>
@@ -236,15 +236,6 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="60410722-dca9-4c3a-a9c4-33fcd45fe584">
-    <name>ФормаЗаписи</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма записи</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="3f200f5a-01bd-4304-9c57-18703cac9ec9">
     <name>ИзменениеСостоянийОригиналовПервичныхДокументов</name>
     <synonym>
@@ -256,6 +247,15 @@
         <lang>ru</lang>
       </pages>
     </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="60410722-dca9-4c3a-a9c4-33fcd45fe584">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

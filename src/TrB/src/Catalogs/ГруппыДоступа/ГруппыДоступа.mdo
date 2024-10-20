@@ -144,26 +144,63 @@
   <defaultListForm>Catalog.ГруппыДоступа.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.ГруппыДоступа.Form.ФормаСписка</defaultChoiceForm>
   <defaultFolderChoiceForm>Catalog.ГруппыДоступа.Form.ФормаВыбораГруппы</defaultFolderChoiceForm>
-  <attributes uuid="5035aa55-d557-419a-89e2-10ed0f8d109b">
-    <name>Профиль</name>
+  <attributes uuid="c12c90e4-7c40-489b-b14b-6b9442016e0f">
+    <name>Комментарий</name>
     <synonym>
       <key>ru</key>
-      <value>Профиль</value>
+      <value>Комментарий</value>
     </synonym>
     <type>
-      <types>CatalogRef.ПрофилиГруппДоступа</types>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Профиль группы доступа</value>
+      <value>Произвольная строка</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Catalog.ПрофилиГруппДоступа.EmptyRef</value>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
     </fillValue>
-    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="245814f7-028c-4c13-98eb-15412e851f81">
+    <name>ОсновнаяГруппаДоступаПоставляемогоПрофиля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная группа доступа поставляемого профиля</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет основную группу доступа поставляемого профиля без видов доступа для автоматического управления составом пользователей.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6371e288-3502-4d66-9006-b5a36107c0b7">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, которой может изменять состав участников группы доступа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -188,129 +225,29 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="c12c90e4-7c40-489b-b14b-6b9442016e0f">
-    <name>Комментарий</name>
+  <attributes uuid="5035aa55-d557-419a-89e2-10ed0f8d109b">
+    <name>Профиль</name>
     <synonym>
       <key>ru</key>
-      <value>Комментарий</value>
+      <value>Профиль</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>CatalogRef.ПрофилиГруппДоступа</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Произвольная строка</value>
+      <value>Профиль группы доступа</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ПрофилиГруппДоступа.EmptyRef</value>
     </fillValue>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="6371e288-3502-4d66-9006-b5a36107c0b7">
-    <name>Ответственный</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ответственный</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Пользователи</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Пользователь, которой может изменять состав участников группы доступа</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="245814f7-028c-4c13-98eb-15412e851f81">
-    <name>ОсновнаяГруппаДоступаПоставляемогоПрофиля</name>
-    <synonym>
-      <key>ru</key>
-      <value>Основная группа доступа поставляемого профиля</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Определяет основную группу доступа поставляемого профиля без видов доступа для автоматического управления составом пользователей.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <tabularSections uuid="0132e564-2cd3-4930-8962-1068532f4be4">
-    <producedTypes>
-      <objectType typeId="80257c67-a204-4f2a-948a-f34b9227f036" valueTypeId="f2d301f8-8692-4afc-873e-2441147b4061"/>
-      <rowType typeId="321de270-faaf-457a-afb2-ba9c421e1433" valueTypeId="8dc5c950-066b-4fbb-a43b-c40ea989ec59"/>
-    </producedTypes>
-    <name>Пользователи</name>
-    <synonym>
-      <key>ru</key>
-      <value>Пользователи</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="57d0f9b0-18d0-48ba-9f3c-d106f66ac602">
-      <name>Пользователь</name>
-      <synonym>
-        <key>ru</key>
-        <value>Пользователь</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ВнешниеПользователи</types>
-        <types>CatalogRef.ГруппыВнешнихПользователей</types>
-        <types>CatalogRef.ГруппыПользователей</types>
-        <types>CatalogRef.Пользователи</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Участник группы доступа</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="76c802c1-1442-412f-ba91-5864c7a2f8f9">
-      <name>СрокДействия</name>
-      <synonym>
-        <key>ru</key>
-        <value>Срок действия</value>
-      </synonym>
-      <type>
-        <types>Date</types>
-        <dateQualifiers>
-          <dateFractions>Date</dateFractions>
-        </dateQualifiers>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Срок после которого пользователь будет удален из группы доступа</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
   <tabularSections uuid="3a7cfd4c-c943-43c2-a8d5-6d8ab3a10fc9">
     <producedTypes>
       <objectType typeId="cccfbb5a-cf41-4eea-b491-79b4cb90747a" valueTypeId="7cedd6c0-4b94-47b5-badd-3e4158b4dcbe"/>
@@ -441,11 +378,83 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <forms uuid="ade21e2e-349f-414b-8f35-6ae3b6a4064d">
-    <name>ФормаЭлемента</name>
+  <tabularSections uuid="0132e564-2cd3-4930-8962-1068532f4be4">
+    <producedTypes>
+      <objectType typeId="80257c67-a204-4f2a-948a-f34b9227f036" valueTypeId="f2d301f8-8692-4afc-873e-2441147b4061"/>
+      <rowType typeId="321de270-faaf-457a-afb2-ba9c421e1433" valueTypeId="8dc5c950-066b-4fbb-a43b-c40ea989ec59"/>
+    </producedTypes>
+    <name>Пользователи</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Пользователи</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="57d0f9b0-18d0-48ba-9f3c-d106f66ac602">
+      <name>Пользователь</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пользователь</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВнешниеПользователи</types>
+        <types>CatalogRef.ГруппыВнешнихПользователей</types>
+        <types>CatalogRef.ГруппыПользователей</types>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Участник группы доступа</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="76c802c1-1442-412f-ba91-5864c7a2f8f9">
+      <name>СрокДействия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Срок действия</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Срок после которого пользователь будет удален из группы доступа</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="6ed466d7-e016-4d9c-9c0e-8deed48cbd70">
+    <name>ВыборПоОтветственному</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор по ответственному</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="83f51efe-e2af-459a-b59f-2c036124ac23">
+    <name>ФормаВыбораГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора группы</value>
     </synonym>
     <help>
       <pages>
@@ -483,26 +492,17 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="83f51efe-e2af-459a-b59f-2c036124ac23">
-    <name>ФормаВыбораГруппы</name>
+  <forms uuid="ade21e2e-349f-414b-8f35-6ae3b6a4064d">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора группы</value>
+      <value>Форма элемента</value>
     </synonym>
     <help>
       <pages>
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="6ed466d7-e016-4d9c-9c0e-8deed48cbd70">
-    <name>ВыборПоОтветственному</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выбор по ответственному</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

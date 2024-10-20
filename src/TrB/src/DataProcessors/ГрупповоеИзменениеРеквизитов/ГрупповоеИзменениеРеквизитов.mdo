@@ -16,6 +16,38 @@
       <lang>ru</lang>
     </pages>
   </help>
+  <attributes uuid="5921c2e6-4b25-40d4-b871-9654c2ce89bb">
+    <name>АдресДвоичныхДанныхВнешнейОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес двоичных данных внешней обработки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cc98670a-7b18-4973-b211-90261c5c8c10">
+    <name>ВариантЗаписиОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант записи объекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект может быть записан автоматически после выполнения алгоритма или необходимость записи определяется в коде.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="7d2a37b1-a1a0-435a-846a-95e255655044">
     <name>ИзменятьВТранзакции</name>
     <synonym>
@@ -28,22 +60,6 @@
     <toolTip>
       <key>ru</key>
       <value>При невозможности изменения элементов в транзакции, все изменения будут отменены.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="109db64c-00dc-490e-99a5-4430d9344e99">
-    <name>ПрерыватьПриОшибке</name>
-    <synonym>
-      <key>ru</key>
-      <value>Прерывать при ошибке</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Предупреждать, если во время изменения элементов возникнут ошибки.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -96,6 +112,41 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="109db64c-00dc-490e-99a5-4430d9344e99">
+    <name>ПрерыватьПриОшибке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прерывать при ошибке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предупреждать, если во время изменения элементов возникнут ошибки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8b621ec9-24c9-4166-90ce-29c5ad30f78b">
+    <name>РежимВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим выполнения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет вариант изменения реквизитов  замена значений или произвольным алгоритмом.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="325bacdd-793f-47d8-b987-57e9d5f2782b">
     <name>РежимРазработчика</name>
     <synonym>
@@ -131,62 +182,11 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="8b621ec9-24c9-4166-90ce-29c5ad30f78b">
-    <name>РежимВыполнения</name>
+  <forms uuid="51f9aff4-71da-4b1b-b48b-04122a17d855">
+    <name>ВыборВидаОбъектов</name>
     <synonym>
       <key>ru</key>
-      <value>Режим выполнения</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Определяет вариант изменения реквизитов  замена значений или произвольным алгоритмом.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="cc98670a-7b18-4973-b211-90261c5c8c10">
-    <name>ВариантЗаписиОбъекта</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вариант записи объекта</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>12</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Объект может быть записан автоматически после выполнения алгоритма или необходимость записи определяется в коде.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="5921c2e6-4b25-40d4-b871-9654c2ce89bb">
-    <name>АдресДвоичныхДанныхВнешнейОбработки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Адрес двоичных данных внешней обработки</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <forms uuid="da9821c3-4b16-48b7-9088-d3cf8ac536a6">
-    <name>Форма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма</value>
+      <value>Выбор вида объектов</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -196,15 +196,6 @@
     <synonym>
       <key>ru</key>
       <value>Выбранные элементы</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="51f9aff4-71da-4b1b-b48b-04122a17d855">
-    <name>ВыборВидаОбъектов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выбор вида объектов</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -234,6 +225,15 @@
         <lang>ru</lang>
       </pages>
     </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="da9821c3-4b16-48b7-9088-d3cf8ac536a6">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

@@ -98,11 +98,11 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <templates uuid="9823a704-8602-430e-b1f3-0893b2285401">
-    <name>Полномочия</name>
+  <templates uuid="ed216057-b1ce-489c-a120-581043f6d438">
+    <name>ЗначенияОграниченийПолномочий</name>
     <synonym>
       <key>ru</key>
-      <value>Полномочия</value>
+      <value>Значения ограничений полномочий</value>
     </synonym>
     <comment>АПК:497 Не подлежит переводу, находится в локализованной части</comment>
     <templateType>TextDocument</templateType>
@@ -116,11 +116,11 @@
     <comment>АПК:497 Не подлежит переводу, находится в локализованной части</comment>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="ed216057-b1ce-489c-a120-581043f6d438">
-    <name>ЗначенияОграниченийПолномочий</name>
+  <templates uuid="9823a704-8602-430e-b1f3-0893b2285401">
+    <name>Полномочия</name>
     <synonym>
       <key>ru</key>
-      <value>Значения ограничений полномочий</value>
+      <value>Полномочия</value>
     </synonym>
     <comment>АПК:497 Не подлежит переводу, находится в локализованной части</comment>
     <templateType>TextDocument</templateType>

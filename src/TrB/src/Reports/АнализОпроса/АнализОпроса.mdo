@@ -17,15 +17,6 @@
       <lang>ru</lang>
     </pages>
   </help>
-  <forms uuid="bc2aa3f9-ef2c-49a5-8cd9-ddd8a8cbe19d">
-    <name>ФормаОтчета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма отчета</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="b6ac4cd6-c68f-4464-88e9-a8d335d581c6">
     <name>РасшифровкаПростыхОтветов</name>
     <synonym>
@@ -44,6 +35,22 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="bc2aa3f9-ef2c-49a5-8cd9-ddd8a8cbe19d">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="62eca88f-025d-44de-b92c-46cd8bc7e4a1">
+    <name>МакетОтветившие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет ответившие</value>
+    </synonym>
+  </templates>
   <templates uuid="abd7a766-5cc1-48db-8d29-797e9d666a78">
     <name>МакетОтветы</name>
     <synonym>
@@ -58,12 +65,5 @@
       <value>Простые вопросы</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
-  </templates>
-  <templates uuid="62eca88f-025d-44de-b92c-46cd8bc7e4a1">
-    <name>МакетОтветившие</name>
-    <synonym>
-      <key>ru</key>
-      <value>Макет ответившие</value>
-    </synonym>
   </templates>
 </mdclass:Report>

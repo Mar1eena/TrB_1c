@@ -51,29 +51,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="874868a1-e4a3-4c78-8db4-5b103c9cc541">
-    <name>УровеньРодителя</name>
-    <synonym>
-      <key>ru</key>
-      <value>Уровень родителя</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Уровень иерархии родителя, начиная с нуля</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="d397d41e-6113-4f4e-99de-5d445649a4c3">
     <name>УровеньГруппы</name>
     <synonym>
@@ -90,6 +67,29 @@
     <toolTip>
       <key>ru</key>
       <value>Уровень иерархии группы, начиная с нуля</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="874868a1-e4a3-4c78-8db4-5b103c9cc541">
+    <name>УровеньРодителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень родителя</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уровень иерархии родителя, начиная с нуля</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -144,20 +144,20 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="da9028f5-04bb-4782-bd3a-0d17f4e1534e">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="45a74cbe-e001-4a6e-b0bf-b1e8947fb409">
     <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
       <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="da9028f5-04bb-4782-bd3a-0d17f4e1534e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

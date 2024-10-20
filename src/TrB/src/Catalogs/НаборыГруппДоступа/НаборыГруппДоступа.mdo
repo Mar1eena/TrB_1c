@@ -136,57 +136,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="d4a6ab09-259f-4476-834c-a2b57cdeac05">
-    <name>ТипЭлементовНабора</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тип элементов набора</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ГруппыДоступа</types>
-      <types>CatalogRef.ВнешниеПользователи</types>
-      <types>CatalogRef.ГруппыВнешнихПользователей</types>
-      <types>CatalogRef.ГруппыПользователей</types>
-      <types>CatalogRef.Пользователи</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Тип элементов набора (представлен пустой ссылкой справочников Группы доступа, Группы пользователей, Группы внешних пользователей, Пользователи, Внешние пользователи)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Catalog.ГруппыДоступа.EmptyRef</value>
-    </fillValue>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="a56ff7f4-2259-455f-b707-b98aacd7d0b2">
-    <name>Хеш</name>
-    <synonym>
-      <key>ru</key>
-      <value>Хеш</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Хеш-сумма состава групп, позволяющая
-сделать быстрый поиск по индексу</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="8c9636c3-0a84-4575-b4c7-6d8bb588e1b0">
     <name>НеИспользуетсяС</name>
     <synonym>
@@ -205,6 +154,71 @@
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="02910dcd-9e66-4239-a421-8067faf59577">
+    <name>НовыйНаборГруппДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новый набор групп доступа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НаборыГруппДоступа</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Когда свойство Пользователь заполнено означает новый набор групп доступа, который станет разрешенным набором этого пользователя после обновления регистров</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.ТипЭлементовНабора</name>
+      <field>Catalog.НаборыГруппДоступа.Attribute.ТипЭлементовНабора</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ТипЭлементовНабора</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Catalog.ГруппыДоступа.EmptyRef</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="76d5a67f-bb11-4937-a66d-cdce28165562">
+    <name>НовыйНаборГруппПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новый набор групп пользователей</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НаборыГруппДоступа</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Когда свойство Пользователь заполнено означает новый набор групп пользователей, который станет разрешенным набором этого пользователя после обновления регистров</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.ТипЭлементовНабора</name>
+      <field>Catalog.НаборыГруппДоступа.Attribute.ТипЭлементовНабора</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ТипЭлементовНабора</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.ГруппыПользователей.EmptyRef</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.ГруппыВнешнихПользователей.EmptyRef</value>
+        </values>
+      </value>
+    </choiceParameters>
     <fillValue xsi:type="core:UndefinedValue"/>
     <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
@@ -303,66 +317,52 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="02910dcd-9e66-4239-a421-8067faf59577">
-    <name>НовыйНаборГруппДоступа</name>
+  <attributes uuid="d4a6ab09-259f-4476-834c-a2b57cdeac05">
+    <name>ТипЭлементовНабора</name>
     <synonym>
       <key>ru</key>
-      <value>Новый набор групп доступа</value>
+      <value>Тип элементов набора</value>
     </synonym>
     <type>
-      <types>CatalogRef.НаборыГруппДоступа</types>
+      <types>CatalogRef.ГруппыДоступа</types>
+      <types>CatalogRef.ВнешниеПользователи</types>
+      <types>CatalogRef.ГруппыВнешнихПользователей</types>
+      <types>CatalogRef.ГруппыПользователей</types>
+      <types>CatalogRef.Пользователи</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Когда свойство Пользователь заполнено означает новый набор групп доступа, который станет разрешенным набором этого пользователя после обновления регистров</value>
+      <value>Тип элементов набора (представлен пустой ссылкой справочников Группы доступа, Группы пользователей, Группы внешних пользователей, Пользователи, Внешние пользователи)</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <choiceParameterLinks>
-      <name>Отбор.ТипЭлементовНабора</name>
-      <field>Catalog.НаборыГруппДоступа.Attribute.ТипЭлементовНабора</field>
-    </choiceParameterLinks>
-    <choiceParameters>
-      <name>Отбор.ТипЭлементовНабора</name>
-      <value xsi:type="core:ReferenceValue">
-        <value>Catalog.ГруппыДоступа.EmptyRef</value>
-      </value>
-    </choiceParameters>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ГруппыДоступа.EmptyRef</value>
+    </fillValue>
     <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="76d5a67f-bb11-4937-a66d-cdce28165562">
-    <name>НовыйНаборГруппПользователей</name>
+  <attributes uuid="a56ff7f4-2259-455f-b707-b98aacd7d0b2">
+    <name>Хеш</name>
     <synonym>
       <key>ru</key>
-      <value>Новый набор групп пользователей</value>
+      <value>Хеш</value>
     </synonym>
     <type>
-      <types>CatalogRef.НаборыГруппДоступа</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Когда свойство Пользователь заполнено означает новый набор групп пользователей, который станет разрешенным набором этого пользователя после обновления регистров</value>
+      <value>Хеш-сумма состава групп, позволяющая
+сделать быстрый поиск по индексу</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <choiceParameterLinks>
-      <name>Отбор.ТипЭлементовНабора</name>
-      <field>Catalog.НаборыГруппДоступа.Attribute.ТипЭлементовНабора</field>
-    </choiceParameterLinks>
-    <choiceParameters>
-      <name>Отбор.ТипЭлементовНабора</name>
-      <value xsi:type="core:FixedArrayValue">
-        <values xsi:type="core:ReferenceValue">
-          <value>Catalog.ГруппыПользователей.EmptyRef</value>
-        </values>
-        <values xsi:type="core:ReferenceValue">
-          <value>Catalog.ГруппыВнешнихПользователей.EmptyRef</value>
-        </values>
-      </value>
-    </choiceParameters>
     <fillValue xsi:type="core:UndefinedValue"/>
     <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>

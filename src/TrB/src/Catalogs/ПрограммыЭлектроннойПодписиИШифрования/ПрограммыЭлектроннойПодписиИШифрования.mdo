@@ -123,53 +123,6 @@
   <defaultObjectForm>Catalog.ПрограммыЭлектроннойПодписиИШифрования.Form.ФормаЭлемента</defaultObjectForm>
   <defaultChoiceForm>Catalog.ПрограммыЭлектроннойПодписиИШифрования.Form.ФормаВыбора</defaultChoiceForm>
   <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
-  <attributes uuid="0d76799d-7fc7-446b-88fb-dca839de00a5">
-    <name>ИмяПрограммы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Приложение</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>430</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Уникальное имя приложения, присвоенное его разработчиком.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="cb5674c3-0d91-4948-bafd-d9ef44a2a69d">
-    <name>ТипПрограммы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тип приложения</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>9</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Специальное число, которое дополняет имя приложения.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="ea4a869c-861c-412c-a3be-de1c57d1a251">
     <name>АлгоритмПодписи</name>
     <synonym>
@@ -244,19 +197,28 @@
     </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="6c1d8f6c-db33-46dc-8824-aceacb4bf9c1">
-    <name>ЭтоВстроенныйКриптопровайдер</name>
+  <attributes uuid="0d76799d-7fc7-446b-88fb-dca839de00a5">
+    <name>ИмяПрограммы</name>
     <synonym>
       <key>ru</key>
-      <value>Это встроенный криптопровайдер</value>
+      <value>Приложение</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>430</length>
+      </stringQualifiers>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уникальное имя приложения, присвоенное его разработчиком.</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="67e8b7dc-e0d7-44a9-81d0-6b31bb318145">
@@ -276,25 +238,49 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="50ac390d-324f-40bd-b3df-0468a63b94b6">
-    <name>ФормаЭлемента</name>
+  <attributes uuid="cb5674c3-0d91-4948-bafd-d9ef44a2a69d">
+    <name>ТипПрограммы</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Тип приложения</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="80337710-2c60-45c4-ae1f-bb42731fb611">
-    <name>ФормаВыбора</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Специальное число, которое дополняет имя приложения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6c1d8f6c-db33-46dc-8824-aceacb4bf9c1">
+    <name>ЭтоВстроенныйКриптопровайдер</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора</value>
+      <value>Это встроенный криптопровайдер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="dd07b255-25af-466e-a224-c561a8ca567b">
+    <name>ВстроенныйКриптопровайдер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Встроенный криптопровайдер</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -304,15 +290,6 @@
     <synonym>
       <key>ru</key>
       <value>Ошибка обращения к приложению</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="dd07b255-25af-466e-a224-c561a8ca567b">
-    <name>ВстроенныйКриптопровайдер</name>
-    <synonym>
-      <key>ru</key>
-      <value>Встроенный криптопровайдер</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -332,6 +309,29 @@
       <key>ru</key>
       <value>Токен</value>
     </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="80337710-2c60-45c4-ae1f-bb42731fb611">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="50ac390d-324f-40bd-b3df-0468a63b94b6">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

@@ -79,31 +79,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <attributes uuid="0ba68198-983d-409b-be27-96f1572b3f12">
-    <name>ОписаниеДатыЗапрета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Описание даты запрета</value>
-    </synonym>
-    <comment>Описание относительной даты запрета, используемое для вычисления даты запрета на текущую дату</comment>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>1000</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Описание относительной даты запрета, используемое для вычисления даты запрета на текущую дату</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </attributes>
   <attributes uuid="9cd1e8dd-e2be-48a9-b32d-43688e1748bc">
     <name>Комментарий</name>
     <synonym>
@@ -120,6 +95,31 @@
     <toolTip>
       <key>ru</key>
       <value>Комментарий к отдельной настройке запрета по пользователю/группе пользователей</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="0ba68198-983d-409b-be27-96f1572b3f12">
+    <name>ОписаниеДатыЗапрета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание даты запрета</value>
+    </synonym>
+    <comment>Описание относительной даты запрета, используемое для вычисления даты запрета на текущую дату</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Описание относительной даты запрета, используемое для вычисления даты запрета на текущую дату</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -201,24 +201,6 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="0ce6e252-8d6e-4bfe-b8cc-daf3434fa51e">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="aa9513b4-f575-4030-a7f9-ac09aa319e98">
-    <name>ФормаЗаписи</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма записи</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="f01afc5e-91b8-4cc2-b63a-c245e5e36d01">
     <name>ДатыЗапретаИзменения</name>
     <synonym>
@@ -237,20 +219,24 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <commands uuid="d03f66b1-48a3-434b-bb58-9fd53c183514">
-    <name>ДатыЗапретаИзмененияДанных</name>
+  <forms uuid="aa9513b4-f575-4030-a7f9-ac09aa319e98">
+    <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
-      <value>Даты запрета изменения данных</value>
+      <value>Форма записи</value>
     </synonym>
-    <group>ActionsPanelTools</group>
-    <commandParameterType/>
-    <representation>Auto</representation>
-    <toolTip>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0ce6e252-8d6e-4bfe-b8cc-daf3434fa51e">
+    <name>ФормаСписка</name>
+    <synonym>
       <key>ru</key>
-      <value>Даты запрета добавления, изменения и удаления данных</value>
-    </toolTip>
-  </commands>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <commands uuid="a469e55e-d7ca-4c27-b350-fafe7364c18f">
     <name>ДатыЗапретаЗагрузкиДанных</name>
     <synonym>
@@ -263,6 +249,20 @@
     <toolTip>
       <key>ru</key>
       <value>Даты запрета загрузки данных при обмене данными</value>
+    </toolTip>
+  </commands>
+  <commands uuid="d03f66b1-48a3-434b-bb58-9fd53c183514">
+    <name>ДатыЗапретаИзмененияДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Даты запрета изменения данных</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Даты запрета добавления, изменения и удаления данных</value>
     </toolTip>
   </commands>
 </mdclass:InformationRegister>

@@ -134,6 +134,19 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="d7ea882a-6ef9-407f-b0e9-7bb42cf5ef17">
+    <name>ВременныйКаталогРаботыСФайлами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Временный каталог работы с файлами</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="5a8c3621-595a-4168-8bba-a7f8d499e47e">
     <name>ВыводВОкноСообщенийИнформационныхСообщений</name>
     <synonym>
@@ -595,6 +608,21 @@
       <key>ru</key>
       <value>Каталог с информационной базой для подключения</value>
     </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="905b787b-c638-4703-af70-416a2ce43b50">
+    <name>КодировкаФайлаПротоколаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кодировка файла протокола обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
@@ -1209,34 +1237,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="905b787b-c638-4703-af70-416a2ce43b50">
-    <name>КодировкаФайлаПротоколаОбмена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Кодировка файла протокола обмена</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="d7ea882a-6ef9-407f-b0e9-7bb42cf5ef17">
-    <name>ВременныйКаталогРаботыСФайлами</name>
-    <synonym>
-      <key>ru</key>
-      <value>Временный каталог работы с файлами</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <forms uuid="4522c564-61da-40da-a749-5312121a331d">
     <name>УправляемаяФорма</name>
     <synonym>
@@ -1255,13 +1255,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="2943b572-7411-4f92-a6cc-7ee552b85223">
-    <name>ПараметрыОбработчиков</name>
-    <synonym>
-      <key>ru</key>
-      <value>Параметры обработчиков</value>
-    </synonym>
-  </templates>
   <templates uuid="28478e7a-e8aa-40aa-866c-a3624f903141">
     <name>ОбщиеПроцедурыФункции</name>
     <synonym>
@@ -1269,6 +1262,13 @@
       <value>Общие процедуры функции</value>
     </synonym>
     <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="2943b572-7411-4f92-a6cc-7ee552b85223">
+    <name>ПараметрыОбработчиков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры обработчиков</value>
+    </synonym>
   </templates>
   <commands uuid="f692ab21-a8de-4feb-914f-4beef350543a">
     <name>УниверсальныйОбменДанными</name>

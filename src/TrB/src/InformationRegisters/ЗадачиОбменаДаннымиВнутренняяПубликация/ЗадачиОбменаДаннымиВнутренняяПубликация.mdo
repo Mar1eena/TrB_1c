@@ -51,15 +51,15 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="7692e2fd-9ab5-45ee-9a4c-380107769ef7">
-    <name>Сценарий</name>
+  <resources uuid="dcbcf7e3-83ab-4460-8ee7-dfc55a0342e7">
+    <name>ВремяПроверкиЗадачи</name>
     <synonym>
       <key>ru</key>
-      <value>Сценарий</value>
+      <value>Время проверки задачи</value>
     </synonym>
-    <comment>Сценарий или идентификатор обмена при ручной синхронизации</comment>
     <type>
-      <types>CatalogRef.СценарииОбменовДанными</types>
+      <types>Date</types>
+      <dateQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -82,6 +82,21 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="100acfa0-d5f3-4a20-8a05-9d9d00aff2c9">
+    <name>ЗавершенаСОшибкой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершена с ошибкой</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="2af20999-4b9a-44c7-9edf-40446e083796">
     <name>ЗавершенаУспешно</name>
     <synonym>
@@ -97,14 +112,17 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="100acfa0-d5f3-4a20-8a05-9d9d00aff2c9">
-    <name>ЗавершенаСОшибкой</name>
+  <resources uuid="a2961e9e-8361-4416-b736-1b59c9306526">
+    <name>ОбластьДанныхКорреспондента</name>
     <synonym>
       <key>ru</key>
-      <value>Завершена с ошибкой</value>
+      <value>Область данных корреспондента</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+      </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -130,22 +148,6 @@
       <value></value>
     </fillValue>
   </resources>
-  <resources uuid="dcbcf7e3-83ab-4460-8ee7-dfc55a0342e7">
-    <name>ВремяПроверкиЗадачи</name>
-    <synonym>
-      <key>ru</key>
-      <value>Время проверки задачи</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="4aa2e369-4871-4f28-ab0b-94323bb7e856">
     <name>Режим</name>
     <synonym>
@@ -166,17 +168,15 @@
       <value></value>
     </fillValue>
   </resources>
-  <resources uuid="a2961e9e-8361-4416-b736-1b59c9306526">
-    <name>ОбластьДанныхКорреспондента</name>
+  <resources uuid="7692e2fd-9ab5-45ee-9a4c-380107769ef7">
+    <name>Сценарий</name>
     <synonym>
       <key>ru</key>
-      <value>Область данных корреспондента</value>
+      <value>Сценарий</value>
     </synonym>
+    <comment>Сценарий или идентификатор обмена при ручной синхронизации</comment>
     <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>7</precision>
-      </numberQualifiers>
+      <types>CatalogRef.СценарииОбменовДанными</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -296,20 +296,20 @@
     </fillValue>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="e5c31a93-cda7-4972-a13b-8cb864cc40ed">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="e2a5f14f-9b64-4d1c-9c66-332ea0157cc2">
     <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
       <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e5c31a93-cda7-4972-a13b-8cb864cc40ed">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

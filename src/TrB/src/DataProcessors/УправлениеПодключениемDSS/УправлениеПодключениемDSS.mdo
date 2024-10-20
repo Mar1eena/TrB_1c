@@ -420,16 +420,6 @@
       <value>Подключение учетной записи DSS</value>
     </synonym>
   </templates>
-  <commands uuid="78288ff9-d838-4970-84bd-9a6b229e6ef0">
-    <name>СписокСертификатов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Список сертификатов</value>
-    </synonym>
-    <group>NavigationPanelSeeAlso</group>
-    <commandParameterType/>
-    <representation>Auto</representation>
-  </commands>
   <commands uuid="8310f927-1123-4b4b-a65e-0ff29be73329">
     <name>СерверыDSS</name>
     <synonym>
@@ -437,6 +427,16 @@
       <value>Серверы DSS</value>
     </synonym>
     <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="78288ff9-d838-4970-84bd-9a6b229e6ef0">
+    <name>СписокСертификатов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список сертификатов</value>
+    </synonym>
+    <group>NavigationPanelSeeAlso</group>
     <commandParameterType/>
     <representation>Auto</representation>
   </commands>

@@ -196,129 +196,6 @@
   <defaultObjectForm>Catalog.Пользователи.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.Пользователи.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.Пользователи.Form.ФормаСписка</defaultChoiceForm>
-  <attributes uuid="ae6d0e12-8857-476c-b4b2-f03295cbed3e">
-    <name>Недействителен</name>
-    <synonym>
-      <key>ru</key>
-      <value>Недействителен</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Пользователь больше не работает в приложении, но сведения о нем сохранены.
-Недействительные пользователи скрываются из всех списков
-при выборе или подборе в документах и других местах приложения.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="cc8e3172-491d-45d8-a7eb-fc6c400845cb">
-    <name>Подразделение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Подразделение</value>
-    </synonym>
-    <type>
-      <types>DefinedType.Подразделение</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Подразделение, в котором работает пользователь</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="d7cfc87f-ac09-44aa-91d9-6511c408c5cb">
-    <name>ФизическоеЛицо</name>
-    <synonym>
-      <key>ru</key>
-      <value>Физическое лицо</value>
-    </synonym>
-    <type>
-      <types>DefinedType.ФизическоеЛицо</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Физическое лицо, с которым связан пользователь</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="7ee1e0d0-9735-45da-bd24-c0dbabfd5b1e">
-    <name>Комментарий</name>
-    <synonym>
-      <key>ru</key>
-      <value>Комментарий</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Произвольная строка</value>
-    </toolTip>
-    <multiLine>true</multiLine>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="bd0e3bd4-1207-41ea-8dfc-afa8f7d08cc2">
-    <name>Служебный</name>
-    <synonym>
-      <key>ru</key>
-      <value>Служебный</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Служебный пользователь для автоматизации некоторых действий в приложении (права не настраиваются интерактивно).</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="51d83895-5692-4479-9612-07c790d19dff">
-    <name>Подготовлен</name>
-    <synonym>
-      <key>ru</key>
-      <value>Подготовлен</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Пользователь подготовлен ответственным за список пользователей.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="9c1325af-7492-42be-b3af-51b692534510">
     <name>ИдентификаторПользователяИБ</name>
     <synonym>
@@ -357,6 +234,109 @@
     <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="7ee1e0d0-9735-45da-bd24-c0dbabfd5b1e">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольная строка</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ae6d0e12-8857-476c-b4b2-f03295cbed3e">
+    <name>Недействителен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Недействителен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь больше не работает в приложении, но сведения о нем сохранены.
+Недействительные пользователи скрываются из всех списков
+при выборе или подборе в документах и других местах приложения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="51d83895-5692-4479-9612-07c790d19dff">
+    <name>Подготовлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подготовлен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь подготовлен ответственным за список пользователей.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cc8e3172-491d-45d8-a7eb-fc6c400845cb">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Подразделение</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение, в котором работает пользователь</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bd0e3bd4-1207-41ea-8dfc-afa8f7d08cc2">
+    <name>Служебный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служебный</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Служебный пользователь для автоматизации некоторых действий в приложении (права не настраиваются интерактивно).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="d854b528-8456-4453-9c2d-4f96caf10481">
     <name>УдалитьСвойстваПользователяИБ</name>
     <synonym>
@@ -373,6 +353,26 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d7cfc87f-ac09-44aa-91d9-6511c408c5cb">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ФизическоеЛицо</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Физическое лицо, с которым связан пользователь</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -750,40 +750,12 @@
       <dataHistory>Use</dataHistory>
     </attributes>
   </tabularSections>
-  <forms uuid="cb92dc2e-6053-4233-a408-4464514b1257">
-    <name>ФормаЭлемента</name>
+  <forms uuid="cfc0adf6-87b4-4c8a-91e2-46c2616b319b">
+    <name>ВводПароля</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Ввод пароля</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="8cd65ad3-a7a3-46f6-9061-e8751fd5073e">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="85550a7a-8fe0-4296-ace5-63cf053536b4">
-    <name>ПользователиИнформационнойБазы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Пользователи информационной базы</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -815,6 +787,20 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="85550a7a-8fe0-4296-ace5-63cf053536b4">
+    <name>ПользователиИнформационнойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователи информационной базы</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="3f8b6411-6606-4d27-891e-7c77be47c5f9">
     <name>СменаПочты</name>
     <synonym>
@@ -824,12 +810,26 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="cfc0adf6-87b4-4c8a-91e2-46c2616b319b">
-    <name>ВводПароля</name>
+  <forms uuid="8cd65ad3-a7a3-46f6-9061-e8751fd5073e">
+    <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
-      <value>Ввод пароля</value>
+      <value>Форма списка</value>
     </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cb92dc2e-6053-4233-a408-4464514b1257">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

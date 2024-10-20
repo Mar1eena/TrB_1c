@@ -249,24 +249,6 @@
       </fillValue>
     </attributes>
   </tabularSections>
-  <forms uuid="6fcd2a3a-4d66-40e3-bde0-5c274b43783f">
-    <name>Форма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="569047c2-0879-4fba-a814-44812d21043b">
-    <name>СообщенияОбОшибках</name>
-    <synonym>
-      <key>ru</key>
-      <value>Сообщения об ошибках</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="0c3c4494-c037-431e-9eeb-9b6cfd7372c3">
     <name>ПараметрыПрописиВалюты_ru</name>
     <synonym>
@@ -293,6 +275,24 @@
         <lang>ru</lang>
       </pages>
     </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="569047c2-0879-4fba-a814-44812d21043b">
+    <name>СообщенияОбОшибках</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщения об ошибках</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6fcd2a3a-4d66-40e3-bde0-5c274b43783f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

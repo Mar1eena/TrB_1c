@@ -50,21 +50,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="448e7386-cc56-4578-9c57-ef270980a0ff">
-    <name>Статус</name>
-    <synonym>
-      <key>ru</key>
-      <value>Статус</value>
-    </synonym>
-    <type>
-      <types>EnumRef.СтатусыОбработчиковОбновления</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="c2cdc60c-157d-450f-b3ba-2b6242459ebb">
     <name>Версия</name>
     <synonym>
@@ -75,26 +60,6 @@
       <types>String</types>
       <stringQualifiers>
         <length>20</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </resources>
-  <resources uuid="186f87ca-b9d5-48fa-b196-eed2794bade4">
-    <name>ИмяБиблиотеки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Имя библиотеки</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -123,6 +88,26 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="186f87ca-b9d5-48fa-b196-eed2794bade4">
+    <name>ИмяБиблиотеки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя библиотеки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
   <resources uuid="65b653b7-1298-40e4-9d69-2ce7810d5985">
     <name>РежимВыполнения</name>
     <synonym>
@@ -131,6 +116,21 @@
     </synonym>
     <type>
       <types>EnumRef.РежимыВыполненияОбработчиков</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="448e7386-cc56-4578-9c57-ef270980a0ff">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыОбработчиковОбновления</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -158,6 +158,22 @@
       <value></value>
     </fillValue>
   </attributes>
+  <attributes uuid="83be7bdf-e915-440f-a39f-1bb74db34b3e">
+    <name>ИнформацияОбОшибке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация об ошибке</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="66359bb1-8692-415a-86d9-f40545f88d3a">
     <name>Комментарий</name>
     <synonym>
@@ -177,22 +193,6 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
-  </attributes>
-  <attributes uuid="83be7bdf-e915-440f-a39f-1bb74db34b3e">
-    <name>ИнформацияОбОшибке</name>
-    <synonym>
-      <key>ru</key>
-      <value>Информация об ошибке</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <dimensions uuid="190b6efe-e67e-4274-abb9-263178a6ec4a">
     <name>ИмяОбработчика</name>

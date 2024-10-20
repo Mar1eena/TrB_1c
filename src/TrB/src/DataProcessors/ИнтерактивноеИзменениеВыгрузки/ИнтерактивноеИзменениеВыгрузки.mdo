@@ -16,6 +16,32 @@
       <lang>ru</lang>
     </pages>
   </help>
+  <attributes uuid="a8f32b13-249c-4ce6-a521-f06a87f2e670">
+    <name>АдресКомпоновщикаВсехДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес компоновщика всех документов</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="477dfea4-e401-4cf0-b0a8-2df7c3836c58">
+    <name>АдресХранилищаФормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес хранилища формы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="17e1840f-fef3-4f17-8476-273e6af24cb4">
     <name>ВариантВыгрузки</name>
     <synonym>
@@ -31,39 +57,15 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="a64566fa-b706-49bc-8277-4531145c400e">
-    <name>ПериодОтбораВсехДокументов</name>
+  <attributes uuid="1b614b97-5c1d-497a-9574-40114059f836">
+    <name>ДополнительнаяРегистрация</name>
     <synonym>
       <key>ru</key>
-      <value>Период отбора всех документов</value>
+      <value>Дополнительная регистрация</value>
     </synonym>
+    <comment>Таблица дополнительной регистрации</comment>
     <type>
-      <types>StandardPeriod</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="a8f32b13-249c-4ce6-a521-f06a87f2e670">
-    <name>АдресКомпоновщикаВсехДокументов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Адрес компоновщика всех документов</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="815775e4-cfb7-495b-87c4-d134b90d93d4">
-    <name>ПериодОтбораСценарияУзла</name>
-    <synonym>
-      <key>ru</key>
-      <value>Период отбора сценария узла</value>
-    </synonym>
-    <type>
-      <types>StandardPeriod</types>
+      <types>ValueTable</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -80,15 +82,14 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="8bdbb9ef-3a91-4374-b3c5-9447005bb1b7">
-    <name>ПредставлениеОтбораСценарияУзла</name>
+  <attributes uuid="63f308a5-b955-48a5-8052-50c5bede65d0">
+    <name>КомпоновщикОтбораВсехДокументов</name>
     <synonym>
       <key>ru</key>
-      <value>Представление отбора сценария узла</value>
+      <value>Компоновщик отбора всех документов</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>DataCompositionSettingsComposer</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -100,6 +101,43 @@
       <value>Параметры сценария дополнения</value>
     </synonym>
     <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a64566fa-b706-49bc-8277-4531145c400e">
+    <name>ПериодОтбораВсехДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период отбора всех документов</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="815775e4-cfb7-495b-87c4-d134b90d93d4">
+    <name>ПериодОтбораСценарияУзла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период отбора сценария узла</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8bdbb9ef-3a91-4374-b3c5-9447005bb1b7">
+    <name>ПредставлениеОтбораСценарияУзла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление отбора сценария узла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
@@ -128,49 +166,20 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="63f308a5-b955-48a5-8052-50c5bede65d0">
-    <name>КомпоновщикОтбораВсехДокументов</name>
+  <forms uuid="905d9dcd-5793-4362-8fe8-2edce8c35e32">
+    <name>ВыборВидаОбъектаСоставаУзла</name>
     <synonym>
       <key>ru</key>
-      <value>Компоновщик отбора всех документов</value>
+      <value>Выбор вида объекта состава узла</value>
     </synonym>
-    <type>
-      <types>DataCompositionSettingsComposer</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="1b614b97-5c1d-497a-9574-40114059f836">
-    <name>ДополнительнаяРегистрация</name>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b7111ddf-a623-4bae-90aa-636148492ca2">
+    <name>ОбщиеПараметрыСинхронизации</name>
     <synonym>
       <key>ru</key>
-      <value>Дополнительная регистрация</value>
-    </synonym>
-    <comment>Таблица дополнительной регистрации</comment>
-    <type>
-      <types>ValueTable</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="477dfea4-e401-4cf0-b0a8-2df7c3836c58">
-    <name>АдресХранилищаФормы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Адрес хранилища формы</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <forms uuid="294c000f-6979-4ed1-bbc7-7402facd9185">
-    <name>Форма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма</value>
+      <value>Общие параметры синхронизации</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -186,24 +195,6 @@
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="b7111ddf-a623-4bae-90aa-636148492ca2">
-    <name>ОбщиеПараметрыСинхронизации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Общие параметры синхронизации</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="905d9dcd-5793-4362-8fe8-2edce8c35e32">
-    <name>ВыборВидаОбъектаСоставаУзла</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выбор вида объекта состава узла</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -232,6 +223,15 @@
         <lang>ru</lang>
       </pages>
     </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="294c000f-6979-4ed1-bbc7-7402facd9185">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

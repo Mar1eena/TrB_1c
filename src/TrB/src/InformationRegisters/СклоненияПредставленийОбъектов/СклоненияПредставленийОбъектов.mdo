@@ -49,29 +49,11 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="3b81427f-cf64-4a5e-adb3-5415d515fecd">
-    <name>ИменительныйПадеж</name>
+  <resources uuid="5d1afad0-3d7e-4214-b52a-72c184490084">
+    <name>ВинительныйПадеж</name>
     <synonym>
       <key>ru</key>
-      <value>Именительный падеж</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </resources>
-  <resources uuid="e9f2b604-7181-476d-8b34-3a544cbb353d">
-    <name>РодительныйПадеж</name>
-    <synonym>
-      <key>ru</key>
-      <value>Родительный падеж</value>
+      <value>Винительный падеж</value>
     </synonym>
     <type>
       <types>String</types>
@@ -103,29 +85,11 @@
       <value></value>
     </fillValue>
   </resources>
-  <resources uuid="5d1afad0-3d7e-4214-b52a-72c184490084">
-    <name>ВинительныйПадеж</name>
+  <resources uuid="3b81427f-cf64-4a5e-adb3-5415d515fecd">
+    <name>ИменительныйПадеж</name>
     <synonym>
       <key>ru</key>
-      <value>Винительный падеж</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </resources>
-  <resources uuid="5f7901a1-f992-42fa-9ddb-d63574da3b56">
-    <name>ТворительныйПадеж</name>
-    <synonym>
-      <key>ru</key>
-      <value>Творительный падеж</value>
+      <value>Именительный падеж</value>
     </synonym>
     <type>
       <types>String</types>
@@ -144,6 +108,42 @@
     <synonym>
       <key>ru</key>
       <value>Предложный падеж</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="e9f2b604-7181-476d-8b34-3a544cbb353d">
+    <name>РодительныйПадеж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Родительный падеж</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="5f7901a1-f992-42fa-9ddb-d63574da3b56">
+    <name>ТворительныйПадеж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Творительный падеж</value>
     </synonym>
     <type>
       <types>String</types>

@@ -65,27 +65,24 @@
     <key>ru</key>
     <value>Бизнес-процессы</value>
   </explanation>
-  <resources uuid="ea1298d0-9396-4a50-b83e-24064e8dd99d">
-    <name>Номер</name>
+  <resources uuid="12146ed3-c159-4d6b-ae1a-1ecd30e5a87e">
+    <name>Автор</name>
     <synonym>
       <key>ru</key>
-      <value>Номер</value>
+      <value>Автор</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>11</length>
-      </stringQualifiers>
+      <types>CatalogRef.Пользователи</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Номер бизнес-процесса</value>
+      <value>Автор бизнес-процесса</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Пользователи.EmptyRef</value>
     </fillValue>
     <indexing>Index</indexing>
   </resources>
@@ -102,6 +99,28 @@
     <toolTip>
       <key>ru</key>
       <value>Дата бизнес-процесса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="518ab687-b84a-40c8-8547-aee4257c1b71">
+    <name>ДатаЗавершения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата завершения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата завершения бизнес-процесса</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -130,68 +149,6 @@
     <fillValue xsi:type="core:BooleanValue"/>
     <indexing>Index</indexing>
   </resources>
-  <resources uuid="69149801-a825-4ed2-b077-c26660dff271">
-    <name>Стартован</name>
-    <synonym>
-      <key>ru</key>
-      <value>Стартован</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Признак того, что бизнес-процесс стартовал</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:BooleanValue"/>
-    <indexing>Index</indexing>
-  </resources>
-  <resources uuid="12146ed3-c159-4d6b-ae1a-1ecd30e5a87e">
-    <name>Автор</name>
-    <synonym>
-      <key>ru</key>
-      <value>Автор</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Пользователи</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Автор бизнес-процесса</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Catalog.Пользователи.EmptyRef</value>
-    </fillValue>
-    <indexing>Index</indexing>
-  </resources>
-  <resources uuid="518ab687-b84a-40c8-8547-aee4257c1b71">
-    <name>ДатаЗавершения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата завершения</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Дата завершения бизнес-процесса</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:DateValue">
-      <value>0001-01-01T00:00:00</value>
-    </fillValue>
-    <indexing>Index</indexing>
-  </resources>
   <resources uuid="5cec0949-bfe8-4f7e-98c1-0c402be3ea09">
     <name>Наименование</name>
     <synonym>
@@ -214,6 +171,30 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
+  </resources>
+  <resources uuid="ea1298d0-9396-4a50-b83e-24064e8dd99d">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>11</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер бизнес-процесса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
   </resources>
   <resources uuid="7732ef07-16eb-46a0-9645-7de95c5482af">
     <name>ПометкаУдаления</name>
@@ -249,6 +230,25 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="69149801-a825-4ed2-b077-c26660dff271">
+    <name>Стартован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стартован</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что бизнес-процесс стартовал</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <indexing>Index</indexing>
+  </resources>
   <dimensions uuid="75dac536-b316-4b04-a57b-03656c678bec">
     <name>Владелец</name>
     <synonym>
@@ -275,15 +275,6 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="a07d6c85-159d-4d09-b117-561a1e20329f">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="8a2f9733-4f83-41f2-9d74-dca7161a4b41">
     <name>МоиБизнесПроцессы</name>
     <synonym>
@@ -291,6 +282,15 @@
       <value>Мои бизнес-процессы</value>
     </synonym>
     <comment>Бизнес-процессы в работе с отбором по автору</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a07d6c85-159d-4d09-b117-561a1e20329f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

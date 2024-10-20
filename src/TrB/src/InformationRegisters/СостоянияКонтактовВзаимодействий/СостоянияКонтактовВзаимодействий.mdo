@@ -49,6 +49,27 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6f661660-b9c4-41d4-99a8-e08006cfe9c8">
+    <name>ДатаПоследнегоВзаимодействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последнего взаимодействия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата последнего взаимодействия с контактом.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
   <resources uuid="9a706997-90cb-430d-972c-d2bad87c4a79">
     <name>КоличествоНеРассмотрено</name>
     <synonym>
@@ -65,27 +86,6 @@
     <toolTip>
       <key>ru</key>
       <value>Количество нерассмотренных взаимодействий по контакту.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-  </resources>
-  <resources uuid="6f661660-b9c4-41d4-99a8-e08006cfe9c8">
-    <name>ДатаПоследнегоВзаимодействия</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата последнего взаимодействия</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Дата последнего взаимодействия с контактом.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

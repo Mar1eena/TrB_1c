@@ -113,20 +113,18 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <attributes uuid="f7aacf70-0b59-410a-9929-ab4ab8a2431c">
-    <name>ИсточникДанных</name>
+  <attributes uuid="b37a9edd-b6bc-40eb-b5de-f54968abc119">
+    <name>Идентификатор</name>
     <synonym>
       <key>ru</key>
-      <value>Источник данных</value>
+      <value>Идентификатор</value>
     </synonym>
     <type>
-      <types>CatalogRef.ИдентификаторыОбъектовРасширений</types>
-      <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+      <types>UUID</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -146,18 +144,20 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="b37a9edd-b6bc-40eb-b5de-f54968abc119">
-    <name>Идентификатор</name>
+  <attributes uuid="f7aacf70-0b59-410a-9929-ab4ab8a2431c">
+    <name>ИсточникДанных</name>
     <synonym>
       <key>ru</key>
-      <value>Идентификатор</value>
+      <value>Источник данных</value>
     </synonym>
     <type>
-      <types>UUID</types>
+      <types>CatalogRef.ИдентификаторыОбъектовРасширений</types>
+      <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -170,22 +170,6 @@
     <type>
       <types>ValueStorage</types>
     </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="e9616402-88cc-44ae-96ca-ba20cf7d38ad">
-    <name>УсловиеВидимости</name>
-    <synonym>
-      <key>ru</key>
-      <value>Условие видимости</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <multiLine>true</multiLine>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
@@ -210,6 +194,56 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="e9616402-88cc-44ae-96ca-ba20cf7d38ad">
+    <name>УсловиеВидимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условие видимости</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="c67cddce-64d0-45eb-8abb-5c76bbe27f93">
+    <producedTypes>
+      <objectType typeId="ec9f0e2b-8f18-4faa-9988-e5c0beeb0f5e" valueTypeId="72d9a259-ec72-434c-b4a9-d9c064f85ac6"/>
+      <rowType typeId="7dfb93d3-fdcc-4f3d-b9fc-e5165b61335e" valueTypeId="d8fb5f86-8334-48b1-b776-4118eea507e4"/>
+    </producedTypes>
+    <name>ИсточникиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источники данных</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="4f1aa113-6d77-46c8-ac21-9e5545553499">
+      <name>ИсточникДанных</name>
+      <synonym>
+        <key>ru</key>
+        <value>Источник данных</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИдентификаторыОбъектовРасширений</types>
+        <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
   <tabularSections uuid="a816deca-4863-44e2-a8ff-89bfa5fbb0ac">
     <producedTypes>
       <objectType typeId="3a365e44-e054-4d53-9bff-320b132d9473" valueTypeId="2111fca4-ace0-4d05-b8da-b7e66e546a28"/>
@@ -288,40 +322,6 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <use>ForFolderAndItem</use>
-  </tabularSections>
-  <tabularSections uuid="c67cddce-64d0-45eb-8abb-5c76bbe27f93">
-    <producedTypes>
-      <objectType typeId="ec9f0e2b-8f18-4faa-9988-e5c0beeb0f5e" valueTypeId="72d9a259-ec72-434c-b4a9-d9c064f85ac6"/>
-      <rowType typeId="7dfb93d3-fdcc-4f3d-b9fc-e5165b61335e" valueTypeId="d8fb5f86-8334-48b1-b776-4118eea507e4"/>
-    </producedTypes>
-    <name>ИсточникиДанных</name>
-    <synonym>
-      <key>ru</key>
-      <value>Источники данных</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="4f1aa113-6d77-46c8-ac21-9e5545553499">
-      <name>ИсточникДанных</name>
-      <synonym>
-        <key>ru</key>
-        <value>Источник данных</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ИдентификаторыОбъектовРасширений</types>
-        <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
   </tabularSections>
   <forms uuid="6ccec21e-f26f-482c-9ce2-1f058fc492c1">
     <name>УсловияВидимостиВПодменюПечать</name>

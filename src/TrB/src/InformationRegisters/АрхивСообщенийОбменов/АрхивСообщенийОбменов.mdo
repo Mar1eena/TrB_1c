@@ -52,6 +52,24 @@
   </standardAttributes>
   <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="84a655d4-49fb-44bb-bdc5-59776046e66b">
+    <name>НомерПринятогоСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер принятого сообщения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="9964f9e3-613c-479f-8557-742e409da4ab">
     <name>ПолноеИмяФайла</name>
     <synonym>
@@ -85,24 +103,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="84a655d4-49fb-44bb-bdc5-59776046e66b">
-    <name>НомерПринятогоСообщения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Номер принятого сообщения</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <attributes uuid="8d5d9ad3-31a7-4877-b053-64edb7332af4">
     <name>ИмяФайла</name>
     <synonym>
@@ -112,26 +112,6 @@
     <type>
       <types>String</types>
       <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </attributes>
-  <attributes uuid="3dbcdc42-8583-49e4-9c57-a1b06071be66">
-    <name>РасширениеФайла</name>
-    <synonym>
-      <key>ru</key>
-      <value>Расширение файла</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>3</length>
-      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -158,6 +138,26 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3dbcdc42-8583-49e4-9c57-a1b06071be66">
+    <name>РасширениеФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширение файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
   </attributes>
   <attributes uuid="6ef107de-6385-4448-9ef8-82110452a2b6">
     <name>ФайлБольше100Мб</name>
@@ -194,20 +194,20 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="3bcc76a7-f28a-4d28-a95e-af7ac1138993">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="50b4bf05-7810-4068-8be9-0be410d9b9db">
     <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
       <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3bcc76a7-f28a-4d28-a95e-af7ac1138993">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

@@ -133,18 +133,18 @@
   <defaultObjectForm>Catalog.Календари.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.Календари.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.Календари.Form.ФормаСписка</defaultChoiceForm>
-  <attributes uuid="8d7750e9-899f-4434-8702-44cd02681779">
-    <name>ПроизводственныйКалендарь</name>
+  <attributes uuid="6dc05d69-bd54-4e8a-8985-c2ddfa0aaffb">
+    <name>ВладелецГрафика</name>
     <synonym>
       <key>ru</key>
-      <value>Производственный календарь</value>
+      <value>Владелец графика</value>
     </synonym>
     <type>
-      <types>CatalogRef.ПроизводственныеКалендари</types>
+      <types>DefinedType.ВладелецГрафикаРаботы</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Производственный календарь, на основании которого выполняется заполнение графика</value>
+      <value>Служебный реквизит для связи с владельцем графика работы</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -152,24 +152,26 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="d85244dc-c417-4e69-9aa7-7ad313ecb940">
-    <name>СпособЗаполнения</name>
+  <attributes uuid="c4d7c569-4649-4f98-a048-45f3c5933670">
+    <name>ГоризонтПланирования</name>
     <synonym>
       <key>ru</key>
-      <value>Способ заполнения</value>
+      <value>Горизонт планирования</value>
     </synonym>
     <type>
-      <types>EnumRef.СпособыЗаполненияГрафикаРаботы</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Способ заполнения графика работы по данным производственного календаря</value>
+      <value>Период времени, на который график должен быть заполнен вперед</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.СпособыЗаполненияГрафикаРаботы.EnumValue.ПоНеделям</value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -240,23 +242,64 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="0713de12-87d5-4877-bd8a-2b6466df67df">
-    <name>УчитыватьПраздники</name>
+  <attributes uuid="b848aafc-44fb-4dfe-8eec-233dc08fbbb6">
+    <name>Описание</name>
     <synonym>
       <key>ru</key>
-      <value>Учитывать праздники</value>
+      <value>Описание</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Если установлено, то из состава рабочих дней будут исключаться дни, выпадающие на праздники</value>
+      <value>Произвольный текст</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8d7750e9-899f-4434-8702-44cd02681779">
+    <name>ПроизводственныйКалендарь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производственный календарь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПроизводственныеКалендари</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Производственный календарь, на основании которого выполняется заполнение графика</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:BooleanValue">
-      <value>true</value>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d85244dc-c417-4e69-9aa7-7ad313ecb940">
+    <name>СпособЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ заполнения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыЗаполненияГрафикаРаботы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ заполнения графика работы по данным производственного календаря</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.СпособыЗаполненияГрафикаРаботы.EnumValue.ПоНеделям</value>
     </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -282,115 +325,27 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="b848aafc-44fb-4dfe-8eec-233dc08fbbb6">
-    <name>Описание</name>
+  <attributes uuid="0713de12-87d5-4877-bd8a-2b6466df67df">
+    <name>УчитыватьПраздники</name>
     <synonym>
       <key>ru</key>
-      <value>Описание</value>
+      <value>Учитывать праздники</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Произвольный текст</value>
-    </toolTip>
-    <multiLine>true</multiLine>
-    <extendedEdit>true</extendedEdit>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="c4d7c569-4649-4f98-a048-45f3c5933670">
-    <name>ГоризонтПланирования</name>
-    <synonym>
-      <key>ru</key>
-      <value>Горизонт планирования</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>3</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Период времени, на который график должен быть заполнен вперед</value>
+      <value>Если установлено, то из состава рабочих дней будут исключаться дни, выпадающие на праздники</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="6dc05d69-bd54-4e8a-8985-c2ddfa0aaffb">
-    <name>ВладелецГрафика</name>
-    <synonym>
-      <key>ru</key>
-      <value>Владелец графика</value>
-    </synonym>
-    <type>
-      <types>DefinedType.ВладелецГрафикаРаботы</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Служебный реквизит для связи с владельцем графика работы</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <tabularSections uuid="ad08b104-01f8-4900-a06c-baa1d55eba84">
-    <producedTypes>
-      <objectType typeId="a46154d6-5130-4e31-a509-dfc89004bf6f" valueTypeId="82efe3db-7415-48e9-952b-6b7c546dba82"/>
-      <rowType typeId="dca0e821-7404-4b21-974e-d802130f5c38" valueTypeId="226ef116-a20d-486f-9847-314b4a075e4b"/>
-    </producedTypes>
-    <name>ШаблонЗаполнения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Шаблон заполнения</value>
-    </synonym>
-    <toolTip>
-      <key>ru</key>
-      <value>Цикл заполнения графика работы</value>
-    </toolTip>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <synonym>
-        <key>ru</key>
-        <value>Номер дня</value>
-      </synonym>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="9352d10d-188f-4074-8dd1-7be5c11525e3">
-      <name>ДеньВключенВГрафик</name>
-      <synonym>
-        <key>ru</key>
-        <value>День включен в график</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Признак того, что указанный день цикла включен в график</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
   <tabularSections uuid="1933634a-6f10-48e7-99f0-60ac338f7832">
     <producedTypes>
       <objectType typeId="4836955c-d561-4574-a8a1-5d2cbba411a8" valueTypeId="c07825bd-caaa-4acc-be18-98a7f339fb6e"/>
@@ -494,17 +449,57 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <forms uuid="c9a06c8d-2f6d-4e03-bc62-a1a19f17faf3">
-    <name>ФормаЭлемента</name>
+  <tabularSections uuid="ad08b104-01f8-4900-a06c-baa1d55eba84">
+    <producedTypes>
+      <objectType typeId="a46154d6-5130-4e31-a509-dfc89004bf6f" valueTypeId="82efe3db-7415-48e9-952b-6b7c546dba82"/>
+      <rowType typeId="dca0e821-7404-4b21-974e-d802130f5c38" valueTypeId="226ef116-a20d-486f-9847-314b4a075e4b"/>
+    </producedTypes>
+    <name>ШаблонЗаполнения</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Шаблон заполнения</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
+    <toolTip>
+      <key>ru</key>
+      <value>Цикл заполнения графика работы</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер дня</value>
+      </synonym>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="9352d10d-188f-4074-8dd1-7be5c11525e3">
+      <name>ДеньВключенВГрафик</name>
+      <synonym>
+        <key>ru</key>
+        <value>День включен в график</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Признак того, что указанный день цикла включен в график</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="3da20e86-1d83-4935-b425-a91392dc8f35">
+    <name>РасписаниеРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расписание работы</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -517,12 +512,17 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="3da20e86-1d83-4935-b425-a91392dc8f35">
-    <name>РасписаниеРаботы</name>
+  <forms uuid="c9a06c8d-2f6d-4e03-bc62-a1a19f17faf3">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Расписание работы</value>
+      <value>Форма элемента</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

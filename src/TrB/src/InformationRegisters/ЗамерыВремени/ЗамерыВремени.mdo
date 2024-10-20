@@ -56,6 +56,25 @@
     </pages>
   </help>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="17944416-85a5-49e4-9fa8-652c671c3df0">
+    <name>ВесЗамера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес замера</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="b26ab92b-9739-4eb4-b855-be6850274432">
     <name>ВремяВыполнения</name>
     <synonym>
@@ -73,25 +92,6 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="17944416-85a5-49e4-9fa8-652c671c3df0">
-    <name>ВесЗамера</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вес замера</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
@@ -114,6 +114,21 @@
       <value></value>
     </fillValue>
   </resources>
+  <attributes uuid="a34b8fdc-e756-4065-b68a-12a07fa7c40e">
+    <name>ВыполненСОшибкой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнен с ошибкой</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="192844c3-7cb9-4477-a4af-0edb8ce5129d">
     <name>ДатаЗаписи</name>
     <synonym>
@@ -129,6 +144,24 @@
     <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="866c418f-332e-415a-bb8e-794d38f15080">
+    <name>ДатаЗаписиЛокальная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата записи локальная</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
   </attributes>
   <attributes uuid="33324481-55d1-475f-9f12-7542a05429a2">
     <name>ДатаОкончания</name>
@@ -164,39 +197,6 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="866c418f-332e-415a-bb8e-794d38f15080">
-    <name>ДатаЗаписиЛокальная</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата записи локальная</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:DateValue">
-      <value>0001-01-01T00:00:00</value>
-    </fillValue>
-  </attributes>
-  <attributes uuid="a34b8fdc-e756-4065-b68a-12a07fa7c40e">
-    <name>ВыполненСОшибкой</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выполнен с ошибкой</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>

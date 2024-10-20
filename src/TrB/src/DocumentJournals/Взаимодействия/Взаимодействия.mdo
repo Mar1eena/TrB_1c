@@ -234,6 +234,57 @@
     <references>Document.ЭлектронноеПисьмоВходящее.Attribute.ИдентификаторСообщения</references>
     <references>Document.ЭлектронноеПисьмоИсходящее.Attribute.ИдентификаторСообщения</references>
   </columns>
+  <forms uuid="cb1d4a41-20a9-4d76-8798-d47d8858bff1">
+    <name>ВыборТипаПредмета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор типа предмета</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bb878f73-8a0f-459a-9076-ce57fe7957dc">
+    <name>НастройкиРаботыСПочтой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки работы с почтой</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5d3e9678-20fe-4128-867a-3f7addaa7831">
+    <name>ПараметрыЭлектронногоПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры электронного письма</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ec928563-6e35-4b84-b477-90d2481cec1c">
+    <name>ПечатьЭлектронногоПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать электронного письма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="27089e8e-2c75-431c-b808-5d4dcba3cdca">
     <name>ФормаСписка</name>
     <synonym>
@@ -262,62 +313,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="ec928563-6e35-4b84-b477-90d2481cec1c">
-    <name>ПечатьЭлектронногоПисьма</name>
+  <templates uuid="9f4b8e36-83ff-4694-8540-b5f47b18395f">
+    <name>ИерархияВзаимодействийКонтакт</name>
     <synonym>
       <key>ru</key>
-      <value>Печать электронного письма</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="5d3e9678-20fe-4128-867a-3f7addaa7831">
-    <name>ПараметрыЭлектронногоПисьма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Параметры электронного письма</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="bb878f73-8a0f-459a-9076-ce57fe7957dc">
-    <name>НастройкиРаботыСПочтой</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройки работы с почтой</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="cb1d4a41-20a9-4d76-8798-d47d8858bff1">
-    <name>ВыборТипаПредмета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выбор типа предмета</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <templates uuid="a2b4110b-4d9c-40fd-ab46-bfa08d2eb993">
-    <name>СхемаОтборВзаимодействия</name>
-    <synonym>
-      <key>ru</key>
-      <value>Схема отбор взаимодействия</value>
+      <value>Иерархия взаимодействий контакт</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>
@@ -329,11 +329,11 @@
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>
-  <templates uuid="9f4b8e36-83ff-4694-8540-b5f47b18395f">
-    <name>ИерархияВзаимодействийКонтакт</name>
+  <templates uuid="a2b4110b-4d9c-40fd-ab46-bfa08d2eb993">
+    <name>СхемаОтборВзаимодействия</name>
     <synonym>
       <key>ru</key>
-      <value>Иерархия взаимодействий контакт</value>
+      <value>Схема отбор взаимодействия</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>

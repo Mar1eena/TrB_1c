@@ -141,11 +141,11 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <attributes uuid="a623fef1-96eb-41ba-93fe-09162698f419">
-    <name>Формулировка</name>
+  <attributes uuid="899f1526-d6bc-42ef-852e-7297a06db9e3">
+    <name>Заметки</name>
     <synonym>
       <key>ru</key>
-      <value>Формулировка</value>
+      <value>Заметки</value>
     </synonym>
     <type>
       <types>String</types>
@@ -153,7 +153,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Формулировка вопроса. Выводится респонденту</value>
+      <value>Возможность указать поясняющую информацию по вопросу. Предназначено для составителей анкеты и не выводится пользователю</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -162,6 +162,25 @@
     </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="793d7af5-b499-4646-9e8e-a5728bf71338">
+    <name>ИспользоватьОтказОтОтвета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать отказ от ответа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что для обязательного вопроса допускается не давать ответ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="45a8d7cb-c927-4a4e-a653-13fd9b1eda10">
@@ -180,6 +199,66 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1b4feda1-e555-4b85-b236-b21153a7246f">
+    <name>Подсказка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подсказка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текст подсказки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d5d9976a-4cc0-43f7-afd6-d43cebb07940">
+    <name>РодительВопрос</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вопрос родитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВопросыШаблонаАнкеты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Условный вопрос, который определяет необходимость ответа на данный вопрос</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="61d3cef4-2c42-417d-a762-a2d2f5a28924">
+    <name>СпособОтображенияПодсказки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отображения подсказки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыОтображенияПодсказок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ отображения подсказки в форме анкеты</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -225,6 +304,47 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="a623fef1-96eb-41ba-93fe-09162698f419">
+    <name>Формулировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формулировка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Формулировка вопроса. Выводится респонденту</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e4850e53-03b0-43ba-8365-feb89eb38102">
+    <name>ФормулировкаОтказаОтОтвета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формулировка отказа от ответа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="5e8bddc7-7836-4ec8-b6e1-0c15d228f47e">
     <name>ЭлементарныйВопрос</name>
     <synonym>
@@ -246,163 +366,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="d5d9976a-4cc0-43f7-afd6-d43cebb07940">
-    <name>РодительВопрос</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вопрос родитель</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ВопросыШаблонаАнкеты</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Условный вопрос, который определяет необходимость ответа на данный вопрос</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="899f1526-d6bc-42ef-852e-7297a06db9e3">
-    <name>Заметки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Заметки</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Возможность указать поясняющую информацию по вопросу. Предназначено для составителей анкеты и не выводится пользователю</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <use>ForFolderAndItem</use>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="1b4feda1-e555-4b85-b236-b21153a7246f">
-    <name>Подсказка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Подсказка</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Текст подсказки</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="61d3cef4-2c42-417d-a762-a2d2f5a28924">
-    <name>СпособОтображенияПодсказки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Способ отображения подсказки</value>
-    </synonym>
-    <type>
-      <types>EnumRef.СпособыОтображенияПодсказок</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Способ отображения подсказки в форме анкеты</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="793d7af5-b499-4646-9e8e-a5728bf71338">
-    <name>ИспользоватьОтказОтОтвета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Использовать отказ от ответа</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Признак того, что для обязательного вопроса допускается не давать ответ</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="e4850e53-03b0-43ba-8365-feb89eb38102">
-    <name>ФормулировкаОтказаОтОтвета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Формулировка отказа от ответа</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>50</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <tabularSections uuid="c694c132-1ddb-4273-818a-d3cca88c082a">
-    <producedTypes>
-      <objectType typeId="14607087-e369-45a1-afaf-98c4f1d22343" valueTypeId="1ca3c2f2-859d-4917-8a61-3d925bf6076b"/>
-      <rowType typeId="047c4253-b59f-4174-863f-dd9a273b75df" valueTypeId="f5f036d1-442f-4070-bdf8-041e88579f14"/>
-    </producedTypes>
-    <name>СоставТабличногоВопроса</name>
-    <synonym>
-      <key>ru</key>
-      <value>Состав табличного вопроса</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="cd4da06e-c06b-4233-befc-1bc4c4db58e3">
-      <name>ЭлементарныйВопрос</name>
-      <synonym>
-        <key>ru</key>
-        <value>Элементарный вопрос</value>
-      </synonym>
-      <type>
-        <types>ChartOfCharacteristicTypesRef.ВопросыДляАнкетирования</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Элементарный вопрос, являющийся составной частью табличного вопроса</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
   <tabularSections uuid="918a01fe-f753-4a4a-9200-55bbd6edaf5f">
     <producedTypes>
       <objectType typeId="0d321a7a-5423-4578-aacc-c119adc56e5f" valueTypeId="81f1fe09-0bc4-40e4-9f35-636127d7a6ae"/>
@@ -488,6 +451,43 @@
       <toolTip>
         <key>ru</key>
         <value>Элементарный вопрос, являющийся составной частью комплексного вопроса</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="c694c132-1ddb-4273-818a-d3cca88c082a">
+    <producedTypes>
+      <objectType typeId="14607087-e369-45a1-afaf-98c4f1d22343" valueTypeId="1ca3c2f2-859d-4917-8a61-3d925bf6076b"/>
+      <rowType typeId="047c4253-b59f-4174-863f-dd9a273b75df" valueTypeId="f5f036d1-442f-4070-bdf8-041e88579f14"/>
+    </producedTypes>
+    <name>СоставТабличногоВопроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав табличного вопроса</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="cd4da06e-c06b-4233-befc-1bc4c4db58e3">
+      <name>ЭлементарныйВопрос</name>
+      <synonym>
+        <key>ru</key>
+        <value>Элементарный вопрос</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ВопросыДляАнкетирования</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Элементарный вопрос, являющийся составной частью табличного вопроса</value>
       </toolTip>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

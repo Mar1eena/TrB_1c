@@ -35,6 +35,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="73afaad8-dfa9-43e3-bdaf-543c3545d788">
+    <name>РазделениеДанныхСеанса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разделение данных сеанса</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="eadfdbe3-bc85-4084-aef6-4cfd258ee6f1">
     <name>РедакторСоставаСвойства</name>
     <synonym>
@@ -58,25 +67,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="73afaad8-dfa9-43e3-bdaf-543c3545d788">
-    <name>РазделениеДанныхСеанса</name>
-    <synonym>
-      <key>ru</key>
-      <value>Разделение данных сеанса</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <commands uuid="c264441d-4805-4968-baa2-37b8970049c7">
-    <name>ЖурналРегистрации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Журнал регистрации</value>
-    </synonym>
-    <group>NavigationPanelOrdinary</group>
-    <commandParameterType/>
-    <representation>Auto</representation>
-  </commands>
   <commands uuid="88f34f9f-121b-43e2-9280-ec2b414681ad">
     <name>ЖурналДоступаКДанным</name>
     <synonym>
@@ -84,6 +74,16 @@
       <value>Журнал доступа к данным</value>
     </synonym>
     <group>NavigationPanelSeeAlso</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="c264441d-4805-4968-baa2-37b8970049c7">
+    <name>ЖурналРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Журнал регистрации</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
     <commandParameterType/>
     <representation>Auto</representation>
   </commands>

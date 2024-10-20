@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="025515e8-f62f-4f8f-b434-6ca72954c902">
+  <producedTypes>
+    <refType typeId="9e79e2b1-1626-4e26-b64c-001a7943984b" valueTypeId="d63b1e7a-9b6d-40b2-8f52-4b4bcb4b07ce"/>
+    <listType typeId="fce99259-feb4-443b-930b-cdca75c324e5" valueTypeId="b0cebd4e-ff1f-4875-8299-d1f4923fc81f"/>
+    <managerType typeId="7599fc78-5f7a-44dc-8e98-63898f59d46d" valueTypeId="e39ec683-a11f-4f4c-a0e0-be44c0f3ed9a"/>
+  </producedTypes>
+  <name>TrBOptionDirection</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип опциона по направлению сделки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ba40a8e7-6d49-4ee4-9a9d-c54177102cb4">
+    <name>OPTION_DIRECTION_UNSPECIFIED</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип не определен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d6c243c9-6000-44dd-989b-63f1373adbcf">
+    <name>OPTION_DIRECTION_PUT</name>
+    <synonym>
+      <key>ru</key>
+      <value>Опцион на продажу</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9d7fec42-e2b5-40fe-85e2-a1c111e7c20f">
+    <name>OPTION_DIRECTION_CALL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Опцион на покупку</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d1ac278-3d6d-4a2d-bb84-74e04eb0e60a">
+  <producedTypes>
+    <refType typeId="68d4f9c3-b96c-48d6-b43c-079035ffd9a3" valueTypeId="5445c66c-5cd7-4107-b180-69f868ec012e"/>
+    <listType typeId="52f8b0c8-9fc4-495f-a7e7-d32713c3afab" valueTypeId="1a663ce7-d9d7-4e4f-8af7-d94c2adac3ec"/>
+    <managerType typeId="dcb1a775-1efc-43d3-902f-ec65c70601de" valueTypeId="574c8725-c7f7-40f3-be29-f10e70eb5ea1"/>
+  </producedTypes>
+  <name>TrBStructuredProductType</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип структурной ноты</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

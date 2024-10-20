@@ -112,24 +112,22 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <attributes uuid="084a7c95-a59b-4861-b8b3-b5710a57ac60">
-    <name>РольИсполнителя</name>
+  <attributes uuid="aff367fb-7fca-44d0-adf9-3731f14834f6">
+    <name>ДополнительныйОбъектАдресации</name>
     <synonym>
       <key>ru</key>
-      <value>Роль исполнителя</value>
+      <value>Дополнительный объект адресации</value>
     </synonym>
     <type>
-      <types>CatalogRef.РолиИсполнителей</types>
+      <types>Characteristic.ОбъектыАдресацииЗадач</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Роль исполнителей задач</value>
+      <value>Дополнительный объект адресации данной группы</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Catalog.РолиИсполнителей.EmptyRef</value>
-    </fillValue>
+    <fillValue xsi:type="core:ReferenceValue"/>
     <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -154,22 +152,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="aff367fb-7fca-44d0-adf9-3731f14834f6">
-    <name>ДополнительныйОбъектАдресации</name>
+  <attributes uuid="084a7c95-a59b-4861-b8b3-b5710a57ac60">
+    <name>РольИсполнителя</name>
     <synonym>
       <key>ru</key>
-      <value>Дополнительный объект адресации</value>
+      <value>Роль исполнителя</value>
     </synonym>
     <type>
-      <types>Characteristic.ОбъектыАдресацииЗадач</types>
+      <types>CatalogRef.РолиИсполнителей</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Дополнительный объект адресации данной группы</value>
+      <value>Роль исполнителей задач</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:ReferenceValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.РолиИсполнителей.EmptyRef</value>
+    </fillValue>
     <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>

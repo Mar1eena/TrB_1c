@@ -74,44 +74,22 @@
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
-  <attributes uuid="fa429302-ccaf-4c89-8a11-3a1d30817c00">
-    <name>ШаблонАнкеты</name>
+  <attributes uuid="1c93fcd3-53a1-403f-a30b-454fbc941d55">
+    <name>ВозможностьПредварительногоСохранения</name>
     <synonym>
       <key>ru</key>
-      <value>Шаблон анкеты</value>
+      <value>Возможность предварительного сохранения</value>
     </synonym>
     <type>
-      <types>CatalogRef.ШаблоныАнкет</types>
+      <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Шаблон анкеты, на основании которого проводится опрос</value>
+      <value>Определяет, имеет ли возможность сохранить анкету, при этом не устанавливая признака окончания заполнения</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Catalog.ШаблоныАнкет.EmptyRef</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="9b4c49ce-93da-439a-8d67-f3774e92800a">
-    <name>ТипРеспондентов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тип респондентов</value>
-    </synonym>
-    <type>
-      <types>DefinedType.Респондент</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Тип респондентов, принимающих участие в опросе</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -163,41 +141,27 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="1c93fcd3-53a1-403f-a30b-454fbc941d55">
-    <name>ВозможностьПредварительногоСохранения</name>
+  <attributes uuid="12afec4d-1728-4aa8-86e5-23cd2f1572b3">
+    <name>Комментарий</name>
     <synonym>
       <key>ru</key>
-      <value>Возможность предварительного сохранения</value>
+      <value>Комментарий</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Определяет, имеет ли возможность сохранить анкету, при этом не устанавливая признака окончания заполнения</value>
+      <value>Комментарий к опросу</value>
     </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:BooleanValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="0fc54be4-2e19-45cf-b62f-7cbc70a70d5f">
-    <name>СвободныйОпрос</name>
-    <synonym>
-      <key>ru</key>
-      <value>Свободный опрос</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Признак устанавливает, что анкета доступна всем респондентам определенного типа</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -245,30 +209,80 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="12afec4d-1728-4aa8-86e5-23cd2f1572b3">
-    <name>Комментарий</name>
+  <attributes uuid="0fc54be4-2e19-45cf-b62f-7cbc70a70d5f">
+    <name>СвободныйОпрос</name>
     <synonym>
       <key>ru</key>
-      <value>Комментарий</value>
+      <value>Свободный опрос</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Комментарий к опросу</value>
+      <value>Признак устанавливает, что анкета доступна всем респондентам определенного типа</value>
     </toolTip>
-    <multiLine>true</multiLine>
-    <extendedEdit>true</extendedEdit>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9b4c49ce-93da-439a-8d67-f3774e92800a">
+    <name>ТипРеспондентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип респондентов</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Респондент</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип респондентов, принимающих участие в опросе</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fa429302-ccaf-4c89-8a11-3a1d30817c00">
+    <name>ШаблонАнкеты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон анкеты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныАнкет</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Шаблон анкеты, на основании которого проводится опрос</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ШаблоныАнкет.EmptyRef</value>
     </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="d07c094c-2795-4e0c-b030-bdb82be7ba6d">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="16bc197b-5a2f-43f4-8ba0-ffabd9289f5c">
     <name>ФормаДокумента</name>
     <synonym>
@@ -302,20 +316,6 @@
     <synonym>
       <key>ru</key>
       <value>Форма списка</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="d07c094c-2795-4e0c-b030-bdb82be7ba6d">
-    <name>ФормаВыбора</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма выбора</value>
     </synonym>
     <help>
       <pages>

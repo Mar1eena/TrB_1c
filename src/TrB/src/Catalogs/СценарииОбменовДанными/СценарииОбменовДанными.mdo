@@ -171,6 +171,22 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="a805d33c-2cb0-4862-943f-06ded997b940">
+    <name>ОтключенАвтоматически</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отключен автоматически</value>
+    </synonym>
+    <comment>Отключен из-за часто повторяющейся ошибке при выполнении обмена</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="0e6e9372-beb4-478e-9428-71b19a60739b">
     <name>РегламентноеЗаданиеGUID</name>
     <synonym>
@@ -192,22 +208,6 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="a805d33c-2cb0-4862-943f-06ded997b940">
-    <name>ОтключенАвтоматически</name>
-    <synonym>
-      <key>ru</key>
-      <value>Отключен автоматически</value>
-    </synonym>
-    <comment>Отключен из-за часто повторяющейся ошибке при выполнении обмена</comment>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -292,6 +292,24 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <forms uuid="87ed7963-c2e4-4515-b768-47cf72442fd0">
+    <name>ВыборУзлаПланаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор узла плана обмена</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d8854555-9e15-4d82-a1fd-656a848a8e8a">
+    <name>НастройкаРасписанияОбменовДанными</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка расписания обменов данными</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="7078977f-31bf-427e-ac37-e309d81fe999">
     <name>ФормаСписка</name>
     <synonym>
@@ -312,24 +330,6 @@
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="d8854555-9e15-4d82-a1fd-656a848a8e8a">
-    <name>НастройкаРасписанияОбменовДанными</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройка расписания обменов данными</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="87ed7963-c2e4-4515-b768-47cf72442fd0">
-    <name>ВыборУзлаПланаОбмена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выбор узла плана обмена</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

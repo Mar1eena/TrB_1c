@@ -52,54 +52,24 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="a52f2de4-f414-4837-9b1a-6d8f282e1327">
-    <name>ХешСумма</name>
+  <resources uuid="6b0721fe-d27f-4d1a-b377-26fce2ed1687">
+    <name>ВерсииПараметровШаблонов</name>
     <synonym>
       <key>ru</key>
-      <value>Хеш сумма</value>
+      <value>Версии параметров шаблонов</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>48</length>
-      </stringQualifiers>
+      <types>ValueStorage</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Хеш-сумма версии параметров ограничения доступа для отслеживания изменений в информационной базе по сравнению с версией в оперативной памяти</value>
+      <value>Версии параметров для шаблонов в сеансах пользователей и внешних пользователей, требуемые для переходного процесса обновления доступа к регистрам.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </resources>
-  <resources uuid="82573440-0ef5-4c07-bb1e-fe90295981d2">
-    <name>ХешСуммаПостоянныхПараметров</name>
-    <synonym>
-      <key>ru</key>
-      <value>Хеш сумма постоянных параметров</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>48</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Хеш-сумма версии постоянных параметров ограничения доступа,
-которые зависят от метаданных и используемых видов доступа.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <resources uuid="804be484-09cf-45a4-bd1f-c8850067e2b2">
     <name>ДляЗаписиОбъектовИПроверкиПрав</name>
@@ -139,6 +109,68 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="f4d88096-bff9-416a-8f75-9143ede1213f">
+    <name>ДляШаблоновВСеансахВнешнихПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для шаблонов в сеансах внешних пользователей</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Параметры ограничения доступа, используемые только для установки параметров сеанса для шаблонов, используемых при ограничении доступа внешних пользователей</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d126a11e-c770-4309-941f-cbcdd5cbad5d">
+    <name>ДляШаблоновВСеансахПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для шаблонов в сеансах пользователей</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Параметры ограничения доступа, используемые только для установки параметров сеанса для шаблонов, используемых при ограничении доступа пользователей</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a52f2de4-f414-4837-9b1a-6d8f282e1327">
+    <name>ХешСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хеш сумма</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>48</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Хеш-сумма версии параметров ограничения доступа для отслеживания изменений в информационной базе по сравнению с версией в оперативной памяти</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
   <resources uuid="8d509c4e-fcea-4ccd-aec4-e146f2d4319b">
     <name>ХешСуммаПараметровШаблонов</name>
     <synonym>
@@ -164,62 +196,30 @@
       <value></value>
     </fillValue>
   </resources>
-  <resources uuid="d126a11e-c770-4309-941f-cbcdd5cbad5d">
-    <name>ДляШаблоновВСеансахПользователей</name>
+  <resources uuid="82573440-0ef5-4c07-bb1e-fe90295981d2">
+    <name>ХешСуммаПостоянныхПараметров</name>
     <synonym>
       <key>ru</key>
-      <value>Для шаблонов в сеансах пользователей</value>
+      <value>Хеш сумма постоянных параметров</value>
     </synonym>
     <type>
-      <types>ValueStorage</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>48</length>
+      </stringQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Параметры ограничения доступа, используемые только для установки параметров сеанса для шаблонов, используемых при ограничении доступа пользователей</value>
+      <value>Хеш-сумма версии постоянных параметров ограничения доступа,
+которые зависят от метаданных и используемых видов доступа.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="f4d88096-bff9-416a-8f75-9143ede1213f">
-    <name>ДляШаблоновВСеансахВнешнихПользователей</name>
-    <synonym>
-      <key>ru</key>
-      <value>Для шаблонов в сеансах внешних пользователей</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Параметры ограничения доступа, используемые только для установки параметров сеанса для шаблонов, используемых при ограничении доступа внешних пользователей</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="6b0721fe-d27f-4d1a-b377-26fce2ed1687">
-    <name>ВерсииПараметровШаблонов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Версии параметров шаблонов</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Версии параметров для шаблонов в сеансах пользователей и внешних пользователей, требуемые для переходного процесса обновления доступа к регистрам.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
   </resources>
   <attributes uuid="25c97480-330c-42f2-a2a5-031062a3a683">
     <name>ДатаСоздания</name>
@@ -267,20 +267,20 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="6adc3aa8-8784-467d-8e12-b60418a5c729">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="265206ed-4d41-497e-a483-c14052134500">
     <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
       <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6adc3aa8-8784-467d-8e12-b60418a5c729">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

@@ -55,25 +55,6 @@
     <key>ru</key>
     <value>Ключ доступа к объекту</value>
   </recordPresentation>
-  <resources uuid="b8658e11-42b6-41bb-b384-5380e2228338">
-    <name>КлючДоступаПользователей</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ключ доступа пользователей</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.КлючиДоступа</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Группа однотипных объектов с одинаковым доступом (для пользователей)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="40c0919f-2c53-4502-af06-745dfa47fd8e">
     <name>КлючДоступаВнешнихПользователей</name>
     <synonym>
@@ -86,6 +67,25 @@
     <toolTip>
       <key>ru</key>
       <value>Группа однотипных объектов с одинаковым доступом (для внешних пользователей)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b8658e11-42b6-41bb-b384-5380e2228338">
+    <name>КлючДоступаПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ доступа пользователей</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиДоступа</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа однотипных объектов с одинаковым доступом (для пользователей)</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -114,20 +114,20 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="662a2803-da19-40c7-a906-e20d0843f67f">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="327c0731-1496-4463-837f-8f9c3e4c1a49">
     <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
       <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="662a2803-da19-40c7-a906-e20d0843f67f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

@@ -115,52 +115,6 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.ВнешниеКомпоненты.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.ВнешниеКомпоненты.Form.ФормаСписка</defaultListForm>
-  <attributes uuid="ae37f465-1ee5-4f06-a834-deea9e9e0eb3">
-    <name>Использование</name>
-    <synonym>
-      <key>ru</key>
-      <value>Использование</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ВариантыИспользованияВнешнихКомпонент</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.ВариантыИспользованияВнешнихКомпонент.EnumValue.Используется</value>
-    </fillValue>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="c6ccf82f-f130-4037-9e89-1e0365b996a4">
-    <name>Идентификатор</name>
-    <synonym>
-      <key>ru</key>
-      <value>Идентификатор</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>150</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Внутренний идентификатор объекта внешней компоненты.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="c532963e-0d92-44b9-9cfc-43ed2744ccf9">
     <name>Версия</name>
     <synonym>
@@ -207,6 +161,32 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="c6ccf82f-f130-4037-9e89-1e0365b996a4">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Внутренний идентификатор объекта внешней компоненты.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="0107a9c7-4c85-49c4-918a-925d85d57a0b">
     <name>ИмяФайла</name>
     <synonym>
@@ -231,22 +211,23 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="6e1efa55-969b-4c2b-8af2-b11d672db5f0">
-    <name>ХранилищеКомпоненты</name>
+  <attributes uuid="ae37f465-1ee5-4f06-a834-deea9e9e0eb3">
+    <name>Использование</name>
     <synonym>
       <key>ru</key>
-      <value>Хранилище компоненты</value>
+      <value>Использование</value>
     </synonym>
     <type>
-      <types>ValueStorage</types>
+      <types>EnumRef.ВариантыИспользованияВнешнихКомпонент</types>
     </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Двоичные данные внешней компоненты, содержит ZIP-архив (служебное поле)</value>
-    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВариантыИспользованияВнешнихКомпонент.EnumValue.Используется</value>
+    </fillValue>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -285,6 +266,25 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="6e1efa55-969b-4c2b-8af2-b11d672db5f0">
+    <name>ХранилищеКомпоненты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище компоненты</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Двоичные данные внешней компоненты, содержит ZIP-архив (служебное поле)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="60340efe-6a9e-4676-856f-87bfae5409f7">
     <name>ЦелевыеПлатформы</name>
     <synonym>
@@ -300,25 +300,11 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="ac9f4c2e-316b-4f96-8fe6-fb5a5a7e48ed">
-    <name>ФормаЭлемента</name>
+  <forms uuid="9a30b92d-0c5b-4e11-a741-2b6efa8ac229">
+    <name>ОбновлениеКомпонентСПортала1СИТС</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="da808c0e-b1b0-4d46-8c63-2bbe7d0dca9d">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
+      <value>Обновление компонент с портала 1С:ИТС</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -332,12 +318,26 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="9a30b92d-0c5b-4e11-a741-2b6efa8ac229">
-    <name>ОбновлениеКомпонентСПортала1СИТС</name>
+  <forms uuid="da808c0e-b1b0-4d46-8c63-2bbe7d0dca9d">
+    <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
-      <value>Обновление компонент с портала 1С:ИТС</value>
+      <value>Форма списка</value>
     </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ac9f4c2e-316b-4f96-8fe6-fb5a5a7e48ed">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

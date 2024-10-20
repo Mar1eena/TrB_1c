@@ -155,65 +155,23 @@
     <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="08c2f92c-eb05-49e7-bfc9-4a89607b9864">
-    <name>Предмет</name>
+  <attributes uuid="4cba5a06-1484-4dd1-8e35-2d702c7d96d0">
+    <name>ДатаИзменения</name>
     <synonym>
       <key>ru</key>
-      <value>Предмет</value>
+      <value>Дата изменения</value>
     </synonym>
     <type>
-      <types>DefinedType.ПредметЗаметок</types>
+      <types>Date</types>
+      <dateQualifiers/>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Предмет заметки</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="6d751379-89a7-49b5-93e5-578329c63d9c">
-    <name>Содержание</name>
-    <synonym>
-      <key>ru</key>
-      <value>Содержание</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Текст заметки</value>
+      <value>Дата последнего изменения заметки</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="c3f156ef-947e-4ebb-883f-4f099a116063">
-    <name>ТекстСодержания</name>
-    <synonym>
-      <key>ru</key>
-      <value>Содержание</value>
-    </synonym>
-    <comment>Реквизит для полнотекстового поиска</comment>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Служебный реквизит, не предназначен для ручного заполнения</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -262,23 +220,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="4cba5a06-1484-4dd1-8e35-2d702c7d96d0">
-    <name>ДатаИзменения</name>
+  <attributes uuid="08c2f92c-eb05-49e7-bfc9-4a89607b9864">
+    <name>Предмет</name>
     <synonym>
       <key>ru</key>
-      <value>Дата изменения</value>
+      <value>Предмет</value>
     </synonym>
     <type>
-      <types>Date</types>
-      <dateQualifiers/>
+      <types>DefinedType.ПредметЗаметок</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Дата последнего изменения заметки</value>
+      <value>Предмет заметки</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -306,20 +265,47 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="d35c51b0-4cb7-4f9c-8aac-6a25a1b49adf">
-    <name>ФормаЭлемента</name>
+  <attributes uuid="6d751379-89a7-49b5-93e5-578329c63d9c">
+    <name>Содержание</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Содержание</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текст заметки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c3f156ef-947e-4ebb-883f-4f099a116063">
+    <name>ТекстСодержания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание</value>
+    </synonym>
+    <comment>Реквизит для полнотекстового поиска</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Служебный реквизит, не предназначен для ручного заполнения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="8a7546f4-bfc9-4732-bf60-43a41e2c8753">
     <name>ВсеЗаметки</name>
     <synonym>
@@ -368,6 +354,20 @@
     <synonym>
       <key>ru</key>
       <value>Форма группы</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d35c51b0-4cb7-4f9c-8aac-6a25a1b49adf">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
     </synonym>
     <help>
       <pages>

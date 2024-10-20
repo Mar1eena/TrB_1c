@@ -16,28 +16,14 @@
       <lang>ru</lang>
     </pages>
   </help>
-  <attributes uuid="72ee9a03-a320-4e60-be04-0ee813ea567f">
-    <name>ПравилоСтрока</name>
+  <attributes uuid="52f065fe-556a-47cd-82b1-c56d7894df30">
+    <name>ОчищатьПерсональныеНастройкиПользователей</name>
     <synonym>
       <key>ru</key>
-      <value>Правило строка</value>
+      <value>Очищать персональные настройки пользователей</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="f6f52cc8-23a3-4402-b1eb-0e41584c802a">
-    <name>ПравилоЧисло</name>
-    <synonym>
-      <key>ru</key>
-      <value>Правило число</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -68,6 +54,19 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="72ee9a03-a320-4e60-be04-0ee813ea567f">
+    <name>ПравилоСтрока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правило строка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="d73e084f-9201-40c8-8ad4-f61b6cbb47c9">
     <name>ПравилоХранилищеЗначений</name>
     <synonym>
@@ -81,14 +80,15 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="52f065fe-556a-47cd-82b1-c56d7894df30">
-    <name>ОчищатьПерсональныеНастройкиПользователей</name>
+  <attributes uuid="f6f52cc8-23a3-4402-b1eb-0e41584c802a">
+    <name>ПравилоЧисло</name>
     <synonym>
       <key>ru</key>
-      <value>Очищать персональные настройки пользователей</value>
+      <value>Правило число</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -183,20 +183,20 @@
       <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
   </tabularSections>
-  <forms uuid="68598d98-0c59-4cda-b0b2-6901d3aff88b">
-    <name>Форма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="219c1375-f26e-4698-aa82-4b9d735df783">
     <name>ВыборПравилОбработки</name>
     <synonym>
       <key>ru</key>
       <value>Выбор правил обработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="68598d98-0c59-4cda-b0b2-6901d3aff88b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

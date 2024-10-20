@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="952488d5-b12b-4a33-8abc-6bc225e99897">
+  <producedTypes>
+    <refType typeId="bfd42666-8f36-4465-a583-16911d71e8a2" valueTypeId="d3dab4ce-dbea-4041-b203-75c5a2446cc8"/>
+    <listType typeId="a889ae0c-f1ca-4d59-a440-a5400c6de5b9" valueTypeId="94569ebc-9c1b-4b40-bbda-55368e64789e"/>
+    <managerType typeId="ebd79eff-af5b-402b-82a9-5d00cda763a0" valueTypeId="40ab7c9b-8544-480d-8db0-a8c596dfc747"/>
+  </producedTypes>
+  <name>TrBSecurityTradingStatus</name>
+  <synonym>
+    <key>ru</key>
+    <value>СтатусТорговли</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

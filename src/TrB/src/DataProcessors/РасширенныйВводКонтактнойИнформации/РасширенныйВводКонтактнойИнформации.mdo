@@ -89,6 +89,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="c6a4d03d-f3b2-449c-8a2b-deb542dd2c99">
+    <name>ИсправлениеАдресов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправление адресов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="d5af38bf-6261-4177-8f74-998a85f0ef39">
     <name>НаселенныйПунктАдреса</name>
     <synonym>
@@ -114,15 +123,6 @@
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="c6a4d03d-f3b2-449c-8a2b-deb542dd2c99">
-    <name>ИсправлениеАдресов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Исправление адресов</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

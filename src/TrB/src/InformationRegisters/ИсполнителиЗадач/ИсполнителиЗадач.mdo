@@ -181,11 +181,11 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="1d6a68ec-917f-4c3b-b970-797a6921cbc9">
-    <name>РолиИИсполнителиЗадач</name>
+  <forms uuid="5b663988-3599-46dc-8d59-4c82ceac537c">
+    <name>ИсполнителиРоли</name>
     <synonym>
       <key>ru</key>
-      <value>Роли и исполнители задач</value>
+      <value>Исполнители роли</value>
     </synonym>
     <help>
       <pages>
@@ -209,11 +209,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="5b663988-3599-46dc-8d59-4c82ceac537c">
-    <name>ИсполнителиРоли</name>
+  <forms uuid="1d6a68ec-917f-4c3b-b970-797a6921cbc9">
+    <name>РолиИИсполнителиЗадач</name>
     <synonym>
       <key>ru</key>
-      <value>Исполнители роли</value>
+      <value>Роли и исполнители задач</value>
     </synonym>
     <help>
       <pages>
@@ -246,6 +246,19 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <commands uuid="b156752b-f25c-4f35-9474-8ac3636597f5">
+    <name>ИсполнителиРоли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнители роли</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.РолиИсполнителей</types>
+    </commandParameterType>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+  </commands>
   <commands uuid="679cc0df-df5c-4c33-8c64-c0b6cee39116">
     <name>РолиИИсполнителиЗадач</name>
     <synonym>
@@ -259,18 +272,5 @@
       <key>ru</key>
       <value>Назначить исполнителей на роли</value>
     </toolTip>
-  </commands>
-  <commands uuid="b156752b-f25c-4f35-9474-8ac3636597f5">
-    <name>ИсполнителиРоли</name>
-    <synonym>
-      <key>ru</key>
-      <value>Исполнители роли</value>
-    </synonym>
-    <group>FormNavigationPanelGoTo</group>
-    <commandParameterType>
-      <types>CatalogRef.РолиИсполнителей</types>
-    </commandParameterType>
-    <modifiesData>true</modifiesData>
-    <representation>Auto</representation>
   </commands>
 </mdclass:InformationRegister>

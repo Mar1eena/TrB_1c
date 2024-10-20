@@ -138,22 +138,23 @@
   <defaultObjectForm>Catalog.ВариантыОтветовАнкет.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.ВариантыОтветовАнкет.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.ВариантыОтветовАнкет.Form.ФормаВыбора</defaultChoiceForm>
-  <attributes uuid="2582a714-a6d6-4d37-b9a7-5e89e18b0f27">
-    <name>ТребуетОткрытогоОтвета</name>
+  <attributes uuid="c234a467-ad6c-41d0-ac9e-8592acd8d9d2">
+    <name>Подсказка</name>
     <synonym>
       <key>ru</key>
-      <value>Требует открытого ответа</value>
+      <value>Подсказка</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
     </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Признак того, что респондент будет иметь возможность прокомментировать данный вариант ответа</value>
-    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:BooleanValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -181,35 +182,25 @@
     <indexing>IndexWithAdditionalOrder</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="c234a467-ad6c-41d0-ac9e-8592acd8d9d2">
-    <name>Подсказка</name>
+  <attributes uuid="2582a714-a6d6-4d37-b9a7-5e89e18b0f27">
+    <name>ТребуетОткрытогоОтвета</name>
     <synonym>
       <key>ru</key>
-      <value>Подсказка</value>
+      <value>Требует открытого ответа</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>250</length>
-      </stringQualifiers>
+      <types>Boolean</types>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что респондент будет иметь возможность прокомментировать данный вариант ответа</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:BooleanValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="fc1066b5-20d4-4c73-85f8-9889e554d6e1">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="a9b6b5fd-1862-4207-87e8-5c25a8f86c57">
     <name>ФормаВыбора</name>
     <synonym>
@@ -224,6 +215,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fc1066b5-20d4-4c73-85f8-9889e554d6e1">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

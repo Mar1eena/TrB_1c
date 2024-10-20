@@ -49,14 +49,46 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="2e882442-45ce-41af-a76b-b00a74021cba">
-    <name>ТехническийСтатус</name>
+  <resources uuid="4d596b46-4654-46b8-a015-cecfc86780fc">
+    <name>ДанныеОшибкиЗапросаСтатуса</name>
     <synonym>
       <key>ru</key>
-      <value>Технический статус</value>
+      <value>Данные ошибки запроса статуса</value>
     </synonym>
     <type>
-      <types>EnumRef.ТехническиеСтатусыМЧД</types>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5af3a256-2bdb-4d87-a2e6-348f072f099d">
+    <name>ДатаЗапросаСтатуса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата запроса статуса</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="487ec60f-c31c-4c74-ba24-efcfc3908320">
+    <name>ДатаТранзакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата транзакции</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -82,61 +114,14 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="d4beb157-c999-46c2-ac4b-5ec6846a717d">
-    <name>СтатусТранзакции</name>
+  <resources uuid="c94decc9-4fb7-4f47-a7e6-ab8944798a24">
+    <name>Подписана</name>
     <synonym>
       <key>ru</key>
-      <value>Статус транзакции</value>
+      <value>Подписана</value>
     </synonym>
     <type>
-      <types>EnumRef.СтатусыТранзакцииСРеестромМЧД</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="9eed26c8-8874-4814-b232-44a8f594fabe">
-    <name>ТипТранзакции</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тип транзакции</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ТипыТранзакцийСРеестромМЧД</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="487ec60f-c31c-4c74-ba24-efcfc3908320">
-    <name>ДатаТранзакции</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата транзакции</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="5af3a256-2bdb-4d87-a2e6-348f072f099d">
-    <name>ДатаЗапросаСтатуса</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата запроса статуса</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -162,14 +147,14 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="4d596b46-4654-46b8-a015-cecfc86780fc">
-    <name>ДанныеОшибкиЗапросаСтатуса</name>
+  <resources uuid="d4beb157-c999-46c2-ac4b-5ec6846a717d">
+    <name>СтатусТранзакции</name>
     <synonym>
       <key>ru</key>
-      <value>Данные ошибки запроса статуса</value>
+      <value>Статус транзакции</value>
     </synonym>
     <type>
-      <types>ValueStorage</types>
+      <types>EnumRef.СтатусыТранзакцииСРеестромМЧД</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -177,14 +162,29 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="c94decc9-4fb7-4f47-a7e6-ab8944798a24">
-    <name>Подписана</name>
+  <resources uuid="2e882442-45ce-41af-a76b-b00a74021cba">
+    <name>ТехническийСтатус</name>
     <synonym>
       <key>ru</key>
-      <value>Подписана</value>
+      <value>Технический статус</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>EnumRef.ТехническиеСтатусыМЧД</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9eed26c8-8874-4814-b232-44a8f594fabe">
+    <name>ТипТранзакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип транзакции</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыТранзакцийСРеестромМЧД</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -122,14 +122,14 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <attributes uuid="85223d37-2503-4783-94dc-fe6265e718d5">
-    <name>Отчет</name>
+  <attributes uuid="c09dcf00-a45a-4487-99c5-d3a37956ec88">
+    <name>ВидимостьПоУмолчанию</name>
     <synonym>
       <key>ru</key>
-      <value>Отчет</value>
+      <value>Видимость по умолчанию</value>
     </synonym>
     <type>
-      <types>CatalogRef.ИдентификаторыОбъектовРасширений</types>
+      <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
@@ -138,31 +138,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="0918cd76-56e5-4314-8a1c-c21d023ba6f8">
-    <name>КлючВарианта</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ключ варианта</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>256</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value> </value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="9db21c2e-79fa-44e4-902e-416abfccb54a">
@@ -199,117 +174,28 @@
     <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="c09dcf00-a45a-4487-99c5-d3a37956ec88">
-    <name>ВидимостьПоУмолчанию</name>
+  <attributes uuid="0918cd76-56e5-4314-8a1c-c21d023ba6f8">
+    <name>КлючВарианта</name>
     <synonym>
       <key>ru</key>
-      <value>Видимость по умолчанию</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value> </value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="531a5a0c-6ac9-4e93-8caa-42d9aad0bc82">
-    <name>Описание</name>
-    <synonym>
-      <key>ru</key>
-      <value>Описание</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value> </value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="2714e1b6-6b02-43a1-bc94-2934b429ed35">
-    <name>ХешНастроек</name>
-    <synonym>
-      <key>ru</key>
-      <value>Хеш настроек</value>
+      <value>Ключ варианта</value>
     </synonym>
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>32</length>
+        <length>256</length>
       </stringQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Используется при обновлении приложения</value>
+      <value> </value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="e33c73b2-ef0b-49b7-a65f-ab2c814ad256">
-    <name>НаименованияПолей</name>
-    <synonym>
-      <key>ru</key>
-      <value>Наименования полей</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Наименования полей, выведенных в отчете.
-Используется при поиске.</value>
-    </toolTip>
-    <multiLine>true</multiLine>
-    <extendedEdit>true</extendedEdit>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="4c7016da-9991-4917-8eaa-e760cc9e29d1">
-    <name>НаименованияПараметровИОтборов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Наименования параметров и отборов</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Наименования параметров и отборов отчета.
-Используется при поиске.</value>
-    </toolTip>
-    <multiLine>true</multiLine>
-    <extendedEdit>true</extendedEdit>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="febb3770-5c11-4ada-9e49-a27950bdaddf">
@@ -317,6 +203,52 @@
     <synonym>
       <key>ru</key>
       <value>Ключевые слова</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительная терминология (в т.ч. специализированная или устаревшая).
+Используется при поиске.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8e4c2dbe-15b7-4e04-9f07-892d70741a97">
+    <name>КлючевыеСловаЯзык1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключевые слова (дополнительный язык)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительная терминология (в т.ч. специализированная или устаревшая).
+Используется при поиске.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="67691860-e374-451f-aee3-05a35df2a477">
+    <name>КлючевыеСловаЯзык2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключевые слова (дополнительный язык 2)</value>
     </synonym>
     <type>
       <types>String</types>
@@ -354,33 +286,26 @@
     </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="223e4ccf-5638-4576-bd88-7c54be68de47">
-    <name>ОписаниеЯзык1</name>
+  <attributes uuid="4337d956-809f-4140-a7bb-5f5c00a65ccb">
+    <name>Назначение</name>
     <synonym>
       <key>ru</key>
-      <value>Описание (дополнительный язык)</value>
+      <value>Назначение</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>EnumRef.НазначенияВариантовОтчетов</types>
     </type>
-    <toolTip>
-      <key>ru</key>
-      <value> </value>
-    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="e3bae40b-5316-4392-8c82-b601922a6582">
-    <name>ОписаниеЯзык2</name>
+  <attributes uuid="4c7016da-9991-4917-8eaa-e760cc9e29d1">
+    <name>НаименованияПараметровИОтборов</name>
     <synonym>
       <key>ru</key>
-      <value>Описание (дополнительный язык 2)</value>
+      <value>Наименования параметров и отборов</value>
     </synonym>
     <type>
       <types>String</types>
@@ -388,54 +313,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value> </value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="26806602-54be-4b2f-96ae-3e2a31616a4e">
-    <name>НаименованияПолейЯзык1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Наименования полей (дополнительный язык)</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Наименования полей, выведенных в отчете.
-Используется при поиске.</value>
-    </toolTip>
-    <multiLine>true</multiLine>
-    <extendedEdit>true</extendedEdit>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="738fc48f-5160-4786-84bb-053c188662ce">
-    <name>НаименованияПолейЯзык2</name>
-    <synonym>
-      <key>ru</key>
-      <value>Наименования полей (дополнительный язык 2)</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Наименования полей, выведенных в отчете.
+      <value>Наименования параметров и отборов отчета.
 Используется при поиске.</value>
     </toolTip>
     <multiLine>true</multiLine>
@@ -498,11 +376,11 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="8e4c2dbe-15b7-4e04-9f07-892d70741a97">
-    <name>КлючевыеСловаЯзык1</name>
+  <attributes uuid="e33c73b2-ef0b-49b7-a65f-ab2c814ad256">
+    <name>НаименованияПолей</name>
     <synonym>
       <key>ru</key>
-      <value>Ключевые слова (дополнительный язык)</value>
+      <value>Наименования полей</value>
     </synonym>
     <type>
       <types>String</types>
@@ -510,8 +388,82 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Дополнительная терминология (в т.ч. специализированная или устаревшая).
+      <value>Наименования полей, выведенных в отчете.
 Используется при поиске.</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="26806602-54be-4b2f-96ae-3e2a31616a4e">
+    <name>НаименованияПолейЯзык1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименования полей (дополнительный язык)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименования полей, выведенных в отчете.
+Используется при поиске.</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="738fc48f-5160-4786-84bb-053c188662ce">
+    <name>НаименованияПолейЯзык2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименования полей (дополнительный язык 2)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименования полей, выведенных в отчете.
+Используется при поиске.</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="531a5a0c-6ac9-4e93-8caa-42d9aad0bc82">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value> </value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -521,11 +473,11 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="67691860-e374-451f-aee3-05a35df2a477">
-    <name>КлючевыеСловаЯзык2</name>
+  <attributes uuid="223e4ccf-5638-4576-bd88-7c54be68de47">
+    <name>ОписаниеЯзык1</name>
     <synonym>
       <key>ru</key>
-      <value>Ключевые слова (дополнительный язык 2)</value>
+      <value>Описание (дополнительный язык)</value>
     </synonym>
     <type>
       <types>String</types>
@@ -533,8 +485,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Дополнительная терминология (в т.ч. специализированная или устаревшая).
-Используется при поиске.</value>
+      <value> </value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -544,19 +495,45 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="4337d956-809f-4140-a7bb-5f5c00a65ccb">
-    <name>Назначение</name>
+  <attributes uuid="e3bae40b-5316-4392-8c82-b601922a6582">
+    <name>ОписаниеЯзык2</name>
     <synonym>
       <key>ru</key>
-      <value>Назначение</value>
+      <value>Описание (дополнительный язык 2)</value>
     </synonym>
     <type>
-      <types>EnumRef.НазначенияВариантовОтчетов</types>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value> </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="85223d37-2503-4783-94dc-fe6265e718d5">
+    <name>Отчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИдентификаторыОбъектовРасширений</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value> </value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="dbed7302-370e-4e0f-b505-3a86fe4c4ebd">
@@ -574,81 +551,29 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <tabularSections uuid="9c484a15-039e-416d-af97-4c2bd90fd873">
-    <producedTypes>
-      <objectType typeId="f19341a5-7bb4-4938-be63-479e23748fb6" valueTypeId="b1c8206a-72e4-457d-a9b0-72c79c1c37e5"/>
-      <rowType typeId="67b9c4eb-d9f8-4044-be23-225571346d2f" valueTypeId="946ee64f-95c7-4c27-8134-14c108dc101f"/>
-    </producedTypes>
-    <name>Размещение</name>
+  <attributes uuid="2714e1b6-6b02-43a1-bc94-2934b429ed35">
+    <name>ХешНастроек</name>
     <synonym>
       <key>ru</key>
-      <value>Размещение</value>
+      <value>Хеш настроек</value>
     </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="534855e3-4cf2-471c-b982-7138917050c9">
-      <name>Подсистема</name>
-      <synonym>
-        <key>ru</key>
-        <value>Подсистема</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ИдентификаторыОбъектовРасширений</types>
-        <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Раздел или группа</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-    </attributes>
-    <attributes uuid="4c72b944-d000-4920-aec8-54029f88ddf4">
-      <name>Важный</name>
-      <synonym>
-        <key>ru</key>
-        <value>Важный</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value> </value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-    </attributes>
-    <attributes uuid="b4033d05-05c2-4617-80d9-abfa389c47f4">
-      <name>СмТакже</name>
-      <synonym>
-        <key>ru</key>
-        <value>См также</value>
-      </synonym>
-      <comment>Вариант находится в группе &quot;См. также&quot;</comment>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value> </value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-    </attributes>
-  </tabularSections>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется при обновлении приложения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="0f46b124-1575-4984-9bc1-b5e4696efc74">
     <producedTypes>
       <objectType typeId="86ca890f-7116-4710-9e2e-d2e391cb31eb" valueTypeId="ebcb6fb9-f092-48af-a08d-c1673d7ad787"/>
@@ -781,6 +706,81 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="9c484a15-039e-416d-af97-4c2bd90fd873">
+    <producedTypes>
+      <objectType typeId="f19341a5-7bb4-4938-be63-479e23748fb6" valueTypeId="b1c8206a-72e4-457d-a9b0-72c79c1c37e5"/>
+      <rowType typeId="67b9c4eb-d9f8-4044-be23-225571346d2f" valueTypeId="946ee64f-95c7-4c27-8134-14c108dc101f"/>
+    </producedTypes>
+    <name>Размещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размещение</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="534855e3-4cf2-471c-b982-7138917050c9">
+      <name>Подсистема</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подсистема</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИдентификаторыОбъектовРасширений</types>
+        <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Раздел или группа</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+    </attributes>
+    <attributes uuid="4c72b944-d000-4920-aec8-54029f88ddf4">
+      <name>Важный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Важный</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value> </value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+    </attributes>
+    <attributes uuid="b4033d05-05c2-4617-80d9-abfa389c47f4">
+      <name>СмТакже</name>
+      <synonym>
+        <key>ru</key>
+        <value>См также</value>
+      </synonym>
+      <comment>Вариант находится в группе &quot;См. также&quot;</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value> </value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
     </attributes>
   </tabularSections>
 </mdclass:Catalog>

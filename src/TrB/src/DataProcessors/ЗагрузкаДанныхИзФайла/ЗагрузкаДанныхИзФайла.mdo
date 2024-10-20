@@ -20,6 +20,15 @@
     <key>ru</key>
     <value>Загрузка справочной информации из табличных документов (файлы Microsoft Office Excel, Microsoft Office Word, OpenOffice Calc и др.) в справочники приложения.</value>
   </explanation>
+  <forms uuid="6f683f46-9eef-4e78-bc2f-7174238bf53c">
+    <name>ВыборКолонок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор колонок сопоставления</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="ac4fa2a4-93a1-4aa6-986a-5f576457fc8a">
     <name>ЗагрузкаДанныхИзФайла</name>
     <synonym>
@@ -31,15 +40,6 @@
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="6f683f46-9eef-4e78-bc2f-7174238bf53c">
-    <name>ВыборКолонок</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выбор колонок сопоставления</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

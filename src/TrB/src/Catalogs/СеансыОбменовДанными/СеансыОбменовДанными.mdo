@@ -115,14 +115,32 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.СеансыОбменовДанными.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.СеансыОбменовДанными.Form.ФормаСписка</defaultListForm>
-  <attributes uuid="d5523a3a-2fb4-4f6c-a76c-08864db125d9">
-    <name>УзелИнформационнойБазы</name>
+  <attributes uuid="22a6d909-b793-4540-8f4e-605e0448bf2a">
+    <name>ВремяВыполнения</name>
     <synonym>
       <key>ru</key>
-      <value>Узел информационной базы</value>
+      <value>Время выполнения (сек.)</value>
     </synonym>
     <type>
-      <types>ExchangePlanRef</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2e01082e-9b7b-47f5-900f-1c2e8dfb3f20">
+    <name>ЗамерыПроизводительности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Замеры производительности</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -192,17 +210,14 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="22a6d909-b793-4540-8f4e-605e0448bf2a">
-    <name>ВремяВыполнения</name>
+  <attributes uuid="d5523a3a-2fb4-4f6c-a76c-08864db125d9">
+    <name>УзелИнформационнойБазы</name>
     <synonym>
       <key>ru</key>
-      <value>Время выполнения (сек.)</value>
+      <value>Узел информационной базы</value>
     </synonym>
     <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
+      <types>ExchangePlanRef</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -210,35 +225,20 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="2e01082e-9b7b-47f5-900f-1c2e8dfb3f20">
-    <name>ЗамерыПроизводительности</name>
-    <synonym>
-      <key>ru</key>
-      <value>Замеры производительности</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <forms uuid="16547db4-7d90-451b-b0a0-33a59837d1f6">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="f008b0a5-266c-47ab-a15d-95e23bf7041b">
     <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
       <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="16547db4-7d90-451b-b0a0-33a59837d1f6">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

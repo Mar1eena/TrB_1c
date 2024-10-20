@@ -54,6 +54,25 @@
     <key>ru</key>
     <value>Файл</value>
   </recordPresentation>
+  <resources uuid="39932897-959b-41a6-94ad-61426abfdbd9">
+    <name>ДатаЗакладкиСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата закладки сообщения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата закладки сообщения обмена</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="f6118cdd-1dcd-464e-a49d-e95c69466750">
     <name>ИмяФайлаСообщения</name>
     <synonym>
@@ -77,25 +96,6 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
-  </resources>
-  <resources uuid="39932897-959b-41a6-94ad-61426abfdbd9">
-    <name>ДатаЗакладкиСообщения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата закладки сообщения</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Дата закладки сообщения обмена</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <dimensions uuid="c56ea6f3-1032-4b7a-a20e-e912196da1cd">
     <name>ИдентификаторСообщения</name>

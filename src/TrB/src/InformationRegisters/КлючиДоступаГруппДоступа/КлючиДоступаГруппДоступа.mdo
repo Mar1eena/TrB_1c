@@ -55,25 +55,6 @@
     <key>ru</key>
     <value>Ключ доступа группы доступа</value>
   </recordPresentation>
-  <resources uuid="b62434ac-ef9f-4fe7-8279-357e0dd760ac">
-    <name>ПравоИзменение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Право изменение</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Если признак установлен, то разрешено не только чтение, но и изменение</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="eb1c7d02-f5fc-4b37-9b32-7dd828958d76">
     <name>ПравоДобавление</name>
     <synonym>
@@ -86,6 +67,25 @@
     <toolTip>
       <key>ru</key>
       <value>Если признак установлен, то разрешено не только чтение и изменение, но и добавление</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b62434ac-ef9f-4fe7-8279-357e0dd760ac">
+    <name>ПравоИзменение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Право изменение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если признак установлен, то разрешено не только чтение, но и изменение</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -136,20 +136,20 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="2aa2a968-2cac-4883-9bc8-5a3ccbd2e7a9">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="7d1361af-c5d3-4312-ab5e-ba00bf3418f2">
     <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
       <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2aa2a968-2cac-4883-9bc8-5a3ccbd2e7a9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

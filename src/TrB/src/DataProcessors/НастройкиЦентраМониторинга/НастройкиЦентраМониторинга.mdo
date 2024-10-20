@@ -11,11 +11,11 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.НастройкиЦентраМониторинга.Form.НастройкиЦентраМониторинга</defaultForm>
-  <forms uuid="c550a43a-1240-4f29-9045-a262f37f703a">
-    <name>НастройкиЦентраМониторинга</name>
+  <forms uuid="85ac42d7-400a-4469-8fcd-e6a14f258792">
+    <name>ЗапросНаОтправкуОтчетовОбОшибках</name>
     <synonym>
       <key>ru</key>
-      <value>Настройки центра мониторинга</value>
+      <value>Запрос на отправку отчетов об ошибках</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -29,11 +29,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="85ac42d7-400a-4469-8fcd-e6a14f258792">
-    <name>ЗапросНаОтправкуОтчетовОбОшибках</name>
+  <forms uuid="c550a43a-1240-4f29-9045-a262f37f703a">
+    <name>НастройкиЦентраМониторинга</name>
     <synonym>
       <key>ru</key>
-      <value>Запрос на отправку отчетов об ошибках</value>
+      <value>Настройки центра мониторинга</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

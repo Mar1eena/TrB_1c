@@ -169,6 +169,94 @@
     </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="e268a337-f576-4ec2-8a22-0500b79b2441">
+    <name>ВзаимодействиеОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взаимодействие основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЭлектронноеПисьмоИсходящее</types>
+      <types>DocumentRef.ЗапланированноеВзаимодействие</types>
+      <types>DocumentRef.ЭлектронноеПисьмоВходящее</types>
+      <types>DocumentRef.ТелефонныйЗвонок</types>
+      <types>DocumentRef.Встреча</types>
+      <types>DocumentRef.СообщениеSMS</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ - взаимодействие, на основании которого был создано сообщение SMS</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="73f5ce9e-d5a7-45c0-965a-8af1d776a98a">
+    <name>ДатаАктуальностиОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата актуальности отправки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата, до которой рассылаемые сообщения имеет смысл отправлять. Если не заполнено, то без ограничений.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5d45a926-513f-4bbc-a002-54a2db94b297">
+    <name>ДатаКогдаОтправить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата когда отправить</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если указана, то сообщение будет отправлено в указанную дату.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c352da94-ea64-44b1-b2df-2c4ed9e2efc5">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный текст</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="930a0156-feb3-4e14-96a5-cd183a4891f4">
     <name>Ответственный</name>
     <synonym>
@@ -186,6 +274,44 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:ReferenceValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6babd40a-8b8f-454b-b4a4-7cf2854f49a2">
+    <name>ОтправлятьВТранслите</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлять в транслите</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что сообщение необходимо отправить в транслите.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a41f060a-f0f6-4940-960b-5056082b2c45">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияДокументаСообщениеSMS</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Итоговое состояние сообщения SMS. Формируется на основании состояний отдельных сообщений адресатам.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -213,27 +339,27 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="e268a337-f576-4ec2-8a22-0500b79b2441">
-    <name>ВзаимодействиеОснование</name>
+  <attributes uuid="bf480259-6e72-4ad1-ac41-0b0d41a75387">
+    <name>ТекстСообщения</name>
     <synonym>
       <key>ru</key>
-      <value>Взаимодействие основание</value>
+      <value>Текст сообщения</value>
     </synonym>
     <type>
-      <types>DocumentRef.ЭлектронноеПисьмоИсходящее</types>
-      <types>DocumentRef.ЗапланированноеВзаимодействие</types>
-      <types>DocumentRef.ЭлектронноеПисьмоВходящее</types>
-      <types>DocumentRef.ТелефонныйЗвонок</types>
-      <types>DocumentRef.Встреча</types>
-      <types>DocumentRef.СообщениеSMS</types>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Документ - взаимодействие, на основании которого был создано сообщение SMS</value>
+      <value>Текст сообщения SMS.</value>
     </toolTip>
+    <multiLine>true</multiLine>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -261,132 +387,15 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="c352da94-ea64-44b1-b2df-2c4ed9e2efc5">
-    <name>Комментарий</name>
+  <forms uuid="61dc318a-c17d-402e-bf64-a0c0a63a1c93">
+    <name>ФормаВыбора</name>
     <synonym>
       <key>ru</key>
-      <value>Комментарий</value>
+      <value>Форма выбора</value>
     </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Произвольный текст</value>
-    </toolTip>
-    <multiLine>true</multiLine>
-    <extendedEdit>true</extendedEdit>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="6babd40a-8b8f-454b-b4a4-7cf2854f49a2">
-    <name>ОтправлятьВТранслите</name>
-    <synonym>
-      <key>ru</key>
-      <value>Отправлять в транслите</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Признак того, что сообщение необходимо отправить в транслите.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="bf480259-6e72-4ad1-ac41-0b0d41a75387">
-    <name>ТекстСообщения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Текст сообщения</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Текст сообщения SMS.</value>
-    </toolTip>
-    <multiLine>true</multiLine>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="a41f060a-f0f6-4940-960b-5056082b2c45">
-    <name>Состояние</name>
-    <synonym>
-      <key>ru</key>
-      <value>Состояние</value>
-    </synonym>
-    <type>
-      <types>EnumRef.СостоянияДокументаСообщениеSMS</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Итоговое состояние сообщения SMS. Формируется на основании состояний отдельных сообщений адресатам.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="5d45a926-513f-4bbc-a002-54a2db94b297">
-    <name>ДатаКогдаОтправить</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата когда отправить</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Если указана, то сообщение будет отправлено в указанную дату.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="73f5ce9e-d5a7-45c0-965a-8af1d776a98a">
-    <name>ДатаАктуальностиОтправки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата актуальности отправки</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Дата, до которой рассылаемые сообщения имеет смысл отправлять. Если не заполнено, то без ограничений.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <dataHistory>Use</dataHistory>
-  </attributes>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="073e14d4-5d43-428b-a9a7-985d173e94c7">
     <name>ФормаДокумента</name>
     <synonym>
@@ -398,15 +407,6 @@
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="61dc318a-c17d-402e-bf64-a0c0a63a1c93">
-    <name>ФормаВыбора</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма выбора</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -587,6 +587,84 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <tabularSections uuid="26e2c83b-8873-4ad3-9c50-e94421473a43">
+    <producedTypes>
+      <objectType typeId="9e919da0-9540-4ed5-81a8-a360c34e8c6a" valueTypeId="6bc69e98-1b16-41d8-8a25-3b5acf505c9e"/>
+      <rowType typeId="4ca18dd7-9d9f-43da-96b1-8bf1c6f40fcc" valueTypeId="f09d1947-9252-453e-85b8-6e2fdae595aa"/>
+    </producedTypes>
+    <name>ДополнительныеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные реквизиты</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="f0b2ec05-8e01-4ccf-b927-671329a9013b">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительный реквизит</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ab442b11-2482-4f80-ac82-01966e0657ec">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение дополнительного реквизита</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.СообщениеSMS.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="14fe4d39-81a1-470e-9724-6642ce34ad89">
+      <name>ТекстоваяСтрока</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текстовая строка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Полный текст строкового дополнительного реквизита</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
   <tabularSections uuid="573ff1f2-0ef5-4962-a0f6-eb84d430fe03">
     <producedTypes>
       <objectType typeId="b8b90313-af65-4615-8f05-6ccc53c0e4c7" valueTypeId="64bd25f4-8fe9-4862-8035-306e4c5b85a7"/>
@@ -699,84 +777,6 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
-    </attributes>
-  </tabularSections>
-  <tabularSections uuid="26e2c83b-8873-4ad3-9c50-e94421473a43">
-    <producedTypes>
-      <objectType typeId="9e919da0-9540-4ed5-81a8-a360c34e8c6a" valueTypeId="6bc69e98-1b16-41d8-8a25-3b5acf505c9e"/>
-      <rowType typeId="4ca18dd7-9d9f-43da-96b1-8bf1c6f40fcc" valueTypeId="f09d1947-9252-453e-85b8-6e2fdae595aa"/>
-    </producedTypes>
-    <name>ДополнительныеРеквизиты</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дополнительные реквизиты</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="f0b2ec05-8e01-4ccf-b927-671329a9013b">
-      <name>Свойство</name>
-      <synonym>
-        <key>ru</key>
-        <value>Свойство</value>
-      </synonym>
-      <type>
-        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Дополнительный реквизит</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="ab442b11-2482-4f80-ac82-01966e0657ec">
-      <name>Значение</name>
-      <synonym>
-        <key>ru</key>
-        <value>Значение</value>
-      </synonym>
-      <type>
-        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Значение дополнительного реквизита</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <choiceParameterLinks>
-        <name>Отбор.Владелец</name>
-        <field>Document.СообщениеSMS.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
-      </choiceParameterLinks>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="14fe4d39-81a1-470e-9724-6642ce34ad89">
-      <name>ТекстоваяСтрока</name>
-      <synonym>
-        <key>ru</key>
-        <value>Текстовая строка</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers/>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Полный текст строкового дополнительного реквизита</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
 </mdclass:Document>

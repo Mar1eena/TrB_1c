@@ -24,43 +24,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="5d6b29dc-38af-4dce-b79c-ce8f23afb3b1">
-    <name>ПроизводственныеКалендари</name>
-    <synonym>
-      <key>ru</key>
-      <value>Производственные календари</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
   <templates uuid="c04b685a-0d2d-404c-a74a-775ffab298ce">
     <name>ДанныеПроизводственныхКалендарей</name>
     <synonym>
       <key>ru</key>
       <value>Данные производственных календарей</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
-  <templates uuid="5fe6967d-e333-464b-a89e-8c868c0ce37d">
-    <name>ДатыЦаганСар</name>
-    <synonym>
-      <key>ru</key>
-      <value>Даты &quot;Цаган Сар&quot;</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
-  <templates uuid="5aef2892-7a87-4d3b-bb46-8340a7fb97a8">
-    <name>ДатыРадоница</name>
-    <synonym>
-      <key>ru</key>
-      <value>Даты &quot;Радоница&quot;</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
-  <templates uuid="8efa4c12-b5ba-4dfd-bdc9-e824402fc4b1">
-    <name>ПериодыНерабочихДней</name>
-    <synonym>
-      <key>ru</key>
-      <value>Периоды нерабочих дней</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
@@ -72,11 +40,43 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
+  <templates uuid="5aef2892-7a87-4d3b-bb46-8340a7fb97a8">
+    <name>ДатыРадоница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Даты &quot;Радоница&quot;</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
   <templates uuid="54e57825-c6f3-44c3-9457-bc24317e23c2">
     <name>ДатыТроица</name>
     <synonym>
       <key>ru</key>
       <value>Даты &quot;Троица&quot;</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5fe6967d-e333-464b-a89e-8c868c0ce37d">
+    <name>ДатыЦаганСар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Даты &quot;Цаган Сар&quot;</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="8efa4c12-b5ba-4dfd-bdc9-e824402fc4b1">
+    <name>ПериодыНерабочихДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периоды нерабочих дней</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5d6b29dc-38af-4dce-b79c-ce8f23afb3b1">
+    <name>ПроизводственныеКалендари</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производственные календари</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>

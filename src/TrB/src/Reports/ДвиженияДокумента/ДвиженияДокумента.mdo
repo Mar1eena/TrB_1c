@@ -19,6 +19,13 @@
       <lang>ru</lang>
     </pages>
   </help>
+  <templates uuid="1809ff43-2af2-44d1-ac7b-91d5bbe4f0ce">
+    <name>Заголовок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовок</value>
+    </synonym>
+  </templates>
   <templates uuid="3c305f89-e453-46c7-987b-f01dc964efdb">
     <name>ПустаяСхемаКомпоновкиДанных</name>
     <synonym>
@@ -26,12 +33,5 @@
       <value>Пустая схема компоновки данных</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
-  </templates>
-  <templates uuid="1809ff43-2af2-44d1-ac7b-91d5bbe4f0ce">
-    <name>Заголовок</name>
-    <synonym>
-      <key>ru</key>
-      <value>Заголовок</value>
-    </synonym>
   </templates>
 </mdclass:Report>

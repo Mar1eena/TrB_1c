@@ -70,21 +70,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="cc925b83-839b-48da-8f62-7f8cde76ac2a">
-    <name>ХранитьНаДиске</name>
-    <synonym>
-      <key>ru</key>
-      <value>Хранить на диске</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="7d06f855-8a6a-45e0-a1c2-fd5f03d2a8ed">
     <name>ПолныйПуть</name>
     <synonym>
@@ -134,6 +119,21 @@
     <synonym>
       <key>ru</key>
       <value>Сжимать файлы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cc925b83-839b-48da-8f62-7f8cde76ac2a">
+    <name>ХранитьНаДиске</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранить на диске</value>
     </synonym>
     <type>
       <types>Boolean</types>

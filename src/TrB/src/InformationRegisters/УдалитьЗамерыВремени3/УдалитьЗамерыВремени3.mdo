@@ -56,6 +56,24 @@
     </pages>
   </help>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ff1a4c30-03ff-4bdd-9df2-a2579aeb4157">
+    <name>ВесЗамера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес замера</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="cde46d6d-9f8a-45b6-98a7-9411030ccd72">
     <name>ВремяВыполнения</name>
     <synonym>
@@ -68,24 +86,6 @@
       <numberQualifiers>
         <precision>15</precision>
         <scale>3</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="ff1a4c30-03ff-4bdd-9df2-a2579aeb4157">
-    <name>ВесЗамера</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вес замера</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
         <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
@@ -129,6 +129,24 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="578e0fd2-997c-437a-befc-33d128097a7e">
+    <name>ДатаЗаписиЛокальная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата записи локальная</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+  </attributes>
   <attributes uuid="15f1a3a8-5d42-486d-95f9-3d43ff1d5d56">
     <name>ДатаОкончания</name>
     <synonym>
@@ -165,24 +183,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="578e0fd2-997c-437a-befc-33d128097a7e">
-    <name>ДатаЗаписиЛокальная</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата записи локальная</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:DateValue">
-      <value>0001-01-01T00:00:00</value>
-    </fillValue>
   </attributes>
   <dimensions uuid="14089231-31a8-4471-b85b-064836794ff3">
     <name>КлючеваяОперация</name>

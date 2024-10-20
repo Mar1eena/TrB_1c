@@ -16,18 +16,6 @@
       <lang>ru</lang>
     </pages>
   </help>
-  <attributes uuid="dbced4aa-6432-4f0c-a99a-5a3e7b0f6755">
-    <name>Респондент</name>
-    <synonym>
-      <key>ru</key>
-      <value>Респондент</value>
-    </synonym>
-    <type>
-      <types>DefinedType.Респондент</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <attributes uuid="6b28a716-2fb1-47f7-a7d6-f2fe7edb32c3">
     <name>РежимАнкетирования</name>
     <synonym>
@@ -40,15 +28,18 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <forms uuid="e849e46c-2ce6-427b-92bc-06d7997f59bf">
-    <name>Форма</name>
+  <attributes uuid="dbced4aa-6432-4f0c-a99a-5a3e7b0f6755">
+    <name>Респондент</name>
     <synonym>
       <key>ru</key>
-      <value>Форма</value>
+      <value>Респондент</value>
     </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
+    <type>
+      <types>DefinedType.Респондент</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <forms uuid="5a971dc0-28bf-4426-9426-9f456aea080a">
     <name>АрхивАнкет</name>
     <synonym>
@@ -60,6 +51,15 @@
         <lang>ru</lang>
       </pages>
     </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e849e46c-2ce6-427b-92bc-06d7997f59bf">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

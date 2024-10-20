@@ -127,6 +127,44 @@
   <defaultObjectForm>Catalog.КлючевыеОперации.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.КлючевыеОперации.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.КлючевыеОперации.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="3f023afb-c02a-42ee-9afe-0f47ef3fe721">
+    <name>ВыполненаСОшибкой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнена с ошибкой</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Свойство ключевой операции замера, служит для разделения выполнения замеров</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d7fe80d3-7fcf-427e-a991-5384f0c3947e">
+    <name>Длительная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительная</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Свойство ключевой операции замера. Для длительных ключевых операций рассчитывается удельное время выполнения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="cd869887-0b0e-43db-8b51-04fe4a1341d5">
     <name>Имя</name>
     <synonym>
@@ -148,6 +186,31 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cd8fd85f-f02e-4f11-b4b4-40670febfaca">
+    <name>ИмяХеш</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя хеш</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Хеш сумма имени</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -219,80 +282,12 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="cd8fd85f-f02e-4f11-b4b4-40670febfaca">
-    <name>ИмяХеш</name>
+  <forms uuid="55c63580-16f1-4d6f-a40b-e630f71ebb98">
+    <name>ФормаВыбора</name>
     <synonym>
       <key>ru</key>
-      <value>Имя хеш</value>
+      <value>Форма выбора</value>
     </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>40</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Хеш сумма имени</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="3f023afb-c02a-42ee-9afe-0f47ef3fe721">
-    <name>ВыполненаСОшибкой</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выполнена с ошибкой</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Свойство ключевой операции замера, служит для разделения выполнения замеров</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="d7fe80d3-7fcf-427e-a991-5384f0c3947e">
-    <name>Длительная</name>
-    <synonym>
-      <key>ru</key>
-      <value>Длительная</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Свойство ключевой операции замера. Для длительных ключевых операций рассчитывается удельное время выполнения.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <forms uuid="085a08f3-9d93-429d-9b1b-9065ab8363f7">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -305,12 +300,17 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="55c63580-16f1-4d6f-a40b-e630f71ebb98">
-    <name>ФормаВыбора</name>
+  <forms uuid="085a08f3-9d93-429d-9b1b-9065ab8363f7">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора</value>
+      <value>Форма элемента</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

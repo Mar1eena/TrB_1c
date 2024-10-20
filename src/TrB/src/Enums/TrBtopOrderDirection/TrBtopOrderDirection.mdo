@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4fbce397-74f9-4f6e-9594-0de7fc6c316e">
+  <producedTypes>
+    <refType typeId="813cd64a-0cb0-49fa-870a-d7a05cdca466" valueTypeId="f8f66e22-c151-4675-8c50-8baa1d084c4c"/>
+    <listType typeId="46b4a917-08e6-4e29-9bf0-79f127b2c9e9" valueTypeId="0d4b31f8-6fd0-4342-9b1d-cf0095d57250"/>
+    <managerType typeId="96b8b803-6786-41a5-a846-cc26e41e69ad" valueTypeId="f9d2dee4-65e8-4562-9625-1a84fa77342a"/>
+  </producedTypes>
+  <name>TrBtopOrderDirection</name>
+  <synonym>
+    <key>ru</key>
+    <value>Направление сделки стоп-заявки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

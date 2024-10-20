@@ -291,6 +291,25 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="7b074b91-3c8e-48b3-8858-b6ea1c531f66">
+    <name>Назначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение</value>
+    </synonym>
+    <type>
+      <types>EnumRef.НазначенияВариантовОтчетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.НазначенияВариантовОтчетов.EnumValue.ДляКомпьютеровИПланшетов</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="5504f5d1-35d8-4a47-a0e1-003fe00395c1">
     <name>НаименованияПараметровИОтборов</name>
     <synonym>
@@ -561,25 +580,80 @@
     </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="7b074b91-3c8e-48b3-8858-b6ea1c531f66">
-    <name>Назначение</name>
+  <tabularSections uuid="c1c62215-41b8-40bc-a806-1347db5b03e9">
+    <producedTypes>
+      <objectType typeId="f8245c3b-b14b-4212-b772-e48206f1323d" valueTypeId="b1416cce-05f5-40f3-89ad-1c94740b746b"/>
+      <rowType typeId="d5a0c9c6-9020-4a6a-99d2-e341bee917c1" valueTypeId="716e5a29-f25b-4a31-a262-52d7a178b244"/>
+    </producedTypes>
+    <name>Представления</name>
     <synonym>
       <key>ru</key>
-      <value>Назначение</value>
+      <value>Представления</value>
     </synonym>
-    <type>
-      <types>EnumRef.НазначенияВариантовОтчетов</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.НазначенияВариантовОтчетов.EnumValue.ДляКомпьютеровИПланшетов</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="a24322f3-c7a5-4b25-bad6-9c75712a3e58">
+      <name>КодЯзыка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код языка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="679d2b3b-a354-4dec-b49d-ab1163756e3a">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Наименование варианта отчета</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="665e96bc-8ec1-4008-b9bd-db95a234b9b8">
+      <name>Описание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Описание</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
   <tabularSections uuid="3df19dbf-efe7-4e31-99ad-fafb59ec1329">
     <producedTypes>
       <objectType typeId="abf3e560-3e61-416a-8893-8b9da792c5a0" valueTypeId="07793fd1-5e8e-435e-98ed-fa2646c0239b"/>
@@ -671,80 +745,6 @@
       <indexing>Index</indexing>
     </attributes>
   </tabularSections>
-  <tabularSections uuid="c1c62215-41b8-40bc-a806-1347db5b03e9">
-    <producedTypes>
-      <objectType typeId="f8245c3b-b14b-4212-b772-e48206f1323d" valueTypeId="b1416cce-05f5-40f3-89ad-1c94740b746b"/>
-      <rowType typeId="d5a0c9c6-9020-4a6a-99d2-e341bee917c1" valueTypeId="716e5a29-f25b-4a31-a262-52d7a178b244"/>
-    </producedTypes>
-    <name>Представления</name>
-    <synonym>
-      <key>ru</key>
-      <value>Представления</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="a24322f3-c7a5-4b25-bad6-9c75712a3e58">
-      <name>КодЯзыка</name>
-      <synonym>
-        <key>ru</key>
-        <value>Код языка</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>10</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="679d2b3b-a354-4dec-b49d-ab1163756e3a">
-      <name>Наименование</name>
-      <synonym>
-        <key>ru</key>
-        <value>Наименование</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>150</length>
-        </stringQualifiers>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Наименование варианта отчета</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="665e96bc-8ec1-4008-b9bd-db95a234b9b8">
-      <name>Описание</name>
-      <synonym>
-        <key>ru</key>
-        <value>Описание</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers/>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
   <forms uuid="a8021ff9-f0ae-49ab-b8ac-5e3d8fe90d82">
     <name>РазмещениеВРазделах</name>
     <synonym>
@@ -801,6 +801,26 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <commands uuid="b1c1c2eb-f9cd-468a-8398-b0b7f611f832">
+    <name>Изменить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменить...</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.ВариантыОтчетов</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Изменить настройки отчета...</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Change</picture>
+    </picture>
+    <shortcut>F2</shortcut>
+  </commands>
   <commands uuid="28801fba-c429-4afa-bdcd-b3ec3ec22fda">
     <name>Открыть</name>
     <synonym>
@@ -870,25 +890,5 @@
     <picture xsi:type="core:PictureRef">
       <picture>StdPicture.RestoreValues</picture>
     </picture>
-  </commands>
-  <commands uuid="b1c1c2eb-f9cd-468a-8398-b0b7f611f832">
-    <name>Изменить</name>
-    <synonym>
-      <key>ru</key>
-      <value>Изменить...</value>
-    </synonym>
-    <group>FormCommandBarImportant</group>
-    <commandParameterType>
-      <types>CatalogRef.ВариантыОтчетов</types>
-    </commandParameterType>
-    <representation>PictureAndText</representation>
-    <toolTip>
-      <key>ru</key>
-      <value>Изменить настройки отчета...</value>
-    </toolTip>
-    <picture xsi:type="core:PictureRef">
-      <picture>StdPicture.Change</picture>
-    </picture>
-    <shortcut>F2</shortcut>
   </commands>
 </mdclass:Catalog>

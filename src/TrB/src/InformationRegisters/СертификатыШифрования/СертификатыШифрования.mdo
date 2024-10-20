@@ -49,6 +49,29 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e1e151cc-7b8a-4125-804f-c902a522ed81">
+    <name>Отпечаток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отпечаток</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>28</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Отпечаток сертификата (служебное поле)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
   <resources uuid="f64089ee-72dd-4fcf-8926-31e95c6fcf77">
     <name>Представление</name>
     <synonym>
@@ -89,29 +112,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="e1e151cc-7b8a-4125-804f-c902a522ed81">
-    <name>Отпечаток</name>
-    <synonym>
-      <key>ru</key>
-      <value>Отпечаток</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>28</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Отпечаток сертификата (служебное поле)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
   </resources>
   <dimensions uuid="f475494e-fe94-4902-b2da-3ade01eba5bb">
     <name>ЗашифрованныйОбъект</name>

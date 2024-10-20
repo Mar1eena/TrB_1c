@@ -324,6 +324,28 @@
     <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="518dcd70-4ccf-4866-a94f-7ceec7dd2801">
+    <name>ИспользуетХранилищеВариантов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использует хранилище вариантов</value>
+    </synonym>
+    <comment>Когда Истина то дополнительный отчет подключен к хранилищу вариантов &quot;ХранилищеВариантовОтчетов&quot;.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет может ли дополнительный отчет выводиться в панелях отчетов.
+Заполняется автоматически при подключении дополнительного отчета/обработки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="3c54d440-e908-43d6-a5cc-bb64620c82d7">
     <name>Комментарий</name>
     <synonym>
@@ -389,6 +411,46 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="8f16763b-86f0-4ad0-b786-cce7dcb3460e">
+    <name>РежимСовместимостиРазрешений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим совместимости разрешений</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РежимыСовместимостиРазрешенийДополнительныхОтчетовИОбработок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Режим совместимости, исходя из которого при подключении дополнительного отчета или обработки определяется способ интерпретации запрошенных разрешений. Задается в качестве версии библиотеки &quot;1С:Библиотека стандартных подсистем&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f9950ab5-1077-4033-bbbf-53899a1bcf33">
+    <name>ТеснаяИнтеграцияСФормойОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тесная интеграция с формой отчета</value>
+    </synonym>
+    <comment>Когда Истина то у отчета есть программный интерфейс для тесной интеграции с общей формой &quot;ФормаОтчета&quot;.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заполняется автоматически при подключении дополнительного отчета/обработки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="e924058f-25c3-4744-a565-836b824991b7">
     <name>ХранилищеНастроек</name>
     <synonym>
@@ -425,68 +487,77 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="518dcd70-4ccf-4866-a94f-7ceec7dd2801">
-    <name>ИспользуетХранилищеВариантов</name>
+  <tabularSections uuid="07629bf6-5544-4de9-b1d8-851cb03766cb">
+    <producedTypes>
+      <objectType typeId="8b812b65-ac04-4df0-8534-dd377a1e03eb" valueTypeId="60c89453-9716-4c2f-acfd-b9abb0ab1f97"/>
+      <rowType typeId="d2b13074-c631-46c5-8f62-eac17923427a" valueTypeId="a7355b67-9e0c-411b-aa92-8d125ccb7f03"/>
+    </producedTypes>
+    <name>ДополнительныеРеквизиты</name>
     <synonym>
       <key>ru</key>
-      <value>Использует хранилище вариантов</value>
+      <value>Дополнительные реквизиты</value>
     </synonym>
-    <comment>Когда Истина то дополнительный отчет подключен к хранилищу вариантов &quot;ХранилищеВариантовОтчетов&quot;.</comment>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Определяет может ли дополнительный отчет выводиться в панелях отчетов.
-Заполняется автоматически при подключении дополнительного отчета/обработки.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="f9950ab5-1077-4033-bbbf-53899a1bcf33">
-    <name>ТеснаяИнтеграцияСФормойОтчета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тесная интеграция с формой отчета</value>
-    </synonym>
-    <comment>Когда Истина то у отчета есть программный интерфейс для тесной интеграции с общей формой &quot;ФормаОтчета&quot;.</comment>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Заполняется автоматически при подключении дополнительного отчета/обработки.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="8f16763b-86f0-4ad0-b786-cce7dcb3460e">
-    <name>РежимСовместимостиРазрешений</name>
-    <synonym>
-      <key>ru</key>
-      <value>Режим совместимости разрешений</value>
-    </synonym>
-    <type>
-      <types>EnumRef.РежимыСовместимостиРазрешенийДополнительныхОтчетовИОбработок</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Режим совместимости, исходя из которого при подключении дополнительного отчета или обработки определяется способ интерпретации запрошенных разрешений. Задается в качестве версии библиотеки &quot;1С:Библиотека стандартных подсистем&quot;.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="d449a85f-2e26-4512-b98c-7be3007966ed">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="581be829-b097-4f95-a0c4-7ca3f13c29fc">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <comment>Значение</comment>
+      <type>
+        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение дополнительного реквизита</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Catalog.ДополнительныеОтчетыИОбработки.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="dd978355-1fb7-44a0-ba88-4e72e9cd67a9">
+      <name>ТекстоваяСтрока</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текстовая строка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
   <tabularSections uuid="0481bc65-6a32-46b9-ae87-993ba52a29a5">
     <producedTypes>
       <objectType typeId="bf58afbf-1c94-47e6-a5ba-c5d7d219ac91" valueTypeId="b911e797-06eb-405d-a5b3-0ef90c3cef79"/>
@@ -793,77 +864,33 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <tabularSections uuid="07629bf6-5544-4de9-b1d8-851cb03766cb">
-    <producedTypes>
-      <objectType typeId="8b812b65-ac04-4df0-8534-dd377a1e03eb" valueTypeId="60c89453-9716-4c2f-acfd-b9abb0ab1f97"/>
-      <rowType typeId="d2b13074-c631-46c5-8f62-eac17923427a" valueTypeId="a7355b67-9e0c-411b-aa92-8d125ccb7f03"/>
-    </producedTypes>
-    <name>ДополнительныеРеквизиты</name>
+  <forms uuid="df22b227-b2c3-4e65-9706-7582f99fe59c">
+    <name>БыстрыйДоступКДополнительнымОтчетамИОбработкам</name>
     <synonym>
       <key>ru</key>
-      <value>Дополнительные реквизиты</value>
+      <value>Быстрый доступ к дополнительным отчетам и обработкам</value>
     </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="d449a85f-2e26-4512-b98c-7be3007966ed">
-      <name>Свойство</name>
-      <synonym>
-        <key>ru</key>
-        <value>Свойство</value>
-      </synonym>
-      <type>
-        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="581be829-b097-4f95-a0c4-7ca3f13c29fc">
-      <name>Значение</name>
-      <synonym>
-        <key>ru</key>
-        <value>Значение</value>
-      </synonym>
-      <comment>Значение</comment>
-      <type>
-        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Значение дополнительного реквизита</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <choiceParameterLinks>
-        <name>Отбор.Владелец</name>
-        <field>Catalog.ДополнительныеОтчетыИОбработки.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
-      </choiceParameterLinks>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="dd978355-1fb7-44a0-ba88-4e72e9cd67a9">
-      <name>ТекстоваяСтрока</name>
-      <synonym>
-        <key>ru</key>
-        <value>Текстовая строка</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers/>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="35828c88-f1ec-42e7-b189-78748931ee4a">
+    <name>ПроверкаДополнительныхОтчетовИОбработок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка дополнительных отчетов и обработок</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="eafaec9c-030b-4e5f-8fa8-e17dad2feec9">
+    <name>РазмещениеВРазделах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размещение в разделах</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="087480bb-8c89-4b00-a29b-b7e29926478d">
     <name>ФормаСписка</name>
     <synonym>
@@ -884,33 +911,6 @@
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="eafaec9c-030b-4e5f-8fa8-e17dad2feec9">
-    <name>РазмещениеВРазделах</name>
-    <synonym>
-      <key>ru</key>
-      <value>Размещение в разделах</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="df22b227-b2c3-4e65-9706-7582f99fe59c">
-    <name>БыстрыйДоступКДополнительнымОтчетамИОбработкам</name>
-    <synonym>
-      <key>ru</key>
-      <value>Быстрый доступ к дополнительным отчетам и обработкам</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="35828c88-f1ec-42e7-b189-78748931ee4a">
-    <name>ПроверкаДополнительныхОтчетовИОбработок</name>
-    <synonym>
-      <key>ru</key>
-      <value>Проверка дополнительных отчетов и обработок</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

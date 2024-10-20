@@ -16,20 +16,20 @@
       <lang>ru</lang>
     </pages>
   </help>
-  <forms uuid="04b5ae71-7fa4-4a64-b406-59dc603b80c5">
-    <name>Форма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="f23a2023-f776-40db-8689-1fc3f7ebc482">
     <name>НастройкаТекущихДел</name>
     <synonym>
       <key>ru</key>
       <value>Настройка текущих дел</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="04b5ae71-7fa4-4a64-b406-59dc603b80c5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

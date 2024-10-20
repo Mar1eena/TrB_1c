@@ -210,6 +210,26 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="45ca19df-90f3-4143-a659-bc0cb97efee9">
+    <name>КоличествоОбъектовКЗагрузкеВнешнееСоединение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество объектов к загрузке внешнее соединение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество объектов подлежащих к загрузке через внешнее соединение. Заполняется обработкой, выполняющей выгрузку на стороне базы-корреспондента</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="3a62d88e-9298-42c0-bd87-c749ecd01d19">
     <name>КоличествоОбъектовНаТранзакцию</name>
     <synonym>
@@ -384,6 +404,18 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="6c70b13d-f9d0-459f-8d38-c01c11f356f1">
+    <name>РежимОтладки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим отладки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="64a86d5d-f925-45ee-82da-76df1cc20729">
     <name>РежимПротоколированияОбменаДанными</name>
     <synonym>
@@ -403,6 +435,36 @@
       <value>Сохраненные настройки</value>
     </synonym>
     <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4e1b48b1-c998-4f99-94e7-50af22059bfa">
+    <name>СсылкаДляПереходаПриВозникновенииОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка для перехода при возникновении ошибки</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6fe997a3-d729-420b-b2b2-558e9a1031ee">
+    <name>СчетчикЗагруженныхОбъектовВнешнееСоединение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счетчик загруженных объектов внешнее соединение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество объектов, загруженных через внешнее соединение. Заполняется обработкой, выполняющей выгрузку на стороне базы-корреспондента</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
@@ -499,68 +561,6 @@
     <type>
       <types>ExchangePlanRef</types>
     </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="6c70b13d-f9d0-459f-8d38-c01c11f356f1">
-    <name>РежимОтладки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Режим отладки</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="45ca19df-90f3-4143-a659-bc0cb97efee9">
-    <name>КоличествоОбъектовКЗагрузкеВнешнееСоединение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Количество объектов к загрузке внешнее соединение</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Количество объектов подлежащих к загрузке через внешнее соединение. Заполняется обработкой, выполняющей выгрузку на стороне базы-корреспондента</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="6fe997a3-d729-420b-b2b2-558e9a1031ee">
-    <name>СчетчикЗагруженныхОбъектовВнешнееСоединение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Счетчик загруженных объектов внешнее соединение</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Количество объектов, загруженных через внешнее соединение. Заполняется обработкой, выполняющей выгрузку на стороне базы-корреспондента</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="4e1b48b1-c998-4f99-94e7-50af22059bfa">
-    <name>СсылкаДляПереходаПриВозникновенииОшибки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ссылка для перехода при возникновении ошибки</value>
-    </synonym>
-    <type/>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>

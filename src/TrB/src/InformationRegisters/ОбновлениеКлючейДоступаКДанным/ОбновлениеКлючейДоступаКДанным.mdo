@@ -55,22 +55,24 @@
     <key>ru</key>
     <value>Обновление ключей доступа</value>
   </recordPresentation>
-  <attributes uuid="7b638691-416d-4484-81f4-e4c796a92818">
-    <name>ТочечноеЗадание</name>
+  <attributes uuid="73bf8c40-76ee-4c61-b56a-898bcd6da1ca">
+    <name>ДатаИзмененияЗаписиРегистра</name>
     <synonym>
       <key>ru</key>
-      <value>Точечное задание</value>
+      <value>Дата изменения записи регистра</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>Date</types>
+      <dateQualifiers/>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Точечное задание содержит ссылку на ведущий объект для обновления
-только той части списка, которая соответствует ведущему объекту.</value>
+      <value>Дата изменения записи регистра.
+Используется для выбора записей, измененных после предыдущего выбора.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
@@ -146,24 +148,22 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="73bf8c40-76ee-4c61-b56a-898bcd6da1ca">
-    <name>ДатаИзмененияЗаписиРегистра</name>
+  <attributes uuid="7b638691-416d-4484-81f4-e4c796a92818">
+    <name>ТочечноеЗадание</name>
     <synonym>
       <key>ru</key>
-      <value>Дата изменения записи регистра</value>
+      <value>Точечное задание</value>
     </synonym>
     <type>
-      <types>Date</types>
-      <dateQualifiers/>
+      <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Дата изменения записи регистра.
-Используется для выбора записей, измененных после предыдущего выбора.</value>
+      <value>Точечное задание содержит ссылку на ведущий объект для обновления
+только той части списка, которая соответствует ведущему объекту.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
@@ -227,24 +227,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </dimensions>
-  <forms uuid="398b93b1-620d-4942-ba44-7ea0f9cc14f0">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="7b06537e-d818-41b3-acc5-b6b63b543be8">
-    <name>ФормаЗаписи</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма записи</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="74226c30-5f9b-4e47-b7cc-35e92139cbfa">
     <name>ОбновлениеДоступаНаУровнеЗаписей</name>
     <synonym>
@@ -270,6 +252,24 @@
         <lang>ru</lang>
       </pages>
     </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7b06537e-d818-41b3-acc5-b6b63b543be8">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="398b93b1-620d-4942-ba44-7ea0f9cc14f0">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

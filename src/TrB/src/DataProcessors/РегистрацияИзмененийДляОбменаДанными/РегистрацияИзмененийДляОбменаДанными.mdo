@@ -17,18 +17,91 @@
       <lang>ru</lang>
     </pages>
   </help>
-  <attributes uuid="411489de-f907-4d60-a776-64bb0aa12a0e">
-    <name>НастройкаАвторегистрацияПоследовательностей</name>
+  <attributes uuid="c0f5bbe1-3247-4bbe-a28e-8c55748e7d42">
+    <name>ДоступнаПакетнаяРегистрация</name>
     <synonym>
       <key>ru</key>
-      <value>Авторегистрация последовательностей</value>
+      <value>Доступна пакетная регистрация</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5ac38b5a-92e5-47eb-b956-24d9f010cb9f">
+    <name>ДоступнаРаботаРИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступна работа РИБ</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Авторегистрация последовательностей документов</value>
+      <value>Работа РИБ доступна</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d61ca454-505b-4fd6-be15-d7ed948a5ff6">
+    <name>ДоступнаРегистрацияАсинхронно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступна регистрация асинхронно</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Регистрация в асинхронном режиме доступна.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b96b2e45-8fb3-4d48-ab53-d3bbf6ef0284">
+    <name>ДоступнаРегистрацияСредствамиБСП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступна регистрация средствами БСП</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Регистрация средствами БСП доступна</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7347d709-bb61-4354-aa79-86ed8025d6d4">
+    <name>ИменаСкрываемыхМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имена скрываемых метаданных</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3ba8c378-ef3d-4646-90b3-6d8078aa623e">
+    <name>КонфигурацияПоддерживаетБСП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация поддерживает БСП</value>
+    </synonym>
+    <comment>Вычисляется при чтении настроек, ограничивает варианты настроек</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Конфигурация поддерживает возможности БСП</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -45,6 +118,22 @@
     <toolTip>
       <key>ru</key>
       <value>Авторегистрация движений документов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="411489de-f907-4d60-a776-64bb0aa12a0e">
+    <name>НастройкаАвторегистрацияПоследовательностей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Авторегистрация последовательностей</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Авторегистрация последовательностей документов</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -102,122 +191,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="3ba8c378-ef3d-4646-90b3-6d8078aa623e">
-    <name>КонфигурацияПоддерживаетБСП</name>
-    <synonym>
-      <key>ru</key>
-      <value>Конфигурация поддерживает БСП</value>
-    </synonym>
-    <comment>Вычисляется при чтении настроек, ограничивает варианты настроек</comment>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Конфигурация поддерживает возможности БСП</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="b96b2e45-8fb3-4d48-ab53-d3bbf6ef0284">
-    <name>ДоступнаРегистрацияСредствамиБСП</name>
-    <synonym>
-      <key>ru</key>
-      <value>Доступна регистрация средствами БСП</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Регистрация средствами БСП доступна</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="5ac38b5a-92e5-47eb-b956-24d9f010cb9f">
-    <name>ДоступнаРаботаРИБ</name>
-    <synonym>
-      <key>ru</key>
-      <value>Доступна работа РИБ</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Работа РИБ доступна</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="d61ca454-505b-4fd6-be15-d7ed948a5ff6">
-    <name>ДоступнаРегистрацияАсинхронно</name>
-    <synonym>
-      <key>ru</key>
-      <value>Доступна регистрация асинхронно</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Регистрация в асинхронном режиме доступна.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="c0f5bbe1-3247-4bbe-a28e-8c55748e7d42">
-    <name>ДоступнаПакетнаяРегистрация</name>
-    <synonym>
-      <key>ru</key>
-      <value>Доступна пакетная регистрация</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="7347d709-bb61-4354-aa79-86ed8025d6d4">
-    <name>ИменаСкрываемыхМетаданных</name>
-    <synonym>
-      <key>ru</key>
-      <value>Имена скрываемых метаданных</value>
-    </synonym>
-    <type>
-      <types>ValueList</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <forms uuid="2dd7eb87-8130-425a-be13-85235508cde6">
-    <name>ВыборУзлаПланаОбмена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выбор узла плана обмена</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="8a62c997-4fda-4464-90bd-ab719161949f">
-    <name>Форма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Регистрация изменений для обмена данными</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="28af52dd-3144-428b-956d-b6f27863ec4a">
-    <name>НомераСообщенийУзлаПланаОбмена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Номера сообщений узла плана обмена</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="8ac94328-2300-4681-9c35-fd7e2f830310">
     <name>ВыборКонстанты</name>
     <synonym>
@@ -236,11 +209,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="4868cb2e-0892-42bc-9de1-73cb8a15a96f">
-    <name>УзлыРегистрацииОбъекта</name>
+  <forms uuid="2dd7eb87-8130-425a-be13-85235508cde6">
+    <name>ВыборУзлаПланаОбмена</name>
     <synonym>
       <key>ru</key>
-      <value>Узлы регистрации объекта</value>
+      <value>Выбор узла плана обмена</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -250,6 +223,33 @@
     <synonym>
       <key>ru</key>
       <value>Настройки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="28af52dd-3144-428b-956d-b6f27863ec4a">
+    <name>НомераСообщенийУзлаПланаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номера сообщений узла плана обмена</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4868cb2e-0892-42bc-9de1-73cb8a15a96f">
+    <name>УзлыРегистрацииОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узлы регистрации объекта</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8a62c997-4fda-4464-90bd-ab719161949f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация изменений для обмена данными</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

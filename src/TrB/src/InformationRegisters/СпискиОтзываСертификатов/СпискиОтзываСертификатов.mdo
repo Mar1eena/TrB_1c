@@ -65,38 +65,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <attributes uuid="d6eb3484-b0ab-40e3-aa95-c18a40259f77">
-    <name>ДатаПроверки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата проверки</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="08ec3f2e-e523-4e37-8d44-fbc52c66263c">
-    <name>ДатаПоследнегоИзменения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата последнего изменения</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <attributes uuid="7300e566-06ea-42a3-b046-477ee9883559">
     <name>АдресСпискаОтзыва</name>
     <synonym>
@@ -134,6 +102,38 @@
     <synonym>
       <key>ru</key>
       <value>Дата окончания действия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="08ec3f2e-e523-4e37-8d44-fbc52c66263c">
+    <name>ДатаПоследнегоИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последнего изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d6eb3484-b0ab-40e3-aa95-c18a40259f77">
+    <name>ДатаПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата проверки</value>
     </synonym>
     <type>
       <types>Date</types>
