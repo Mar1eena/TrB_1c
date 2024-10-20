@@ -221,25 +221,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="91a82492-5e27-46b6-b1a8-48e89a437715">
-    <name>EMAILУчетнаяЗапись</name>
-    <synonym>
-      <key>ru</key>
-      <value>Учетная запись электронной почты</value>
-    </synonym>
-    <type>
-      <types>DefinedType.ОбменДаннымиУчетныеЗаписиЭлектроннойПочты</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Учетная запись для синхронизации</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="53bc7bfd-8786-464f-a615-ceae2971cbc9">
     <name>EMAILТранслитерироватьИменаФайловСообщенийОбмена</name>
     <synonym>
@@ -252,6 +233,25 @@
     <toolTip>
       <key>ru</key>
       <value>Признак того, что имена файлов сообщений обмена будут содержать только латинские символы.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="91a82492-5e27-46b6-b1a8-48e89a437715">
+    <name>EMAILУчетнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись электронной почты</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ОбменДаннымиУчетныеЗаписиЭлектроннойПочты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Учетная запись для синхронизации</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -552,6 +552,22 @@
       <value>true</value>
     </fillValue>
   </resources>
+  <resources uuid="178342fd-1ba5-422d-89d2-4f486e45dae9">
+    <name>WSКонечнаяТочкаКорреспондента</name>
+    <synonym>
+      <key>ru</key>
+      <value>WS Конечная точка корреспондента</value>
+    </synonym>
+    <comment>Используется только в сервисе и только при автоматической настройки через внутреннюю публикацию</comment>
+    <type>
+      <types>DefinedType.КонечнаяТочкаОбменаСообщениями</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="e59e9cfc-43b2-4bdf-a512-b6f87f781cee">
     <name>WSОбластьДанныхКорреспондента</name>
     <synonym>
@@ -650,22 +666,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="178342fd-1ba5-422d-89d2-4f486e45dae9">
-    <name>WSКонечнаяТочкаКорреспондента</name>
-    <synonym>
-      <key>ru</key>
-      <value>WS Конечная точка корреспондента</value>
-    </synonym>
-    <comment>Используется только в сервисе и только при автоматической настройки через внутреннюю публикацию</comment>
-    <type>
-      <types>DefinedType.КонечнаяТочкаОбменаСообщениями</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <dimensions uuid="7e9fadd6-d0ad-4856-a195-1058f00bf488">
     <name>Корреспондент</name>
     <synonym>
@@ -690,15 +690,6 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="76d0c5ee-5b85-4670-ba1c-8fdaa7ba872a">
-    <name>ФормаЗаписи</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма записи</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="84f67d35-ca48-4fff-94e4-5f4beb7e3c08">
     <name>НастройкаПодключенияКСервису</name>
     <synonym>
@@ -713,6 +704,15 @@
     <synonym>
       <key>ru</key>
       <value>Повторная синхронизация данных перед запуском</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="76d0c5ee-5b85-4670-ba1c-8fdaa7ba872a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

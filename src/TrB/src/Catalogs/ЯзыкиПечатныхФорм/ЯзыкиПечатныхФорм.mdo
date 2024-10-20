@@ -145,20 +145,20 @@
     <indexing>IndexWithAdditionalOrder</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="fe10d76e-3f80-4529-83a8-74c452a781f6">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="e3d1a7f5-ba86-414e-b2d2-89cc9db51667">
     <name>ПодборЯзыкаИзСпискаДоступных</name>
     <synonym>
       <key>ru</key>
       <value>Подбор языка из списка доступных</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fe10d76e-3f80-4529-83a8-74c452a781f6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

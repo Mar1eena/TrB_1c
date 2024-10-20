@@ -43,6 +43,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="c91de10a-d370-4495-9d9e-98581e566385">
+    <name>ВебСайт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Веб сайт</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="d5a73869-381e-4878-8db7-596643937202">
     <name>ИсторияКонтактнойИнформации</name>
     <synonym>
@@ -54,15 +63,6 @@
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="c91de10a-d370-4495-9d9e-98581e566385">
-    <name>ВебСайт</name>
-    <synonym>
-      <key>ru</key>
-      <value>Веб сайт</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

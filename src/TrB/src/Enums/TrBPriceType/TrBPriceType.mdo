@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c7a7cae-d4d0-49cf-8066-54346ac08d78">
+  <producedTypes>
+    <refType typeId="cca26cb0-82bd-4cea-9dba-ec45f76ac721" valueTypeId="ad833a85-8dbd-4198-8b7d-55450982a6a5"/>
+    <listType typeId="a40d68bf-328b-4e38-88fc-7e8154204bae" valueTypeId="892524cd-9312-4a13-829c-14b8830c1880"/>
+    <managerType typeId="37d5b1b3-97d7-4c57-85de-16e7a9c35c91" valueTypeId="78a4f6a6-13c7-40e0-9c0e-89f48688e78f"/>
+  </producedTypes>
+  <name>TrBPriceType</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип цены</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

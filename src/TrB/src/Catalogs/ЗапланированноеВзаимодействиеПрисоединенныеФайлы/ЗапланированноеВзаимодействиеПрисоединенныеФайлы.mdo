@@ -545,6 +545,86 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <tabularSections uuid="98e3aace-52a6-4911-8205-92165adca6de">
+    <producedTypes>
+      <objectType typeId="8763e6e8-0159-4f1a-a671-d95c047fa9ae" valueTypeId="7dce171c-94f1-4bb0-9056-95f57547f7ab"/>
+      <rowType typeId="8ded4f48-a161-4e42-ab02-152d1193bc11" valueTypeId="738a0611-ef6f-475f-a709-94eb50139586"/>
+    </producedTypes>
+    <name>УдалитьСертификатыШифрования</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Сертификаты шифрования</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Хранение сертификатов шифрования</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="91f4dbf9-d539-4239-a95d-c1d9e14e50f8">
+      <name>Отпечаток</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отпечаток</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>28</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Отпечаток сертификата (служебное поле)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="577e5fea-b792-4c8b-b3b3-a03a14b64b04">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Представление</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Владелец сертификата (фамилия имя, организация, должность)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ba5ec2d6-1791-42b5-8e6f-04d1d18e9469">
+      <name>Сертификат</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сертификат</value>
+      </synonym>
+      <type>
+        <types>ValueStorage</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Двоичные данные сертификата (служебное поле)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
   <tabularSections uuid="2d66502d-77ab-4cc9-9ccf-5433458fae9f">
     <producedTypes>
       <objectType typeId="1b7212d4-9fe7-4c96-a6a3-1c96923226e8" valueTypeId="ba1c67fe-ded1-4324-b58a-1ccc00144598"/>
@@ -746,86 +826,6 @@
       <toolTip>
         <key>ru</key>
         <value>Результат последней проверки подписи.</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
-  <tabularSections uuid="98e3aace-52a6-4911-8205-92165adca6de">
-    <producedTypes>
-      <objectType typeId="8763e6e8-0159-4f1a-a671-d95c047fa9ae" valueTypeId="7dce171c-94f1-4bb0-9056-95f57547f7ab"/>
-      <rowType typeId="8ded4f48-a161-4e42-ab02-152d1193bc11" valueTypeId="738a0611-ef6f-475f-a709-94eb50139586"/>
-    </producedTypes>
-    <name>УдалитьСертификатыШифрования</name>
-    <synonym>
-      <key>ru</key>
-      <value>(не используется) Сертификаты шифрования</value>
-    </synonym>
-    <toolTip>
-      <key>ru</key>
-      <value>Хранение сертификатов шифрования</value>
-    </toolTip>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="91f4dbf9-d539-4239-a95d-c1d9e14e50f8">
-      <name>Отпечаток</name>
-      <synonym>
-        <key>ru</key>
-        <value>Отпечаток</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>28</length>
-        </stringQualifiers>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Отпечаток сертификата (служебное поле)</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="577e5fea-b792-4c8b-b3b3-a03a14b64b04">
-      <name>Представление</name>
-      <synonym>
-        <key>ru</key>
-        <value>Представление</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers/>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Владелец сертификата (фамилия имя, организация, должность)</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="ba5ec2d6-1791-42b5-8e6f-04d1d18e9469">
-      <name>Сертификат</name>
-      <synonym>
-        <key>ru</key>
-        <value>Сертификат</value>
-      </synonym>
-      <type>
-        <types>ValueStorage</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Двоичные данные сертификата (служебное поле)</value>
       </toolTip>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

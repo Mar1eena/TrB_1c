@@ -52,27 +52,6 @@
     <key>ru</key>
     <value>Используется для хранения информации состояния последней итерации обмена данными.</value>
   </explanation>
-  <resources uuid="45d61391-4cf7-4f45-8775-ada582c42400">
-    <name>РезультатВыполненияОбмена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Результат выполнения обмена</value>
-    </synonym>
-    <type>
-      <types>EnumRef.РезультатыВыполненияОбмена</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Результат выполнения действия обмена данными.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.РезультатыВыполненияОбмена.EmptyRef</value>
-    </fillValue>
-  </resources>
   <resources uuid="78b2a913-2ab9-455d-85a3-504f0f468468">
     <name>ДатаНачала</name>
     <synonym>
@@ -112,6 +91,27 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="45d61391-4cf7-4f45-8775-ada582c42400">
+    <name>РезультатВыполненияОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат выполнения обмена</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РезультатыВыполненияОбмена</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Результат выполнения действия обмена данными.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.РезультатыВыполненияОбмена.EmptyRef</value>
+    </fillValue>
   </resources>
   <dimensions uuid="560b5b12-4dee-4c69-ab6b-7680757a2797">
     <name>УзелИнформационнойБазы</name>

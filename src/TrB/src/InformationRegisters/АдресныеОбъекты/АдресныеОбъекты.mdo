@@ -50,6 +50,48 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="8ce1e84a-9e69-4a75-9c3e-481ba3b5eaae">
+    <name>ДополнительныеАдресныеСведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные адресные сведения</value>
+    </synonym>
+    <comment>Служебный идентификатор комбинации кодов ОКАТО и т.п.</comment>
+    <type>
+      <types>UUID</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Служебный идентификатор комбинации кодов ОКАТО, ОКТМО и т.п.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="59561ccb-5412-4f8a-8961-3d43639e4742">
+    <name>КодКЛАДР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код КЛАДР</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>17</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Код адресного объекта в КЛАДР</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="ba6e2356-8b0e-4af6-9941-3b808e17c570">
     <name>Наименование</name>
     <synonym>
@@ -93,48 +135,6 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
-  </attributes>
-  <attributes uuid="59561ccb-5412-4f8a-8961-3d43639e4742">
-    <name>КодКЛАДР</name>
-    <synonym>
-      <key>ru</key>
-      <value>Код КЛАДР</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>17</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Код адресного объекта в КЛАДР</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="8ce1e84a-9e69-4a75-9c3e-481ba3b5eaae">
-    <name>ДополнительныеАдресныеСведения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дополнительные адресные сведения</value>
-    </synonym>
-    <comment>Служебный идентификатор комбинации кодов ОКАТО и т.п.</comment>
-    <type>
-      <types>UUID</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Служебный идентификатор комбинации кодов ОКАТО, ОКТМО и т.п.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <attributes uuid="0ec665f2-bbde-4e41-8cd0-2578253ecdf3">
     <name>Уровень</name>
@@ -247,19 +247,19 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="a22ba49d-7a11-4dc7-8b0e-874da6f0874d">
-    <name>КлассификаторСубъектовРФ</name>
-    <synonym>
-      <key>ru</key>
-      <value>Классификатор субъектов РФ</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
   <templates uuid="888e5183-a152-435f-b105-6b924e0d4f4f">
     <name>АдресныеСокращения</name>
     <synonym>
       <key>ru</key>
       <value>Адресные сокращения</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a22ba49d-7a11-4dc7-8b0e-874da6f0874d">
+    <name>КлассификаторСубъектовРФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор субъектов РФ</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
@@ -273,21 +273,21 @@
     <commandParameterType/>
     <representation>Auto</representation>
   </commands>
-  <commands uuid="6d4e26f4-4cc4-4445-ad7b-547cd0afc750">
-    <name>ПодключитьИнтернетПоддержку</name>
-    <synonym>
-      <key>ru</key>
-      <value>Подключить интернет-поддержку</value>
-    </synonym>
-    <group>NavigationPanelOrdinary</group>
-    <commandParameterType/>
-    <representation>Auto</representation>
-  </commands>
   <commands uuid="5736ef36-69eb-4406-a98e-1e4b4227a10d">
     <name>ОчиститьАдресныйКлассификатор</name>
     <synonym>
       <key>ru</key>
       <value>Очистить адресный классификатор</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="6d4e26f4-4cc4-4445-ad7b-547cd0afc750">
+    <name>ПодключитьИнтернетПоддержку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключить интернет-поддержку</value>
     </synonym>
     <group>NavigationPanelOrdinary</group>
     <commandParameterType/>

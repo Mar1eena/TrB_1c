@@ -160,25 +160,6 @@
     <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="db497857-33d3-49a1-b328-dfc62c973ecb">
-    <name>ПоставляемыйПрофильИзменен</name>
-    <synonym>
-      <key>ru</key>
-      <value>Поставляемый профиль изменен</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Флажок установлен Истина, когда профиль групп доступа является поставляемым и был изменен администратором по сравнению с поставкой</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="139c001c-7b07-465a-9187-399ad32d294f">
     <name>Комментарий</name>
     <synonym>
@@ -202,46 +183,25 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <tabularSections uuid="5d228ce4-069e-4f98-beed-b8e1de17c3d9">
-    <producedTypes>
-      <objectType typeId="926989ac-849e-47f4-9491-3c7dc717d42c" valueTypeId="e47fdad6-6a00-4db3-8ba8-ecd6cb388e6d"/>
-      <rowType typeId="8a8d4fab-b7f3-482f-b7bf-9d51cb486e4f" valueTypeId="9ab86c34-1190-4dda-b1f6-03d5fa52df14"/>
-    </producedTypes>
-    <name>Роли</name>
+  <attributes uuid="db497857-33d3-49a1-b328-dfc62c973ecb">
+    <name>ПоставляемыйПрофильИзменен</name>
     <synonym>
       <key>ru</key>
-      <value>Роли</value>
+      <value>Поставляемый профиль изменен</value>
     </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="9770fc09-87bf-4fce-9b0d-410efd30edae">
-      <name>Роль</name>
-      <synonym>
-        <key>ru</key>
-        <value>Роль</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ИдентификаторыОбъектовРасширений</types>
-        <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Разрешенное действие (роль), заданное для профиля групп доступа</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флажок установлен Истина, когда профиль групп доступа является поставляемым и был изменен администратором по сравнению с поставкой</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="3d73d5ff-995e-40ed-a401-cec2a3d12c8f">
     <producedTypes>
       <objectType typeId="4386d851-6b14-42f0-b1d2-0f7834b5ed74" valueTypeId="80fc5a3b-610b-4176-91c2-af81a5fa95a2"/>
@@ -432,25 +392,51 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <forms uuid="56177464-5e9f-4598-96bc-eb311993c503">
-    <name>ФормаЭлемента</name>
+  <tabularSections uuid="5d228ce4-069e-4f98-beed-b8e1de17c3d9">
+    <producedTypes>
+      <objectType typeId="926989ac-849e-47f4-9491-3c7dc717d42c" valueTypeId="e47fdad6-6a00-4db3-8ba8-ecd6cb388e6d"/>
+      <rowType typeId="8a8d4fab-b7f3-482f-b7bf-9d51cb486e4f" valueTypeId="9ab86c34-1190-4dda-b1f6-03d5fa52df14"/>
+    </producedTypes>
+    <name>Роли</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Роли</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="c2308e60-2844-4bd8-bc8a-c9c20e5fc62d">
-    <name>ФормаСписка</name>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="9770fc09-87bf-4fce-9b0d-410efd30edae">
+      <name>Роль</name>
+      <synonym>
+        <key>ru</key>
+        <value>Роль</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИдентификаторыОбъектовРасширений</types>
+        <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Разрешенное действие (роль), заданное для профиля групп доступа</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="5271de2d-d3a0-4128-90e0-cd8e1ea2ad30">
+    <name>ФормаВыбораГруппы</name>
     <synonym>
       <key>ru</key>
-      <value>Форма списка</value>
+      <value>Форма выбора группы</value>
     </synonym>
     <help>
       <pages>
@@ -474,11 +460,25 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="5271de2d-d3a0-4128-90e0-cd8e1ea2ad30">
-    <name>ФормаВыбораГруппы</name>
+  <forms uuid="c2308e60-2844-4bd8-bc8a-c9c20e5fc62d">
+    <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора группы</value>
+      <value>Форма списка</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="56177464-5e9f-4598-96bc-eb311993c503">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
     </synonym>
     <help>
       <pages>

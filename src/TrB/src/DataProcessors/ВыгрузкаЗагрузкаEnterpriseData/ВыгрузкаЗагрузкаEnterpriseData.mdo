@@ -20,6 +20,137 @@
     <key>ru</key>
     <value>Выгрузка загрузка данных EnterpriseData</value>
   </extendedPresentation>
+  <attributes uuid="11e708d8-82f4-4d45-a77d-7b9d23c0ef54">
+    <name>АдресКомпоновщикаВсехДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес компоновщика всех документов</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес компоновщика всех документов (служебный)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="dbc1bf11-e92a-4f4e-90d4-6a3ccdaec7e5">
+    <name>АдресХранилищаФормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес хранилища формы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес хранилища формы (служебный)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ddd2861c-592b-4879-b9de-4b05a22c0b43">
+    <name>ВерсияФормата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия формата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Версия формата для выгрузки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="29ec9423-25ef-4cf2-ad6a-58f854c3e22b">
+    <name>ДополнительнаяРегистрация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительная регистрация</value>
+    </synonym>
+    <comment>Таблица дополнительной регистрации</comment>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Таблица объектов подлежащих дополнительной регистрации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="68447105-a784-4803-8eb8-3701b0fc819d">
+    <name>ИсточникВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник выгрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Источник выгрузки (текст либо файл)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8a57d427-a34e-4121-84e6-1a86a9f9092d">
+    <name>КомпоновщикОтбораВсехДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоновщик отбора всех документов</value>
+    </synonym>
+    <type>
+      <types>DataCompositionSettingsComposer</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Компоновщик отбора всех документов (служебный)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ca47123d-90f5-4d1d-be06-34b505b01d81">
+    <name>ЛогироватьВыгрузкуОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логировать выгрузку объектов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8fe71bce-a61a-4a2e-bd18-81c7a7bb4456">
+    <name>ПериодОтбораВсехДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период отбора всех документов</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Указанный отбор по периоду будет применен ко всем выбранным документам.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="8bc4bece-027f-460c-ade0-d7c7d3d9a6b7">
     <name>ПутьКМенеджеруОбменаВыгрузки</name>
     <synonym>
@@ -54,6 +185,19 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="ec892726-dee3-4edb-ad71-020404b09477">
+    <name>РасширениеФормата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширение формата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="11a93e3a-3c5b-4242-913c-02474a383344">
     <name>РезультатВыгрузкиXDTO</name>
     <synonym>
@@ -67,122 +211,6 @@
     <toolTip>
       <key>ru</key>
       <value>Результат выгрузки при выгрузке в текст</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="ddd2861c-592b-4879-b9de-4b05a22c0b43">
-    <name>ВерсияФормата</name>
-    <synonym>
-      <key>ru</key>
-      <value>Версия формата</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Версия формата для выгрузки</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="5b383021-a800-4f0b-b8a3-d344389bff6c">
-    <name>УзелОбмена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Узел обмена</value>
-    </synonym>
-    <type>
-      <types>ExchangePlanRef</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>При указании узла будут выгружены зарегистрированные на узле изменения</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="8fe71bce-a61a-4a2e-bd18-81c7a7bb4456">
-    <name>ПериодОтбораВсехДокументов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Период отбора всех документов</value>
-    </synonym>
-    <type>
-      <types>StandardPeriod</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Указанный отбор по периоду будет применен ко всем выбранным документам.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="11e708d8-82f4-4d45-a77d-7b9d23c0ef54">
-    <name>АдресКомпоновщикаВсехДокументов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Адрес компоновщика всех документов</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Адрес компоновщика всех документов (служебный)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="8a57d427-a34e-4121-84e6-1a86a9f9092d">
-    <name>КомпоновщикОтбораВсехДокументов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Компоновщик отбора всех документов</value>
-    </synonym>
-    <type>
-      <types>DataCompositionSettingsComposer</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Компоновщик отбора всех документов (служебный)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="dbc1bf11-e92a-4f4e-90d4-6a3ccdaec7e5">
-    <name>АдресХранилищаФормы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Адрес хранилища формы</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Адрес хранилища формы (служебный)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="29ec9423-25ef-4cf2-ad6a-58f854c3e22b">
-    <name>ДополнительнаяРегистрация</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дополнительная регистрация</value>
-    </synonym>
-    <comment>Таблица дополнительной регистрации</comment>
-    <type>
-      <types>ValueTable</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Таблица объектов подлежащих дополнительной регистрации</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -219,59 +247,22 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="68447105-a784-4803-8eb8-3701b0fc819d">
-    <name>ИсточникВыгрузки</name>
+  <attributes uuid="5b383021-a800-4f0b-b8a3-d344389bff6c">
+    <name>УзелОбмена</name>
     <synonym>
       <key>ru</key>
-      <value>Источник выгрузки</value>
+      <value>Узел обмена</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>20</length>
-      </stringQualifiers>
+      <types>ExchangePlanRef</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Источник выгрузки (текст либо файл)</value>
+      <value>При указании узла будут выгружены зарегистрированные на узле изменения</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="ec892726-dee3-4edb-ad71-020404b09477">
-    <name>РасширениеФормата</name>
-    <synonym>
-      <key>ru</key>
-      <value>Расширение формата</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="ca47123d-90f5-4d1d-be06-34b505b01d81">
-    <name>ЛогироватьВыгрузкуОбъектов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Логировать выгрузку объектов</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <forms uuid="5fb5320c-cd7c-4f28-ad6a-8670a60a9e11">
-    <name>Форма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="59dee70d-aeca-470a-b3c4-e43bb16c5753">
     <name>РедактированиеПериодаИОтбора</name>
     <synonym>
@@ -283,6 +274,15 @@
         <lang>ru</lang>
       </pages>
     </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5fb5320c-cd7c-4f28-ad6a-8670a60a9e11">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

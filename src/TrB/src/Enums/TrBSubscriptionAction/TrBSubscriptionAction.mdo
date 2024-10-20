@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e662412-c470-4780-8069-697e816c5cf1">
+  <producedTypes>
+    <refType typeId="51dfee77-6fac-41e3-965f-4cc595407661" valueTypeId="3d753cc2-55b4-4485-9e87-091dbfd2a88d"/>
+    <listType typeId="6721ddbe-d485-4e5c-a672-3c898c6b06d7" valueTypeId="1a5a513f-a434-4d9d-922e-d1f9b50356e4"/>
+    <managerType typeId="ee3f3176-7c9b-4b66-b20b-f16294760de5" valueTypeId="69cc300d-ed83-4c0f-be74-b2bf780f3da6"/>
+  </producedTypes>
+  <name>TrBSubscriptionAction</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип операции со списком подписок</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

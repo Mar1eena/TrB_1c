@@ -250,20 +250,6 @@
     </attributes>
     <use>ForFolderAndItem</use>
   </tabularSections>
-  <forms uuid="3fd4bc77-2a1b-4750-a54a-4171c8d40027">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="5b27fde9-fa80-48b1-aea1-73e132b9a944">
     <name>ФормаГруппы</name>
     <synonym>
@@ -284,6 +270,20 @@
       <key>ru</key>
       <value>Форма списка</value>
     </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3fd4bc77-2a1b-4750-a54a-4171c8d40027">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

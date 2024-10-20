@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="206f3b9a-dc0b-463b-a6be-a9e3cd0800d0">
+  <producedTypes>
+    <refType typeId="ef5ecd00-393c-450b-89b9-1c932d69d4c4" valueTypeId="49de7aad-f6cc-4fd5-b165-91da706ada6c"/>
+    <listType typeId="6b940f2d-b59b-4ae7-9ab5-45b6575fd15a" valueTypeId="8eeffb66-a3d8-4ee8-a2c6-56e21b8f1509"/>
+    <managerType typeId="411ae3ab-e727-4cb9-a536-458289aeaf54" valueTypeId="8ac064a9-250e-45b1-9ed9-583bfe9f5440"/>
+  </producedTypes>
+  <name>TrBOptionPaymentType</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип расчетов по опциону</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

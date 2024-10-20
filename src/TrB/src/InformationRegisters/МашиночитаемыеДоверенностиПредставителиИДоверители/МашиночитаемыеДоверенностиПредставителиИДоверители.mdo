@@ -64,11 +64,66 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <attributes uuid="c496cc40-f9cb-4334-80a1-d4ff98d58798">
+    <name>НаименованиеОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование организации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
   <attributes uuid="222fdf9c-7bfe-4f81-ae59-3c6309754d43">
     <name>Организация</name>
     <synonym>
       <key>ru</key>
       <value>Организация</value>
+    </synonym>
+    <type>
+      <types>DefinedType.СторонаМЧД</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="22855103-c30a-4da1-aa25-6295e3f1f145">
+    <name>РегистрационныйНомерФилиала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрационный номер филиала</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="0cee4741-eadb-4dfa-8993-fcb514acd2cd">
+    <name>УправляющаяКомпания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Управляющая компания</value>
     </synonym>
     <type>
       <types>DefinedType.СторонаМЧД</types>
@@ -94,41 +149,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="0cee4741-eadb-4dfa-8993-fcb514acd2cd">
-    <name>УправляющаяКомпания</name>
-    <synonym>
-      <key>ru</key>
-      <value>Управляющая компания</value>
-    </synonym>
-    <type>
-      <types>DefinedType.СторонаМЧД</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="c496cc40-f9cb-4334-80a1-d4ff98d58798">
-    <name>НаименованиеОрганизации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Наименование организации</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>1000</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </attributes>
   <attributes uuid="a4d1aa8f-d4e9-48df-a194-4d05f21084c8">
     <name>ФИО</name>
     <synonym>
@@ -148,56 +168,6 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
-  </attributes>
-  <attributes uuid="22855103-c30a-4da1-aa25-6295e3f1f145">
-    <name>РегистрационныйНомерФилиала</name>
-    <synonym>
-      <key>ru</key>
-      <value>Регистрационный номер филиала</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </attributes>
-  <attributes uuid="80a7a699-6633-4109-a78d-d86f50d9f922">
-    <name>ЭтоКонтрагент</name>
-    <synonym>
-      <key>ru</key>
-      <value>Это контрагент</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="7e26e712-cd36-4773-abae-21fe999a197f">
-    <name>ЭтоФизическоеЛицо</name>
-    <synonym>
-      <key>ru</key>
-      <value>Это физическое лицо</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <attributes uuid="bd676e43-b35a-41e0-83a9-8a9da8778f8e">
     <name>ЭтоИндивидуальныйПредприниматель</name>
@@ -219,6 +189,36 @@
     <synonym>
       <key>ru</key>
       <value>Это иностранная организация</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="80a7a699-6633-4109-a78d-d86f50d9f922">
+    <name>ЭтоКонтрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это контрагент</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7e26e712-cd36-4773-abae-21fe999a197f">
+    <name>ЭтоФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это физическое лицо</value>
     </synonym>
     <type>
       <types>Boolean</types>

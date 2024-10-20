@@ -168,98 +168,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <tabularSections uuid="798fd445-d02e-4e97-890a-0283f33317cf">
-    <producedTypes>
-      <objectType typeId="4de54ae8-52e1-4f8e-b758-0a2570acf143" valueTypeId="9ce99a91-b6bc-4ce0-a698-86e66d657656"/>
-      <rowType typeId="62459cd9-147a-42fc-8bfc-755982f95497" valueTypeId="e048fb2b-4da9-4b01-b5e7-07527287a47e"/>
-    </producedTypes>
-    <name>ТаблицаНеутвержденныхСвязей</name>
-    <synonym>
-      <key>ru</key>
-      <value>Таблица неутвержденных связей</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="095583ca-010d-43ad-8c7a-8938fa4cb761">
-      <name>УникальныйИдентификаторПриемника</name>
-      <synonym>
-        <key>ru</key>
-        <value>Уникальный идентификатор приемника</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>36</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:StringValue">
-        <value></value>
-      </fillValue>
-    </attributes>
-    <attributes uuid="178d210c-e847-4805-a8d4-31acdf4983af">
-      <name>УникальныйИдентификаторИсточника</name>
-      <synonym>
-        <key>ru</key>
-        <value>Уникальный идентификатор источника</value>
-      </synonym>
-      <type>
-        <types>BusinessProcessRef</types>
-        <types>DocumentRef</types>
-        <types>ChartOfCalculationTypesRef</types>
-        <types>TaskRef</types>
-        <types>ChartOfCharacteristicTypesRef</types>
-        <types>ChartOfAccountsRef</types>
-        <types>CatalogRef</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
-    </attributes>
-    <attributes uuid="aa214d9f-23b1-4996-8a43-9010dceeb53d">
-      <name>ТипИсточника</name>
-      <synonym>
-        <key>ru</key>
-        <value>Тип источника</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>150</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:StringValue">
-        <value></value>
-      </fillValue>
-    </attributes>
-    <attributes uuid="26a5527e-dc2b-45a4-a51c-b1dfb31fa8a2">
-      <name>ТипПриемника</name>
-      <synonym>
-        <key>ru</key>
-        <value>Тип приемника</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>150</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:StringValue">
-        <value></value>
-      </fillValue>
-    </attributes>
-  </tabularSections>
   <tabularSections uuid="aefc3149-90ee-4ccc-8fb6-b1f6096237f6">
     <producedTypes>
       <objectType typeId="5e4bc881-f60a-419e-b3fa-d07d111541d0" valueTypeId="ad21b351-ecc5-49cb-9cf3-b78704f54685"/>
@@ -560,6 +468,98 @@
       <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
   </tabularSections>
+  <tabularSections uuid="798fd445-d02e-4e97-890a-0283f33317cf">
+    <producedTypes>
+      <objectType typeId="4de54ae8-52e1-4f8e-b758-0a2570acf143" valueTypeId="9ce99a91-b6bc-4ce0-a698-86e66d657656"/>
+      <rowType typeId="62459cd9-147a-42fc-8bfc-755982f95497" valueTypeId="e048fb2b-4da9-4b01-b5e7-07527287a47e"/>
+    </producedTypes>
+    <name>ТаблицаНеутвержденныхСвязей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица неутвержденных связей</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="095583ca-010d-43ad-8c7a-8938fa4cb761">
+      <name>УникальныйИдентификаторПриемника</name>
+      <synonym>
+        <key>ru</key>
+        <value>Уникальный идентификатор приемника</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="178d210c-e847-4805-a8d4-31acdf4983af">
+      <name>УникальныйИдентификаторИсточника</name>
+      <synonym>
+        <key>ru</key>
+        <value>Уникальный идентификатор источника</value>
+      </synonym>
+      <type>
+        <types>BusinessProcessRef</types>
+        <types>DocumentRef</types>
+        <types>ChartOfCalculationTypesRef</types>
+        <types>TaskRef</types>
+        <types>ChartOfCharacteristicTypesRef</types>
+        <types>ChartOfAccountsRef</types>
+        <types>CatalogRef</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="aa214d9f-23b1-4996-8a43-9010dceeb53d">
+      <name>ТипИсточника</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип источника</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="26a5527e-dc2b-45a4-a51c-b1dfb31fa8a2">
+      <name>ТипПриемника</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип приемника</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
   <tabularSections uuid="fca6b230-a38e-4791-9cc5-3d215f79dc6f">
     <producedTypes>
       <objectType typeId="7e4a42ef-1c93-42df-8797-5dd26f745d43" valueTypeId="b6165ef6-951a-4ba9-a61b-033123a93eaf"/>
@@ -621,20 +621,11 @@
       <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
   </tabularSections>
-  <forms uuid="97cc84c6-3565-474c-a028-83acb5390446">
-    <name>Форма</name>
+  <forms uuid="1dcec107-9d5f-4b69-ad65-cc4cb1f27a9c">
+    <name>НастройкаАвтоматическогоСопоставления</name>
     <synonym>
       <key>ru</key>
-      <value>Форма</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="9bf07c3e-7fdf-4a4f-ab00-98c7668349bd">
-    <name>ФормаВыбораСвязиСопоставления</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма выбора связи сопоставления</value>
+      <value>Настройка автоматического сопоставления</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -657,15 +648,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="1dcec107-9d5f-4b69-ad65-cc4cb1f27a9c">
-    <name>НастройкаАвтоматическогоСопоставления</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройка автоматического сопоставления</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="b366d7eb-626c-4c0c-b4cc-c392763e6e94">
     <name>НастройкаСортировки</name>
     <synonym>
@@ -680,6 +662,24 @@
     <synonym>
       <key>ru</key>
       <value>Результат автоматического сопоставления</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="97cc84c6-3565-474c-a028-83acb5390446">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9bf07c3e-7fdf-4a4f-ab00-98c7668349bd">
+    <name>ФормаВыбораСвязиСопоставления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора связи сопоставления</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

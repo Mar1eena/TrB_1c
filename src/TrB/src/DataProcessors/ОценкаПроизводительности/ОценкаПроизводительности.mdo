@@ -17,6 +17,43 @@
       <lang>ru</lang>
     </pages>
   </help>
+  <attributes uuid="891194d9-9f02-4b22-89cd-941181c83ecb">
+    <name>ВариантФильтраКомментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант фильтра комментарий</value>
+    </synonym>
+    <comment>Вариант отбора комментариев при расчете производительности</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вариант сравнения строки комментария</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a4d3b738-9ae3-46a9-ac21-7ac3d081c727">
+    <name>ВыполнятьЗамерыПроизводительности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнять замеры производительности</value>
+    </synonym>
+    <comment>Включение подсистемы &quot;Оценка производительности&quot;</comment>
+    <type>
+      <types>ConstantsSet</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Включает запись замеров производительности</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="e20593fd-b3e3-41d2-8c8d-97b5d6148fa4">
     <name>ДатаНачала</name>
     <synonym>
@@ -67,21 +104,22 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="667de710-cee5-4a97-8434-641d199f3b68">
-    <name>Шаг</name>
+  <attributes uuid="2e459a7c-c448-4db4-ae21-e59646527030">
+    <name>Комментарий</name>
     <synonym>
       <key>ru</key>
-      <value>Шаг</value>
+      <value>Комментарий</value>
     </synonym>
+    <comment>Значение комментария для отбора замеров</comment>
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>6</length>
+        <length>256</length>
       </stringQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Интервал времени между точками диаграммы</value>
+      <value>Комментарий, по которому будут отбираться замеры производительности при расчете APDEX</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -106,59 +144,21 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="2e459a7c-c448-4db4-ae21-e59646527030">
-    <name>Комментарий</name>
+  <attributes uuid="667de710-cee5-4a97-8434-641d199f3b68">
+    <name>Шаг</name>
     <synonym>
       <key>ru</key>
-      <value>Комментарий</value>
+      <value>Шаг</value>
     </synonym>
-    <comment>Значение комментария для отбора замеров</comment>
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>256</length>
+        <length>6</length>
       </stringQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Комментарий, по которому будут отбираться замеры производительности при расчете APDEX</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="891194d9-9f02-4b22-89cd-941181c83ecb">
-    <name>ВариантФильтраКомментарий</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вариант фильтра комментарий</value>
-    </synonym>
-    <comment>Вариант отбора комментариев при расчете производительности</comment>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>20</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Вариант сравнения строки комментария</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="a4d3b738-9ae3-46a9-ac21-7ac3d081c727">
-    <name>ВыполнятьЗамерыПроизводительности</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выполнять замеры производительности</value>
-    </synonym>
-    <comment>Включение подсистемы &quot;Оценка производительности&quot;</comment>
-    <type>
-      <types>ConstantsSet</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Включает запись замеров производительности</value>
+      <value>Интервал времени между точками диаграммы</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -261,20 +261,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="af6bccbb-a6cb-41ee-bc4e-f2d6a5e0f419">
-    <name>ЭкспортЗамеровПроизводительности</name>
-    <synonym>
-      <key>ru</key>
-      <value>Экспорт замеров производительности</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="d08679db-f83f-476e-b8c4-f3f52c3cf6fd">
     <name>ИмпортЗамеровПроизводительности</name>
     <synonym>
@@ -303,31 +289,35 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <commands uuid="e0227e4b-be22-4614-8980-5d573fae705d">
-    <name>НастройкиОценкиПроизводительности</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройки оценки производительности</value>
-    </synonym>
-    <group>ActionsPanelTools</group>
-    <commandParameterType/>
-    <representation>Auto</representation>
-  </commands>
-  <commands uuid="7a7b7882-a4c1-40c8-a807-cb2d71d054cc">
+  <forms uuid="af6bccbb-a6cb-41ee-bc4e-f2d6a5e0f419">
     <name>ЭкспортЗамеровПроизводительности</name>
     <synonym>
       <key>ru</key>
       <value>Экспорт замеров производительности</value>
     </synonym>
-    <group>ActionsPanelTools</group>
-    <commandParameterType/>
-    <representation>Auto</representation>
-  </commands>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <commands uuid="6f36007b-04dc-4007-abf7-e20fbd126b97">
     <name>ИмпортЗамеровПроизводительности</name>
     <synonym>
       <key>ru</key>
       <value>Импорт замеров производительности</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="e0227e4b-be22-4614-8980-5d573fae705d">
+    <name>НастройкиОценкиПроизводительности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки оценки производительности</value>
     </synonym>
     <group>ActionsPanelTools</group>
     <commandParameterType/>
@@ -343,6 +333,16 @@
     <commandParameterType>
       <types>CatalogRef.КлючевыеОперации</types>
     </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="7a7b7882-a4c1-40c8-a807-cb2d71d054cc">
+    <name>ЭкспортЗамеровПроизводительности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экспорт замеров производительности</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
     <representation>Auto</representation>
   </commands>
 </mdclass:DataProcessor>

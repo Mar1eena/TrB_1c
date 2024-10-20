@@ -20,6 +20,15 @@
     <key>ru</key>
     <value>Поиск и удаление дублирующихся элементов произвольных справочников</value>
   </explanation>
+  <forms uuid="ea84021d-2431-44ad-a446-f1fb979c9e96">
+    <name>ОбластьПоискаДублей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Область поиска дублей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="06abad33-2d69-4e8b-a16c-8aa0d4422d5a">
     <name>ПоискДублей</name>
     <synonym>
@@ -40,15 +49,6 @@
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="ea84021d-2431-44ad-a446-f1fb979c9e96">
-    <name>ОбластьПоискаДублей</name>
-    <synonym>
-      <key>ru</key>
-      <value>Область поиска дублей</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

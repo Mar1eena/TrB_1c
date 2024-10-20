@@ -245,6 +245,29 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="e2cf5ca9-c2a0-4506-89e6-318cad0a48a3">
+    <name>ИДФайлаЭлектронногоПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор файла электронного письма</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор файла электронного письма. Используются в случае когда тело письма в формате HTML, а картинки, предназначенные для отображения в теле письма хранятся в присоединенных файлах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="e770e26e-a3a4-487d-b3bb-aeb63d8b7323">
     <name>Изменил</name>
     <synonym>
@@ -525,29 +548,6 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="e2cf5ca9-c2a0-4506-89e6-318cad0a48a3">
-    <name>ИДФайлаЭлектронногоПисьма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Идентификатор файла электронного письма</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>200</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Идентификатор файла электронного письма. Используются в случае когда тело письма в формате HTML, а картинки, предназначенные для отображения в теле письма хранятся в присоединенных файлах</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="aa0e290d-21ab-4197-b8f3-cf1f97ab1b98">
     <name>ХранитьВерсии</name>
     <synonym>
@@ -587,6 +587,86 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <tabularSections uuid="a583e53a-3f3c-48c7-8928-37ce40b2bafe">
+    <producedTypes>
+      <objectType typeId="946fa1d5-c10e-4684-8798-85333aaa48fd" valueTypeId="d340c16c-6b3d-4db4-ad64-962247052a13"/>
+      <rowType typeId="d3584d22-0cec-43c5-9ca4-534fe6b87af2" valueTypeId="a61bda21-8119-4b30-8548-0220974229cc"/>
+    </producedTypes>
+    <name>УдалитьСертификатыШифрования</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Сертификаты шифрования</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Хранение сертификатов шифрования</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="a844dd4a-274a-4894-9446-031dbe006084">
+      <name>Отпечаток</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отпечаток</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>28</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Отпечаток сертификата (служебное поле)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="9a740f81-5437-47af-8ed9-ea62edcb2ea1">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Представление</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Владелец сертификата (фамилия имя, организация, должность)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cdf54c86-0a1c-4f74-93ee-6d8d8db0a778">
+      <name>Сертификат</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сертификат</value>
+      </synonym>
+      <type>
+        <types>ValueStorage</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Двоичные данные сертификата (служебное поле)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
   <tabularSections uuid="5aecdfd1-1cd7-4523-be23-7e32fcb01a94">
     <producedTypes>
       <objectType typeId="60f9d73d-b399-4dd0-bb8e-dcfc7fe846a0" valueTypeId="12a9705a-3732-49d1-bda1-6bd85ea6f287"/>
@@ -788,86 +868,6 @@
       <toolTip>
         <key>ru</key>
         <value>Результат последней проверки подписи.</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
-  <tabularSections uuid="a583e53a-3f3c-48c7-8928-37ce40b2bafe">
-    <producedTypes>
-      <objectType typeId="946fa1d5-c10e-4684-8798-85333aaa48fd" valueTypeId="d340c16c-6b3d-4db4-ad64-962247052a13"/>
-      <rowType typeId="d3584d22-0cec-43c5-9ca4-534fe6b87af2" valueTypeId="a61bda21-8119-4b30-8548-0220974229cc"/>
-    </producedTypes>
-    <name>УдалитьСертификатыШифрования</name>
-    <synonym>
-      <key>ru</key>
-      <value>(не используется) Сертификаты шифрования</value>
-    </synonym>
-    <toolTip>
-      <key>ru</key>
-      <value>Хранение сертификатов шифрования</value>
-    </toolTip>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="a844dd4a-274a-4894-9446-031dbe006084">
-      <name>Отпечаток</name>
-      <synonym>
-        <key>ru</key>
-        <value>Отпечаток</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>28</length>
-        </stringQualifiers>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Отпечаток сертификата (служебное поле)</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="9a740f81-5437-47af-8ed9-ea62edcb2ea1">
-      <name>Представление</name>
-      <synonym>
-        <key>ru</key>
-        <value>Представление</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers/>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Владелец сертификата (фамилия имя, организация, должность)</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="cdf54c86-0a1c-4f74-93ee-6d8d8db0a778">
-      <name>Сертификат</name>
-      <synonym>
-        <key>ru</key>
-        <value>Сертификат</value>
-      </synonym>
-      <type>
-        <types>ValueStorage</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Двоичные данные сертификата (служебное поле)</value>
       </toolTip>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

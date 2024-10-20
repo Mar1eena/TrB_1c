@@ -16,6 +16,15 @@
       <lang>ru</lang>
     </pages>
   </help>
+  <forms uuid="3560f949-48f9-4fca-9fe2-81efc1ec0eee">
+    <name>ЗавершениеЗапросаРазрешений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершение запроса разрешений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="5079f17e-dfd6-43f4-83fa-6ac408e5bd3b">
     <name>ИнициализацияЗапросаРазрешений</name>
     <synonym>
@@ -53,11 +62,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="3560f949-48f9-4fca-9fe2-81efc1ec0eee">
-    <name>ЗавершениеЗапросаРазрешений</name>
+  <forms uuid="4fa11304-fbd4-4c90-909d-5024283a6868">
+    <name>ОткрытиеВнешнейОбработкиИлиОтчетаСВыборомБезопасногоРежима</name>
     <synonym>
       <key>ru</key>
-      <value>Завершение запроса разрешений</value>
+      <value>Открытие внешней обработки или отчета</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -67,15 +76,6 @@
     <synonym>
       <key>ru</key>
       <value>Форма</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="4fa11304-fbd4-4c90-909d-5024283a6868">
-    <name>ОткрытиеВнешнейОбработкиИлиОтчетаСВыборомБезопасногоРежима</name>
-    <synonym>
-      <key>ru</key>
-      <value>Открытие внешней обработки или отчета</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

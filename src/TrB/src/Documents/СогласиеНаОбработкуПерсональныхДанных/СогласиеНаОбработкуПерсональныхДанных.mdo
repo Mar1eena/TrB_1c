@@ -124,161 +124,6 @@
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
-  <attributes uuid="b08fd921-c3d6-44eb-9401-fec5acab5d22">
-    <name>Организация</name>
-    <synonym>
-      <key>ru</key>
-      <value>Организация</value>
-    </synonym>
-    <type>
-      <types>DefinedType.Организация</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Оператор персональных данных</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="f4f185af-5507-427c-b82b-515ea71f3fc1">
-    <name>НаименованиеОрганизации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Наименование организации</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Используется для размещения полного официального наименования организации  для вывода в печатные формы документов.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="1611855a-abf4-4269-aed3-3f78dce7bea5">
-    <name>ЮридическийАдресОрганизации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Юридический адрес организации</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>150</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Юридический адрес организации, используемый в официальных документах</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="c5bd277c-b258-43af-9c80-3e328b1581f5">
-    <name>ОтветственныйЗаОбработкуПерсональныхДанных</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ответственный за обработку персональных данных</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Пользователи</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Ответственный за обработку персональных данных в организации</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="96dac7e8-5113-4217-ac0a-fffea4acc410">
-    <name>ФИООтветственногоЗаОбработкуПДн</name>
-    <synonym>
-      <key>ru</key>
-      <value>ФИО ответственного</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>150</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Фамилия, имя и отчество ответственного за обработку ПДн</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="d6fa2b86-1c3b-4c14-8a66-b6dbd40bca19">
-    <name>Субъект</name>
-    <synonym>
-      <key>ru</key>
-      <value>Субъект</value>
-    </synonym>
-    <type>
-      <types>DefinedType.СубъектПерсональныхДанных</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Субъект, предоставляющий согласие на обработку персональных данных</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="f9cefef4-2182-42ca-93ef-b6a51d6555cc">
-    <name>ФИОСубъекта</name>
-    <synonym>
-      <key>ru</key>
-      <value>ФИО субъекта</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>150</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Фамилия, имя и отчество субъекта персональных данных</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="71e1c7de-7367-424c-ae07-6ec04b408b83">
     <name>АдресСубъекта</name>
     <synonym>
@@ -294,30 +139,6 @@
     <toolTip>
       <key>ru</key>
       <value>Адрес местонахождения субъекта</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="b3956392-199c-4934-80d1-8cdab453d879">
-    <name>ПаспортныеДанные</name>
-    <synonym>
-      <key>ru</key>
-      <value>Паспортные данные</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>500</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Реквизиты паспорта субъекта</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -350,24 +171,68 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="d1bd7448-aa5f-43fc-9735-224f36960c3e">
-    <name>СрокДействия</name>
+  <attributes uuid="6fa25c57-411d-4f9c-9c3e-c7ea1b1f7195">
+    <name>Комментарий</name>
     <synonym>
       <key>ru</key>
-      <value>Срок действия</value>
+      <value>Комментарий</value>
     </synonym>
     <type>
-      <types>Date</types>
-      <dateQualifiers>
-        <dateFractions>Date</dateFractions>
-      </dateQualifiers>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Дата, до которой будет действовать согласие. Если не указано, то до истечения срока обязательного хранения документов.</value>
+      <value>Произвольный текст</value>
+    </toolTip>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f4f185af-5507-427c-b82b-515ea71f3fc1">
+    <name>НаименованиеОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование организации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для размещения полного официального наименования организации  для вывода в печатные формы документов.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b08fd921-c3d6-44eb-9401-fec5acab5d22">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Организация</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Оператор персональных данных</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -391,21 +256,156 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="6fa25c57-411d-4f9c-9c3e-c7ea1b1f7195">
-    <name>Комментарий</name>
+  <attributes uuid="c5bd277c-b258-43af-9c80-3e328b1581f5">
+    <name>ОтветственныйЗаОбработкуПерсональныхДанных</name>
     <synonym>
       <key>ru</key>
-      <value>Комментарий</value>
+      <value>Ответственный за обработку персональных данных</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>CatalogRef.Пользователи</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Произвольный текст</value>
+      <value>Ответственный за обработку персональных данных в организации</value>
     </toolTip>
-    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b3956392-199c-4934-80d1-8cdab453d879">
+    <name>ПаспортныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Паспортные данные</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Реквизиты паспорта субъекта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d1bd7448-aa5f-43fc-9735-224f36960c3e">
+    <name>СрокДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата, до которой будет действовать согласие. Если не указано, то до истечения срока обязательного хранения документов.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d6fa2b86-1c3b-4c14-8a66-b6dbd40bca19">
+    <name>Субъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субъект</value>
+    </synonym>
+    <type>
+      <types>DefinedType.СубъектПерсональныхДанных</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Субъект, предоставляющий согласие на обработку персональных данных</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="96dac7e8-5113-4217-ac0a-fffea4acc410">
+    <name>ФИООтветственногоЗаОбработкуПДн</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФИО ответственного</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Фамилия, имя и отчество ответственного за обработку ПДн</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f9cefef4-2182-42ca-93ef-b6a51d6555cc">
+    <name>ФИОСубъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФИО субъекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Фамилия, имя и отчество субъекта персональных данных</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1611855a-abf4-4269-aed3-3f78dce7bea5">
+    <name>ЮридическийАдресОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Юридический адрес организации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Юридический адрес организации, используемый в официальных документах</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:StringValue">
@@ -510,12 +510,13 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <templates uuid="25864028-1a53-4a8d-b6e4-189fa62c62f5">
-    <name>ПФ_MXL_СогласиеНаОбработкуПерсональныхДанных</name>
+  <templates uuid="ecb7dd1b-46d6-46b5-a51f-699f068ad6a0">
+    <name>ПредупреждениеОбУведомленииРКН_ru</name>
     <synonym>
       <key>ru</key>
-      <value>Согласие на обработку персональных данных (табличный документ 1С:Предприятия)</value>
+      <value>Предупреждение об уведомлении РКН</value>
     </synonym>
+    <templateType>TextDocument</templateType>
   </templates>
   <templates uuid="e923beae-0bd8-4119-a802-fd6bfb729f10">
     <name>ПФ_DOC_СогласиеНаОбработкуПерсональныхДанных_ru</name>
@@ -525,12 +526,11 @@
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
-  <templates uuid="ecb7dd1b-46d6-46b5-a51f-699f068ad6a0">
-    <name>ПредупреждениеОбУведомленииРКН_ru</name>
+  <templates uuid="25864028-1a53-4a8d-b6e4-189fa62c62f5">
+    <name>ПФ_MXL_СогласиеНаОбработкуПерсональныхДанных</name>
     <synonym>
       <key>ru</key>
-      <value>Предупреждение об уведомлении РКН</value>
+      <value>Согласие на обработку персональных данных (табличный документ 1С:Предприятия)</value>
     </synonym>
-    <templateType>TextDocument</templateType>
   </templates>
 </mdclass:Document>

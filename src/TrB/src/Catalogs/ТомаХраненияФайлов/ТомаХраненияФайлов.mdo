@@ -127,6 +127,22 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.ТомаХраненияФайлов.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.ТомаХраненияФайлов.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="ec966ef2-b291-4937-a164-5c2b461871f8">
+    <name>ВремяПоследнейОчисткиФайлов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время последней очистки файлов</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="b04018b5-a74d-43c9-8519-6cc8aa23fe09">
     <name>Комментарий</name>
     <synonym>
@@ -241,33 +257,12 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="ec966ef2-b291-4937-a164-5c2b461871f8">
-    <name>ВремяПоследнейОчисткиФайлов</name>
+  <forms uuid="df81cc63-26f2-4e66-bf0b-fd083a6a7d7b">
+    <name>УдалениеЛишнихФайловИзТома</name>
     <synonym>
       <key>ru</key>
-      <value>Время последней очистки файлов</value>
+      <value>Удаление лишних файлов из тома</value>
     </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <forms uuid="db15f8eb-4736-4b47-9cee-3e6883f0888c">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -280,12 +275,17 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="df81cc63-26f2-4e66-bf0b-fd083a6a7d7b">
-    <name>УдалениеЛишнихФайловИзТома</name>
+  <forms uuid="db15f8eb-4736-4b47-9cee-3e6883f0888c">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Удаление лишних файлов из тома</value>
+      <value>Форма элемента</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

@@ -144,6 +144,25 @@
   <defaultObjectForm>Catalog.ГруппыВнешнихПользователей.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.ГруппыВнешнихПользователей.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.ГруппыВнешнихПользователей.Form.ФормаСписка</defaultChoiceForm>
+  <attributes uuid="d042687f-0725-4611-a868-f5b4f6a3a3a8">
+    <name>ВсеОбъектыАвторизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Все</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>В группу должны быть включены все участники указанного вида</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="b7b80237-d642-4c21-a9ee-64fc4ed20d2f">
     <name>Комментарий</name>
     <synonym>
@@ -167,25 +186,83 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="d042687f-0725-4611-a868-f5b4f6a3a3a8">
-    <name>ВсеОбъектыАвторизации</name>
+  <tabularSections uuid="82e8ac21-c2aa-47de-89ae-ea6cc10cc862">
+    <producedTypes>
+      <objectType typeId="53103a9a-6942-492b-81b3-fa4c6c8d41ec" valueTypeId="5339a6e7-abc3-4db4-9932-667aa100de2a"/>
+      <rowType typeId="1724b91a-a16a-4b87-a4fa-25ca611a36b5" valueTypeId="9c65e466-3be2-4048-8426-de42d4303150"/>
+    </producedTypes>
+    <name>Назначение</name>
     <synonym>
       <key>ru</key>
-      <value>Все</value>
+      <value>Назначение</value>
     </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="13b27ec3-2be9-4959-92e5-94ba7bb64f03">
+      <name>ТипПользователей</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип пользователей</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ВнешнийПользователь</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Пустая ссылка на допустимый тип объектов авторизации</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="f2f69644-80dc-4b5e-a208-ed1de131e25e">
+    <producedTypes>
+      <objectType typeId="b4b8dd32-5e8d-4ead-b036-25102e0e106f" valueTypeId="d639ee61-2ab2-4fb4-8c05-11b543c50f66"/>
+      <rowType typeId="fec37b75-719c-4946-84df-15e9afa2e406" valueTypeId="864d62ae-b376-4b62-9c15-e51292a033b9"/>
+    </producedTypes>
+    <name>Роли</name>
+    <synonym>
       <key>ru</key>
-      <value>В группу должны быть включены все участники указанного вида</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
+      <value>Роли</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="73060f72-6d08-47da-aac8-d4d2ed8f871c">
+      <name>Роль</name>
+      <synonym>
+        <key>ru</key>
+        <value>Роль</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Разрешенное действие (роль), заданное для группы внешних пользователей</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
   <tabularSections uuid="bb143340-7fff-49ef-b121-355c96613f78">
     <producedTypes>
       <objectType typeId="96f8e2c0-b32a-40e8-b1e4-18dbe3053e66" valueTypeId="4a538b33-b0e9-486d-bad9-56750c714214"/>
@@ -231,83 +308,15 @@
     </attributes>
     <use>ForFolderAndItem</use>
   </tabularSections>
-  <tabularSections uuid="f2f69644-80dc-4b5e-a208-ed1de131e25e">
-    <producedTypes>
-      <objectType typeId="b4b8dd32-5e8d-4ead-b036-25102e0e106f" valueTypeId="d639ee61-2ab2-4fb4-8c05-11b543c50f66"/>
-      <rowType typeId="fec37b75-719c-4946-84df-15e9afa2e406" valueTypeId="864d62ae-b376-4b62-9c15-e51292a033b9"/>
-    </producedTypes>
-    <name>Роли</name>
+  <forms uuid="6f6ef6ac-5bb7-41e4-b6d5-0f068e8cb176">
+    <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
-      <value>Роли</value>
+      <value>Форма списка</value>
     </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="73060f72-6d08-47da-aac8-d4d2ed8f871c">
-      <name>Роль</name>
-      <synonym>
-        <key>ru</key>
-        <value>Роль</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Разрешенное действие (роль), заданное для группы внешних пользователей</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
-  <tabularSections uuid="82e8ac21-c2aa-47de-89ae-ea6cc10cc862">
-    <producedTypes>
-      <objectType typeId="53103a9a-6942-492b-81b3-fa4c6c8d41ec" valueTypeId="5339a6e7-abc3-4db4-9932-667aa100de2a"/>
-      <rowType typeId="1724b91a-a16a-4b87-a4fa-25ca611a36b5" valueTypeId="9c65e466-3be2-4048-8426-de42d4303150"/>
-    </producedTypes>
-    <name>Назначение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Назначение</value>
-    </synonym>
-    <fillChecking>ShowError</fillChecking>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="13b27ec3-2be9-4959-92e5-94ba7bb64f03">
-      <name>ТипПользователей</name>
-      <synonym>
-        <key>ru</key>
-        <value>Тип пользователей</value>
-      </synonym>
-      <type>
-        <types>DefinedType.ВнешнийПользователь</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Пустая ссылка на допустимый тип объектов авторизации</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="9f832f4b-ae60-4d81-9ffd-6e00f7e02560">
     <name>ФормаЭлемента</name>
     <synonym>
@@ -319,15 +328,6 @@
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="6f6ef6ac-5bb7-41e4-b6d5-0f068e8cb176">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

@@ -365,27 +365,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="c1bcfc01-529c-4774-a79b-052eee157f2d">
-    <name>ТекстШаблонаПроизвольный</name>
-    <synonym>
-      <key>ru</key>
-      <value>Текст шаблона произвольный</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Текст, который будет использоваться в качестве произвольного шаблона сообщения.</value>
-    </toolTip>
-    <multiLine>true</multiLine>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="952b49e0-e1a1-4130-8fb2-083e3988255c">
     <name>ТекстШаблонаSMS</name>
     <synonym>
@@ -452,6 +431,27 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c1bcfc01-529c-4774-a79b-052eee157f2d">
+    <name>ТекстШаблонаПроизвольный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст шаблона произвольный</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текст, который будет использоваться в качестве произвольного шаблона сообщения.</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -595,67 +595,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <tabularSections uuid="2f4ea53a-c84d-4d5f-ae7a-817a20ccd96a">
-    <producedTypes>
-      <objectType typeId="fc3cbef9-0d18-4366-ab46-dc95b4a163a7" valueTypeId="db394ba9-529e-43a2-bb62-c8b9a5905bdf"/>
-      <rowType typeId="33a58708-b343-4f00-8731-c7a5d616f70d" valueTypeId="9199907b-bba1-4869-b146-5c223d88fa09"/>
-    </producedTypes>
-    <name>ПечатныеФормыИВложения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Печатные формы и вложения</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="b2a39c8a-d884-4dfe-a593-e6788dabbd6b">
-      <name>Идентификатор</name>
-      <synonym>
-        <key>ru</key>
-        <value>Идентификатор</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>50</length>
-        </stringQualifiers>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Идентификатор печатной формы</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="3d0afdb2-ab8f-43c0-920a-88ed85545b2f">
-      <name>Имя</name>
-      <synonym>
-        <key>ru</key>
-        <value>Имя</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>300</length>
-        </stringQualifiers>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Имя выбранной печатной формы</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
   <tabularSections uuid="17477f72-0622-445c-9cb7-2c5a5a65bbe0">
     <producedTypes>
       <objectType typeId="a6f14d51-ef20-453c-a5a4-7e3d9a3a0e8a" valueTypeId="17cd65ca-7a51-4777-b7d7-1f3ab87ddd82"/>
@@ -739,25 +678,81 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <forms uuid="e889e80f-97c9-43c6-8268-d652764fcafb">
-    <name>ФормаЭлемента</name>
+  <tabularSections uuid="2f4ea53a-c84d-4d5f-ae7a-817a20ccd96a">
+    <producedTypes>
+      <objectType typeId="fc3cbef9-0d18-4366-ab46-dc95b4a163a7" valueTypeId="db394ba9-529e-43a2-bb62-c8b9a5905bdf"/>
+      <rowType typeId="33a58708-b343-4f00-8731-c7a5d616f70d" valueTypeId="9199907b-bba1-4869-b146-5c223d88fa09"/>
+    </producedTypes>
+    <name>ПечатныеФормыИВложения</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Печатные формы и вложения</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b2a39c8a-d884-4dfe-a593-e6788dabbd6b">
+      <name>Идентификатор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Идентификатор печатной формы</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3d0afdb2-ab8f-43c0-920a-88ed85545b2f">
+      <name>Имя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>300</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Имя выбранной печатной формы</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="f47a9bec-2a9f-4955-a432-acb63a5b0e46">
+    <name>ЗаполнитьПроизвольныеПараметры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнить произвольные параметры</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="4eb48d3a-e2d5-4db5-b08b-4b6ccc701f77">
-    <name>ФормаСписка</name>
+  <forms uuid="7c920b8b-1dbf-4f7e-99af-1ca784a59a64">
+    <name>ПроизвольныйПараметр</name>
     <synonym>
       <key>ru</key>
-      <value>Форма списка</value>
+      <value>Произвольный параметр</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -776,21 +771,26 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="7c920b8b-1dbf-4f7e-99af-1ca784a59a64">
-    <name>ПроизвольныйПараметр</name>
+  <forms uuid="4eb48d3a-e2d5-4db5-b08b-4b6ccc701f77">
+    <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
-      <value>Произвольный параметр</value>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="f47a9bec-2a9f-4955-a432-acb63a5b0e46">
-    <name>ЗаполнитьПроизвольныеПараметры</name>
+  <forms uuid="e889e80f-97c9-43c6-8268-d652764fcafb">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Заполнить произвольные параметры</value>
+      <value>Форма элемента</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

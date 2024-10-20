@@ -24,6 +24,18 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="0e2107e2-8648-4b2e-9dfb-c23b1ff5b007">
+    <name>АвтономноеРабочееМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автономное рабочее место</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="e523f88b-b3de-476e-a3cc-592970492dec">
     <name>НаименованиеАвтономногоРабочегоМеста</name>
     <synonym>
@@ -39,32 +51,20 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="0e2107e2-8648-4b2e-9dfb-c23b1ff5b007">
-    <name>АвтономноеРабочееМесто</name>
-    <synonym>
-      <key>ru</key>
-      <value>Автономное рабочее место</value>
-    </synonym>
-    <type>
-      <types>ExchangePlanRef</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <forms uuid="efb6b3b6-d57b-469f-a7c2-f4e0308d0c7f">
-    <name>НастройкаНаСторонеСервиса</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройка на стороне сервиса</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="ea0843f4-60fb-4d44-abf4-0021867c636b">
     <name>ДополнительноеОписание</name>
     <synonym>
       <key>ru</key>
       <value>Дополнительное описание</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="efb6b3b6-d57b-469f-a7c2-f4e0308d0c7f">
+    <name>НастройкаНаСторонеСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка на стороне сервиса</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

@@ -35,6 +35,13 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <templates uuid="047fd6d7-5e30-4184-a09a-6525de526cc7">
+    <name>МакетОтчетаПоОшибкамВЖурналеРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет отчета по ошибкам в журнале регистрации</value>
+    </synonym>
+  </templates>
   <templates uuid="246571fb-38c7-4da6-929d-d8b44bc3437c">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
@@ -42,13 +49,6 @@
       <value>Основная схема компоновки данных</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
-  </templates>
-  <templates uuid="047fd6d7-5e30-4184-a09a-6525de526cc7">
-    <name>МакетОтчетаПоОшибкамВЖурналеРегистрации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Макет отчета по ошибкам в журнале регистрации</value>
-    </synonym>
   </templates>
   <templates uuid="beb44b02-5d5e-4127-aee7-e184a43a4210">
     <name>ПродолжительностьРаботыРегламентныхЗаданий</name>

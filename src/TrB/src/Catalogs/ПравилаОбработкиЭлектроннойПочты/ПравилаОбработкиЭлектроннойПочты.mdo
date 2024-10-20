@@ -180,6 +180,28 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="5ec6838f-2d70-4f91-b41b-16adfe8ed587">
+    <name>ПредставлениеОтбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление отбора</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Представление отбора, согласно которому письма помещаются в папку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="926cdf17-1929-43d6-8205-858aab558ad9">
     <name>РеквизитДопУпорядочивания</name>
     <synonym>
@@ -204,33 +226,11 @@
     <indexing>IndexWithAdditionalOrder</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="5ec6838f-2d70-4f91-b41b-16adfe8ed587">
-    <name>ПредставлениеОтбора</name>
+  <forms uuid="26365e29-903b-47fd-ad96-e0d87f5d6e87">
+    <name>ПрименениеПравил</name>
     <synonym>
       <key>ru</key>
-      <value>Представление отбора</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Представление отбора, согласно которому письма помещаются в папку</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <forms uuid="6420ad7e-61ca-4af9-9715-f2b0c3e2c58f">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Применение правил обработки электронной почты</value>
     </synonym>
     <help>
       <pages>
@@ -249,11 +249,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="26365e29-903b-47fd-ad96-e0d87f5d6e87">
-    <name>ПрименениеПравил</name>
+  <forms uuid="6420ad7e-61ca-4af9-9715-f2b0c3e2c58f">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Применение правил обработки электронной почты</value>
+      <value>Форма элемента</value>
     </synonym>
     <help>
       <pages>

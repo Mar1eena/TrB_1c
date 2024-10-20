@@ -51,6 +51,21 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="aef883c7-c1f5-46ff-a95a-6828d3509069">
+    <name>ИзмеренияРегистраСведений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Измерения регистра сведений</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="23f96afc-28e2-470d-9732-220f8867fc23">
     <name>ИмяРегистраСведений</name>
     <synonym>
@@ -70,21 +85,6 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
-  </resources>
-  <resources uuid="aef883c7-c1f5-46ff-a95a-6828d3509069">
-    <name>ИзмеренияРегистраСведений</name>
-    <synonym>
-      <key>ru</key>
-      <value>Измерения регистра сведений</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <attributes uuid="36b3b988-bf64-4466-9887-93583f59833d">
     <name>ПредставлениеОбъекта</name>

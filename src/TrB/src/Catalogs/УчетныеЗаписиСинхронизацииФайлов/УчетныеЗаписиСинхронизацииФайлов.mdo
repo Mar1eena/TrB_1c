@@ -116,28 +116,19 @@
   <quickChoice>true</quickChoice>
   <choiceMode>QuickChoice</choiceMode>
   <defaultObjectForm>Catalog.УчетныеЗаписиСинхронизацииФайлов.Form.ФормаЭлемента</defaultObjectForm>
-  <attributes uuid="6303ea55-e8ed-4acc-9717-941eefafc2a9">
-    <name>Сервис</name>
+  <attributes uuid="d0b17206-3949-4513-a47f-02e1a8ba369a">
+    <name>АвторФайлов</name>
     <synonym>
       <key>ru</key>
-      <value>Сервис</value>
+      <value>Автор файлов</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
+      <types>CatalogRef.ВнешниеПользователи</types>
+      <types>CatalogRef.Пользователи</types>
     </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Адрес сервиса WebDAV</value>
-    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -162,19 +153,28 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="d0b17206-3949-4513-a47f-02e1a8ba369a">
-    <name>АвторФайлов</name>
+  <attributes uuid="6303ea55-e8ed-4acc-9717-941eefafc2a9">
+    <name>Сервис</name>
     <synonym>
       <key>ru</key>
-      <value>Автор файлов</value>
+      <value>Сервис</value>
     </synonym>
     <type>
-      <types>CatalogRef.ВнешниеПользователи</types>
-      <types>CatalogRef.Пользователи</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес сервиса WebDAV</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

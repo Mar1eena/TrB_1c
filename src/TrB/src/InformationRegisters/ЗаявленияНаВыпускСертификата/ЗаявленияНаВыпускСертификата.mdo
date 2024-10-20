@@ -59,21 +59,20 @@
     <key>ru</key>
     <value>Данные заявлений на выпуск сертификата, заполняются обработкой &quot;ЗаявлениеНаВыпускНовогоКвалифицированногоСертификата&quot;</value>
   </explanation>
-  <resources uuid="182f92f5-0a8e-4f6a-9f9e-7878fafd0a2a">
-    <name>СостояниеЗаявления</name>
+  <resources uuid="56aa4b2f-5b7e-457d-a59d-837405f17fde">
+    <name>ДляФизическогоЛица</name>
     <synonym>
       <key>ru</key>
-      <value>Состояние заявления</value>
+      <value>Для физического лица</value>
     </synonym>
     <type>
-      <types>EnumRef.СостоянияЗаявленияНаВыпускСертификата</types>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
   </resources>
   <resources uuid="45ca26ef-2a9f-4f24-a81b-2fe10c02ed9f">
     <name>ОформленоВЭлектронномВиде</name>
@@ -90,20 +89,21 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="56aa4b2f-5b7e-457d-a59d-837405f17fde">
-    <name>ДляФизическогоЛица</name>
+  <resources uuid="182f92f5-0a8e-4f6a-9f9e-7878fafd0a2a">
+    <name>СостояниеЗаявления</name>
     <synonym>
       <key>ru</key>
-      <value>Для физического лица</value>
+      <value>Состояние заявления</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>EnumRef.СостоянияЗаявленияНаВыпускСертификата</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
   </resources>
   <attributes uuid="819e2442-cb5a-4826-8a66-b34a3270e8e0">
     <name>ДатаОбновленияСостояния</name>
@@ -177,6 +177,25 @@
       <value></value>
     </fillValue>
   </attributes>
+  <attributes uuid="430cf66c-5cfc-4fd4-bbf3-d9df6070e115">
+    <name>СертификатОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат основание</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СертификатыКлючейЭлектроннойПодписиИШифрования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сертификат, данные которого использовались при заполнении данных заявления</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="95adcac2-bc88-46bc-aae5-d13cfb9a170c">
     <name>СодержаниеЗаявления</name>
     <synonym>
@@ -205,25 +224,6 @@
     <toolTip>
       <key>ru</key>
       <value>Дополнительные сообщения при обновлении состояния заявления</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="430cf66c-5cfc-4fd4-bbf3-d9df6070e115">
-    <name>СертификатОснование</name>
-    <synonym>
-      <key>ru</key>
-      <value>Сертификат основание</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.СертификатыКлючейЭлектроннойПодписиИШифрования</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Сертификат, данные которого использовались при заполнении данных заявления</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

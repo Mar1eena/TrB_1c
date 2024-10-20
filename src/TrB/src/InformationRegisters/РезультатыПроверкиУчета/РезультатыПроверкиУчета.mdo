@@ -49,28 +49,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="e4cd44e6-1255-490f-96d9-f805ac92cf67">
-    <name>УточнениеПроблемы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Уточнение проблемы</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Подробные сведения о проблеме</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </resources>
   <resources uuid="8ae9be37-cda5-4b66-8a97-5e77d2a2c75f">
     <name>ВажностьПроблемы</name>
     <synonym>
@@ -83,44 +61,6 @@
     <toolTip>
       <key>ru</key>
       <value>Важность выявленной проблемы</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="5a9011fc-c023-47fb-a999-2c6ca33a04b9">
-    <name>Ответственный</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ответственный</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Пользователи</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Ответственный за проблемный объект</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="ab574fa5-0730-4456-b741-111e5ea8a896">
-    <name>ДополнительнаяИнформация</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дополнительная информация</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Служебный реквизит с дополнительными сведениями, связанными с выявленной проблемой</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -148,6 +88,44 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="ab574fa5-0730-4456-b741-111e5ea8a896">
+    <name>ДополнительнаяИнформация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительная информация</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Служебный реквизит с дополнительными сведениями, связанными с выявленной проблемой</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5a9011fc-c023-47fb-a999-2c6ca33a04b9">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ответственный за проблемный объект</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="398199c4-4830-48e9-89c5-45c2c5a30ee6">
     <name>УдалитьИгнорироватьПроблему</name>
     <synonym>
@@ -162,6 +140,28 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e4cd44e6-1255-490f-96d9-f805ac92cf67">
+    <name>УточнениеПроблемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уточнение проблемы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подробные сведения о проблеме</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
   </resources>
   <attributes uuid="546ba3bb-4614-423f-954c-466530f42784">
     <name>КонтрольнаяСумма</name>

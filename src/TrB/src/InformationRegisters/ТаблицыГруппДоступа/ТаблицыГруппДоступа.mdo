@@ -50,25 +50,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="8e9f9baf-8d12-46cc-915f-f6f290af5512">
-    <name>ПравоИзменение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Право изменение</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Флажок, установленный истина, показывает наличие права изменения в заданной таблице в пределах заданной группы доступа</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:BooleanValue"/>
-    <indexing>Index</indexing>
-  </resources>
   <resources uuid="a8e14d2e-911d-4096-9027-deb7a08838e0">
     <name>ПравоДобавление</name>
     <synonym>
@@ -88,23 +69,42 @@
     <fillValue xsi:type="core:BooleanValue"/>
     <indexing>Index</indexing>
   </resources>
-  <resources uuid="c51d8ae2-66fe-4052-8ee4-980855b1f90c">
-    <name>ПравоЧтениеБезОграничения</name>
+  <resources uuid="4e2a3873-0317-44be-8dbb-e4cefc0361a8">
+    <name>ПравоДобавлениеБезОграничения</name>
     <synonym>
       <key>ru</key>
-      <value>Право чтение без ограничения</value>
+      <value>Право добавление без ограничения</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Флажок, установленный истина, показывает наличие права чтения без ограничения в заданной таблице в пределах заданной группы доступа</value>
+      <value>Флажок, установленный истина, показывает наличие права добавления без ограничения в заданной таблице в пределах заданной группы доступа</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8e9f9baf-8d12-46cc-915f-f6f290af5512">
+    <name>ПравоИзменение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Право изменение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флажок, установленный истина, показывает наличие права изменения в заданной таблице в пределах заданной группы доступа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <indexing>Index</indexing>
   </resources>
   <resources uuid="27610803-846f-40bd-b817-f73708f1fdb7">
     <name>ПравоИзменениеБезОграничения</name>
@@ -124,18 +124,18 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="4e2a3873-0317-44be-8dbb-e4cefc0361a8">
-    <name>ПравоДобавлениеБезОграничения</name>
+  <resources uuid="c51d8ae2-66fe-4052-8ee4-980855b1f90c">
+    <name>ПравоЧтениеБезОграничения</name>
     <synonym>
       <key>ru</key>
-      <value>Право добавление без ограничения</value>
+      <value>Право чтение без ограничения</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Флажок, установленный истина, показывает наличие права добавления без ограничения в заданной таблице в пределах заданной группы доступа</value>
+      <value>Флажок, установленный истина, показывает наличие права чтения без ограничения в заданной таблице в пределах заданной группы доступа</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -218,20 +218,20 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="2cedfef0-5d93-475a-b2dd-ee36e553e6e1">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="29200d04-d7da-435a-89e6-858c11a1a98c">
     <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
       <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2cedfef0-5d93-475a-b2dd-ee36e553e6e1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

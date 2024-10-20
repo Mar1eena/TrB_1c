@@ -17,11 +17,39 @@
       <lang>ru</lang>
     </pages>
   </help>
+  <forms uuid="72c695c3-66f6-4aa8-8a39-737ec6967a1d">
+    <name>ВыборНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор настроек пользователя</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="14002d51-87d4-4647-92ef-a9b1935cb666">
     <name>ВыборПользователей</name>
     <synonym>
       <key>ru</key>
       <value>Выбор пользователей</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2beef1e0-7a59-407e-b454-ee2ec38ca4b3">
+    <name>КопированиеНастроекПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Копирование настроек пользователей</value>
     </synonym>
     <help>
       <pages>
@@ -63,34 +91,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="72c695c3-66f6-4aa8-8a39-737ec6967a1d">
-    <name>ВыборНастроек</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выбор настроек пользователя</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="2beef1e0-7a59-407e-b454-ee2ec38ca4b3">
-    <name>КопированиеНастроекПользователей</name>
-    <synonym>
-      <key>ru</key>
-      <value>Копирование настроек пользователей</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="b57a1d6f-8375-4d57-a2c1-f53e25318ddb">
     <name>ПредупреждениеОКопированииНастроек</name>
     <synonym>
@@ -107,6 +107,20 @@
       <value>Макет отчета</value>
     </synonym>
   </templates>
+  <commands uuid="b5384eb7-40e4-4437-b96b-eab9b7b5b8f2">
+    <name>КопированиеНастроекПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Копирование настроек</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Копирование настроек пользователей</value>
+    </toolTip>
+  </commands>
   <commands uuid="b1e45d36-08e9-430e-976b-03e6e3320c6a">
     <name>НастройкиПользователя</name>
     <synonym>
@@ -122,20 +136,6 @@
     <toolTip>
       <key>ru</key>
       <value>Настройки пользователя</value>
-    </toolTip>
-  </commands>
-  <commands uuid="b5384eb7-40e4-4437-b96b-eab9b7b5b8f2">
-    <name>КопированиеНастроекПользователей</name>
-    <synonym>
-      <key>ru</key>
-      <value>Копирование настроек</value>
-    </synonym>
-    <group>ActionsPanelTools</group>
-    <commandParameterType/>
-    <representation>Auto</representation>
-    <toolTip>
-      <key>ru</key>
-      <value>Копирование настроек пользователей</value>
     </toolTip>
   </commands>
   <commands uuid="8e21374f-5a65-406c-856d-2040607da4bc">

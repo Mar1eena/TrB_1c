@@ -136,6 +136,28 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.ШаблоныАнкет.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.ШаблоныАнкет.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="2cbc16da-aa67-4ad6-82f8-fa6922447be6">
+    <name>Вступление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вступление</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Данный текст будет отображаться респонденту в начале формы заполнения анкеты.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="ce34d88d-3017-4197-a962-ea23a6a96d32">
     <name>Заголовок</name>
     <synonym>
@@ -155,28 +177,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="2cbc16da-aa67-4ad6-82f8-fa6922447be6">
-    <name>Вступление</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вступление</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Данный текст будет отображаться респонденту в начале формы заполнения анкеты.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
@@ -224,11 +224,25 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="acb193f4-52e5-4572-a79b-b825a2f6525f">
-    <name>ФормаЭлемента</name>
+  <forms uuid="e9aef0c8-9dc4-4c4a-8288-8b2d9860624d">
+    <name>ФормаВыбора</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Форма выбора</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="733d4494-01e2-46f5-a49b-f289267a90c9">
+    <name>ФормаМастераКомплексныхВопросов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма мастера комплексных вопросов</value>
     </synonym>
     <help>
       <pages>
@@ -252,15 +266,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="9fb13bfe-80c7-43c3-b0da-9185ab197ce2">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="cd80a520-1d1c-4d80-8a4a-360ac1ca98d8">
     <name>ФормаПростыхВопросов</name>
     <synonym>
@@ -275,25 +280,20 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="e9aef0c8-9dc4-4c4a-8288-8b2d9860624d">
-    <name>ФормаВыбора</name>
+  <forms uuid="9fb13bfe-80c7-43c3-b0da-9185ab197ce2">
+    <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора</value>
+      <value>Форма списка</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="733d4494-01e2-46f5-a49b-f289267a90c9">
-    <name>ФормаМастераКомплексныхВопросов</name>
+  <forms uuid="acb193f4-52e5-4572-a79b-b825a2f6525f">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Форма мастера комплексных вопросов</value>
+      <value>Форма элемента</value>
     </synonym>
     <help>
       <pages>

@@ -50,11 +50,11 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="54936c70-5a08-40fa-8f85-da07dd6a29ec">
-    <name>ТребуетсяПроверка</name>
+  <resources uuid="1bab3154-9f5c-402b-93ae-5da019e96d2b">
+    <name>Верна</name>
     <synonym>
       <key>ru</key>
-      <value>Требуется проверка</value>
+      <value>Верна</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -83,11 +83,11 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="1bab3154-9f5c-402b-93ae-5da019e96d2b">
-    <name>Верна</name>
+  <resources uuid="5c802dcc-411e-4413-ad88-465127ad0004">
+    <name>ПодписантСоответствуетПредставителю</name>
     <synonym>
       <key>ru</key>
-      <value>Верна</value>
+      <value>Подписант соответствует представителю</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -98,14 +98,14 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="5c802dcc-411e-4413-ad88-465127ad0004">
-    <name>ПодписантСоответствуетПредставителю</name>
+  <resources uuid="22db835c-014c-4ff0-90ef-0654e250ff77">
+    <name>ПротоколПроверки</name>
     <synonym>
       <key>ru</key>
-      <value>Подписант соответствует представителю</value>
+      <value>Протокол проверки</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>ValueStorage</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -143,14 +143,14 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="22db835c-014c-4ff0-90ef-0654e250ff77">
-    <name>ПротоколПроверки</name>
+  <resources uuid="54936c70-5a08-40fa-8f85-da07dd6a29ec">
+    <name>ТребуетсяПроверка</name>
     <synonym>
       <key>ru</key>
-      <value>Протокол проверки</value>
+      <value>Требуется проверка</value>
     </synonym>
     <type>
-      <types>ValueStorage</types>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

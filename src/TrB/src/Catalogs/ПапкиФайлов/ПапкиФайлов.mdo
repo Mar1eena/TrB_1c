@@ -188,6 +188,28 @@
   <defaultObjectForm>Catalog.ПапкиФайлов.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.ПапкиФайлов.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.ПапкиФайлов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="b46546fe-3d6b-473f-a7cb-ff3b3ae0bafe">
+    <name>ДатаСоздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата создания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата создания папки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="0fdb864e-ede9-4777-835c-0804968ee544">
     <name>Описание</name>
     <synonym>
@@ -230,28 +252,6 @@
     <createOnInput>Use</createOnInput>
     <fillValue xsi:type="core:ReferenceValue">
       <value>Catalog.Пользователи.EmptyRef</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="b46546fe-3d6b-473f-a7cb-ff3b3ae0bafe">
-    <name>ДатаСоздания</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата создания</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Дата создания папки</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:DateValue">
-      <value>0001-01-01T00:00:00</value>
     </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -342,17 +342,12 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <forms uuid="3bb8dc33-970c-4c58-9036-ce716d963847">
-    <name>ФормаЭлемента</name>
+  <forms uuid="b3ff39fa-f665-4d01-9a2a-69722e6b1071">
+    <name>ФормаВыбора</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Форма выбора</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -365,12 +360,17 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="b3ff39fa-f665-4d01-9a2a-69722e6b1071">
-    <name>ФормаВыбора</name>
+  <forms uuid="3bb8dc33-970c-4c58-9036-ce716d963847">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора</value>
+      <value>Форма элемента</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

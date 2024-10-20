@@ -49,21 +49,18 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="fa523958-ce1e-42e1-ae00-2dcb401b7eda">
-    <name>КоличествоНеРассмотрено</name>
+  <resources uuid="ed8618e2-3ce6-4956-856a-9f40279b4da6">
+    <name>Активен</name>
     <synonym>
       <key>ru</key>
-      <value>Количество не рассмотрено</value>
+      <value>Активен</value>
     </synonym>
     <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
+      <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Количество нерассмотренных взаимодействий.</value>
+      <value>Признак активности предмета.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -93,18 +90,21 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <indexing>Index</indexing>
   </resources>
-  <resources uuid="ed8618e2-3ce6-4956-856a-9f40279b4da6">
-    <name>Активен</name>
+  <resources uuid="fa523958-ce1e-42e1-ae00-2dcb401b7eda">
+    <name>КоличествоНеРассмотрено</name>
     <synonym>
       <key>ru</key>
-      <value>Активен</value>
+      <value>Количество не рассмотрено</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Признак активности предмета.</value>
+      <value>Количество нерассмотренных взаимодействий.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

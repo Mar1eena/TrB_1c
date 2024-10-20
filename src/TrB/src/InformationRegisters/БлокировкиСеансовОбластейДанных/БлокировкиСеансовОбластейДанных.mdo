@@ -53,6 +53,26 @@
     <key>ru</key>
     <value>Блокировка сеансов приложения</value>
   </recordPresentation>
+  <resources uuid="5206d407-ac91-477e-80e7-97c312da934c">
+    <name>КонецБлокировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец блокировки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время окончания действия блокировки работы пользователей области данных</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
   <resources uuid="6ffa8536-7639-4e9a-9f6d-4eda71f5ca3b">
     <name>НачалоБлокировки</name>
     <synonym>
@@ -70,26 +90,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-  </resources>
-  <resources uuid="5206d407-ac91-477e-80e7-97c312da934c">
-    <name>КонецБлокировки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Конец блокировки</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Время окончания действия блокировки работы пользователей области данных</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
     <indexing>Index</indexing>

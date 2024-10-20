@@ -206,6 +206,70 @@
   <defaultFolderForm>Catalog.НаборыДополнительныхРеквизитовИСведений.Form.ФормаГруппы</defaultFolderForm>
   <defaultListForm>Catalog.НаборыДополнительныхРеквизитовИСведений.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.НаборыДополнительныхРеквизитовИСведений.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="849f00c3-2f18-414c-97f6-32a99173fab9">
+    <name>ИмяПредопределенногоНабора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя предопределенного набора</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="091ccac1-9a63-4a89-bb0c-333b274b0c70">
+    <name>Используется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Набор свойств отображается в форме списка</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="710059de-c70e-4b6e-b2a0-11197139144d">
+    <name>КоличествоМеток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество меток</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество меток в наборе не помеченных на удаление.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="208c7b8c-3df9-4441-8ebf-34ffa81572a2">
     <name>КоличествоРеквизитов</name>
     <synonym>
@@ -248,70 +312,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="710059de-c70e-4b6e-b2a0-11197139144d">
-    <name>КоличествоМеток</name>
-    <synonym>
-      <key>ru</key>
-      <value>Количество меток</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>5</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Количество меток в наборе не помеченных на удаление.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="091ccac1-9a63-4a89-bb0c-333b274b0c70">
-    <name>Используется</name>
-    <synonym>
-      <key>ru</key>
-      <value>Используется</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Набор свойств отображается в форме списка</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:BooleanValue">
-      <value>true</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <use>ForFolderAndItem</use>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="849f00c3-2f18-414c-97f6-32a99173fab9">
-    <name>ИмяПредопределенногоНабора</name>
-    <synonym>
-      <key>ru</key>
-      <value>Имя предопределенного набора</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>150</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
   <tabularSections uuid="b456d820-8034-4381-960d-66d9f86b0a4b">
@@ -521,17 +521,12 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <forms uuid="c5b3ca21-8f7b-4933-853c-7d95b17b5631">
-    <name>ФормаЭлемента</name>
+  <forms uuid="e2b482cb-6954-4e6a-abe9-d0a01f64b73a">
+    <name>ФормаВыбора</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Форма выбора</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -553,12 +548,17 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="e2b482cb-6954-4e6a-abe9-d0a01f64b73a">
-    <name>ФормаВыбора</name>
+  <forms uuid="c5b3ca21-8f7b-4933-853c-7d95b17b5631">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора</value>
+      <value>Форма элемента</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

@@ -163,30 +163,6 @@
   <defaultObjectForm>Catalog.СтраныМира.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.СтраныМира.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.СтраныМира.Form.ФормаСписка</defaultChoiceForm>
-  <attributes uuid="f7a89bfc-e3c9-4894-a2df-6c229b4e0fd8">
-    <name>НаименованиеПолное</name>
-    <synonym>
-      <key>ru</key>
-      <value>Наименование полное</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Полное наименование страны мира</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="1e8b70ce-27fc-418f-b3f3-e6efbce9f7a2">
     <name>КодАльфа2</name>
     <synonym>
@@ -235,25 +211,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="28080e64-cd09-410d-9e3e-3ffdb43d3ace">
-    <name>УчастникЕАЭС</name>
-    <synonym>
-      <key>ru</key>
-      <value>Участник ЕАЭС</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Страна является участником Евразийского экономического союза.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="9cfd3d38-4e0e-40f4-ae77-7a997646e4b2">
     <name>МеждународноеНаименование</name>
     <synonym>
@@ -275,6 +232,49 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f7a89bfc-e3c9-4894-a2df-6c229b4e0fd8">
+    <name>НаименованиеПолное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование полное</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Полное наименование страны мира</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="28080e64-cd09-410d-9e3e-3ffdb43d3ace">
+    <name>УчастникЕАЭС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник ЕАЭС</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Страна является участником Евразийского экономического союза.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -364,12 +364,17 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <forms uuid="978640a2-5c4b-4e21-857e-34f00840fba8">
-    <name>ФормаЭлемента</name>
+  <forms uuid="149e72b8-cc03-4b4f-8ca4-07987600c34d">
+    <name>Классификатор</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Классификатор</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -382,17 +387,12 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="149e72b8-cc03-4b4f-8ca4-07987600c34d">
-    <name>Классификатор</name>
+  <forms uuid="978640a2-5c4b-4e21-857e-34f00840fba8">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Классификатор</value>
+      <value>Форма элемента</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

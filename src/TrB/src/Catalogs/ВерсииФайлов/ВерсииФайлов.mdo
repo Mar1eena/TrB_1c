@@ -699,12 +699,17 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <forms uuid="b2e656c1-f4ff-4d95-b066-4ee11ce4dea8">
-    <name>ФормаСписка</name>
+  <forms uuid="aa299fc6-051f-487c-ada4-451e08c4763c">
+    <name>ВерсииФайла</name>
     <synonym>
       <key>ru</key>
-      <value>Форма списка</value>
+      <value>Версии файла</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -722,17 +727,12 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="aa299fc6-051f-487c-ada4-451e08c4763c">
-    <name>ВерсииФайла</name>
+  <forms uuid="b2e656c1-f4ff-4d95-b066-4ee11ce4dea8">
+    <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
-      <value>Версии файла</value>
+      <value>Форма списка</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

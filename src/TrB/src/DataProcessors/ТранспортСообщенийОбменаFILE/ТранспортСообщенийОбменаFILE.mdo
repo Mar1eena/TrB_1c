@@ -35,32 +35,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="4c4d61a6-6bb6-4a15-9a81-25fdcf96ec4b">
-    <name>ПарольАрхиваСообщенияОбмена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Пароль архива сообщения обмена</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="14bd3392-36cd-4ed0-8847-44375d6fb861">
-    <name>ШаблонИмениФайлаСообщения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Шаблон имени файла сообщения</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <attributes uuid="759ede7a-e832-44e6-9b11-5bfb3c507820">
     <name>ИспользоватьВременныйКаталогДляОтправкиИПриемаСообщений</name>
     <synonym>
@@ -74,6 +48,19 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="4c4d61a6-6bb6-4a15-9a81-25fdcf96ec4b">
+    <name>ПарольАрхиваСообщенияОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль архива сообщения обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="c99c7271-cb3c-4fd2-8789-8637cf984514">
     <name>УзелИнформационнойБазы</name>
     <synonym>
@@ -82,6 +69,19 @@
     </synonym>
     <type>
       <types>ExchangePlanRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="14bd3392-36cd-4ed0-8847-44375d6fb861">
+    <name>ШаблонИмениФайлаСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон имени файла сообщения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

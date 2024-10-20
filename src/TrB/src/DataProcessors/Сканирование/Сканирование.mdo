@@ -38,6 +38,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="bb4009c1-7c48-4a5c-a4af-3b27de48ed3e">
+    <name>ОшибкаСканирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка сканирования</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="36eacaa1-2efd-49c0-82de-2f8972535bf2">
     <name>РезультатСканирования</name>
     <synonym>
@@ -49,15 +58,6 @@
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="bb4009c1-7c48-4a5c-a4af-3b27de48ed3e">
-    <name>ОшибкаСканирования</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ошибка сканирования</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

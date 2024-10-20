@@ -49,6 +49,22 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2e239650-973b-4908-b91e-477062046528">
+    <name>ВремяПоследнейПопытки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время последней попытки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="169b0670-8fa7-48d1-b6b1-2cf581b18390">
     <name>КоличествоПопыток</name>
     <synonym>
@@ -61,22 +77,6 @@
         <precision>10</precision>
         <nonNegative>true</nonNegative>
       </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="2e239650-973b-4908-b91e-477062046528">
-    <name>ВремяПоследнейПопытки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Время последней попытки</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

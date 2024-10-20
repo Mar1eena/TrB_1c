@@ -1290,30 +1290,53 @@
   <defaultObjectForm>Catalog.ИдентификаторыОбъектовМетаданных.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.ИдентификаторыОбъектовМетаданных.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.ИдентификаторыОбъектовМетаданных.Form.ФормаСписка</defaultChoiceForm>
-  <attributes uuid="782a8801-06ca-4d63-bf8b-63d2320766d8">
-    <name>ПорядокКоллекции</name>
+  <attributes uuid="62b95ba1-f213-42fb-90f3-a03e8094bc9e">
+    <name>БезДанных</name>
     <synonym>
       <key>ru</key>
-      <value>Порядок коллекции</value>
+      <value>Без данных</value>
     </synonym>
     <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>2</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
+      <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Порядок коллекции объекта метаданных,
-используемый для сортировки в отчетах,
-например, коллекция &quot;Справочники&quot;
-перед коллекцией &quot;Документы&quot;</value>
+      <value>Объект метаданных не имеет таблиц данных</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>IndexWithAdditionalOrder</indexing>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="619b534d-5605-40d3-9b8c-4443a21d7795">
+    <name>ЗначениеПустойСсылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение пустой ссылки</value>
+    </synonym>
+    <comment>АПК:1330 - №728.2.1 Допустимо использование универсального ссылочного типа, так как это универсальный механизм и мало данных</comment>
+    <type>
+      <types>ExchangePlanRef</types>
+      <types>BusinessProcessRef</types>
+      <types>DocumentRef</types>
+      <types>ChartOfCalculationTypesRef</types>
+      <types>TaskRef</types>
+      <types>ChartOfCharacteristicTypesRef</types>
+      <types>ChartOfAccountsRef</types>
+      <types>CatalogRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Для ссылочных типов объектов метаданных 
+содержит пустую ссылку своего типа,
+для остальных - Неопределено
+(в форме показано представление
+типа значения пустой ссылки)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="93a73123-d98c-4286-9269-7bfcedd115e8">
@@ -1341,29 +1364,40 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="c5985c02-1824-4ce9-b415-1621dd2ee864">
-    <name>Синоним</name>
+  <attributes uuid="a010bbf4-d547-4576-9797-28e3096ffed3">
+    <name>КлючОбъектаМетаданных</name>
     <synonym>
       <key>ru</key>
-      <value>Синоним</value>
+      <value>Ключ объекта метаданных</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>255</length>
-      </stringQualifiers>
+      <types>ValueStorage</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Синоним объекта метаданных,
-например, &quot;Объекты адресации задач&quot;</value>
+      <value>Хранилище ключа по которому определяется объект метаданных без использования полного имени</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a44c3eb2-1054-41ca-82e8-fc35336e7009">
+    <name>НоваяСсылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новая ссылка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется при обработке дублей идентификаторов подчиненного узла распределенной информационной базы.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="993ce747-cdc9-445f-ad7d-daf53cd5f7e9">
@@ -1417,89 +1451,55 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="62b95ba1-f213-42fb-90f3-a03e8094bc9e">
-    <name>БезДанных</name>
+  <attributes uuid="782a8801-06ca-4d63-bf8b-63d2320766d8">
+    <name>ПорядокКоллекции</name>
     <synonym>
       <key>ru</key>
-      <value>Без данных</value>
+      <value>Порядок коллекции</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Объект метаданных не имеет таблиц данных</value>
+      <value>Порядок коллекции объекта метаданных,
+используемый для сортировки в отчетах,
+например, коллекция &quot;Справочники&quot;
+перед коллекцией &quot;Документы&quot;</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="619b534d-5605-40d3-9b8c-4443a21d7795">
-    <name>ЗначениеПустойСсылки</name>
+  <attributes uuid="c5985c02-1824-4ce9-b415-1621dd2ee864">
+    <name>Синоним</name>
     <synonym>
       <key>ru</key>
-      <value>Значение пустой ссылки</value>
+      <value>Синоним</value>
     </synonym>
-    <comment>АПК:1330 - №728.2.1 Допустимо использование универсального ссылочного типа, так как это универсальный механизм и мало данных</comment>
     <type>
-      <types>ExchangePlanRef</types>
-      <types>BusinessProcessRef</types>
-      <types>DocumentRef</types>
-      <types>ChartOfCalculationTypesRef</types>
-      <types>TaskRef</types>
-      <types>ChartOfCharacteristicTypesRef</types>
-      <types>ChartOfAccountsRef</types>
-      <types>CatalogRef</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Для ссылочных типов объектов метаданных 
-содержит пустую ссылку своего типа,
-для остальных - Неопределено
-(в форме показано представление
-типа значения пустой ссылки)</value>
+      <value>Синоним объекта метаданных,
+например, &quot;Объекты адресации задач&quot;</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="a010bbf4-d547-4576-9797-28e3096ffed3">
-    <name>КлючОбъектаМетаданных</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ключ объекта метаданных</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Хранилище ключа по которому определяется объект метаданных без использования полного имени</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="a44c3eb2-1054-41ca-82e8-fc35336e7009">
-    <name>НоваяСсылка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Новая ссылка</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Используется при обработке дублей идентификаторов подчиненного узла распределенной информационной базы.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <forms uuid="01f67911-4ca7-4668-b970-62c299b98e56">

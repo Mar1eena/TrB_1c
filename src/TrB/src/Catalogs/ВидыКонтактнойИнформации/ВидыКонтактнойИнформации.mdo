@@ -182,25 +182,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="b51eaf45-baa1-4d1c-bcb7-a89bb8bcc26a">
-    <name>ВключатьСтрануВПредставление</name>
-    <synonym>
-      <key>ru</key>
-      <value>Включать страну в представление</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>В представление будет включена страна адреса.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="0f314b6b-5ed1-46ed-bdfd-cf53330c2783">
     <name>ВидПоляДругое</name>
     <synonym>
@@ -245,6 +226,25 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b51eaf45-baa1-4d1c-bcb7-a89bb8bcc26a">
+    <name>ВключатьСтрануВПредставление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включать страну в представление</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>В представление будет включена страна адреса.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -454,6 +454,27 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="91a0ceed-03ce-4914-9cd1-dec49bba336f">
+    <name>ОтображатьВсегда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отображать всегда</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид контактной информации всегда отображается и предлагается к заполнению в карточке владельца</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="313e0688-745a-4385-b040-7ef8317a0eb7">
     <name>ПроверятьКорректность</name>
     <synonym>
@@ -471,24 +492,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="7fe61c5d-30bc-440d-9e40-12ff3b296616">
-    <name>УдалитьПроверятьПоФИАС</name>
-    <synonym>
-      <key>ru</key>
-      <value>(не используется) Проверять по ФИАС</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Проверять корректность ввода адресов по адресному классификатору</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="37c37f15-f84b-456b-aab6-729562dc0908">
@@ -614,6 +617,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="7fe61c5d-30bc-440d-9e40-12ff3b296616">
+    <name>УдалитьПроверятьПоФИАС</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Проверять по ФИАС</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Проверять корректность ввода адресов по адресному классификатору</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="45a2569e-820c-4d7d-ba74-4a781d26bb2b">
     <name>УдалитьРедактированиеТолькоВДиалоге</name>
     <synonym>
@@ -668,27 +689,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="91a0ceed-03ce-4914-9cd1-dec49bba336f">
-    <name>ОтображатьВсегда</name>
-    <synonym>
-      <key>ru</key>
-      <value>Отображать всегда</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Вид контактной информации всегда отображается и предлагается к заполнению в карточке владельца</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:BooleanValue">
-      <value>true</value>
-    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

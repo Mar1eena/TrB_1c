@@ -54,6 +54,67 @@
     </pages>
   </help>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="97a9b005-a836-4308-8e63-0e00f6890baa">
+    <name>ВРабочемКаталогеВладельца</name>
+    <synonym>
+      <key>ru</key>
+      <value>В рабочем каталоге владельца</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Включено - файл находится в рабочем каталоге владельца (папки),
+Выключено - файл находится в рабочем каталоге пользователя.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7b95d0b1-c7b2-43b4-9119-320cb8912032">
+    <name>ДатаПомещенияВРабочийКаталог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата помещения в рабочий каталог</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата помещения файла в рабочий каталог</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+  </resources>
+  <resources uuid="004582b7-00aa-405e-8e24-ce76c945edae">
+    <name>НаЧтение</name>
+    <synonym>
+      <key>ru</key>
+      <value>На чтение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Файл помещен на чтение</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+  </resources>
   <resources uuid="1026fbcb-acd8-40dc-b638-6e02c6378c55">
     <name>Путь</name>
     <synonym>
@@ -102,67 +163,6 @@
     <fillValue xsi:type="core:NumberValue">
       <value>0</value>
     </fillValue>
-  </resources>
-  <resources uuid="7b95d0b1-c7b2-43b4-9119-320cb8912032">
-    <name>ДатаПомещенияВРабочийКаталог</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата помещения в рабочий каталог</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Дата помещения файла в рабочий каталог</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:DateValue">
-      <value>0001-01-01T00:00:00</value>
-    </fillValue>
-  </resources>
-  <resources uuid="004582b7-00aa-405e-8e24-ce76c945edae">
-    <name>НаЧтение</name>
-    <synonym>
-      <key>ru</key>
-      <value>На чтение</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Файл помещен на чтение</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:BooleanValue"/>
-  </resources>
-  <resources uuid="97a9b005-a836-4308-8e63-0e00f6890baa">
-    <name>ВРабочемКаталогеВладельца</name>
-    <synonym>
-      <key>ru</key>
-      <value>В рабочем каталоге владельца</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Включено - файл находится в рабочем каталоге владельца (папки),
-Выключено - файл находится в рабочем каталоге пользователя.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <dimensions uuid="98c34ada-0b78-41db-9183-6d7b9e466bde">
     <name>Файл</name>

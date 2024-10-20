@@ -54,25 +54,6 @@
     </pages>
   </help>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="84e34b4a-02e8-4676-8b81-771ddf3c2931">
-    <name>УзелИнформационнойБазы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Узел информационной базы</value>
-    </synonym>
-    <type>
-      <types>ExchangePlanRef</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Узел информационной базы из которой был получен проблемный объект</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="0aa6a024-66ae-4592-87d6-f7cb2a59f906">
     <name>ДатаВозникновения</name>
     <synonym>
@@ -134,18 +115,38 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <attributes uuid="cb6ecc18-a14f-4c3c-a39d-2cd2d1ab4e03">
-    <name>ПометкаУдаления</name>
+  <resources uuid="84e34b4a-02e8-4676-8b81-771ddf3c2931">
+    <name>УзелИнформационнойБазы</name>
     <synonym>
       <key>ru</key>
-      <value>Пометка удаления</value>
+      <value>Узел информационной базы</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>ExchangePlanRef</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Признак установленной пометки удаления для объекта.</value>
+      <value>Узел информационной базы из которой был получен проблемный объект</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="55a42b83-b6d2-409b-a8ff-7849b08e07ed">
+    <name>ДатаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа для которого имеются проблемы при обмене данными.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -177,19 +178,18 @@
       <value></value>
     </fillValue>
   </attributes>
-  <attributes uuid="55a42b83-b6d2-409b-a8ff-7849b08e07ed">
-    <name>ДатаДокумента</name>
+  <attributes uuid="cb6ecc18-a14f-4c3c-a39d-2cd2d1ab4e03">
+    <name>ПометкаУдаления</name>
     <synonym>
       <key>ru</key>
-      <value>Дата документа</value>
+      <value>Пометка удаления</value>
     </synonym>
     <type>
-      <types>Date</types>
-      <dateQualifiers/>
+      <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Дата документа для которого имеются проблемы при обмене данными.</value>
+      <value>Признак установленной пометки удаления для объекта.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

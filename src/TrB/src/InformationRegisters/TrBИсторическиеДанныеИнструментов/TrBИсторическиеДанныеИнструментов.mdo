@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f2372a0b-a799-4073-ad1c-161ea690a0bf">
+  <producedTypes>
+    <selectionType typeId="44429f73-f8af-4b02-86bf-64a0106edff1" valueTypeId="d21f53eb-4d0e-4119-a4e6-d028e5d49cf2"/>
+    <listType typeId="f4628ba0-17f3-41c4-a933-03c7f491e26d" valueTypeId="75a357c6-b7ca-415b-a067-f771613300a5"/>
+    <managerType typeId="f08f6316-1360-43ad-9ac2-e12462f47900" valueTypeId="f38fff41-d06e-4d7b-b49d-fc48f684fdd4"/>
+    <recordSetType typeId="78e5d048-fe28-49de-9af4-dad2ab46b66b" valueTypeId="308e9263-4081-47c0-b75e-02f08fc4b12b"/>
+    <recordKeyType typeId="78fd37dd-c8fb-4373-be45-dbd7b29aa365" valueTypeId="ea60283f-73f9-4fe0-914e-e369de5a91e4"/>
+    <recordType typeId="211bb793-8887-4c70-b42b-32484b51e2c3" valueTypeId="8c3ad7f5-37a2-46db-bc38-e96a4832b494"/>
+    <recordManagerType typeId="f20c9b98-14a4-4643-860a-ebc6d3c7bead" valueTypeId="eddf086d-4c4a-4441-90c3-afb312e105e5"/>
+  </producedTypes>
+  <name>TrBИсторическиеДанныеИнструментов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исторические данные инструментов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="40ea5616-781b-46a4-b8e9-4f7d4f8b11d8">
+    <name>Nano</name>
+    <synonym>
+      <key>ru</key>
+      <value>Nano</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5319afb6-7939-4c38-b994-0713c75636aa">
+    <name>Units</name>
+    <synonym>
+      <key>ru</key>
+      <value>Units</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="431a2fb8-247c-46f4-8fd1-e6493ab82a8c">
+    <name>Инструмент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструмент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.TrBСписокИнструментов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

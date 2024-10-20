@@ -122,14 +122,14 @@
   <defaultObjectForm>Catalog.МашиночитаемыеДоверенности.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.МашиночитаемыеДоверенности.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.МашиночитаемыеДоверенности.Form.ФормаСписка</defaultChoiceForm>
-  <attributes uuid="fe9d7083-82f6-4390-b5a5-46c666463289">
-    <name>ФайлДоверенности</name>
+  <attributes uuid="bf49b842-d162-4690-bec1-acf4207db565">
+    <name>Верна</name>
     <synonym>
       <key>ru</key>
-      <value>Файл доверенности</value>
+      <value>Верна</value>
     </synonym>
     <type>
-      <types>CatalogRef.МашиночитаемыеДоверенностиПрисоединенныеФайлы</types>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -137,24 +137,40 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="cc194484-b3fc-4e89-8f72-de3f0e23019e">
-    <name>НомерДоверенности</name>
+  <attributes uuid="36ace6cf-6493-4325-89ff-3c07faae09b4">
+    <name>ВерсияФормата</name>
     <synonym>
       <key>ru</key>
-      <value>Номер доверенности (в реестре)</value>
+      <value>Версия формата</value>
     </synonym>
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>50</length>
+        <length>10</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:StringValue">
-      <value></value>
+      <value>EMCHD_1</value>
     </fillValue>
-    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e39114e4-2d69-47ad-a888-2d0ccd9f62c5">
+    <name>ВозможностьПередоверия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возможность передоверия</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВозможностьПередоверияМЧД</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВозможностьПередоверияМЧД.EnumValue.БезПередоверия</value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -198,6 +214,38 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="872c3f9c-a484-467b-b5fe-b008fee5152e">
+    <name>ДатаОтмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата отмены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9acdec8d-e59e-47f1-b97c-a8050e590f81">
+    <name>ДатаПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата проверки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="9bc3a840-eeb9-444b-9f8a-05a8dd13e3dc">
     <name>ДляНалоговыхОрганов</name>
     <synonym>
@@ -210,6 +258,146 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="545857ca-2617-4b44-9e35-1b10837059ca">
+    <name>ИныеСведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иные сведения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="80cf9060-8f0c-4cb1-b476-6da83c725db7">
+    <name>КодНалоговогоОрганаПредставления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код налогового органа представления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d6d67cc5-e003-4aaa-88ae-d084dae2dc26">
+    <name>НомерВРеестреНотариальныхДействий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер в реестре нотариальных действий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>28</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cc194484-b3fc-4e89-8f72-de3f0e23019e">
+    <name>НомерДоверенности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер доверенности (в реестре)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="93873fe8-10c0-4f7b-ad20-278e887f69e9">
+    <name>Нотариальная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нотариальная</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4c8a84a0-1d8b-4a00-bd3c-38c8d1deaffd">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, который оформил документ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b5cd0ae6-2a12-44d6-8897-587f7e31159b">
+    <name>ПолномочияВТекстовомВиде</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полномочия в текстовом виде</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1de28303-2d0f-46e9-bbad-e40759fb0d3e">
+    <name>ПолномочияУтрачиваютсяПриПередоверии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полномочия утрачиваются при передоверии</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -230,20 +418,18 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="e39114e4-2d69-47ad-a888-2d0ccd9f62c5">
-    <name>ВозможностьПередоверия</name>
+  <attributes uuid="13b4aa30-d586-4b26-af0e-32f0d691fec9">
+    <name>РеквизитыНотариальнойДоверенности</name>
     <synonym>
       <key>ru</key>
-      <value>Возможность передоверия</value>
+      <value>Реквизиты нотариальной доверенности</value>
     </synonym>
     <type>
-      <types>EnumRef.ВозможностьПередоверияМЧД</types>
+      <types>ValueStorage</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.ВозможностьПередоверияМЧД.EnumValue.БезПередоверия</value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -280,43 +466,19 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="36ace6cf-6493-4325-89ff-3c07faae09b4">
-    <name>ВерсияФормата</name>
+  <attributes uuid="7fdb2c9d-8a8b-43c9-a228-db99fef599d5">
+    <name>СовместныеПолномочия</name>
     <synonym>
       <key>ru</key>
-      <value>Версия формата</value>
+      <value>Совместные полномочия</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value>EMCHD_1</value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="80cf9060-8f0c-4cb1-b476-6da83c725db7">
-    <name>КодНалоговогоОрганаПредставления</name>
-    <synonym>
-      <key>ru</key>
-      <value>Код налогового органа представления</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>4</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="bd35d814-a9d2-4f0b-9f41-e7e9d6c53b7d">
@@ -337,41 +499,11 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="b5cd0ae6-2a12-44d6-8897-587f7e31159b">
-    <name>ПолномочияВТекстовомВиде</name>
+  <attributes uuid="9a9ba19a-3a90-438e-9b5b-8a03bb2820da">
+    <name>СтатусВернаУстановленВручную</name>
     <synonym>
       <key>ru</key>
-      <value>Полномочия в текстовом виде</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="7fdb2c9d-8a8b-43c9-a228-db99fef599d5">
-    <name>СовместныеПолномочия</name>
-    <synonym>
-      <key>ru</key>
-      <value>Совместные полномочия</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="1de28303-2d0f-46e9-bbad-e40759fb0d3e">
-    <name>ПолномочияУтрачиваютсяПриПередоверии</name>
-    <synonym>
-      <key>ru</key>
-      <value>Полномочия утрачиваются при передоверии</value>
+      <value>Статус верна установлен вручную</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -400,36 +532,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="bf49b842-d162-4690-bec1-acf4207db565">
-    <name>Верна</name>
-    <synonym>
-      <key>ru</key>
-      <value>Верна</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="9a9ba19a-3a90-438e-9b5b-8a03bb2820da">
-    <name>СтатусВернаУстановленВручную</name>
-    <synonym>
-      <key>ru</key>
-      <value>Статус верна установлен вручную</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="0d671808-63e8-4ad3-8d83-a69aa0049862">
     <name>УстановившийСтатусВерна</name>
     <synonym>
@@ -445,68 +547,14 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="545857ca-2617-4b44-9e35-1b10837059ca">
-    <name>ИныеСведения</name>
+  <attributes uuid="fe9d7083-82f6-4390-b5a5-46c666463289">
+    <name>ФайлДоверенности</name>
     <synonym>
       <key>ru</key>
-      <value>Иные сведения</value>
+      <value>Файл доверенности</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="4c8a84a0-1d8b-4a00-bd3c-38c8d1deaffd">
-    <name>Ответственный</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ответственный</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Пользователи</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Пользователь, который оформил документ</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="9acdec8d-e59e-47f1-b97c-a8050e590f81">
-    <name>ДатаПроверки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата проверки</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="872c3f9c-a484-467b-b5fe-b008fee5152e">
-    <name>ДатаОтмены</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата отмены</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
+      <types>CatalogRef.МашиночитаемыеДоверенностиПрисоединенныеФайлы</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -522,54 +570,6 @@
     </synonym>
     <type>
       <types>CatalogRef.МашиночитаемыеДоверенностиПрисоединенныеФайлы</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="93873fe8-10c0-4f7b-ad20-278e887f69e9">
-    <name>Нотариальная</name>
-    <synonym>
-      <key>ru</key>
-      <value>Нотариальная</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="13b4aa30-d586-4b26-af0e-32f0d691fec9">
-    <name>РеквизитыНотариальнойДоверенности</name>
-    <synonym>
-      <key>ru</key>
-      <value>Реквизиты нотариальной доверенности</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="d6d67cc5-e003-4aaa-88ae-d084dae2dc26">
-    <name>НомерВРеестреНотариальныхДействий</name>
-    <synonym>
-      <key>ru</key>
-      <value>Номер в реестре нотариальных действий</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>28</length>
-      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -679,15 +679,15 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <tabularSections uuid="1490798d-5cd9-4448-be69-10773ab486ee">
+  <tabularSections uuid="ddca48c8-3254-4683-93db-c4939a2d6e72">
     <producedTypes>
-      <objectType typeId="53d0bbc8-5c03-4fbe-8015-3ad513f4a864" valueTypeId="660d16a2-9c2d-446a-8e75-f412ca8887d8"/>
-      <rowType typeId="5411e294-5cda-4a1a-924d-30777a071a1c" valueTypeId="57fe6607-df1c-47fa-b8ad-fd92a99f3266"/>
+      <objectType typeId="05b6ff88-7841-4d98-a2bb-cf080c93f6a7" valueTypeId="f962437a-523b-4ec5-9eed-8a3ff0b9bc89"/>
+      <rowType typeId="2a505080-6751-4b8c-a560-d36fbc25b4b8" valueTypeId="5d7904b8-ae92-4ded-8457-ab152624db92"/>
     </producedTypes>
-    <name>Представители</name>
+    <name>НалоговыеОрганыДействия</name>
     <synonym>
       <key>ru</key>
-      <value>Представители</value>
+      <value>Налоговые органы действия</value>
     </synonym>
     <standardAttributes>
       <dataHistory>Use</dataHistory>
@@ -697,145 +697,21 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
     </standardAttributes>
-    <attributes uuid="6fa88af0-dfcc-4dcf-ab61-0c7cb03a47f7">
-      <name>Представитель</name>
+    <attributes uuid="f8bd3b36-b0a2-46b0-9a8c-84ea1e72dda4">
+      <name>КодНалоговогоОргана</name>
       <synonym>
         <key>ru</key>
-        <value>Представитель</value>
-      </synonym>
-      <type>
-        <types>DefinedType.СторонаМЧД</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="c59644a2-5ef5-43e8-a94f-682dddd562d4">
-      <name>ПредставительРеквизиты</name>
-      <synonym>
-        <key>ru</key>
-        <value>Представитель реквизиты</value>
-      </synonym>
-      <type>
-        <types>ValueStorage</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="d2906b4a-ddcd-4512-910a-fc6f6c4fbc21">
-      <name>Идентификатор</name>
-      <synonym>
-        <key>ru</key>
-        <value>Идентификатор</value>
-      </synonym>
-      <type>
-        <types>UUID</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="6cc3fe24-0a59-4eb6-ac6d-d1b56fabbad9">
-      <name>ИдентификаторРодителя</name>
-      <synonym>
-        <key>ru</key>
-        <value>Идентификатор родителя</value>
-      </synonym>
-      <type>
-        <types>UUID</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-  </tabularSections>
-  <tabularSections uuid="ce877e78-2e91-471e-831f-171fc5b72d54">
-    <producedTypes>
-      <objectType typeId="8ae7cfc0-42f0-4dbb-9da9-0d8b72a558e1" valueTypeId="63497dfa-daca-4a2b-b008-b2775d4c2d80"/>
-      <rowType typeId="82d03db2-78ac-4308-83f4-d22eb5fc55b5" valueTypeId="21a11cb4-3b32-465a-8b1d-f73bb6c48a50"/>
-    </producedTypes>
-    <name>Полномочия</name>
-    <synonym>
-      <key>ru</key>
-      <value>Полномочия</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="3b50cd97-4362-4cc5-ab2c-49506aea1508">
-      <name>Код</name>
-      <synonym>
-        <key>ru</key>
-        <value>Код</value>
+        <value>Код налогового органа</value>
       </synonym>
       <type>
         <types>String</types>
         <stringQualifiers>
-          <length>255</length>
+          <length>4</length>
         </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="56c84cd4-33c2-4529-abf3-2a542a8cfa60">
-      <name>ИдентификаторПолномочия</name>
-      <synonym>
-        <key>ru</key>
-        <value>Идентификатор полномочия</value>
-      </synonym>
-      <type>
-        <types>UUID</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-    </attributes>
-    <attributes uuid="dc496b24-d0e5-46b7-9c03-c470e17afb38">
-      <name>Мнемокод</name>
-      <synonym>
-        <key>ru</key>
-        <value>Мнемокод</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>255</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="870cb1fb-6dea-4ae2-8952-64215ab2b695">
-      <name>Наименование</name>
-      <synonym>
-        <key>ru</key>
-        <value>Наименование</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>255</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
   <tabularSections uuid="4fcb5267-e015-4da1-8871-23944f21a0c5">
@@ -956,15 +832,15 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <tabularSections uuid="ddca48c8-3254-4683-93db-c4939a2d6e72">
+  <tabularSections uuid="ce877e78-2e91-471e-831f-171fc5b72d54">
     <producedTypes>
-      <objectType typeId="05b6ff88-7841-4d98-a2bb-cf080c93f6a7" valueTypeId="f962437a-523b-4ec5-9eed-8a3ff0b9bc89"/>
-      <rowType typeId="2a505080-6751-4b8c-a560-d36fbc25b4b8" valueTypeId="5d7904b8-ae92-4ded-8457-ab152624db92"/>
+      <objectType typeId="8ae7cfc0-42f0-4dbb-9da9-0d8b72a558e1" valueTypeId="63497dfa-daca-4a2b-b008-b2775d4c2d80"/>
+      <rowType typeId="82d03db2-78ac-4308-83f4-d22eb5fc55b5" valueTypeId="21a11cb4-3b32-465a-8b1d-f73bb6c48a50"/>
     </producedTypes>
-    <name>НалоговыеОрганыДействия</name>
+    <name>Полномочия</name>
     <synonym>
       <key>ru</key>
-      <value>Налоговые органы действия</value>
+      <value>Полномочия</value>
     </synonym>
     <standardAttributes>
       <dataHistory>Use</dataHistory>
@@ -974,34 +850,180 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
     </standardAttributes>
-    <attributes uuid="f8bd3b36-b0a2-46b0-9a8c-84ea1e72dda4">
-      <name>КодНалоговогоОргана</name>
+    <attributes uuid="3b50cd97-4362-4cc5-ab2c-49506aea1508">
+      <name>Код</name>
       <synonym>
         <key>ru</key>
-        <value>Код налогового органа</value>
+        <value>Код</value>
       </synonym>
       <type>
         <types>String</types>
         <stringQualifiers>
-          <length>4</length>
+          <length>255</length>
         </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="56c84cd4-33c2-4529-abf3-2a542a8cfa60">
+      <name>ИдентификаторПолномочия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор полномочия</value>
+      </synonym>
+      <type>
+        <types>UUID</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+    </attributes>
+    <attributes uuid="dc496b24-d0e5-46b7-9c03-c470e17afb38">
+      <name>Мнемокод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Мнемокод</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="870cb1fb-6dea-4ae2-8952-64215ab2b695">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="1490798d-5cd9-4448-be69-10773ab486ee">
+    <producedTypes>
+      <objectType typeId="53d0bbc8-5c03-4fbe-8015-3ad513f4a864" valueTypeId="660d16a2-9c2d-446a-8e75-f412ca8887d8"/>
+      <rowType typeId="5411e294-5cda-4a1a-924d-30777a071a1c" valueTypeId="57fe6607-df1c-47fa-b8ad-fd92a99f3266"/>
+    </producedTypes>
+    <name>Представители</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представители</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="6fa88af0-dfcc-4dcf-ab61-0c7cb03a47f7">
+      <name>Представитель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Представитель</value>
+      </synonym>
+      <type>
+        <types>DefinedType.СторонаМЧД</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c59644a2-5ef5-43e8-a94f-682dddd562d4">
+      <name>ПредставительРеквизиты</name>
+      <synonym>
+        <key>ru</key>
+        <value>Представитель реквизиты</value>
+      </synonym>
+      <type>
+        <types>ValueStorage</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d2906b4a-ddcd-4512-910a-fc6f6c4fbc21">
+      <name>Идентификатор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор</value>
+      </synonym>
+      <type>
+        <types>UUID</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="6cc3fe24-0a59-4eb6-ac6d-d1b56fabbad9">
+      <name>ИдентификаторРодителя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор родителя</value>
+      </synonym>
+      <type>
+        <types>UUID</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
     </attributes>
   </tabularSections>
-  <forms uuid="d46d2f66-f041-4012-b52a-fea74eed0ec6">
-    <name>ФормаЭлемента</name>
+  <forms uuid="bc5216fe-94a4-4f55-ab91-462278c748c4">
+    <name>ВыборЗначенияОграничения</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Выбор значения ограничения полномочий</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2aeb05ee-1aa7-4bd1-a5b1-7f8d6a6b23de">
+    <name>ВыборОграниченийПолномочий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор ограничений полномочий представителя</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a8ac92ab-a476-4e79-8a3f-40e67d09a1bf">
+    <name>НастройкиПолномочий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки полномочий</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1621383d-36a8-4215-9f63-bdff10d2730a">
+    <name>ОтменаДоверенности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отмена доверенности</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -1041,15 +1063,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="ca6f8fcf-2950-4468-abee-8e84ecb4aa33">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="9668096a-74bf-41e2-a150-bfbea5216d10">
     <name>ФормаПолученияДоверенностиИзРеестра</name>
     <synonym>
@@ -1059,58 +1072,29 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="2aeb05ee-1aa7-4bd1-a5b1-7f8d6a6b23de">
-    <name>ВыборОграниченийПолномочий</name>
+  <forms uuid="ca6f8fcf-2950-4468-abee-8e84ecb4aa33">
+    <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
-      <value>Выбор ограничений полномочий представителя</value>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="bc5216fe-94a4-4f55-ab91-462278c748c4">
-    <name>ВыборЗначенияОграничения</name>
+  <forms uuid="d46d2f66-f041-4012-b52a-fea74eed0ec6">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Выбор значения ограничения полномочий</value>
+      <value>Форма элемента</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="a8ac92ab-a476-4e79-8a3f-40e67d09a1bf">
-    <name>НастройкиПолномочий</name>
-    <synonym>
-      <key>ru</key>
-      <value>Настройки полномочий</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="1621383d-36a8-4215-9f63-bdff10d2730a">
-    <name>ОтменаДоверенности</name>
-    <synonym>
-      <key>ru</key>
-      <value>Отмена доверенности</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <templates uuid="d9cc0bdf-ec8a-41e6-a04d-f87a277dc07e">
-    <name>ПФ_MXL_Доверенность</name>
-    <synonym>
-      <key>ru</key>
-      <value>Доверенность</value>
-    </synonym>
-  </templates>
-  <templates uuid="e7d74349-6636-485f-888d-57086beb7574">
-    <name>Ограничения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ограничения</value>
-    </synonym>
-    <comment>АПК:497 Не подлежит переводу, находится в локализованной части</comment>
-    <templateType>BinaryData</templateType>
-  </templates>
   <templates uuid="93210c19-7351-4415-9fe0-f646919594d9">
     <name>ЗначенияОграничений</name>
     <synonym>
@@ -1128,6 +1112,22 @@
     </synonym>
     <comment>АПК:497 Не подлежит переводу, находится в локализованной части</comment>
     <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="e7d74349-6636-485f-888d-57086beb7574">
+    <name>Ограничения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ограничения</value>
+    </synonym>
+    <comment>АПК:497 Не подлежит переводу, находится в локализованной части</comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="d9cc0bdf-ec8a-41e6-a04d-f87a277dc07e">
+    <name>ПФ_MXL_Доверенность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доверенность</value>
+    </synonym>
   </templates>
   <commands uuid="20cbe469-17f9-44da-8317-91feef8c5d46">
     <name>Отменить</name>

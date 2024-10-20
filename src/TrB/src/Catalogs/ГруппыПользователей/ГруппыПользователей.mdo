@@ -220,6 +220,15 @@
     </attributes>
     <use>ForFolderAndItem</use>
   </tabularSections>
+  <forms uuid="3bf1281f-7570-4633-86b9-3e953a7e6647">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="5d7a53fa-1a89-4e6e-868c-4077bd84c0ce">
     <name>ФормаЭлемента</name>
     <synonym>
@@ -231,15 +240,6 @@
         <lang>ru</lang>
       </pages>
     </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="3bf1281f-7570-4633-86b9-3e953a7e6647">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

@@ -108,6 +108,26 @@
       <value></value>
     </fillValue>
   </resources>
+  <resources uuid="1c2103d3-3feb-4412-98c4-c731f22eef2b">
+    <name>ИмяМенеджераРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя менеджера регистрации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
   <resources uuid="3a8fffb6-a732-440c-afb9-d1c699ea53b6">
     <name>ИмяПланаОбменаИзПравил</name>
     <synonym>
@@ -291,6 +311,21 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="569bb515-cec2-4da0-80f0-34dae50206e0">
+    <name>ПараметрыВыборочнойРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры выборочной регистрации</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="0eee931a-57bb-4844-8e6e-eaca342640a0">
     <name>ПравилаXML</name>
     <synonym>
@@ -439,60 +474,6 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="1c2103d3-3feb-4412-98c4-c731f22eef2b">
-    <name>ИмяМенеджераРегистрации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Имя менеджера регистрации</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>150</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </resources>
-  <resources uuid="569bb515-cec2-4da0-80f0-34dae50206e0">
-    <name>ПараметрыВыборочнойРегистрации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Параметры выборочной регистрации</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <attributes uuid="a21989bd-a57f-4969-be3b-d8b39ead4145">
-    <name>УдалитьИспользоватьФильтрВыборочнойРегистрацииОбъектов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Удалить использовать фильтр выборочной регистрации объектов</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Признак использования фильтра Выборочной регистрации объектов для плана обмена. Используется только для правил конвертации объектов. </value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:BooleanValue"/>
-  </attributes>
   <attributes uuid="c4aee120-cdbb-4b48-a1c7-99cccbafb120">
     <name>ПравилаЗагружены</name>
     <synonym>
@@ -511,6 +492,25 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a21989bd-a57f-4969-be3b-d8b39ead4145">
+    <name>УдалитьИспользоватьФильтрВыборочнойРегистрацииОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить использовать фильтр выборочной регистрации объектов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак использования фильтра Выборочной регистрации объектов для плана обмена. Используется только для правил конвертации объектов. </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
   </attributes>
   <dimensions uuid="6b3e07d5-9299-4933-b3fa-c3cc5f5aa7c9">
     <name>ИмяПланаОбмена</name>

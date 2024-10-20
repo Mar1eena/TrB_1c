@@ -82,6 +82,25 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="acc996ab-672a-4602-b7ad-8eee83557e61">
+    <name>ПарольАдминистратора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль администратора</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пароль администратора для копирования</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="6c27eece-2f8e-48eb-b9c7-f9c414ee15bd">
     <name>ПроводитьРезервноеКопированиеПриВосстановленииДанных</name>
     <synonym>
@@ -116,25 +135,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
   </attributes>
-  <attributes uuid="acc996ab-672a-4602-b7ad-8eee83557e61">
-    <name>ПарольАдминистратора</name>
-    <synonym>
-      <key>ru</key>
-      <value>Пароль администратора</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Пароль администратора для копирования</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <forms uuid="bf9e9c2f-e5dc-4f82-8e9a-7f35e3ad9a0b">
     <name>ВосстановлениеДанныхИзРезервнойКопии</name>
     <synonym>
@@ -163,11 +163,19 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="97745768-ed35-44f1-beba-abb8b28a29ae">
-    <name>МакетФайлаРезервногоКопирования</name>
+  <templates uuid="ab201c5f-4134-42cf-a528-c1c4df02f2d7">
+    <name>ДопФайлРезервногоКопирования</name>
     <synonym>
       <key>ru</key>
-      <value>Макет файла резервного копирования</value>
+      <value>Доп файл резервного копирования</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="634cd26b-78f1-4446-8aad-b96ed16e5329">
+    <name>ЗаставкаВосстановления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заставка восстановления</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
@@ -179,14 +187,6 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="ab201c5f-4134-42cf-a528-c1c4df02f2d7">
-    <name>ДопФайлРезервногоКопирования</name>
-    <synonym>
-      <key>ru</key>
-      <value>Доп файл резервного копирования</value>
-    </synonym>
-    <templateType>TextDocument</templateType>
-  </templates>
   <templates uuid="303fb7b5-6a23-40ea-ae12-b54f4ebae026">
     <name>МакетФайлаЗагрузкаИБ</name>
     <synonym>
@@ -195,11 +195,11 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="634cd26b-78f1-4446-8aad-b96ed16e5329">
-    <name>ЗаставкаВосстановления</name>
+  <templates uuid="97745768-ed35-44f1-beba-abb8b28a29ae">
+    <name>МакетФайлаРезервногоКопирования</name>
     <synonym>
       <key>ru</key>
-      <value>Заставка восстановления</value>
+      <value>Макет файла резервного копирования</value>
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>

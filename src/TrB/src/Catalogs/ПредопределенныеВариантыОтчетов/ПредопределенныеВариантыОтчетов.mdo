@@ -286,6 +286,21 @@
     </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="e0e12708-da10-4f81-9e56-5876ddc77084">
+    <name>Назначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение</value>
+    </synonym>
+    <type>
+      <types>EnumRef.НазначенияВариантовОтчетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="f98bcdb8-6eed-4b4f-b3da-d80b5e8bed44">
     <name>НаименованияПараметровИОтборов</name>
     <synonym>
@@ -521,6 +536,21 @@
     <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="63ad43fe-a050-47f7-af4f-099aa10255af">
+    <name>ПоказыватьВПодменюВариантов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать в подменю вариантов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="a1a44832-6026-47ae-affd-5b6d52e84307">
     <name>ХешНастроек</name>
     <synonym>
@@ -544,110 +574,6 @@
     </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="e0e12708-da10-4f81-9e56-5876ddc77084">
-    <name>Назначение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Назначение</value>
-    </synonym>
-    <type>
-      <types>EnumRef.НазначенияВариантовОтчетов</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="63ad43fe-a050-47f7-af4f-099aa10255af">
-    <name>ПоказыватьВПодменюВариантов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Показывать в подменю вариантов</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <tabularSections uuid="4033eb31-8281-402a-afff-431fa36e589e">
-    <producedTypes>
-      <objectType typeId="c02a6112-96e1-46f3-a7c0-d088161064ec" valueTypeId="ec191a41-a5aa-474b-b4dc-092ec6b87a55"/>
-      <rowType typeId="aa11ca7d-7f27-45e7-8f4d-cf1cbb888daf" valueTypeId="bcabb619-7388-4b39-8509-d6920f3bf56a"/>
-    </producedTypes>
-    <name>Размещение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Размещение</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="5a1e1da5-7307-4f48-bb1c-2977fc4d7cef">
-      <name>Подсистема</name>
-      <synonym>
-        <key>ru</key>
-        <value>Подсистема</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Раздел или группа</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-    </attributes>
-    <attributes uuid="f59488c7-4643-4988-8043-5c9724e04279">
-      <name>Важный</name>
-      <synonym>
-        <key>ru</key>
-        <value>Важный</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value> </value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-    </attributes>
-    <attributes uuid="cfe022b5-7647-4b5c-a2bd-f5d313f4a9db">
-      <name>СмТакже</name>
-      <synonym>
-        <key>ru</key>
-        <value>См также</value>
-      </synonym>
-      <comment>Вариант находится в группе &quot;См. также&quot;</comment>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value> </value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
-    </attributes>
-  </tabularSections>
   <tabularSections uuid="b67a509d-bb0f-427e-b447-4d4617078d6a">
     <producedTypes>
       <objectType typeId="4f131f9c-396f-4931-ab33-38c852a7734a" valueTypeId="3976af13-4f3c-4759-9171-e0e0a5fd7d43"/>
@@ -780,6 +706,80 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="4033eb31-8281-402a-afff-431fa36e589e">
+    <producedTypes>
+      <objectType typeId="c02a6112-96e1-46f3-a7c0-d088161064ec" valueTypeId="ec191a41-a5aa-474b-b4dc-092ec6b87a55"/>
+      <rowType typeId="aa11ca7d-7f27-45e7-8f4d-cf1cbb888daf" valueTypeId="bcabb619-7388-4b39-8509-d6920f3bf56a"/>
+    </producedTypes>
+    <name>Размещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размещение</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="5a1e1da5-7307-4f48-bb1c-2977fc4d7cef">
+      <name>Подсистема</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подсистема</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Раздел или группа</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+    </attributes>
+    <attributes uuid="f59488c7-4643-4988-8043-5c9724e04279">
+      <name>Важный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Важный</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value> </value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+    </attributes>
+    <attributes uuid="cfe022b5-7647-4b5c-a2bd-f5d313f4a9db">
+      <name>СмТакже</name>
+      <synonym>
+        <key>ru</key>
+        <value>См также</value>
+      </synonym>
+      <comment>Вариант находится в группе &quot;См. также&quot;</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value> </value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
     </attributes>
   </tabularSections>
 </mdclass:Catalog>

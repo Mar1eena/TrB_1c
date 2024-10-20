@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb9b9c72-3cbd-4e8b-9e42-62ccbe9b7bc6">
+  <producedTypes>
+    <objectType typeId="035c7f6f-e4b8-4b11-aa42-d1dbed8dca77" valueTypeId="26459adc-8d3d-42ee-b2d6-ed409b6cd695"/>
+    <refType typeId="e1a70edc-065b-4f52-83de-91ab91ebea5b" valueTypeId="e6efe7e5-bbef-45f2-9794-8236059ff2d7"/>
+    <selectionType typeId="086b87bb-e0d8-4ed0-aa31-6c9582041e1e" valueTypeId="45bb0b9e-5ba8-4a64-a39e-3249525b9c71"/>
+    <listType typeId="2ed09ee3-e817-4f2f-9c78-749711b4e6ed" valueTypeId="d0131368-9861-41b3-a4d9-28e87249d7f1"/>
+    <managerType typeId="ee6cb001-2f56-45ad-aec9-f1e7ccc557e3" valueTypeId="316681b2-c6c6-4bd5-8148-a0a4950b49ce"/>
+  </producedTypes>
+  <name>TrBСписокИнструментов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список инструментов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.TrBСписокИнструментов.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.TrBСписокИнструментов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Инструмент</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Инструмент</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Инструменты</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

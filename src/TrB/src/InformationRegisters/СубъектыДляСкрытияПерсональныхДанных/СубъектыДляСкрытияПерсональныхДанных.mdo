@@ -82,6 +82,23 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <attributes uuid="ada760f3-6a9f-4b81-afc1-98eb164af747">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.СогласиеНаОбработкуПерсональныхДанных</types>
+      <types>DocumentRef.ОтзывСогласияНаОбработкуПерсональныхДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="4fa153eb-1efb-43e5-ac09-e5431d4800df">
     <name>ПричинаОтменыСкрытия</name>
     <synonym>
@@ -101,23 +118,6 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
-  </attributes>
-  <attributes uuid="ada760f3-6a9f-4b81-afc1-98eb164af747">
-    <name>Основание</name>
-    <synonym>
-      <key>ru</key>
-      <value>Основание</value>
-    </synonym>
-    <type>
-      <types>DocumentRef.СогласиеНаОбработкуПерсональныхДанных</types>
-      <types>DocumentRef.ОтзывСогласияНаОбработкуПерсональныхДанных</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <dimensions uuid="262dea64-4ccd-4b97-ac7e-ec1dbdd9ac98">
     <name>Субъект</name>

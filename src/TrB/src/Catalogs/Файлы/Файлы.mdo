@@ -299,6 +299,28 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="ec0c3187-de61-4bc8-a52a-7617f47ffb6d">
+    <name>Изменил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отредактировал</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВнешниеПользователи</types>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Последний пользователь, который отредактировал файл</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <createOnInput>Use</createOnInput>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Пользователи.EmptyRef</value>
+    </fillValue>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="2fcd2c85-6778-42fa-9bdd-a6ba47497ec0">
     <name>ИндексКартинки</name>
     <synonym>
@@ -365,6 +387,75 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="e8ae4a26-3127-43ae-af7a-c2e278d2611d">
+    <name>ПутьКФайлу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к файлу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Путь к файлу в томе (служебное поле)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b923c78f-d074-41b4-b832-086686258f19">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер (байт)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Размер файла в байтах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8ff96413-6fdd-4b8d-a181-ea0d8633defc">
+    <name>Расширение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Расширение файла</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="54ecaf7b-9bc5-483c-96e1-270bcd323590">
     <name>Редактирует</name>
     <synonym>
@@ -406,6 +497,28 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a0a85b22-63ee-4a05-8b0d-1feb9ee07b0a">
+    <name>СтатусИзвлеченияТекста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус извлечения текста</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыИзвлеченияТекстаФайлов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статус извлечения текста из файла (служебное поле)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.СтатусыИзвлеченияТекстаФайлов.EmptyRef</value>
+    </fillValue>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -452,26 +565,43 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="ec0c3187-de61-4bc8-a52a-7617f47ffb6d">
-    <name>Изменил</name>
+  <attributes uuid="ee008096-1ae8-4a64-9d3d-14cb15c8be70">
+    <name>ТипХраненияФайла</name>
     <synonym>
       <key>ru</key>
-      <value>Отредактировал</value>
+      <value>Тип хранения файла</value>
     </synonym>
     <type>
-      <types>CatalogRef.ВнешниеПользователи</types>
-      <types>CatalogRef.Пользователи</types>
+      <types>EnumRef.ТипыХраненияФайлов</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Последний пользователь, который отредактировал файл</value>
+      <value>Тип хранения файла (в томе или в информационной базе)</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <createOnInput>Use</createOnInput>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Catalog.Пользователи.EmptyRef</value>
-    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="54604ed2-766b-4308-b99e-447817d82799">
+    <name>Том</name>
+    <synonym>
+      <key>ru</key>
+      <value>Том</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТомаХраненияФайлов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Том хранения файлов (если файл хранится в томе)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="1e71ec59-55a4-45e8-a8c9-f70c2cb56589">
@@ -558,92 +688,22 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="e8ae4a26-3127-43ae-af7a-c2e278d2611d">
-    <name>ПутьКФайлу</name>
+  <attributes uuid="a4754a7b-971f-4517-963e-b7cb9d57f86d">
+    <name>ФайлХранилище</name>
     <synonym>
       <key>ru</key>
-      <value>Путь к файлу</value>
+      <value>Временное хранилище файла</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>ValueStorage</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Путь к файлу в томе (служебное поле)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="b923c78f-d074-41b4-b832-086686258f19">
-    <name>Размер</name>
-    <synonym>
-      <key>ru</key>
-      <value>Размер (байт)</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Размер файла в байтах</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:NumberValue">
-      <value>0</value>
-    </fillValue>
-    <indexing>Index</indexing>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="8ff96413-6fdd-4b8d-a181-ea0d8633defc">
-    <name>Расширение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Расширение</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Расширение файла</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <indexing>Index</indexing>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="54604ed2-766b-4308-b99e-447817d82799">
-    <name>Том</name>
-    <synonym>
-      <key>ru</key>
-      <value>Том</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ТомаХраненияФайлов</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Том хранения файлов (если файл хранится в томе)</value>
+      <value>Временное хранилище файла (служебное поле)</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="7abdb07b-edbc-4c3b-aa53-afaa92dc9071">
@@ -664,66 +724,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:BooleanValue"/>
     <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="ee008096-1ae8-4a64-9d3d-14cb15c8be70">
-    <name>ТипХраненияФайла</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тип хранения файла</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ТипыХраненияФайлов</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Тип хранения файла (в томе или в информационной базе)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="a0a85b22-63ee-4a05-8b0d-1feb9ee07b0a">
-    <name>СтатусИзвлеченияТекста</name>
-    <synonym>
-      <key>ru</key>
-      <value>Статус извлечения текста</value>
-    </synonym>
-    <type>
-      <types>EnumRef.СтатусыИзвлеченияТекстаФайлов</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Статус извлечения текста из файла (служебное поле)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.СтатусыИзвлеченияТекстаФайлов.EmptyRef</value>
-    </fillValue>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="a4754a7b-971f-4517-963e-b7cb9d57f86d">
-    <name>ФайлХранилище</name>
-    <synonym>
-      <key>ru</key>
-      <value>Временное хранилище файла</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Временное хранилище файла (служебное поле)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
   </attributes>
   <tabularSections uuid="f48b4475-2cd9-41df-962a-6529f84985ca">
@@ -892,20 +892,6 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <forms uuid="526c688e-a4d4-45f7-8bba-b8ceff38fe27">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="7e32c295-a769-4cff-a3eb-992f7031475f">
     <name>Файлы</name>
     <synonym>
@@ -978,6 +964,20 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="526c688e-a4d4-45f7-8bba-b8ceff38fe27">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="67efa786-312f-4c9c-b970-0320e92069af">
     <name>МакетОтчета</name>
     <synonym>
@@ -985,17 +985,6 @@
       <value>Макет отчета</value>
     </synonym>
   </templates>
-  <commands uuid="5b952e35-1037-4447-8293-6d8889692c8b">
-    <name>Файлы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Файлы</value>
-    </synonym>
-    <comment>Открывает список файлов в папках</comment>
-    <group>NavigationPanelOrdinary</group>
-    <commandParameterType/>
-    <representation>Auto</representation>
-  </commands>
   <commands uuid="2bc2ca58-6cc0-4d4b-8672-f9328c86c2c1">
     <name>ВерсииФайла</name>
     <synonym>
@@ -1006,6 +995,17 @@
     <commandParameterType>
       <types>CatalogRef.Файлы</types>
     </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="5b952e35-1037-4447-8293-6d8889692c8b">
+    <name>Файлы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файлы</value>
+    </synonym>
+    <comment>Открывает список файлов в папках</comment>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
     <representation>Auto</representation>
   </commands>
 </mdclass:Catalog>

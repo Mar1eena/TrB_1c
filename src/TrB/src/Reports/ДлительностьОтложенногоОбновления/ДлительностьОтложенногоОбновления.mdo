@@ -15,6 +15,13 @@
   <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
   <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
   <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="3c2c192e-4869-4cc6-ba47-1fadac5b9678">
+    <name>ДиаграммаГанта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диаграмма ганта</value>
+    </synonym>
+  </templates>
   <templates uuid="2bf9c338-d31e-467e-8281-d1d6a3a6b2e2">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
@@ -22,12 +29,5 @@
       <value>Основная схема компоновки данных</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
-  </templates>
-  <templates uuid="3c2c192e-4869-4cc6-ba47-1fadac5b9678">
-    <name>ДиаграммаГанта</name>
-    <synonym>
-      <key>ru</key>
-      <value>Диаграмма ганта</value>
-    </synonym>
   </templates>
 </mdclass:Report>

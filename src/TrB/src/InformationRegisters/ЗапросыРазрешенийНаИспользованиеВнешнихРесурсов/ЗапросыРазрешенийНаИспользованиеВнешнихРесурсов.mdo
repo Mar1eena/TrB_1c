@@ -49,20 +49,33 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="58230238-d2f2-422e-90cb-de355996eb19">
-    <name>ТипПрограммногоМодуля</name>
+  <resources uuid="10dcbcc6-7793-4da7-a9a5-e4f124209d3e">
+    <name>БезопасныйРежим</name>
     <synonym>
       <key>ru</key>
-      <value>Тип программного модуля</value>
+      <value>Безопасный режим</value>
     </synonym>
     <type>
-      <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+      <types>DefinedType.БезопасныйРежим</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
-    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a8f149d7-e9bc-4695-b4f4-88434e31aafb">
+    <name>ИдентификаторВладельца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор владельца</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <resources uuid="3d907678-628d-4fb2-85c2-149839024c08">
@@ -95,46 +108,50 @@
     <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="a8f149d7-e9bc-4695-b4f4-88434e31aafb">
-    <name>ИдентификаторВладельца</name>
+  <resources uuid="58230238-d2f2-422e-90cb-de355996eb19">
+    <name>ТипПрограммногоМодуля</name>
     <synonym>
       <key>ru</key>
-      <value>Идентификатор владельца</value>
+      <value>Тип программного модуля</value>
     </synonym>
     <type>
-      <types>UUID</types>
+      <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="10dcbcc6-7793-4da7-a9a5-e4f124209d3e">
-    <name>БезопасныйРежим</name>
+  <attributes uuid="43523bbb-c923-4a20-bcb5-50d30cc826ee">
+    <name>ДобавляемыеРазрешения</name>
     <synonym>
       <key>ru</key>
-      <value>Безопасный режим</value>
+      <value>Добавляемые разрешения</value>
     </synonym>
     <type>
-      <types>DefinedType.БезопасныйРежим</types>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <attributes uuid="11ba510f-cb57-43d0-9897-c49e10b67ccd">
-    <name>Операция</name>
+  </attributes>
+  <attributes uuid="9a2f2cd1-4c9f-460b-b3b7-64706a0164ab">
+    <name>ЗапросАдминистрирования</name>
     <synonym>
       <key>ru</key>
-      <value>Операция</value>
+      <value>Запрос администрирования</value>
     </synonym>
     <type>
-      <types>EnumRef.ОперацииАдминистрированияПрофилейБезопасности</types>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
@@ -157,6 +174,21 @@
       <value></value>
     </fillValue>
   </attributes>
+  <attributes uuid="11ba510f-cb57-43d0-9897-c49e10b67ccd">
+    <name>Операция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ОперацииАдминистрированияПрофилейБезопасности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="b009bc99-ea12-46db-a7f8-cb3e285b20d0">
     <name>РежимЗамещения</name>
     <synonym>
@@ -165,22 +197,6 @@
     </synonym>
     <type>
       <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="43523bbb-c923-4a20-bcb5-50d30cc826ee">
-    <name>ДобавляемыеРазрешения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Добавляемые разрешения</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -205,22 +221,6 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
-  </attributes>
-  <attributes uuid="9a2f2cd1-4c9f-460b-b3b7-64706a0164ab">
-    <name>ЗапросАдминистрирования</name>
-    <synonym>
-      <key>ru</key>
-      <value>Запрос администрирования</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <dimensions uuid="7e4b9dce-e332-4d35-8b5f-d3f88918989d">
     <name>ИдентификаторЗапроса</name>

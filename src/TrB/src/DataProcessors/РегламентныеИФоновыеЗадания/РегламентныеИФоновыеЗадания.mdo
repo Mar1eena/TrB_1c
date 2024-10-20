@@ -17,6 +17,20 @@
       <lang>ru</lang>
     </pages>
   </help>
+  <forms uuid="95a8e790-25ef-4ef3-a44a-f150bf1ceb1f">
+    <name>РегламентноеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентное задание</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <forms uuid="11370667-bec5-4a2d-8aa1-97f4d795718f">
     <name>РегламентныеИФоновыеЗадания</name>
     <synonym>
@@ -31,20 +45,6 @@
     <synonym>
       <key>ru</key>
       <value>Фоновое задание</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="95a8e790-25ef-4ef3-a44a-f150bf1ceb1f">
-    <name>РегламентноеЗадание</name>
-    <synonym>
-      <key>ru</key>
-      <value>Регламентное задание</value>
     </synonym>
     <help>
       <pages>

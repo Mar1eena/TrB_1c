@@ -153,216 +153,6 @@
   <defaultObjectForm>ChartOfCharacteristicTypes.ВопросыДляАнкетирования.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>ChartOfCharacteristicTypes.ВопросыДляАнкетирования.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>ChartOfCharacteristicTypes.ВопросыДляАнкетирования.Form.ФормаВыбора</defaultChoiceForm>
-  <attributes uuid="337370e0-1021-4887-9d38-6c3833c90a5b">
-    <name>Формулировка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Формулировка</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>300</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Формулировка вопроса, как её увидит респондент</value>
-    </toolTip>
-    <multiLine>true</multiLine>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="0ff569eb-d5b8-4ab1-ac77-5e5afd6d44d0">
-    <name>ТипОтвета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тип ответа</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ТипыОтветовНаВопрос</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Тип ответа на вопрос</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.ТипыОтветовНаВопрос.EmptyRef</value>
-    </fillValue>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="d6f01f1c-801b-4776-ae11-48236103f76a">
-    <name>ТребуетсяКомментарий</name>
-    <synonym>
-      <key>ru</key>
-      <value>Требуется комментарий</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Признак необходимости прокомментировать данный ответ респондентом</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:BooleanValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="b6fe68cf-657b-40e0-af2e-247607a86519">
-    <name>ПояснениеКомментария</name>
-    <synonym>
-      <key>ru</key>
-      <value>Пояснение комментария</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>150</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Текст, который будет отображаться как пояснение к полю комментарий вопроса</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="9b0b8191-94b7-428f-be86-e9e4cd24a72f">
-    <name>ЗаполнятьАвтоматически</name>
-    <synonym>
-      <key>ru</key>
-      <value>Заполнять автоматически</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Доступен для предопределенных вопросов</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:BooleanValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="a923dbcb-7146-4445-ad17-f4a32c16a837">
-    <name>Длина</name>
-    <synonym>
-      <key>ru</key>
-      <value>Длина</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Длина строкового или числового типа ответа</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:NumberValue">
-      <value>0</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="41dec792-1d1a-4e06-a54b-a86193b98225">
-    <name>МинимальноеЗначение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Минимальное значение</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Минимально возможное значение ответа</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:NumberValue">
-      <value>0</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="52257beb-3e0c-4681-b430-9690398cd13a">
-    <name>МаксимальноеЗначение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Максимальное значение</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Максимально возможное значение ответа</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:NumberValue">
-      <value>0</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="135e637c-c28e-4547-8da2-d897dca54cb2">
-    <name>Точность</name>
-    <synonym>
-      <key>ru</key>
-      <value>Точность</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>1</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Точность числовых ответов</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="245be006-6d0a-4c9e-97c5-f3c2ddd734f7">
     <name>АгрегироватьСуммуВОтчетах</name>
     <synonym>
@@ -422,22 +212,63 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="f0402893-724d-4ccd-87f6-d567839b3e70">
-    <name>ИспользоватьМинимальноеЗначение</name>
+  <attributes uuid="27089712-b7d7-4a2f-9851-1826d8965f5b">
+    <name>ВыводитьПодсказкуУЧисловыхВопросов</name>
     <synonym>
       <key>ru</key>
-      <value>Использовать минимальное значение</value>
+      <value>Выводить подсказку у числовых вопросов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a923dbcb-7146-4445-ad17-f4a32c16a837">
+    <name>Длина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Длина строкового или числового типа ответа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9b0b8191-94b7-428f-be86-e9e4cd24a72f">
+    <name>ЗаполнятьАвтоматически</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнять автоматически</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Использовать минимально возможное значение ответа</value>
+      <value>Доступен для предопределенных вопросов</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -460,6 +291,73 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="f0402893-724d-4ccd-87f6-d567839b3e70">
+    <name>ИспользоватьМинимальноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать минимальное значение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Использовать минимально возможное значение ответа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="52257beb-3e0c-4681-b430-9690398cd13a">
+    <name>МаксимальноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальное значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимально возможное значение ответа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="41dec792-1d1a-4e06-a54b-a86193b98225">
+    <name>МинимальноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальное значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Минимально возможное значение ответа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="08077c47-4ffd-46f5-9ef5-528ac27bdc75">
     <name>ПоказыватьПолосуРегулирования</name>
     <synonym>
@@ -476,6 +374,123 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b6fe68cf-657b-40e0-af2e-247607a86519">
+    <name>ПояснениеКомментария</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пояснение комментария</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текст, который будет отображаться как пояснение к полю комментарий вопроса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0ff569eb-d5b8-4ab1-ac77-5e5afd6d44d0">
+    <name>ТипОтвета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип ответа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыОтветовНаВопрос</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип ответа на вопрос</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ТипыОтветовНаВопрос.EmptyRef</value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="135e637c-c28e-4547-8da2-d897dca54cb2">
+    <name>Точность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Точность числовых ответов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d6f01f1c-801b-4776-ae11-48236103f76a">
+    <name>ТребуетсяКомментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуется комментарий</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак необходимости прокомментировать данный ответ респондентом</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="337370e0-1021-4887-9d38-6c3833c90a5b">
+    <name>Формулировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формулировка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Формулировка вопроса, как её увидит респондент</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -504,21 +519,6 @@
     <fillValue xsi:type="core:NumberValue">
       <value>1</value>
     </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="27089712-b7d7-4a2f-9851-1826d8965f5b">
-    <name>ВыводитьПодсказкуУЧисловыхВопросов</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выводить подсказку у числовых вопросов</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -576,20 +576,6 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <forms uuid="a0b74de9-06b5-416c-9dd0-2f9dc209fe91">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="5356543a-db9a-4265-b83f-31d45544c8e6">
     <name>ФормаВыбора</name>
     <synonym>
@@ -610,6 +596,20 @@
       <key>ru</key>
       <value>Форма списка</value>
     </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a0b74de9-06b5-416c-9dd0-2f9dc209fe91">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

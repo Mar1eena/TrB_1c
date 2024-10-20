@@ -75,6 +75,27 @@
     </fillValue>
     <indexing>Index</indexing>
   </resources>
+  <resources uuid="0d61a8d4-2dc8-435e-a238-416d7640576f">
+    <name>ВладелецФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размещение</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ВладелецПрисоединенныхФайлов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Место размещения файла (папка или другой объект)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
   <resources uuid="60fa2562-4914-46d6-a00a-1bb6e2803263">
     <name>ДатаСоздания</name>
     <synonym>
@@ -96,27 +117,6 @@
     <fillValue xsi:type="core:DateValue">
       <value>0001-01-01T00:00:00</value>
     </fillValue>
-    <indexing>Index</indexing>
-  </resources>
-  <resources uuid="0d61a8d4-2dc8-435e-a238-416d7640576f">
-    <name>ВладелецФайла</name>
-    <synonym>
-      <key>ru</key>
-      <value>Размещение</value>
-    </synonym>
-    <type>
-      <types>DefinedType.ВладелецПрисоединенныхФайлов</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Место размещения файла (папка или другой объект)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <indexing>Index</indexing>
   </resources>
   <resources uuid="5ea899d4-e076-4a1c-838c-e369abc4705f">
@@ -142,24 +142,6 @@
       <value>0</value>
     </fillValue>
   </resources>
-  <resources uuid="f2bf5f4a-e53b-4300-bbc7-97ac2e06f3c2">
-    <name>НомерКартинкиПодписанЗашифрован</name>
-    <synonym>
-      <key>ru</key>
-      <value>Номер картинки подписан зашифрован</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="ab2e75f0-8da7-4b38-8f30-537424b719db">
     <name>Наименование</name>
     <synonym>
@@ -179,6 +161,24 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
+  </resources>
+  <resources uuid="f2bf5f4a-e53b-4300-bbc7-97ac2e06f3c2">
+    <name>НомерКартинкиПодписанЗашифрован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер картинки подписан зашифрован</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
   <resources uuid="db344a42-61b8-4544-9aa1-8840ab8a70f0">
     <name>Описание</name>

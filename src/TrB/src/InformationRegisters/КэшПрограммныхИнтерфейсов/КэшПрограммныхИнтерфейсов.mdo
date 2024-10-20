@@ -55,6 +55,25 @@
     <key>ru</key>
     <value>Данные кэша</value>
   </recordPresentation>
+  <resources uuid="d009782b-d73e-42d1-9979-2cbaf20ee98e">
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Данные кэша</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="a528c26f-3ceb-4ae4-8420-edfbdea6e1ac">
     <name>ДатаОбновления</name>
     <synonym>
@@ -68,25 +87,6 @@
     <toolTip>
       <key>ru</key>
       <value>Дата (UTC) формирования записи кэша</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="d009782b-d73e-42d1-9979-2cbaf20ee98e">
-    <name>Данные</name>
-    <synonym>
-      <key>ru</key>
-      <value>Данные</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Данные кэша</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -21,12 +21,17 @@
     <key>ru</key>
     <value>Поиск и удаление объектов, предварительно помеченных на удаление</value>
   </explanation>
-  <forms uuid="bd1cf7ef-f3e2-4441-836b-16f2cc227aa9">
-    <name>ОсновнаяФорма</name>
+  <forms uuid="4f1393e4-9db5-43d6-b47e-caa1aad9b35c">
+    <name>ВыборОбъектовМетаданныхПоПодсистемам</name>
     <synonym>
       <key>ru</key>
-      <value>Основная форма</value>
+      <value>Выбор объектов метаданных по подсистемам</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -39,17 +44,12 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="4f1393e4-9db5-43d6-b47e-caa1aad9b35c">
-    <name>ВыборОбъектовМетаданныхПоПодсистемам</name>
+  <forms uuid="bd1cf7ef-f3e2-4441-836b-16f2cc227aa9">
+    <name>ОсновнаяФорма</name>
     <synonym>
       <key>ru</key>
-      <value>Выбор объектов метаданных по подсистемам</value>
+      <value>Основная форма</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

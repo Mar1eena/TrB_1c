@@ -50,20 +50,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="2977fedd-2c56-4d21-8eb1-a424e1b17cb3">
-    <name>СодержитОписание</name>
-    <synonym>
-      <key>ru</key>
-      <value>Содержит описание</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="0b8a2936-07c5-4b90-80e6-5a058e546de6">
     <name>Описание</name>
     <synonym>
@@ -72,6 +58,20 @@
     </synonym>
     <type>
       <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2977fedd-2c56-4d21-8eb1-a424e1b17cb3">
+    <name>СодержитОписание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержит описание</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

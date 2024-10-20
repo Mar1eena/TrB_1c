@@ -59,24 +59,6 @@
 - для бытрого обновления прав групп доступа;
 - в отчете &quot;Права доступа&quot;.</value>
   </explanation>
-  <resources uuid="e983f539-e369-491e-9cee-510518187870">
-    <name>ПравоИзменение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Право изменение</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Право изменение, установленное в роли.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="876b23bf-2f48-4916-ad0f-4de8306e1864">
     <name>ПравоДобавление</name>
     <synonym>
@@ -95,19 +77,37 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="9a402a9c-a31f-4082-91d5-b4fe7576a5c2">
-    <name>ПравоЧтениеБезОграничения</name>
+  <resources uuid="e99a1b17-0e37-489a-bc39-3dd2e23b0861">
+    <name>ПравоДобавлениеБезОграничения</name>
     <synonym>
       <key>ru</key>
-      <value>Право чтение без ограничения</value>
+      <value>Право добавление без ограничения</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Право чтение, установленное в роли,
-не содержит ограничения доступа ни по одному полю.</value>
+      <value>Право добавление, установленное в роли,
+не содержит ограничения доступа.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e983f539-e369-491e-9cee-510518187870">
+    <name>ПравоИзменение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Право изменение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Право изменение, установленное в роли.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -133,19 +133,18 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="e99a1b17-0e37-489a-bc39-3dd2e23b0861">
-    <name>ПравоДобавлениеБезОграничения</name>
+  <resources uuid="70e710c5-42df-465f-a9c5-8345c87e1f19">
+    <name>ПравоИнтерактивноеДобавление</name>
     <synonym>
       <key>ru</key>
-      <value>Право добавление без ограничения</value>
+      <value>Право интерактивное добавление</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Право добавление, установленное в роли,
-не содержит ограничения доступа.</value>
+      <value>Право интерактивное добавление, установленное в роли.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -188,18 +187,19 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="70e710c5-42df-465f-a9c5-8345c87e1f19">
-    <name>ПравоИнтерактивноеДобавление</name>
+  <resources uuid="9a402a9c-a31f-4082-91d5-b4fe7576a5c2">
+    <name>ПравоЧтениеБезОграничения</name>
     <synonym>
       <key>ru</key>
-      <value>Право интерактивное добавление</value>
+      <value>Право чтение без ограничения</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Право интерактивное добавление, установленное в роли.</value>
+      <value>Право чтение, установленное в роли,
+не содержит ограничения доступа ни по одному полю.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -251,20 +251,20 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="4492ac73-eb91-41f8-98f1-54c2b3ad212a">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="869b43fb-968f-4fe0-b945-5030c90a38f2">
     <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
       <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4492ac73-eb91-41f8-98f1-54c2b3ad212a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

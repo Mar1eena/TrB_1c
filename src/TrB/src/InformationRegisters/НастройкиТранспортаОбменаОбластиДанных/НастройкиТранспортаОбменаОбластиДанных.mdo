@@ -51,26 +51,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="232dbd5f-b7f1-4463-946c-b8fbf93ac466">
-    <name>КонечнаяТочкаКорреспондента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Конечная точка корреспондента</value>
-    </synonym>
-    <type>
-      <types>DefinedType.КонечнаяТочкаОбменаСообщениями</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Конечная точка корреспондента.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:ReferenceValue"/>
-    <indexing>Index</indexing>
-  </resources>
   <resources uuid="a1a74b34-4174-4769-8f03-bd4a32e83418">
     <name>КаталогОбменаИнформацией</name>
     <synonym>
@@ -93,6 +73,26 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
+  </resources>
+  <resources uuid="232dbd5f-b7f1-4463-946c-b8fbf93ac466">
+    <name>КонечнаяТочкаКорреспондента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конечная точка корреспондента</value>
+    </synonym>
+    <type>
+      <types>DefinedType.КонечнаяТочкаОбменаСообщениями</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Конечная точка корреспондента.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue"/>
+    <indexing>Index</indexing>
   </resources>
   <dimensions uuid="32fd1fe7-34d3-43ed-baba-16ccd43aa25a">
     <name>Корреспондент</name>

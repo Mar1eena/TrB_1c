@@ -50,26 +50,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="45a85e25-7c33-4ff5-87a0-2a0b4cda8130">
-    <name>Чтение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Чтение</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>При проверке права чтения объекта
-использовать набор с заданным номером
-(флажок устанавливается только для одной строки набора)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:BooleanValue"/>
-  </resources>
   <resources uuid="e95b126d-797d-4071-b7b4-b14aaf595f2d">
     <name>Изменение</name>
     <synonym>
@@ -90,26 +70,26 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:BooleanValue"/>
   </resources>
-  <attributes uuid="9241ea3c-633f-4469-9e70-c5a20e464da8">
-    <name>СтандартноеЗначение</name>
+  <resources uuid="45a85e25-7c33-4ff5-87a0-2a0b4cda8130">
+    <name>Чтение</name>
     <synonym>
       <key>ru</key>
-      <value>Стандартное значение</value>
+      <value>Чтение</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Кэш-реквизит, используемый в шаблонах ограничения доступа к данным.
-Указывает выполнять обычную проверку значения доступа в списке разрешенных.</value>
+      <value>При проверке права чтения объекта
+использовать набор с заданным номером
+(флажок устанавливается только для одной строки набора)</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
+    <fillValue xsi:type="core:BooleanValue"/>
+  </resources>
   <attributes uuid="bbadbe1b-cb33-4cc5-84c8-a4fdfc8a2247">
     <name>ЗначениеБезГрупп</name>
     <synonym>
@@ -123,6 +103,26 @@
       <key>ru</key>
       <value>Кэш-реквизит, используемый в шаблонах ограничения доступа к данным.
 Указывает выполнять проверку значения доступа в списке разрешенных без учета групп значений.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9241ea3c-633f-4469-9e70-c5a20e464da8">
+    <name>СтандартноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стандартное значение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Кэш-реквизит, используемый в шаблонах ограничения доступа к данным.
+Указывает выполнять обычную проверку значения доступа в списке разрешенных.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

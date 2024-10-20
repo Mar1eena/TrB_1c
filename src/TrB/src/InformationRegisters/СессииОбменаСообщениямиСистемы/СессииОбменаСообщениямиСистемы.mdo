@@ -50,6 +50,24 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9bb39184-08b7-440e-a8f8-5caf0083ba0f">
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Данные сессии обмена сообщениями</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="53a6ffa4-31f8-4717-9ecc-2852e6e4cce9">
     <name>ДатаНачала</name>
     <synonym>
@@ -71,25 +89,6 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <indexing>Index</indexing>
   </resources>
-  <resources uuid="575a135a-6ffd-4ae8-a597-7e584df9bac4">
-    <name>ЗавершенаУспешно</name>
-    <synonym>
-      <key>ru</key>
-      <value>Завершена успешно</value>
-    </synonym>
-    <comment>Признак успешного завершения сессии</comment>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Признак успешного завершения сессии обмена сообщениями.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="693a7196-f525-4bd2-a417-e902977f21cb">
     <name>ЗавершенаСОшибкой</name>
     <synonym>
@@ -109,18 +108,19 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="9bb39184-08b7-440e-a8f8-5caf0083ba0f">
-    <name>Данные</name>
+  <resources uuid="575a135a-6ffd-4ae8-a597-7e584df9bac4">
+    <name>ЗавершенаУспешно</name>
     <synonym>
       <key>ru</key>
-      <value>Данные</value>
+      <value>Завершена успешно</value>
     </synonym>
+    <comment>Признак успешного завершения сессии</comment>
     <type>
-      <types>ValueStorage</types>
+      <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Данные сессии обмена сообщениями</value>
+      <value>Признак успешного завершения сессии обмена сообщениями.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

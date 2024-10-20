@@ -52,21 +52,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="ee0e428a-bee7-4169-9b6e-63704f3d1a8e">
-    <name>РезультатОтчета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Результат отчета</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="5fa8756c-871d-460f-b70a-0797de0d5563">
     <name>ДатаАктуальности</name>
     <synonym>
@@ -99,11 +84,11 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <attributes uuid="f46ae351-0ac5-4597-a6a9-1394cd5ec83f">
-    <name>ПользовательскаяНастройка</name>
+  <resources uuid="ee0e428a-bee7-4169-9b6e-63704f3d1a8e">
+    <name>РезультатОтчета</name>
     <synonym>
       <key>ru</key>
-      <value>Пользовательская настройка</value>
+      <value>Результат отчета</value>
     </synonym>
     <type>
       <types>ValueStorage</types>
@@ -113,7 +98,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
+  </resources>
   <attributes uuid="d57f644e-40e5-46a3-874c-5addd52ec3f6">
     <name>ОшибкаОбновленияОтчета</name>
     <synonym>
@@ -122,6 +107,21 @@
     </synonym>
     <type>
       <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f46ae351-0ac5-4597-a6a9-1394cd5ec83f">
+    <name>ПользовательскаяНастройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользовательская настройка</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -203,15 +203,6 @@
     </fillValue>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="75cb904b-b3f1-4f0d-85d9-a186262028ff">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="82cfb1ad-5ba0-425c-b75e-6281862faec8">
     <name>ФормаЗаписи</name>
     <synonym>
@@ -226,6 +217,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма просмотра отчетов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="75cb904b-b3f1-4f0d-85d9-a186262028ff">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

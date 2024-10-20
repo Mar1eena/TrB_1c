@@ -49,25 +49,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="4f10e5f9-6cfd-4fa9-9c72-d19a484a796c">
-    <name>Видимость</name>
-    <synonym>
-      <key>ru</key>
-      <value>Видимость</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Видимость варианта отчета в указанном разделе для указанного пользователя.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="b94e805f-e1ab-4870-b855-98aa401864b2">
     <name>БыстрыйДоступ</name>
     <synonym>
@@ -80,6 +61,25 @@
     <toolTip>
       <key>ru</key>
       <value>Показывать указанный вариант отчета в группе быстрого доступа в указанном разделе для указанного пользователя.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4f10e5f9-6cfd-4fa9-9c72-d19a484a796c">
+    <name>Видимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Видимость</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Видимость варианта отчета в указанном разделе для указанного пользователя.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

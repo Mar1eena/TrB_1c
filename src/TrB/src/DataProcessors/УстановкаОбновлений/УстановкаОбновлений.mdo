@@ -191,15 +191,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <forms uuid="ec61075e-fbcb-494a-b790-81548a212d2b">
-    <name>Форма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="0c444045-302b-4dbd-a9a3-81fd40004948">
     <name>НастройкаРезервнойКопии</name>
     <synonym>
@@ -223,15 +214,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="1528b799-1c0f-4244-85e8-e738b827934a">
-    <name>МакетФайлаОбновленияКонфигурации</name>
+  <forms uuid="ec61075e-fbcb-494a-b790-81548a212d2b">
+    <name>Форма</name>
     <synonym>
       <key>ru</key>
-      <value>Макет файла обновления конфигурации</value>
+      <value>Форма</value>
     </synonym>
-    <comment>АПК:450 Для читабельности журнала обновления конфигурации.</comment>
-    <templateType>TextDocument</templateType>
-  </templates>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="45d79e4d-8c2a-432b-abb8-fb9046abea40">
     <name>ДопФайлОбновленияКонфигурации</name>
     <synonym>
@@ -246,6 +237,15 @@
       <key>ru</key>
       <value>Заставка обновления конфигурации</value>
     </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="1528b799-1c0f-4244-85e8-e738b827934a">
+    <name>МакетФайлаОбновленияКонфигурации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет файла обновления конфигурации</value>
+    </synonym>
+    <comment>АПК:450 Для читабельности журнала обновления конфигурации.</comment>
     <templateType>TextDocument</templateType>
   </templates>
   <templates uuid="cb73c8c2-3b09-42e9-ac26-1bd51854efb6">

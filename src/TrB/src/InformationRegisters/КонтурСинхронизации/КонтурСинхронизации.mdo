@@ -51,6 +51,21 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="63623218-8035-4ad9-b4db-a1f917c5641a">
+    <name>Зацикливание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зацикливание</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="4575003b-10c6-4d8e-bc5e-c643f38b24d9">
     <name>ИмяУзла</name>
     <synonym>
@@ -91,21 +106,6 @@
       <value></value>
     </fillValue>
   </resources>
-  <resources uuid="e68e3408-ae45-4d3f-8cbf-e1f517cd4dec">
-    <name>СинхронизацияУдалена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Синхронизация удалена</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="6252386c-865f-41cc-aef4-1d8bf7087798">
     <name>ПоследнееОбновление</name>
     <synonym>
@@ -143,11 +143,11 @@
       <value></value>
     </fillValue>
   </resources>
-  <resources uuid="63623218-8035-4ad9-b4db-a1f917c5641a">
-    <name>Зацикливание</name>
+  <resources uuid="e68e3408-ae45-4d3f-8cbf-e1f517cd4dec">
+    <name>СинхронизацияУдалена</name>
     <synonym>
       <key>ru</key>
-      <value>Зацикливание</value>
+      <value>Синхронизация удалена</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -217,20 +217,20 @@
     </fillValue>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="4d23fa01-b9ef-419c-8806-e0b0fad14be0">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="3eb4e1a4-8653-410f-ae73-b25c03348880">
     <name>ЗацикливаниеСинхронизации</name>
     <synonym>
       <key>ru</key>
       <value>Зацикливание синхронизации</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4d23fa01-b9ef-419c-8806-e0b0fad14be0">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

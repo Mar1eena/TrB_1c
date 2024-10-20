@@ -69,26 +69,6 @@
     <fillValue xsi:type="core:BooleanValue"/>
     <indexing>Index</indexing>
   </resources>
-  <attributes uuid="4ba2e55e-29bc-4fbe-83e8-8bfa36abfdab">
-    <name>ВсеРазрешеныБезИсключений</name>
-    <synonym>
-      <key>ru</key>
-      <value>Все разрешены без исключений</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Обозначает, что в группе доступа не указано
-значений доступа, а по умолчанию все разрешены.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <attributes uuid="93de88de-0069-4aa8-96b2-d5709e4def2f">
     <name>БезНастройки</name>
     <synonym>
@@ -102,6 +82,26 @@
       <key>ru</key>
       <value>Обозначает, что в профиле и группе доступа нет вида доступа или
 ограничение по виду доступа не используется в приложении.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4ba2e55e-29bc-4fbe-83e8-8bfa36abfdab">
+    <name>ВсеРазрешеныБезИсключений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Все разрешены без исключений</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обозначает, что в группе доступа не указано
+значений доступа, а по умолчанию все разрешены.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -157,20 +157,20 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="3a8d9010-8785-4d8d-b908-b821d7d681c9">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="2568a935-ea49-4b99-aa9c-de27de6a0e81">
     <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
       <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3a8d9010-8785-4d8d-b908-b821d7d681c9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

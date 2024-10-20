@@ -161,6 +161,41 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="f6c2b015-9cfc-40d2-a93f-b0e88db4a23f">
+    <name>ДатаНачалаПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала проверки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="08c8a9bf-7b89-4d0e-a496-4c7efeca0577">
+    <name>ДополнительныеПараметры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные параметры</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный набор дополнительных сведений, связанных с проверкой.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="86bb1105-702a-47be-906a-1821a69b1b6c">
     <name>Идентификатор</name>
     <synonym>
@@ -185,86 +220,6 @@
     <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="40653767-9542-44e9-a84b-ffee75584638">
-    <name>Использование</name>
-    <synonym>
-      <key>ru</key>
-      <value>Использование</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Проверка включена</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:BooleanValue">
-      <value>true</value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="49bd152e-479a-46fe-b3af-26ed9181dc34">
-    <name>Причины</name>
-    <synonym>
-      <key>ru</key>
-      <value>Причины</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Предполагаемая причина проблемы.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="0a742dd2-1ff4-42de-b303-f2bb01b36fe2">
-    <name>Рекомендация</name>
-    <synonym>
-      <key>ru</key>
-      <value>Рекомендация</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Рекомендация по решению проблемы.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="69e13959-51ad-4ac2-9cfc-17ac28b78c78">
-    <name>СпособВыполнения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Способ выполнения</value>
-    </synonym>
-    <type>
-      <types>EnumRef.СпособыВыполненияПроверки</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Способ выполнения проверки.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="f890ca1b-f2c2-4630-9002-301b759ca6d9">
     <name>ИдентификаторРегламентногоЗадания</name>
     <synonym>
@@ -286,81 +241,24 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="08c8a9bf-7b89-4d0e-a496-4c7efeca0577">
-    <name>ДополнительныеПараметры</name>
+  <attributes uuid="40653767-9542-44e9-a84b-ffee75584638">
+    <name>Использование</name>
     <synonym>
       <key>ru</key>
-      <value>Дополнительные параметры</value>
+      <value>Использование</value>
     </synonym>
     <type>
-      <types>ValueStorage</types>
+      <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Произвольный набор дополнительных сведений, связанных с проверкой.</value>
+      <value>Проверка включена</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="f6c2b015-9cfc-40d2-a93f-b0e88db4a23f">
-    <name>ДатаНачалаПроверки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата начала проверки</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="103f3d8f-e47a-4772-bdd7-dd5f8508d22b">
-    <name>ЛимитПроблем</name>
-    <synonym>
-      <key>ru</key>
-      <value>Лимит проблем</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>8</precision>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Лимит количества проблем.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:NumberValue">
-      <value>0</value>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
     </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="ba8ea271-8716-49ef-8b10-f4b5798c1f62">
-    <name>РасписаниеВыполненияПроверки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Расписание выполнения проверки</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Для хранения расписания регламентного задания, на случай интерактивного удаления.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -407,18 +305,43 @@
     <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="7ebe16ee-8e5d-4b05-89b5-9539f73be90c">
-    <name>УточнениеКонтекстаПроверокВеденияУчета</name>
+  <attributes uuid="103f3d8f-e47a-4772-bdd7-dd5f8508d22b">
+    <name>ЛимитПроблем</name>
     <synonym>
       <key>ru</key>
-      <value>Уточнение контекста проверок ведения учета</value>
+      <value>Лимит проблем</value>
     </synonym>
     <type>
-      <types>DefinedType.УточнениеКонтекстаПроверокВеденияУчета</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+      </numberQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Уточнение контекста выполнения проверки. Например может отвечать на вопрос: когда выполнять? До? После? Во время? </value>
+      <value>Лимит количества проблем.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="49bd152e-479a-46fe-b3af-26ed9181dc34">
+    <name>Причины</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причины</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предполагаемая причина проблемы.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -446,17 +369,89 @@
     <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="12bce69b-933c-4ce4-9d29-a47f3db0226e">
-    <name>ФормаЭлемента</name>
+  <attributes uuid="ba8ea271-8716-49ef-8b10-f4b5798c1f62">
+    <name>РасписаниеВыполненияПроверки</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>Расписание выполнения проверки</value>
     </synonym>
-    <help>
-      <pages>
-        <lang>ru</lang>
-      </pages>
-    </help>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Для хранения расписания регламентного задания, на случай интерактивного удаления.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0a742dd2-1ff4-42de-b303-f2bb01b36fe2">
+    <name>Рекомендация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рекомендация</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Рекомендация по решению проблемы.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="69e13959-51ad-4ac2-9cfc-17ac28b78c78">
+    <name>СпособВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ выполнения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыВыполненияПроверки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ выполнения проверки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7ebe16ee-8e5d-4b05-89b5-9539f73be90c">
+    <name>УточнениеКонтекстаПроверокВеденияУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уточнение контекста проверок ведения учета</value>
+    </synonym>
+    <type>
+      <types>DefinedType.УточнениеКонтекстаПроверокВеденияУчета</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уточнение контекста выполнения проверки. Например может отвечать на вопрос: когда выполнять? До? После? Во время? </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ad0b1720-282e-49d4-af80-324a887963c3">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -469,12 +464,17 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="ad0b1720-282e-49d4-af80-324a887963c3">
-    <name>ФормаГруппы</name>
+  <forms uuid="12bce69b-933c-4ce4-9d29-a47f3db0226e">
+    <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
-      <value>Форма группы</value>
+      <value>Форма элемента</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

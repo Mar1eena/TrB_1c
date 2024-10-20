@@ -67,6 +67,49 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <attributes uuid="bf3e3395-3e41-49c2-b59e-fdcdc3ef956f">
+    <name>Адресаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адресаты</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пустая строка, если адресаты все пользователи, либо список идентификаторов пользователей информационной базы</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2f6bc78d-d2ed-491f-bc66-3f95e2ca574c">
+    <name>ВидОповещенияВГруппе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оповещения в группе</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уникальный идентификатор вида оповещения длительной операции</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="ba59bf05-b815-4679-94ce-601923d60461">
     <name>ДатаДобавления</name>
     <synonym>
@@ -97,30 +140,6 @@
         <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="00c47343-9f64-4368-896e-85f1639e4dae">
-    <name>ОтсрочкаЗаписиВСистемуВзаимодействия</name>
-    <synonym>
-      <key>ru</key>
-      <value>Отсрочка записи в систему взаимодействия</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>2</precision>
-        <scale>1</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Сообщение с серверным оповещением должно быть записано в систему взаимодействия (перед записью в регистр или позднее)</value>
-    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
@@ -184,46 +203,27 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="2f6bc78d-d2ed-491f-bc66-3f95e2ca574c">
-    <name>ВидОповещенияВГруппе</name>
+  <attributes uuid="00c47343-9f64-4368-896e-85f1639e4dae">
+    <name>ОтсрочкаЗаписиВСистемуВзаимодействия</name>
     <synonym>
       <key>ru</key>
-      <value>Вид оповещения в группе</value>
+      <value>Отсрочка записи в систему взаимодействия</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>36</length>
-      </stringQualifiers>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Уникальный идентификатор вида оповещения длительной операции</value>
+      <value>Сообщение с серверным оповещением должно быть записано в систему взаимодействия (перед записью в регистр или позднее)</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="bf3e3395-3e41-49c2-b59e-fdcdc3ef956f">
-    <name>Адресаты</name>
-    <synonym>
-      <key>ru</key>
-      <value>Адресаты</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>1000</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Пустая строка, если адресаты все пользователи, либо список идентификаторов пользователей информационной базы</value>
-    </toolTip>
-    <multiLine>true</multiLine>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
@@ -250,20 +250,20 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="93b18f0a-7aa1-42db-809b-1e543cda57de">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="a8e04267-5a28-40af-8d45-e65375cd8273">
     <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
       <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="93b18f0a-7aa1-42db-809b-1e543cda57de">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

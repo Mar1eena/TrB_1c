@@ -16,15 +16,6 @@
       <lang>ru</lang>
     </pages>
   </help>
-  <forms uuid="d07016c8-7d97-42cd-865b-85b49075adfb">
-    <name>Поиск</name>
-    <synonym>
-      <key>ru</key>
-      <value>Поиск</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="491a2337-1bf9-45c1-8ae6-95605ef41992">
     <name>ВыборОбластиПоиска</name>
     <synonym>
@@ -36,6 +27,15 @@
         <lang>ru</lang>
       </pages>
     </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d07016c8-7d97-42cd-865b-85b49075adfb">
+    <name>Поиск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поиск</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

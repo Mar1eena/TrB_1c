@@ -58,6 +58,18 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="436a9c94-55f6-4463-becd-573189753ee7">
+    <name>ЗагрузкаДанныхВыполняетсяЧерезВнешнееСоединение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка данных выполняется через внешнее соединение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="db850a08-0c99-4a57-9b04-38be64bd38fb">
     <name>ИмяПланаОбменаВРО</name>
     <synonym>
@@ -109,6 +121,19 @@
     </synonym>
     <type>
       <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="38d5ed93-133b-44fe-827a-69a6cfc0461d">
+    <name>КлючСообщенияЖурналаРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ сообщения журнала регистрации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -168,6 +193,16 @@
       <types>String</types>
       <stringQualifiers/>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8aa73dfd-41ac-4f79-bf73-cd2da51b1232">
+    <name>КомпонентыОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоненты обмена</value>
+    </synonym>
+    <type/>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
@@ -241,41 +276,6 @@
     </synonym>
     <type>
       <types>ExchangePlanRef</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="8aa73dfd-41ac-4f79-bf73-cd2da51b1232">
-    <name>КомпонентыОбмена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Компоненты обмена</value>
-    </synonym>
-    <type/>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="38d5ed93-133b-44fe-827a-69a6cfc0461d">
-    <name>КлючСообщенияЖурналаРегистрации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ключ сообщения журнала регистрации</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="436a9c94-55f6-4463-becd-573189753ee7">
-    <name>ЗагрузкаДанныхВыполняетсяЧерезВнешнееСоединение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Загрузка данных выполняется через внешнее соединение</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

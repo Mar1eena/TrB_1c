@@ -66,6 +66,43 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="1ed0209f-4e11-452b-8520-66bf02186f1a">
+    <name>ДатаДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата доставки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="37ba6039-9162-4c7e-9975-de3aec39664f">
+    <name>ИдентификаторПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор письма</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
   <attributes uuid="82e0e020-d6a7-45ae-bdbd-d29aacff313a">
     <name>Комментарий</name>
     <synonym>
@@ -99,21 +136,6 @@
       <key>ru</key>
       <value>Номер сеанса, в котором выполнялся запуск рассылки (для отбора событий в журнале регистрации)</value>
     </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="3157f1b3-5d78-4fe4-89bf-afca0026a8d5">
-    <name>ЭлектронноеПисьмоИсходящее</name>
-    <synonym>
-      <key>ru</key>
-      <value>Электронное письмо исходящее</value>
-    </synonym>
-    <type>
-      <types>DocumentRef.ЭлектронноеПисьмоИсходящее</types>
-    </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
@@ -155,36 +177,14 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="37ba6039-9162-4c7e-9975-de3aec39664f">
-    <name>ИдентификаторПисьма</name>
+  <attributes uuid="3157f1b3-5d78-4fe4-89bf-afca0026a8d5">
+    <name>ЭлектронноеПисьмоИсходящее</name>
     <synonym>
       <key>ru</key>
-      <value>Идентификатор письма</value>
+      <value>Электронное письмо исходящее</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>255</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </attributes>
-  <attributes uuid="1ed0209f-4e11-452b-8520-66bf02186f1a">
-    <name>ДатаДоставки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата доставки</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers/>
+      <types>DocumentRef.ЭлектронноеПисьмоИсходящее</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

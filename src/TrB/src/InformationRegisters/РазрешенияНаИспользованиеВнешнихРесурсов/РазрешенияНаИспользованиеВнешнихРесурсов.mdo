@@ -49,11 +49,11 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <attributes uuid="14215720-ccb3-4e5a-8345-cd42c96a3e77">
-    <name>ТелоРазрешения</name>
+  <attributes uuid="24fa0604-b6a5-49ad-9d03-b2cf8e81dad8">
+    <name>ДополнениеРазрешения</name>
     <synonym>
       <key>ru</key>
-      <value>Тело разрешения</value>
+      <value>Дополнение разрешения</value>
     </synonym>
     <type>
       <types>String</types>
@@ -67,11 +67,11 @@
       <value></value>
     </fillValue>
   </attributes>
-  <attributes uuid="24fa0604-b6a5-49ad-9d03-b2cf8e81dad8">
-    <name>ДополнениеРазрешения</name>
+  <attributes uuid="2ad7b509-4cd1-456a-a6ae-94649fdf8c3e">
+    <name>ПредставлениеВладельца</name>
     <synonym>
       <key>ru</key>
-      <value>Дополнение разрешения</value>
+      <value>Представление владельца</value>
     </synonym>
     <type>
       <types>String</types>
@@ -103,11 +103,11 @@
       <value></value>
     </fillValue>
   </attributes>
-  <attributes uuid="2ad7b509-4cd1-456a-a6ae-94649fdf8c3e">
-    <name>ПредставлениеВладельца</name>
+  <attributes uuid="14215720-ccb3-4e5a-8345-cd42c96a3e77">
+    <name>ТелоРазрешения</name>
     <synonym>
       <key>ru</key>
-      <value>Представление владельца</value>
+      <value>Тело разрешения</value>
     </synonym>
     <type>
       <types>String</types>

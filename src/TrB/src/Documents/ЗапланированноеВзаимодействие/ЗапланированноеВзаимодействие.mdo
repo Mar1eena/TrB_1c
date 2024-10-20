@@ -166,6 +166,54 @@
     </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="62185c28-3d24-487a-9441-b309dcf11e31">
+    <name>ВзаимодействиеОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взаимодействие основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЭлектронноеПисьмоИсходящее</types>
+      <types>DocumentRef.ЗапланированноеВзаимодействие</types>
+      <types>DocumentRef.ЭлектронноеПисьмоВходящее</types>
+      <types>DocumentRef.ТелефонныйЗвонок</types>
+      <types>DocumentRef.Встреча</types>
+      <types>DocumentRef.СообщениеSMS</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Взаимодействие, на основании которого создано &quot;Запланированное взаимодействие&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b926d058-53a9-4eea-b4f9-98e77f798dd9">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный текст</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="4645b1ad-eb8f-484c-b29c-2093d9ef9dba">
     <name>Описание</name>
     <synonym>
@@ -237,30 +285,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="62185c28-3d24-487a-9441-b309dcf11e31">
-    <name>ВзаимодействиеОснование</name>
-    <synonym>
-      <key>ru</key>
-      <value>Взаимодействие основание</value>
-    </synonym>
-    <type>
-      <types>DocumentRef.ЭлектронноеПисьмоИсходящее</types>
-      <types>DocumentRef.ЗапланированноеВзаимодействие</types>
-      <types>DocumentRef.ЭлектронноеПисьмоВходящее</types>
-      <types>DocumentRef.ТелефонныйЗвонок</types>
-      <types>DocumentRef.Встреча</types>
-      <types>DocumentRef.СообщениеSMS</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Взаимодействие, на основании которого создано &quot;Запланированное взаимодействие&quot;</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="9f264aeb-664d-4724-8248-11873d63ef3b">
     <name>Тема</name>
     <synonym>
@@ -286,35 +310,11 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="b926d058-53a9-4eea-b4f9-98e77f798dd9">
-    <name>Комментарий</name>
+  <forms uuid="20191a65-322c-457d-85f5-ed1258b6fe8e">
+    <name>ФормаВыбора</name>
     <synonym>
       <key>ru</key>
-      <value>Комментарий</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Произвольный текст</value>
-    </toolTip>
-    <multiLine>true</multiLine>
-    <extendedEdit>true</extendedEdit>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <forms uuid="495e2c77-4868-4191-ac18-f94e55a5982e">
-    <name>ФормаДокумента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма документа</value>
+      <value>Форма выбора</value>
     </synonym>
     <help>
       <pages>
@@ -324,11 +324,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="20191a65-322c-457d-85f5-ed1258b6fe8e">
-    <name>ФормаВыбора</name>
+  <forms uuid="495e2c77-4868-4191-ac18-f94e55a5982e">
+    <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора</value>
+      <value>Форма документа</value>
     </synonym>
     <help>
       <pages>
@@ -347,15 +347,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <tabularSections uuid="23b46ecd-14dc-4cc5-8ff0-c676a8337aee">
+  <tabularSections uuid="966b1bde-5b0c-446d-b38b-dc037e2ff7ad">
     <producedTypes>
-      <objectType typeId="81209393-e9c3-4e59-b435-e18f3939d234" valueTypeId="96722e83-0566-4c6c-8713-6449b61764e5"/>
-      <rowType typeId="691e43b7-6b68-449f-9edf-24110f371216" valueTypeId="94843fe2-e65b-4eda-a184-43e7cefb0217"/>
+      <objectType typeId="0d27736b-c02f-4294-9457-35319a03ac66" valueTypeId="ebf6136a-4806-403e-85cb-e5094daa29f4"/>
+      <rowType typeId="e9ddca2c-100a-455c-b642-5c6520702553" valueTypeId="029a87eb-1334-4315-9b86-725707281dae"/>
     </producedTypes>
-    <name>Участники</name>
+    <name>ДополнительныеРеквизиты</name>
     <synonym>
       <key>ru</key>
-      <value>Участники</value>
+      <value>Дополнительные реквизиты</value>
     </synonym>
     <standardAttributes>
       <dataHistory>Use</dataHistory>
@@ -365,62 +365,59 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
     </standardAttributes>
-    <attributes uuid="769c60aa-44f4-4c98-a461-d3f5c2b67f61">
-      <name>Контакт</name>
+    <attributes uuid="fa4c5665-4d73-4db2-a055-8c1c8a302f82">
+      <name>Свойство</name>
       <synonym>
         <key>ru</key>
-        <value>Контакт</value>
+        <value>Свойство</value>
       </synonym>
       <type>
-        <types>DefinedType.КонтактВзаимодействия</types>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
       </type>
       <toolTip>
         <key>ru</key>
-        <value>Ссылка на контактное лицо</value>
+        <value>Дополнительный реквизит</value>
       </toolTip>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
-      <indexing>Index</indexing>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="f9809c99-0eaa-4249-967c-a4bef4763277">
-      <name>ПредставлениеКонтакта</name>
+    <attributes uuid="e3e0caa1-6d3f-45a6-9043-d58a34f35b8f">
+      <name>Значение</name>
       <synonym>
         <key>ru</key>
-        <value>Представление контакта</value>
+        <value>Значение</value>
       </synonym>
       <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>100</length>
-        </stringQualifiers>
+        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
       </type>
       <toolTip>
         <key>ru</key>
-        <value>Участник встречи</value>
+        <value>Значение дополнительного реквизита</value>
       </toolTip>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.ЗапланированноеВзаимодействие.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
+      </choiceParameterLinks>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="37fa88a0-f2c1-455f-a28d-74165e8b933d">
-      <name>КакСвязаться</name>
+    <attributes uuid="9100b286-8ae9-4de3-b116-5ce0fa95b80c">
+      <name>ТекстоваяСтрока</name>
       <synonym>
         <key>ru</key>
-        <value>Как связаться</value>
+        <value>Текстовая строка</value>
       </synonym>
       <type>
         <types>String</types>
-        <stringQualifiers>
-          <length>100</length>
-        </stringQualifiers>
+        <stringQualifiers/>
       </type>
       <toolTip>
         <key>ru</key>
-        <value>Контактная информация</value>
+        <value>Полный текст строкового дополнительного реквизита</value>
       </toolTip>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -544,15 +541,15 @@
       <dataHistory>Use</dataHistory>
     </attributes>
   </tabularSections>
-  <tabularSections uuid="966b1bde-5b0c-446d-b38b-dc037e2ff7ad">
+  <tabularSections uuid="23b46ecd-14dc-4cc5-8ff0-c676a8337aee">
     <producedTypes>
-      <objectType typeId="0d27736b-c02f-4294-9457-35319a03ac66" valueTypeId="ebf6136a-4806-403e-85cb-e5094daa29f4"/>
-      <rowType typeId="e9ddca2c-100a-455c-b642-5c6520702553" valueTypeId="029a87eb-1334-4315-9b86-725707281dae"/>
+      <objectType typeId="81209393-e9c3-4e59-b435-e18f3939d234" valueTypeId="96722e83-0566-4c6c-8713-6449b61764e5"/>
+      <rowType typeId="691e43b7-6b68-449f-9edf-24110f371216" valueTypeId="94843fe2-e65b-4eda-a184-43e7cefb0217"/>
     </producedTypes>
-    <name>ДополнительныеРеквизиты</name>
+    <name>Участники</name>
     <synonym>
       <key>ru</key>
-      <value>Дополнительные реквизиты</value>
+      <value>Участники</value>
     </synonym>
     <standardAttributes>
       <dataHistory>Use</dataHistory>
@@ -562,59 +559,62 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
     </standardAttributes>
-    <attributes uuid="fa4c5665-4d73-4db2-a055-8c1c8a302f82">
-      <name>Свойство</name>
+    <attributes uuid="769c60aa-44f4-4c98-a461-d3f5c2b67f61">
+      <name>Контакт</name>
       <synonym>
         <key>ru</key>
-        <value>Свойство</value>
+        <value>Контакт</value>
       </synonym>
       <type>
-        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+        <types>DefinedType.КонтактВзаимодействия</types>
       </type>
       <toolTip>
         <key>ru</key>
-        <value>Дополнительный реквизит</value>
+        <value>Ссылка на контактное лицо</value>
       </toolTip>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="e3e0caa1-6d3f-45a6-9043-d58a34f35b8f">
-      <name>Значение</name>
+    <attributes uuid="f9809c99-0eaa-4249-967c-a4bef4763277">
+      <name>ПредставлениеКонтакта</name>
       <synonym>
         <key>ru</key>
-        <value>Значение</value>
-      </synonym>
-      <type>
-        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
-      </type>
-      <toolTip>
-        <key>ru</key>
-        <value>Значение дополнительного реквизита</value>
-      </toolTip>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <choiceParameterLinks>
-        <name>Отбор.Владелец</name>
-        <field>Document.ЗапланированноеВзаимодействие.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
-      </choiceParameterLinks>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="9100b286-8ae9-4de3-b116-5ce0fa95b80c">
-      <name>ТекстоваяСтрока</name>
-      <synonym>
-        <key>ru</key>
-        <value>Текстовая строка</value>
+        <value>Представление контакта</value>
       </synonym>
       <type>
         <types>String</types>
-        <stringQualifiers/>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
       </type>
       <toolTip>
         <key>ru</key>
-        <value>Полный текст строкового дополнительного реквизита</value>
+        <value>Участник встречи</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="37fa88a0-f2c1-455f-a28d-74165e8b933d">
+      <name>КакСвязаться</name>
+      <synonym>
+        <key>ru</key>
+        <value>Как связаться</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Контактная информация</value>
       </toolTip>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

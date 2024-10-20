@@ -74,50 +74,6 @@
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
-  <attributes uuid="acf15b79-a6c4-4c46-8013-50d3b223baf6">
-    <name>Опрос</name>
-    <synonym>
-      <key>ru</key>
-      <value>Опрос</value>
-    </synonym>
-    <type>
-      <types>DocumentRef.НазначениеОпросов</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Опрос, в рамках которого заполняется анкета</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Document.НазначениеОпросов.EmptyRef</value>
-    </fillValue>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="f6a29b80-e4c3-4c4f-8e2c-d4dda851d813">
-    <name>Респондент</name>
-    <synonym>
-      <key>ru</key>
-      <value>Респондент</value>
-    </synonym>
-    <type>
-      <types>DefinedType.Респондент</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Респондент, заполнивший анкету</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:ReferenceValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="2d8d5d74-2bc0-4282-af66-e4a37694c147">
     <name>ДатаРедактирования</name>
     <synonym>
@@ -139,22 +95,18 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="cfd31341-287b-4684-9ac0-b28b4e066f15">
-    <name>РедактируемыйРаздел</name>
+  <attributes uuid="77c8a065-a8aa-4f39-93b6-c88f4c38ec66">
+    <name>Интервьюер</name>
     <synonym>
       <key>ru</key>
-      <value>Редактируемый раздел</value>
+      <value>Интервьюер</value>
     </synonym>
     <type>
-      <types>CatalogRef.ВопросыШаблонаАнкеты</types>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
+      <types>DefinedType.Интервьюер</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Раздел, который редактировался в момент сохранения анкеты</value>
+      <value>Сотрудник, проводящий интервью</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -186,41 +138,48 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="77c8a065-a8aa-4f39-93b6-c88f4c38ec66">
-    <name>Интервьюер</name>
+  <attributes uuid="acf15b79-a6c4-4c46-8013-50d3b223baf6">
+    <name>Опрос</name>
     <synonym>
       <key>ru</key>
-      <value>Интервьюер</value>
+      <value>Опрос</value>
     </synonym>
     <type>
-      <types>DefinedType.Интервьюер</types>
+      <types>DocumentRef.НазначениеОпросов</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Сотрудник, проводящий интервью</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="366fa6da-d3bf-4bb0-9a55-a307f9edee6a">
-    <name>ШаблонАнкеты</name>
-    <synonym>
-      <key>ru</key>
-      <value>Шаблон анкеты</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ШаблоныАнкет</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Шаблон анкеты, на основании которого проводится интервью</value>
+      <value>Опрос, в рамках которого заполняется анкета</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Document.НазначениеОпросов.EmptyRef</value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cfd31341-287b-4684-9ac0-b28b4e066f15">
+    <name>РедактируемыйРаздел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактируемый раздел</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВопросыШаблонаАнкеты</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Раздел, который редактировался в момент сохранения анкеты</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -244,6 +203,47 @@
     <fillValue xsi:type="core:ReferenceValue">
       <value>Enum.РежимыАнкетирования.EnumValue.Анкета</value>
     </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f6a29b80-e4c3-4c4f-8e2c-d4dda851d813">
+    <name>Респондент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Респондент</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Респондент</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Респондент, заполнивший анкету</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="366fa6da-d3bf-4bb0-9a55-a307f9edee6a">
+    <name>ШаблонАнкеты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон анкеты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныАнкет</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Шаблон анкеты, на основании которого проводится интервью</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

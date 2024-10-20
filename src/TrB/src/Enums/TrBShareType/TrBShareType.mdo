@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5fa80a1-e1d1-4af5-b4ea-369f8870c4f2">
+  <producedTypes>
+    <refType typeId="ad87ec5b-8b01-4840-a916-2cfc3cea84dc" valueTypeId="36d33512-d632-4a50-83e9-5f5ce31c8cd1"/>
+    <listType typeId="c7a2d044-78bd-429f-976f-d6fbc7fb876a" valueTypeId="19a2059c-cb60-4e09-a047-78612e2024db"/>
+    <managerType typeId="63b709f2-e25a-46e2-b8d1-5c5776c631e9" valueTypeId="a1b0c0be-2413-4ab6-b2a1-ce86117f3962"/>
+  </producedTypes>
+  <name>TrBShareType</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип акций</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

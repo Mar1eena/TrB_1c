@@ -103,6 +103,21 @@
   <codeAllowedLength>Variable</codeAllowedLength>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <attributes uuid="c2a8f4a7-882a-4262-ad9d-0f8ad9821488">
+    <name>ДвоичныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Двоичные данные</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="046d2201-5fe3-4451-9db0-6f784efadaf8">
     <name>Размер</name>
     <synonym>
@@ -144,21 +159,6 @@
       <value></value>
     </fillValue>
     <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="c2a8f4a7-882a-4262-ad9d-0f8ad9821488">
-    <name>ДвоичныеДанные</name>
-    <synonym>
-      <key>ru</key>
-      <value>Двоичные данные</value>
-    </synonym>
-    <type>
-      <types>ValueStorage</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

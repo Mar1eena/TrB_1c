@@ -49,19 +49,41 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="82cc8820-0b92-4bb7-b097-7ac79e922f01">
-    <name>ПоследнийЗапускНачало</name>
+  <resources uuid="f2267d6c-6972-4621-b677-87798056363b">
+    <name>Выполнена</name>
     <synonym>
       <key>ru</key>
-      <value>Последний запуск (начало)</value>
+      <value>Выполнена</value>
     </synonym>
     <type>
-      <types>Date</types>
-      <dateQualifiers/>
+      <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Дата начала последнего запуска рассылки отчетов</value>
+      <value>Признак того, что рассылка завершена</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e1e9862e-c87b-400f-bca1-b1380cb98ddc">
+    <name>НомерСеанса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер сеанса</value>
+    </synonym>
+    <comment>Используется для отбора журнала регистрации по номеру сеанса рассылки отчетов. Подробнее см. НомерСеансаИнформационнойБазы в синтакс-помощнике.</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>25</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер сеанса, в котором выполнялся запуск рассылки (для отбора событий в журнале регистрации)</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -89,11 +111,11 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="8e0340c9-6469-4fc9-b19a-4be4e0e6ee82">
-    <name>УспешныйЗапуск</name>
+  <resources uuid="82cc8820-0b92-4bb7-b097-7ac79e922f01">
+    <name>ПоследнийЗапускНачало</name>
     <synonym>
       <key>ru</key>
-      <value>Успешный запуск</value>
+      <value>Последний запуск (начало)</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -101,26 +123,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Начало последнего успешного запуска рассылки</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="f2267d6c-6972-4621-b677-87798056363b">
-    <name>Выполнена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выполнена</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Признак того, что рассылка завершена</value>
+      <value>Дата начала последнего запуска рассылки отчетов</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -147,22 +150,19 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="e1e9862e-c87b-400f-bca1-b1380cb98ddc">
-    <name>НомерСеанса</name>
+  <resources uuid="8e0340c9-6469-4fc9-b19a-4be4e0e6ee82">
+    <name>УспешныйЗапуск</name>
     <synonym>
       <key>ru</key>
-      <value>Номер сеанса</value>
+      <value>Успешный запуск</value>
     </synonym>
-    <comment>Используется для отбора журнала регистрации по номеру сеанса рассылки отчетов. Подробнее см. НомерСеансаИнформационнойБазы в синтакс-помощнике.</comment>
     <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>25</precision>
-      </numberQualifiers>
+      <types>Date</types>
+      <dateQualifiers/>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Номер сеанса, в котором выполнялся запуск рассылки (для отбора событий в журнале регистрации)</value>
+      <value>Начало последнего успешного запуска рассылки</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -49,50 +49,11 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="895aea8f-4c4e-44e5-b720-0a2e683191b3">
-    <name>ТребуетсяПроверка</name>
+  <resources uuid="5f3a30b0-1ba8-423c-9bc2-f9a87cafe818">
+    <name>ДатаПодписи</name>
     <synonym>
       <key>ru</key>
-      <value>Требуется проверка</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Не удалось проверить подпись из-за внешних обстоятельств (нет криптопровайдера, актуального списка отзыва и т.п.)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="a3b14a36-049d-4f94-bafc-cf7b874f9bf0">
-    <name>ТипПодписи</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тип подписи</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ТипыПодписиКриптографии</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Тип подписи криптографии (CAdES-BES, CAdES-T, ...)</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-  </resources>
-  <resources uuid="6c954862-62d0-4901-8448-ea62a1174660">
-    <name>СрокДействияПоследнейМеткиВремени</name>
-    <synonym>
-      <key>ru</key>
-      <value>Срок действия последней метки времени</value>
+      <value>Дата подписи</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -100,14 +61,13 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Срок действия последней метки времени (Для базовой подписи - срок действия сертификата подписи)</value>
+      <value>Дата установки подписи</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
   </resources>
   <resources uuid="19858faf-2bc5-4cfb-b258-cb101ab66e87">
     <name>ДатаПроверкиПодписи</name>
@@ -277,11 +237,11 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="5f3a30b0-1ba8-423c-9bc2-f9a87cafe818">
-    <name>ДатаПодписи</name>
+  <resources uuid="6c954862-62d0-4901-8448-ea62a1174660">
+    <name>СрокДействияПоследнейМеткиВремени</name>
     <synonym>
       <key>ru</key>
-      <value>Дата подписи</value>
+      <value>Срок действия последней метки времени</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -289,7 +249,47 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Дата установки подписи</value>
+      <value>Срок действия последней метки времени (Для базовой подписи - срок действия сертификата подписи)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="a3b14a36-049d-4f94-bafc-cf7b874f9bf0">
+    <name>ТипПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип подписи</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыПодписиКриптографии</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип подписи криптографии (CAdES-BES, CAdES-T, ...)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="895aea8f-4c4e-44e5-b720-0a2e683191b3">
+    <name>ТребуетсяПроверка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуется проверка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Не удалось проверить подпись из-за внешних обстоятельств (нет криптопровайдера, актуального списка отзыва и т.п.)</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -316,38 +316,30 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <attributes uuid="54bfe81c-06b2-45a8-8bc1-bd22240cfe32">
-    <name>ОшибкаПриАвтоматическомПродлении</name>
+  <attributes uuid="66c8a1f2-248d-4b2a-b427-38fb4f63410a">
+    <name>АвторРучнойПроверкиДополнительныхАтрибутов</name>
     <synonym>
       <key>ru</key>
-      <value>Ошибка при автоматическом продлении</value>
+      <value>Автор ручной проверки дополнительных атрибутов</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
-    <toolTip>
-      <key>ru</key>
-      <value>При выполнении регламентного задания произошла ошибка, требуется обработка вручную</value>
-    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="46f71ecc-5cee-4b8d-9f6d-d38a86787a76">
-    <name>ПропуститьПриПродлении</name>
+  <attributes uuid="0f4de605-5df9-4bb9-92e8-f37c6903396e">
+    <name>ДополнительныеАтрибутыПровереныВручную</name>
     <synonym>
       <key>ru</key>
-      <value>Пропустить при продлении</value>
+      <value>Дополнительные атрибуты проверены вручную</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Исключить из списка подписей для усовершенствования и добавления архивной метки времени</value>
-    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
@@ -369,14 +361,15 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="216410ad-91e5-4c41-b08b-905faa830410">
-    <name>ПодписьМатематическиВерна</name>
+  <attributes uuid="a4b3ed40-b440-49f4-ab22-53fdad8c66c6">
+    <name>ОбоснованиеРучнойПроверкиДополнительныхАтрибутов</name>
     <synonym>
       <key>ru</key>
-      <value>Подпись математически верна</value>
+      <value>Обоснование ручной проверки дополнительных атрибутов</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -400,6 +393,25 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="54bfe81c-06b2-45a8-8bc1-bd22240cfe32">
+    <name>ОшибкаПриАвтоматическомПродлении</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка при автоматическом продлении</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При выполнении регламентного задания произошла ошибка, требуется обработка вручную</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <attributes uuid="1e0a3a73-3fd9-43f7-8ee5-e54565264232">
     <name>ОшибкаПроверкиДополнительныхАтрибутов</name>
     <synonym>
@@ -416,11 +428,11 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="0f4de605-5df9-4bb9-92e8-f37c6903396e">
-    <name>ДополнительныеАтрибутыПровереныВручную</name>
+  <attributes uuid="216410ad-91e5-4c41-b08b-905faa830410">
+    <name>ПодписьМатематическиВерна</name>
     <synonym>
       <key>ru</key>
-      <value>Дополнительные атрибуты проверены вручную</value>
+      <value>Подпись математически верна</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -431,31 +443,19 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="66c8a1f2-248d-4b2a-b427-38fb4f63410a">
-    <name>АвторРучнойПроверкиДополнительныхАтрибутов</name>
+  <attributes uuid="46f71ecc-5cee-4b8d-9f6d-d38a86787a76">
+    <name>ПропуститьПриПродлении</name>
     <synonym>
       <key>ru</key>
-      <value>Автор ручной проверки дополнительных атрибутов</value>
+      <value>Пропустить при продлении</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="a4b3ed40-b440-49f4-ab22-53fdad8c66c6">
-    <name>ОбоснованиеРучнойПроверкиДополнительныхАтрибутов</name>
-    <synonym>
+    <toolTip>
       <key>ru</key>
-      <value>Обоснование ручной проверки дополнительных атрибутов</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
+      <value>Исключить из списка подписей для усовершенствования и добавления архивной метки времени</value>
+    </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>

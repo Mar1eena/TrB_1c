@@ -11,14 +11,15 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.КонвертацияОбъектовРаспределенныхИнформационныхБаз.Form.Форма</defaultForm>
-  <attributes uuid="83ae9b22-20ff-4e94-9282-19daf2274328">
-    <name>УзелИнформационнойБазы</name>
+  <attributes uuid="e1ca1374-6dad-46d3-bb72-b67f3e6b1809">
+    <name>КлючСообщенияЖурналаРегистрации</name>
     <synonym>
       <key>ru</key>
-      <value>Узел информационной базы</value>
+      <value>Ключ сообщения журнала регистрации</value>
     </synonym>
     <type>
-      <types>ExchangePlanRef</types>
+      <types>String</types>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -39,19 +40,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="e1ca1374-6dad-46d3-bb72-b67f3e6b1809">
-    <name>КлючСообщенияЖурналаРегистрации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ключ сообщения журнала регистрации</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <attributes uuid="a92b2b70-7e69-49d1-b921-c9d1b0718f94">
     <name>ПолеИмяФайлаСообщенияОбмена</name>
     <synonym>
@@ -61,6 +49,18 @@
     <type>
       <types>String</types>
       <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="83ae9b22-20ff-4e94-9282-19daf2274328">
+    <name>УзелИнформационнойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел информационной базы</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -59,22 +59,24 @@
     <key>ru</key>
     <value>Обновление ключей доступа пользователей, внешних пользователей и групп доступа</value>
   </explanation>
-  <attributes uuid="eb48f8a9-1644-432d-a8a8-e63bc013a2fe">
-    <name>ТочечноеЗадание</name>
+  <attributes uuid="6da02618-2454-48fe-b1dc-399d0d40d043">
+    <name>ДатаИзмененияЗаписиРегистра</name>
     <synonym>
       <key>ru</key>
-      <value>Точечное задание</value>
+      <value>Дата изменения записи регистра</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>Date</types>
+      <dateQualifiers/>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Точечное задание содержит ссылку на ведущий ключ доступа для обновления
-только тех ключей доступа, которые ссылаются на этот ведущий ключ доступа.</value>
+      <value>Дата изменения записи регистра.
+Используется для выбора записей, измененных после предыдущего выбора.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
@@ -125,24 +127,22 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="6da02618-2454-48fe-b1dc-399d0d40d043">
-    <name>ДатаИзмененияЗаписиРегистра</name>
+  <attributes uuid="eb48f8a9-1644-432d-a8a8-e63bc013a2fe">
+    <name>ТочечноеЗадание</name>
     <synonym>
       <key>ru</key>
-      <value>Дата изменения записи регистра</value>
+      <value>Точечное задание</value>
     </synonym>
     <type>
-      <types>Date</types>
-      <dateQualifiers/>
+      <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Дата изменения записи регистра.
-Используется для выбора записей, измененных после предыдущего выбора.</value>
+      <value>Точечное задание содержит ссылку на ведущий ключ доступа для обновления
+только тех ключей доступа, которые ссылаются на этот ведущий ключ доступа.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
@@ -206,20 +206,20 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </dimensions>
-  <forms uuid="561b97a0-9d42-4735-a606-8d5b5862689f">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="10d5c0c2-301f-4477-a88f-254f99a30fa0">
     <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
       <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="561b97a0-9d42-4735-a606-8d5b5862689f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

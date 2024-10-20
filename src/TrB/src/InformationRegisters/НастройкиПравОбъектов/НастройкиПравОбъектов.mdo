@@ -51,24 +51,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="1c2cc78a-2ae6-4996-a743-7b55aecbe84c">
-    <name>ПравоЗапрещено</name>
-    <synonym>
-      <key>ru</key>
-      <value>Право запрещено</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Флажок, показывающий, что настроено запрещение права.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="9292bf81-5668-4d52-a4ec-a93bc4b0ad3b">
     <name>НаследованиеРазрешено</name>
     <synonym>
@@ -82,6 +64,24 @@
       <key>ru</key>
       <value>Флажок, показывающий, что разрешено наследование
 настройки права нижестоящими объектами.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1c2cc78a-2ae6-4996-a743-7b55aecbe84c">
+    <name>ПравоЗапрещено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Право запрещено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флажок, показывающий, что настроено запрещение права.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -111,11 +111,11 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="eb33e555-db41-462a-a45d-c7e0945cece8">
-    <name>УровеньРазрешенияПрава</name>
+  <attributes uuid="1d76f613-f4f6-4772-8c16-d97b3104a553">
+    <name>УровеньЗапрещенияИзменения</name>
     <synonym>
       <key>ru</key>
-      <value>Уровень разрешения права</value>
+      <value>Уровень запрещения изменения</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -127,7 +127,7 @@
     <toolTip>
       <key>ru</key>
       <value>Вспомогательный реквизит, используемый в шаблонах ограничения доступа к данным.
-Уровень права:
+Уровень изменения для указанной таблицы:
 0 - не разрешено,
 1 - разрешено без возможности наследования,
 2 - разрешено с возможностью наследования.</value>
@@ -155,33 +155,6 @@
       <key>ru</key>
       <value>Вспомогательный реквизит, используемый в шаблонах ограничения доступа к данным.
 Уровень права:
-0 - не разрешено,
-1 - разрешено без возможности наследования,
-2 - разрешено с возможностью наследования.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="d66adc5e-25a3-472e-b0a4-5f22f88d7a0f">
-    <name>УровеньРазрешенияЧтения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Уровень разрешения чтения</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>1</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Вспомогательный реквизит, используемый в шаблонах ограничения доступа к данным.
-Уровень чтения для указанной таблицы:
 0 - не разрешено,
 1 - разрешено без возможности наследования,
 2 - разрешено с возможностью наследования.</value>
@@ -246,11 +219,11 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="1d76f613-f4f6-4772-8c16-d97b3104a553">
-    <name>УровеньЗапрещенияИзменения</name>
+  <attributes uuid="eb33e555-db41-462a-a45d-c7e0945cece8">
+    <name>УровеньРазрешенияПрава</name>
     <synonym>
       <key>ru</key>
-      <value>Уровень запрещения изменения</value>
+      <value>Уровень разрешения права</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -262,7 +235,34 @@
     <toolTip>
       <key>ru</key>
       <value>Вспомогательный реквизит, используемый в шаблонах ограничения доступа к данным.
-Уровень изменения для указанной таблицы:
+Уровень права:
+0 - не разрешено,
+1 - разрешено без возможности наследования,
+2 - разрешено с возможностью наследования.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d66adc5e-25a3-472e-b0a4-5f22f88d7a0f">
+    <name>УровеньРазрешенияЧтения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень разрешения чтения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вспомогательный реквизит, используемый в шаблонах ограничения доступа к данным.
+Уровень чтения для указанной таблицы:
 0 - не разрешено,
 1 - разрешено без возможности наследования,
 2 - разрешено с возможностью наследования.</value>
@@ -372,20 +372,20 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="81936ac2-32fe-4e14-897b-0aba92b90c05">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="9f88e355-3f8f-4fcd-b45f-39c3d45490f5">
     <name>ФормаЗаписи</name>
     <synonym>
       <key>ru</key>
       <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="81936ac2-32fe-4e14-897b-0aba92b90c05">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
