@@ -16,21 +16,24 @@
     <name>OPTION_STYLE_UNSPECIFIED</name>
     <synonym>
       <key>ru</key>
-      <value>Тип не определен</value>
+      <value>OPTION_STYLE_UNSPECIFIED</value>
     </synonym>
+    <comment>Тип не определен</comment>
   </enumValues>
   <enumValues uuid="27a0b4d2-1f9e-4761-823c-b33bd3d27e3b">
     <name>OPTION_STYLE_AMERICAN</name>
     <synonym>
       <key>ru</key>
-      <value>Американский опцион</value>
+      <value>OPTION_STYLE_AMERICAN</value>
     </synonym>
+    <comment>Американский опцион</comment>
   </enumValues>
   <enumValues uuid="469c6023-1c24-4719-bb75-9e6b1a036c35">
     <name>OPTION_STYLE_EUROPEAN</name>
     <synonym>
       <key>ru</key>
-      <value>Европейский опцион</value>
+      <value>OPTION_STYLE_EUROPEAN</value>
     </synonym>
+    <comment>Европейский опцион</comment>
   </enumValues>
 </mdclass:Enum>

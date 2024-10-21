@@ -16,22 +16,24 @@
     <name>INSTRUMENT_STATUS_UNSPECIFIED</name>
     <synonym>
       <key>ru</key>
-      <value>Значение не определено</value>
+      <value>INSTRUMENT_STATUS_UNSPECIFIED</value>
     </synonym>
+    <comment>Значение не определено</comment>
   </enumValues>
   <enumValues uuid="d8e11939-0554-49da-ac20-31fc44570a3c">
     <name>INSTRUMENT_STATUS_BASE</name>
     <synonym>
       <key>ru</key>
-      <value>Базовый список инструментов (по умолчанию)</value>
+      <value>INSTRUMENT_STATUS_BASE</value>
     </synonym>
-    <comment>Инструменты доступные для торговли через TINKOFF INVEST API. Cейчас списки бумаг, доступных из api и других интерфейсах совпадают (за исключением внебиржевых бумаг), но в будущем возможны ситуации, когда списки инструментов будут отличаться</comment>
+    <comment>Базовый список инструментов (по умолчанию). Инструменты доступные для торговли через TINKOFF INVEST API. Cейчас списки бумаг, доступных из api и других интерфейсах совпадают (за исключением внебиржевых бумаг), но в будущем возможны ситуации, когда списки инструментов будут отличаться</comment>
   </enumValues>
   <enumValues uuid="44d81852-45bb-4906-a97d-2f92296e741a">
     <name>INSTRUMENT_STATUS_ALL</name>
     <synonym>
       <key>ru</key>
-      <value>Список всех инструментов</value>
+      <value>INSTRUMENT_STATUS_ALL</value>
     </synonym>
+    <comment>Список всех инструментов</comment>
   </enumValues>
 </mdclass:Enum>

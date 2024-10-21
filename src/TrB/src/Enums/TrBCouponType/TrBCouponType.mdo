@@ -16,56 +16,64 @@
     <name>COUPON_TYPE_UNSPECIFIED</name>
     <synonym>
       <key>ru</key>
-      <value>Неопределенное значение</value>
+      <value>COUPON_TYPE_UNSPECIFIED</value>
     </synonym>
+    <comment>Неопределенное значение</comment>
   </enumValues>
   <enumValues uuid="f9bba16c-e54d-46fc-9b9d-09d2528c70d7">
     <name>COUPON_TYPE_CONSTANT</name>
     <synonym>
       <key>ru</key>
-      <value>Постоянный</value>
+      <value>COUPON_TYPE_CONSTANT</value>
     </synonym>
+    <comment>Постоянный</comment>
   </enumValues>
   <enumValues uuid="241a82ff-606f-4e3b-8d2f-2c6598cbe4be">
     <name>COUPON_TYPE_FLOATING</name>
     <synonym>
       <key>ru</key>
-      <value>Плавающий</value>
+      <value>COUPON_TYPE_FLOATING</value>
     </synonym>
+    <comment>Плавающий</comment>
   </enumValues>
   <enumValues uuid="b91152fd-f3e7-4434-b2db-322dad1d25cd">
     <name>COUPON_TYPE_DISCOUNT</name>
     <synonym>
       <key>ru</key>
-      <value>Дисконт</value>
+      <value>COUPON_TYPE_DISCOUNT</value>
     </synonym>
+    <comment>Дисконт</comment>
   </enumValues>
   <enumValues uuid="e19f3f9b-bd75-4956-87a2-70866ae3f8a1">
     <name>COUPON_TYPE_MORTGAGE</name>
     <synonym>
       <key>ru</key>
-      <value>Ипотечный</value>
+      <value>COUPON_TYPE_MORTGAGE</value>
     </synonym>
+    <comment>Ипотечный</comment>
   </enumValues>
   <enumValues uuid="3f28ae40-45b5-4813-ac1c-81e52e016741">
     <name>COUPON_TYPE_FIX</name>
     <synonym>
       <key>ru</key>
-      <value>Фиксированный</value>
+      <value>COUPON_TYPE_FIX</value>
     </synonym>
+    <comment>Фиксированный</comment>
   </enumValues>
   <enumValues uuid="15db0d83-c219-407b-8aa9-f30c2e66805d">
     <name>COUPON_TYPE_VARIABLE</name>
     <synonym>
       <key>ru</key>
-      <value>Переменный</value>
+      <value>COUPON_TYPE_VARIABLE</value>
     </synonym>
+    <comment>Переменный</comment>
   </enumValues>
   <enumValues uuid="d8d4b1ee-8b5b-4d38-a448-89f4d380677f">
     <name>COUPON_TYPE_OTHER</name>
     <synonym>
       <key>ru</key>
-      <value>Прочее</value>
+      <value>COUPON_TYPE_OTHER</value>
     </synonym>
+    <comment>Прочее</comment>
   </enumValues>
 </mdclass:Enum>
