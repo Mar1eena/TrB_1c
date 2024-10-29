@@ -49,6 +49,7 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.TrB</subsystems>
   <subsystems>Subsystem.Администрирование</subsystems>
   <subsystems>Subsystem.ПодключаемыеОтчетыИОбработки</subsystems>
   <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
@@ -856,6 +857,12 @@
   <filterCriteria>FilterCriterion.СвязанныеДокументы</filterCriteria>
   <commonModules>CommonModule.GoogleПереводчик</commonModules>
   <commonModules>CommonModule.TrBЗапросыTinkoff</commonModules>
+  <commonModules>CommonModule.TrBСервисИнструментов</commonModules>
+  <commonModules>CommonModule.TrBСервисКотировок</commonModules>
+  <commonModules>CommonModule.TrBСервисОпераций</commonModules>
+  <commonModules>CommonModule.TrBСервисОрдеров</commonModules>
+  <commonModules>CommonModule.TrBСервисПесочница</commonModules>
+  <commonModules>CommonModule.TrBСервисСтопОрдеров</commonModules>
   <commonModules>CommonModule.АвтономнаяРабота</commonModules>
   <commonModules>CommonModule.АвтономнаяРаботаСлужебный</commonModules>
   <commonModules>CommonModule.АвтономнаяРаботаСлужебныйКлиент</commonModules>

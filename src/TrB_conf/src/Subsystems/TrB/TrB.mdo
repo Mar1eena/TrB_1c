@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ebd29b92-da8e-44f2-9bc3-241e4326d0a6">
+  <name>TrB</name>
+  <synonym>
+    <key>ru</key>
+    <value>Tr B</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.TrBСервисИнструментов</content>
+  <content>CommonModule.TrBЗапросыTinkoff</content>
+</mdclass:Subsystem>
