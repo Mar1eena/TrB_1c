@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5a71408-bde9-47ca-8554-5b8f3f966fd6">
+  <producedTypes>
+    <refType typeId="74938b73-0d3f-4bdf-b38e-aa830e57ddd5" valueTypeId="b81c6213-f795-46bf-9477-f37e15705b5c"/>
+    <listType typeId="b5e229c4-8009-464d-93cc-0055e2dba445" valueTypeId="816b76c7-4dd0-46dc-8615-3a170b907513"/>
+    <managerType typeId="e439a94a-b8a2-442b-93f0-d88bf5bea085" valueTypeId="6c972710-8096-4965-a13c-ec9c58f918ca"/>
+  </producedTypes>
+  <name>TrBOrderDirection</name>
+  <synonym>
+    <key>ru</key>
+    <value>Направление операции</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

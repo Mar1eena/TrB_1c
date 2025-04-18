@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d4983d8-8425-4f34-aaab-117bd47e0510">
+  <producedTypes>
+    <refType typeId="6853e0e7-b85f-40f4-bf30-5386270e2288" valueTypeId="267564e0-c78c-4219-b31f-3935f843fb05"/>
+    <listType typeId="10e67cda-7c3e-48ae-a323-2f26a669cd1f" valueTypeId="8cc3d57c-de82-4ece-8655-9166f6554221"/>
+    <managerType typeId="76c55ab1-3142-46f4-aba2-9cbac3501a9f" valueTypeId="679a5572-6a61-4ce5-9cbc-56220b75e757"/>
+  </producedTypes>
+  <name>TrBEditFavoritesActionType</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип действия со списком избранных инструментов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

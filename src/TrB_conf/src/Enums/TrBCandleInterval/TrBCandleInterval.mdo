@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2266ebec-8d7a-476f-95a6-f2478067ba95">
+  <producedTypes>
+    <refType typeId="a392c4d8-12e4-4787-b1e6-699bb4d3c5b2" valueTypeId="87bcc05a-c2d1-4c73-9725-0b39dcc86dba"/>
+    <listType typeId="5e1351a3-1235-49f8-974a-b5e9eaefd575" valueTypeId="2f9b0b3d-46f2-426d-9d0b-1a87276fd5f8"/>
+    <managerType typeId="f6765d98-b4cb-4e09-8e34-0cf2449eea82" valueTypeId="ec57f94e-912f-45f1-9dd9-3c33607010b3"/>
+  </producedTypes>
+  <name>TrBCandleInterval</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интервал свечей</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

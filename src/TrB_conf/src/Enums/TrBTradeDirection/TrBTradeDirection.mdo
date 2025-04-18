@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f04e49d5-acc8-4271-9d31-7bb135d4891a">
+  <producedTypes>
+    <refType typeId="6077beee-6b9f-4959-8a51-7ad568703897" valueTypeId="1a6dff64-a482-4b2f-9af8-f88448531014"/>
+    <listType typeId="8e1c0821-1b0d-4ba8-b22b-9cc9bf5c486c" valueTypeId="a852e8cb-0428-4a46-9c31-77434046d44c"/>
+    <managerType typeId="f2da6bb7-37b1-453f-996a-aff1c44d938d" valueTypeId="9167fef1-5c50-41b6-b3fa-e89c6decdb8b"/>
+  </producedTypes>
+  <name>TrBTradeDirection</name>
+  <synonym>
+    <key>ru</key>
+    <value>Направление сделки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

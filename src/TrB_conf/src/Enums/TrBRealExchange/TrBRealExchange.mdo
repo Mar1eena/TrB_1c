@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e560aa3f-c946-4904-879c-644fd58c2056">
+  <producedTypes>
+    <refType typeId="a412fc01-bbce-482e-999b-d368acbc8e17" valueTypeId="eb9bd47d-edb7-4985-aef3-1912b555a7d3"/>
+    <listType typeId="cccfb83f-0f69-4b22-b11c-80e097546d51" valueTypeId="dfcd5e8c-157b-4b3c-b038-ac6028fecb02"/>
+    <managerType typeId="220f5558-b972-4413-be71-16e09bcea8b7" valueTypeId="e0bccb78-11b1-4e7f-abed-8c04931fe3a0"/>
+  </producedTypes>
+  <name>TrBRealExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реальная площадка исполнения расчётов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="055b775e-6e16-4e86-9ba7-eb52f2245b82">
+  <producedTypes>
+    <refType typeId="8ff82b05-d90f-4888-9dd4-43bd5efad6d7" valueTypeId="76eeb03b-c952-4469-94da-874d226f6f94"/>
+    <listType typeId="8affb5fb-ba82-486a-af17-54288bb84ab0" valueTypeId="9943cbf5-3cbf-4a77-9264-7f23dcfd6fa0"/>
+    <managerType typeId="ca609fce-3341-4b0f-9718-6a268b839c87" valueTypeId="316d089b-bd62-424b-b300-6067c1d3c067"/>
+  </producedTypes>
+  <name>TrBAssetType</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип актива</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

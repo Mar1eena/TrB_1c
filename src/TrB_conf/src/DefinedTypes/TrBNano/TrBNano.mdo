@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff422be4-72f9-4a07-b247-6fc88090a5e5">
+  <producedTypes>
+    <containerType typeId="79b272d2-bf0b-49ad-bab8-a956f2de6dd0" valueTypeId="a089fe0d-a6c8-4df8-9c76-cfef09d92897"/>
+  </producedTypes>
+  <name>TrBNano</name>
+  <synonym>
+    <key>ru</key>
+    <value>Nano</value>
+  </synonym>
+  <comment>Дробная часть суммы, может быть отрицательным числом</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+</mdclass:DefinedType>

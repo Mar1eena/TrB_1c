@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ad31912-7126-482c-91c1-ef8a193b4a26">
+  <producedTypes>
+    <objectType typeId="cf6f13b2-36b0-4478-9209-66e6ef2aa539" valueTypeId="83ce2b1b-149b-4d0a-9484-5175822e9ba9"/>
+    <refType typeId="e48bc3ca-6825-4681-8330-bc840e22379c" valueTypeId="fe689ac5-9c9e-4734-81bc-c649bf1b3543"/>
+    <selectionType typeId="ca665184-39c6-40f7-a052-2f806bc4b20f" valueTypeId="adee7f54-ac45-42a5-8002-d04bd7c2219d"/>
+    <listType typeId="cdadd09a-b83b-4ec9-9a3b-ef83ac3cb545" valueTypeId="292456dd-35e4-4827-8e0f-97304e39c25c"/>
+    <managerType typeId="dec362ed-c26f-4fbc-98a7-ed5c44b130ac" valueTypeId="59752bb9-0953-4de0-87a1-56f3e2df807d"/>
+  </producedTypes>
+  <name>TrBShare</name>
+  <synonym>
+    <key>ru</key>
+    <value>Share</value>
+  </synonym>
+  <comment>Информация об акция</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.TrBShare.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.TrBShare.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Акция</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Акция</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Акции</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Акции</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.TrBShare.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="571dd4b2-7269-4124-81dd-336200763f6b">
+    <name>ApiTradeAvailableFlag</name>
+    <synonym>
+      <key>ru</key>
+      <value>Api trade available flag</value>
+    </synonym>
+    <comment>Параметр указывает на возможность торговать инструментом через API.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e2017b48-a347-4285-9a1e-d1a905dfb92e">
+    <name>BlockedTcaFlag</name>
+    <synonym>
+      <key>ru</key>
+      <value>Blocked tca flag</value>
+    </synonym>
+    <comment>Флаг заблокированного ТКС</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2a41c008-4362-47c5-88ef-9b18f5b73c11">
+    <name>BuyAvailableFlag</name>
+    <synonym>
+      <key>ru</key>
+      <value>Buy available flag</value>
+    </synonym>
+    <comment>Признак доступности для покупки.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="55910dd3-3449-47eb-a837-6b0b59427472">
+    <name>Class_code</name>
+    <synonym>
+      <key>ru</key>
+      <value>Class code</value>
+    </synonym>
+    <comment>Класс-код инструмента.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3e7d8028-ac1a-4160-a07b-11f498c51731">
+    <name>CountryOfRisk</name>
+    <synonym>
+      <key>ru</key>
+      <value>Country of risk</value>
+    </synonym>
+    <comment>Код страны риска, т.е. страны, в которой компания ведёт основной бизнес.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ce84667f-365a-4b3a-9ab2-5f6ce20f4093">
+    <name>CountryOfRiskName</name>
+    <synonym>
+      <key>ru</key>
+      <value>Country of risk name</value>
+    </synonym>
+    <comment>	Наименование страны риска, т.е. страны, в которой компания ведёт основной бизнес.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cc92198b-755e-4173-b409-daf3ad52ea16">
+    <name>Currency</name>
+    <synonym>
+      <key>ru</key>
+      <value>Currency</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.TrBВалюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="adcd700e-9de3-4aca-9c6d-db66e5c8aac0">
+    <name>DivYieldFlag</name>
+    <synonym>
+      <key>ru</key>
+      <value>Div yield flag</value>
+    </synonym>
+    <comment>	Признак наличия дивидендной доходности.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c12e2392-ef02-420d-895b-a0fc08d23197">
+    <name>DlongMinNano</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dlong min nano</value>
+    </synonym>
+    <comment>Ставка риска начальной маржи для КПУР лонг</comment>
+    <type>
+      <types>DefinedType.TrBNano</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="700d68a7-f6b5-45a6-9dec-cf8398102b5a">
+    <name>DlongMinUnits</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dlong min units</value>
+    </synonym>
+    <comment>Ставка риска начальной маржи для КПУР лонг</comment>
+    <type>
+      <types>DefinedType.TrBUnits</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8aad5b65-1408-4d58-9292-a6a9b39f00f0">
+    <name>DlongNano</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dlong nano</value>
+    </synonym>
+    <comment>Ставка риска начальной маржи для КСУР лонг</comment>
+    <type>
+      <types>DefinedType.TrBNano</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1428f969-1dee-4ae1-9bce-32997bca3af8">
+    <name>DlongUnits</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dlong units</value>
+    </synonym>
+    <comment>Ставка риска начальной маржи для КСУР лонг</comment>
+    <type>
+      <types>DefinedType.TrBUnits</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8e4cda91-a841-4446-80b8-880e748ffbcd">
+    <name>DshortMinNano</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dshort min nano</value>
+    </synonym>
+    <comment>Ставка риска начальной маржи для КПУР шорт</comment>
+    <type>
+      <types>DefinedType.TrBNano</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8d419ef5-5bfc-474b-84d6-69c933aab184">
+    <name>DshortMinUnits</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dshort min units</value>
+    </synonym>
+    <comment>Ставка риска начальной маржи для КПУР шорт</comment>
+    <type>
+      <types>DefinedType.TrBUnits</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="566bc89a-eb6d-4ae0-83a9-4cb21a2d340d">
+    <name>DshortNano</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dshort nano</value>
+    </synonym>
+    <type>
+      <types>DefinedType.TrBNano</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9c9be4d2-f692-4d6f-9a68-55afe3f9b171">
+    <name>DshortUnits</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dshort units</value>
+    </synonym>
+    <comment>Ставка риска начальной маржи для КСУР шорт</comment>
+    <type>
+      <types>DefinedType.TrBUnits</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9d01ebcc-b70a-4d6e-8783-c7e5bb452d1f">
+    <name>Exchange</name>
+    <synonym>
+      <key>ru</key>
+      <value>Exchange</value>
+    </synonym>
+    <comment>Tорговая площадка (секция биржи).</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6bf1019b-206f-4205-bf94-64513c7febb0">
+    <name>Figi</name>
+    <synonym>
+      <key>ru</key>
+      <value>Figi</value>
+    </synonym>
+    <comment>Глобальный идентификатор финансового инструмента. Представляет собой 12-символьный код из латинских букв и цифр и определяется как идентификатор ценной бумаги на торговой площадке (бирже)</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="be62e4f2-4fde-4b05-8ba9-745506e4c4ab">
+    <name>First1dayCandleDate</name>
+    <synonym>
+      <key>ru</key>
+      <value>First 1day candle date</value>
+    </synonym>
+    <comment>Дата первой дневной свечи.</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="accac6ab-b3dc-4422-9780-359034dace9d">
+    <name>First1minCandleDate</name>
+    <synonym>
+      <key>ru</key>
+      <value>First 1min candle date</value>
+    </synonym>
+    <comment>Дата первой минутной свечи.</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="004f7da0-f721-4f8d-8ccc-fa1abc3e5bca">
+    <name>ForIisFlag</name>
+    <synonym>
+      <key>ru</key>
+      <value>For iis flag</value>
+    </synonym>
+    <comment>Признак доступности для ИИС.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c706a7d5-dfde-4688-86b6-44bd6a493006">
+    <name>ForQualInvestorFlag</name>
+    <synonym>
+      <key>ru</key>
+      <value>For qual investor flag</value>
+    </synonym>
+    <comment>	Флаг отображающий доступность торговли инструментом только для квалифицированных инвесторов.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9b7c45ca-cd4f-44fa-a992-438a40442042">
+    <name>IpoDate</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата IPO</value>
+    </synonym>
+    <comment>Дата IPO акции в часовом поясе UTC.</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1b623b6b-6650-498f-83af-45df6bec63ff">
+    <name>Isin</name>
+    <synonym>
+      <key>ru</key>
+      <value>Isin</value>
+    </synonym>
+    <comment>Isin-идентификатор инструмента.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1be7824f-3cad-4182-b245-5e33ad00dc9a">
+    <name>IssueSize</name>
+    <synonym>
+      <key>ru</key>
+      <value>Issue size</value>
+    </synonym>
+    <comment>Размер выпуска.</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>19</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="41bf1b9c-e0b3-4f6b-8acd-15a142bbfd5c">
+    <name>IssueSizePlan</name>
+    <synonym>
+      <key>ru</key>
+      <value>Issue size plan</value>
+    </synonym>
+    <comment>Плановый размер выпуска.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="54b140f8-5fe8-4daf-8300-353ccb9030e8">
+    <name>KlongNano</name>
+    <synonym>
+      <key>ru</key>
+      <value>Klong nano</value>
+    </synonym>
+    <comment>	Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</comment>
+    <type>
+      <types>DefinedType.TrBNano</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="98c76677-f7ff-4562-a48a-480880093e97">
+    <name>KlongUnits</name>
+    <synonym>
+      <key>ru</key>
+      <value>Klong units</value>
+    </synonym>
+    <comment>	Коэффициент ставки риска длинной позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</comment>
+    <type>
+      <types>DefinedType.TrBUnits</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="63765d1a-5534-47a6-9fdc-234a20b7b5ca">
+    <name>KshortNano</name>
+    <synonym>
+      <key>ru</key>
+      <value>Kshort nano</value>
+    </synonym>
+    <comment>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</comment>
+    <type>
+      <types>DefinedType.TrBNano</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="165fc8d6-727f-4938-b400-f614b8618808">
+    <name>KshortUnits</name>
+    <synonym>
+      <key>ru</key>
+      <value>Kshort units</value>
+    </synonym>
+    <comment>Коэффициент ставки риска короткой позиции по клиенту. 2 – клиент со стандартным уровнем риска (КСУР). 1 – клиент с повышенным уровнем риска (КПУР)</comment>
+    <type>
+      <types>DefinedType.TrBUnits</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d39338ec-f7ba-426f-ae4e-ed2e8b946b57">
+    <name>LiquidityFlag</name>
+    <synonym>
+      <key>ru</key>
+      <value>Liquidity flag</value>
+    </synonym>
+    <comment>Флаг достаточной ликвидности</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a970bdcf-2e5c-4bd6-a125-3ec0d8f6b876">
+    <name>Lot</name>
+    <synonym>
+      <key>ru</key>
+      <value>Lot</value>
+    </synonym>
+    <comment>Лотность инструмента. Возможно совершение операций только на количества ценной бумаги, кратные параметру lot</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="78ce56c3-9d38-4219-8552-70941c6242b0">
+    <name>MinPriceIncrementNano</name>
+    <synonym>
+      <key>ru</key>
+      <value>Min price increment nano</value>
+    </synonym>
+    <comment>Шаг цены</comment>
+    <type>
+      <types>DefinedType.TrBNano</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="464c6e72-bf20-43e4-9788-c88b53f38608">
+    <name>MinPriceIncrementUnits</name>
+    <synonym>
+      <key>ru</key>
+      <value>Min price increment units</value>
+    </synonym>
+    <comment>Шаг цены</comment>
+    <type>
+      <types>DefinedType.TrBUnits</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7c34cfa6-8f9d-43c6-a2e0-0715ce2914be">
+    <name>NominalCurrency</name>
+    <synonym>
+      <key>ru</key>
+      <value>Currency</value>
+    </synonym>
+    <comment>Номинал.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="86d94c5e-6d99-4ce2-8406-4322822f9a7d">
+    <name>NominalNano</name>
+    <synonym>
+      <key>ru</key>
+      <value>Nominal nano</value>
+    </synonym>
+    <type>
+      <types>DefinedType.TrBNano</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="57347449-2930-484c-8aea-d6bcaff98c40">
+    <name>NominalUnits</name>
+    <synonym>
+      <key>ru</key>
+      <value>Nominal units</value>
+    </synonym>
+    <type>
+      <types>DefinedType.TrBUnits</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="805f0886-890c-48df-b875-8af99a991551">
+    <name>OtcFlag</name>
+    <synonym>
+      <key>ru</key>
+      <value>Otc flag</value>
+    </synonym>
+    <comment>Признак внебиржевой ценной бумаги.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="744c92cb-1619-461d-b40a-72c0fef17510">
+    <name>PositionUid</name>
+    <synonym>
+      <key>ru</key>
+      <value>Position uid</value>
+    </synonym>
+    <comment>Уникальный идентификатор позиции инструмента.</comment>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="542fd64a-a4cd-4c05-b383-75b9cdf933c1">
+    <name>RealExchange</name>
+    <synonym>
+      <key>ru</key>
+      <value>Real exchange</value>
+    </synonym>
+    <comment>Реальная площадка исполнения расчётов (биржа).</comment>
+    <type>
+      <types>EnumRef.TrBRealExchange</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a20d18f6-ab40-4971-8985-0b402d63da9a">
+    <name>Sector</name>
+    <synonym>
+      <key>ru</key>
+      <value>Sector</value>
+    </synonym>
+    <comment>	Сектор экономики.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ea6a6e43-56a7-4fcf-9e4b-7ef4d723dfbd">
+    <name>SellAvailableFlag</name>
+    <synonym>
+      <key>ru</key>
+      <value>Sell available flag</value>
+    </synonym>
+    <comment>Признак доступности для продажи.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="37052396-73a0-466a-8b3d-71c9051c4822">
+    <name>ShareType</name>
+    <synonym>
+      <key>ru</key>
+      <value>Share type</value>
+    </synonym>
+    <comment>Тип акции</comment>
+    <type>
+      <types>EnumRef.TrBShareType</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c4754c1c-8d77-4aa2-b0f5-82bf64b0466a">
+    <name>ShortEnabledFlag</name>
+    <synonym>
+      <key>ru</key>
+      <value>Short enabled flag</value>
+    </synonym>
+    <comment>Признак доступности для операций в шорт.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2abd99f8-ae12-4b55-b79e-6fdb7418fa33">
+    <name>Ticker</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ticker</value>
+    </synonym>
+    <comment>Тикер инструмента</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>6</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3067f3f9-8603-41e5-9786-b672d0a4b6f7">
+    <name>TradingStatus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Trading status</value>
+    </synonym>
+    <type>
+      <types>EnumRef.TrBSecurityTradingStatus</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b6d800f1-a08f-4db7-add6-2d5582ca4145">
+    <name>Uid</name>
+    <synonym>
+      <key>ru</key>
+      <value>Uid</value>
+    </synonym>
+    <comment>Уникальный идентификатор инструмента.</comment>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="859b8cca-adfa-4b68-8471-d0e797cf84e3">
+    <name>WeekendFlag</name>
+    <synonym>
+      <key>ru</key>
+      <value>Weekend flag</value>
+    </synonym>
+    <comment>Флаг отображающий доступность торговли инструментом по выходным</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="97da870d-5c11-4631-b88e-784f3f8d0a98">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

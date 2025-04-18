@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03a963ec-1adf-498f-bbe6-4e651099e278">
+  <producedTypes>
+    <refType typeId="e30bf15d-ea46-4969-83cb-b6bacff29713" valueTypeId="80d70b94-6d86-4bab-a8a8-dd4c64afa566"/>
+    <listType typeId="f04b8feb-3541-4832-af0a-b9d0c613b0bd" valueTypeId="817074df-2ed1-4ecb-8cf0-c882343ed579"/>
+    <managerType typeId="aab44b2e-3696-4f04-bbe8-ee24e0780a0c" valueTypeId="835a9147-287e-457c-a55d-27399707980c"/>
+  </producedTypes>
+  <name>TrBOperationState</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус запрашиваемых операций</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

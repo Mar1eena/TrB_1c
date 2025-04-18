@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3227c675-d02b-4041-84d9-eac4139237eb">
+  <producedTypes>
+    <refType typeId="76e5fd0e-212d-4151-9189-b489276415b4" valueTypeId="472e4be6-dd1a-4c9f-b96d-87b14751f8c3"/>
+    <listType typeId="4e7b35d4-b40d-48f4-8f84-bc1edb74b0a9" valueTypeId="3c2dd2f4-c58d-4326-9ccc-d846cf06da6f"/>
+    <managerType typeId="e042ee8a-feef-4d02-adc6-9d72894dd094" valueTypeId="121bc8f0-d783-4f4c-a8a4-66762722f4d6"/>
+  </producedTypes>
+  <name>TrBRiskLevel</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уровень риска облигации</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

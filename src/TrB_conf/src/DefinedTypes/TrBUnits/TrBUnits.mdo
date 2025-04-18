@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49e056c1-78c9-4994-b423-c078ec29d6f3">
+  <producedTypes>
+    <containerType typeId="93ccdf75-5728-4c95-b7ce-f2e7a886443f" valueTypeId="4edab335-bed7-4bc7-afb9-bd743eacf722"/>
+  </producedTypes>
+  <name>TrBUnits</name>
+  <synonym>
+    <key>ru</key>
+    <value>Units</value>
+  </synonym>
+  <comment>Целая часть суммы, может быть отрицательным числом</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>19</precision>
+    </numberQualifiers>
+  </type>
+</mdclass:DefinedType>

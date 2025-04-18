@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c1712adb-dbb6-432e-94ec-b6e94dd55383">
+  <producedTypes>
+    <refType typeId="cbcf4516-0c86-43ca-88ca-271a7c3af4ec" valueTypeId="5d58efe2-385f-464e-8678-20f4d227a234"/>
+    <listType typeId="167c4496-f89d-4e8a-80e4-2e1d0af7c248" valueTypeId="69fb08c6-2575-43b5-964a-9a22b69971e6"/>
+    <managerType typeId="fca7a09e-e4b2-4419-8d0f-efe1ac5ff48a" valueTypeId="defa44ae-6c6a-4017-8e2b-b87b80623d2e"/>
+  </producedTypes>
+  <name>TrBSubscriptionInterval</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интервал свечи</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

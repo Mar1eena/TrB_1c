@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bbb9945d-226d-4f58-aef6-84d93dc538e4">
+  <producedTypes>
+    <objectType typeId="9ce9900b-dbf6-4f27-9dec-7a70678c1b34" valueTypeId="602238af-7ce0-4eb2-9775-1f5b87845469"/>
+    <refType typeId="36104c1e-3258-4abd-b623-d88370cf86dd" valueTypeId="a09032a4-6a79-4c44-a70a-f8fdea713e8d"/>
+    <selectionType typeId="86f2de62-edc7-42fd-910f-6fc7c6820d6a" valueTypeId="8f9a35df-4ea4-4ab5-bf24-cf3ff1b5f4ce"/>
+    <listType typeId="138e27fe-42f1-4f76-8417-f3e6c3b3a4ae" valueTypeId="50ab9571-d2cf-471c-971c-486bcb3247af"/>
+    <managerType typeId="a3e9b54c-30e3-422d-b3ec-b2f506c9de6e" valueTypeId="01ff37bc-448e-4174-b619-f91a2ba12792"/>
+  </producedTypes>
+  <name>TrBВалюты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Валюты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.TrBВалюты.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.TrBВалюты.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

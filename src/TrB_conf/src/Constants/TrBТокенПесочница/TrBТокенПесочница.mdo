@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc2e5944-0b6f-41fc-a321-7cf2ae91dbb4">
+  <producedTypes>
+    <managerType typeId="e5d227da-d862-40ca-b265-5b989fe42a08" valueTypeId="a94ded2e-f0d1-4fd1-aa74-23123ca4ea11"/>
+    <valueManagerType typeId="34fcb80f-eb6a-4028-a7a6-d6526c3fff07" valueTypeId="b04050ff-c37f-49c9-a956-c5d55ebecfaa"/>
+    <valueKeyType typeId="3d04bbdf-fbb5-4318-b560-f1226df1dcdc" valueTypeId="fb26526a-b21a-4186-8662-12529c024dc8"/>
+  </producedTypes>
+  <name>TrBТокенПесочница</name>
+  <synonym>
+    <key>ru</key>
+    <value>Токен песочница</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

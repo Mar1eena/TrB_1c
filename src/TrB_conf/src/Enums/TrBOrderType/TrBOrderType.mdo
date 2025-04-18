@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="097aabd0-15a0-4246-804a-a2daf2bce182">
+  <producedTypes>
+    <refType typeId="db510bd0-1c92-4776-8468-853ef2c85211" valueTypeId="4cead7fb-b315-4b8c-9501-7c5e5d951fe2"/>
+    <listType typeId="2f2f49b4-fa6b-4fe5-b0b3-48a7736bc6d1" valueTypeId="894fb390-2c6a-4d52-9f91-7f67c9325c9e"/>
+    <managerType typeId="5607c5c6-2010-4a62-a4bf-159fe0507db9" valueTypeId="75254f57-a118-406a-a094-80a374072e13"/>
+  </producedTypes>
+  <name>TrBOrderType</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип заявки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

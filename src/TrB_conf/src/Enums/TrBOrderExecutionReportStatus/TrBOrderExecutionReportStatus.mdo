@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8913f4a-b6ac-4daf-9699-f760b051fc95">
+  <producedTypes>
+    <refType typeId="c7f21449-3746-4f1e-9a37-09bed68ad25d" valueTypeId="95ef1c56-cd0c-4319-975f-1fca011b054c"/>
+    <listType typeId="1a100db1-bae0-4bfa-8b71-688a4ea4b4a2" valueTypeId="b8cefe88-68e4-43f8-892d-9210b6ccb67a"/>
+    <managerType typeId="46a77679-1ade-4e79-bbde-1eb972f0a818" valueTypeId="7adbfa55-b6b9-4d33-9b4e-e4531d8f0d93"/>
+  </producedTypes>
+  <name>TrBOrderExecutionReportStatus</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущий статус заявки (поручения)</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>
