@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a1c0747-da09-4155-b91d-d36699b1a961">
+  <name>TEST</name>
+  <synonym>
+    <key>ru</key>
+    <value>TEST</value>
+  </synonym>
+  <rootURL>Test</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>21</sessionMaxAge>
+  <urlTemplates uuid="c26c3ac1-2e6e-4127-82a3-aa04b8ea22e3">
+    <name>POST</name>
+    <synonym>
+      <key>ru</key>
+      <value>POST</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="6cba36a2-4eeb-4e15-a3f5-e945576a0e08">
+      <name>ЗапросВремени</name>
+      <synonym>
+        <key>ru</key>
+        <value>Запрос времени</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>POSTЗапросВремени</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

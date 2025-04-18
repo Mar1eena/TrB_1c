@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c65eb6a0-e65d-4d64-babf-8b080031e0d8">
+  <producedTypes>
+    <managerType typeId="be1eb963-0613-4869-b6a9-f1136aa52749" valueTypeId="d1df19a3-a2da-4a45-b1ca-99fc00effdbc"/>
+    <valueManagerType typeId="6a4653b3-1da3-434a-aa21-0f357e0629b9" valueTypeId="f7d0e55c-336f-467c-a145-0199e9eec3df"/>
+    <valueKeyType typeId="f7829995-53d3-452d-a05a-c801a0f2a3e1" valueTypeId="8d45ccde-c2f5-4214-acae-646b54c64e9d"/>
+  </producedTypes>
+  <name>ПараметрыБлокировкиРаботыССервисамиИнтернетПоддержки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры блокировки работы с сервисами интернет поддержки</value>
+  </synonym>
+  <type>
+    <types>ValueStorage</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

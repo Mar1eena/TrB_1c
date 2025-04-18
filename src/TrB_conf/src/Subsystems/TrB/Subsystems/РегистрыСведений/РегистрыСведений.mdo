@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd50fb77-b7d1-4b8c-94e9-e3f1ad21fcf6">
+  <name>РегистрыСведений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистры сведений</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.TrBИсторическиеДанныеИнструментов</content>
+  <parentSubsystem>Subsystem.TrB</parentSubsystem>
+</mdclass:Subsystem>

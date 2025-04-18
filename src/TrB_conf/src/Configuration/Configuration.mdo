@@ -40,7 +40,7 @@
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>UseWithWarnings</modalityUseMode>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
-  <compatibilityMode>8.3.21</compatibilityMode>
+  <compatibilityMode>8.3.24</compatibilityMode>
   <languages uuid="db4a9ccb-9ef5-4b3c-8577-b6fe5db1b62e">
     <name>Русский</name>
     <synonym>
@@ -53,7 +53,6 @@
   <subsystems>Subsystem.Администрирование</subsystems>
   <subsystems>Subsystem.ПодключаемыеОтчетыИОбработки</subsystems>
   <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
-  <subsystems>Subsystem.Тесты</subsystems>
   <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряВоскресеньеЦвет</styleItems>
   <styleItems>StyleItem.ВидДняПроизводственногоКалендаряНеУказанЦвет</styleItems>
@@ -856,7 +855,9 @@
   <commonTemplates>CommonTemplate.СтруктураПодчиненности</commonTemplates>
   <filterCriteria>FilterCriterion.СвязанныеДокументы</filterCriteria>
   <commonModules>CommonModule.GoogleПереводчик</commonModules>
+  <commonModules>CommonModule.TrBTest</commonModules>
   <commonModules>CommonModule.TrBЗапросыTinkoff</commonModules>
+  <commonModules>CommonModule.TrBОбщегоНазначения</commonModules>
   <commonModules>CommonModule.TrBСервисИнструментов</commonModules>
   <commonModules>CommonModule.TrBСервисКотировок</commonModules>
   <commonModules>CommonModule.TrBСервисОпераций</commonModules>
@@ -1457,6 +1458,7 @@
   <webServices>WebService.RemoteAdministrationOfExchange_2_1_6_1</webServices>
   <webServices>WebService.RemoteAdministrationOfExchange_2_4_5_1</webServices>
   <webServices>WebService.RemoteControl</webServices>
+  <httpServices>HTTPService.TEST</httpServices>
   <eventSubscriptions>EventSubscription.ВариантыОтчетовПередУдалениемИдентификатораОбъектаМетаданных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ВариантыОтчетовПриУдаленииПользователя</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ВключитьИспользованиеПланаОбмена</eventSubscriptions>
@@ -1671,6 +1673,8 @@
   <functionalOptionsParameters>FunctionalOptionsParameter.ДополнительныеОтчетыИОбработкиТипФормы</functionalOptionsParameters>
   <functionalOptionsParameters>FunctionalOptionsParameter.ОбщиеНастройкиУзлов</functionalOptionsParameters>
   <functionalOptionsParameters>FunctionalOptionsParameter.ТипВерсионируемогоОбъекта</functionalOptionsParameters>
+  <definedTypes>DefinedType.TrBNano</definedTypes>
+  <definedTypes>DefinedType.TrBUnits</definedTypes>
   <definedTypes>DefinedType.АдресатЗапретаИзменения</definedTypes>
   <definedTypes>DefinedType.БезопасныйРежим</definedTypes>
   <definedTypes>DefinedType.БизнесПроцесс</definedTypes>
@@ -1919,6 +1923,7 @@
   <constants>Constant.ПараметрыАдминистрированияИБ</constants>
   <constants>Constant.ПараметрыАдресногоКлассификатора</constants>
   <constants>Constant.ПараметрыБлокировкиРаботыСВнешнимиРесурсами</constants>
+  <constants>Constant.ПараметрыБлокировкиРаботыССервисамиИнтернетПоддержки</constants>
   <constants>Constant.ПараметрыИтоговИАгрегатов</constants>
   <constants>Constant.ПараметрыРезервногоКопирования</constants>
   <constants>Constant.ПараметрыХраненияФайловВИБ</constants>
@@ -2072,6 +2077,8 @@
   <commonForms>CommonForm.ФормаОтчета</commonForms>
   <commonForms>CommonForm.ФормаПоиска</commonForms>
   <commonForms>CommonForm.ЭлектроннаяПодпись</commonForms>
+  <catalogs>Catalog.TrBShare</catalogs>
+  <catalogs>Catalog.TrBВалюты</catalogs>
   <catalogs>Catalog.TrBСписокИнструментов</catalogs>
   <catalogs>Catalog.Валюты</catalogs>
   <catalogs>Catalog.ВариантыОтветовАнкет</catalogs>
@@ -2161,6 +2168,7 @@
   <enums>Enum.TrBCouponType</enums>
   <enums>Enum.TrBEditFavoritesActionType</enums>
   <enums>Enum.TrBInstrumentIdType</enums>
+  <enums>Enum.TrBInstrumentType</enums>
   <enums>Enum.TrBItrumentStatus</enums>
   <enums>Enum.TrBOperationState</enums>
   <enums>Enum.TrBOperationType</enums>

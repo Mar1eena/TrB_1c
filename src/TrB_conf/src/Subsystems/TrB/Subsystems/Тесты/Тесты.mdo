@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc7ea7a1-35ea-419d-9aee-d8d4df5df183">
+  <name>Тесты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тесты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.TrBТесты</content>
+  <parentSubsystem>Subsystem.TrB</parentSubsystem>
+</mdclass:Subsystem>

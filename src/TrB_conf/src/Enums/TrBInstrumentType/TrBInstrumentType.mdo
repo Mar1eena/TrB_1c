@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc1f662d-2c29-4dbf-bcce-ac805c8d5d93">
+  <producedTypes>
+    <refType typeId="0db4bdd3-f1e5-430a-80da-705ad5c86773" valueTypeId="7b1d2ef3-cffd-4063-9f0d-b7f5d7d89987"/>
+    <listType typeId="4caa8d30-d678-4c61-b09c-cca72aaca9b8" valueTypeId="002ac761-c253-4ee2-8bbc-cda6d0aef591"/>
+    <managerType typeId="b481d484-a8ad-416e-af80-e0629b68906d" valueTypeId="4c925372-f8c5-45f0-bcd1-6c93cd169978"/>
+  </producedTypes>
+  <name>TrBInstrumentType</name>
+  <synonym>
+    <key>ru</key>
+    <value>Instrument type</value>
+  </synonym>
+  <comment>Тип инструмента</comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>
