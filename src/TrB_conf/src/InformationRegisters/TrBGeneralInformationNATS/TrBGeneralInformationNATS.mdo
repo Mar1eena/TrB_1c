@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="731a97b2-f6ac-468e-adf0-c142467d610c">
+  <producedTypes>
+    <selectionType typeId="dc267ec6-95d1-490d-868c-02f2041ccd9b" valueTypeId="f46c9120-bb99-4179-879e-0a0ddfe56fdf"/>
+    <listType typeId="0bff2887-536c-4b0a-8005-334daa55b35b" valueTypeId="e5a02a2f-cf4a-4e11-81cd-9c1bd7292a49"/>
+    <managerType typeId="a98fcf31-8c9e-49c6-835d-a45e01db776a" valueTypeId="ff0de8c3-9ede-41a6-9c27-9119cd2f83da"/>
+    <recordSetType typeId="058c93e0-87fd-45aa-9885-8979f3d0863d" valueTypeId="e4f4d527-1d27-4320-9764-ef0fa53e43a4"/>
+    <recordKeyType typeId="4e905fab-272b-4cbe-88e6-6ba5a80ce5cb" valueTypeId="923e38d4-a8bd-4ff8-953f-17675bce31d9"/>
+    <recordType typeId="8e0c8f85-c6bf-4865-9b89-1574ab45a4fa" valueTypeId="0c4bf790-1a99-4f69-a069-f5d6620c4bc8"/>
+    <recordManagerType typeId="ef1e9d98-9256-4066-bb4b-3b5e49b5ca70" valueTypeId="f8213b20-e00d-4813-b68a-3ef6cdefafaf"/>
+  </producedTypes>
+  <name>TrBGeneralInformationNATS</name>
+  <synonym>
+    <key>ru</key>
+    <value>General information NATS</value>
+  </synonym>
+  <comment>Основная информация NATS</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="52bcb5b1-1453-4e92-bf27-15127114044e">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>20</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ff06979a-059d-438a-b139-7dd8330c8387">
+    <name>server_id</name>
+    <synonym>
+      <key>ru</key>
+      <value>Server id</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ID Сервера</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="eea6ddd2-7a65-4aaf-9372-e47590c91e2c">
+    <name>Ключ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

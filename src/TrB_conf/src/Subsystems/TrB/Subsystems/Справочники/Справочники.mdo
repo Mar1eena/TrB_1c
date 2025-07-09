@@ -10,5 +10,6 @@
   <content>Catalog.TrBShare</content>
   <content>Catalog.TrBВалюты</content>
   <content>Catalog.TrBСписокИнструментов</content>
+  <content>Catalog.TrBNATSСервера</content>
   <parentSubsystem>Subsystem.TrB</parentSubsystem>
 </mdclass:Subsystem>

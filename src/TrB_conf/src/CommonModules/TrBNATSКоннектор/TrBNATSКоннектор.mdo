@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51b78c78-1411-435f-8edc-d780d7ad791f">
+  <name>TrBNATSКоннектор</name>
+  <synonym>
+    <key>ru</key>
+    <value>TrB NATS Коннектор</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="575422fb-f8a9-43d5-80be-33123d37b5ed">
+  <producedTypes>
+    <objectType typeId="749bc435-9838-46dc-b316-beafbe05d817" valueTypeId="68433278-7755-47ee-a7d5-56880de348f9"/>
+    <managerType typeId="1bb2f14a-1c72-4639-a9fc-a6e79f682253" valueTypeId="6ecd430b-8c41-40b6-a35c-14bd4c7bf84e"/>
+  </producedTypes>
+  <name>TrBNatsMonitoring</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мониторинг НАТС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.TrBNatsMonitoring.Form.Форма</defaultForm>
+  <forms uuid="bb053dda-ef0a-4d1e-a255-a2a86c4090ca">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
