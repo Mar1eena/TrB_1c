@@ -8,5 +8,7 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>DataProcessor.TrBТесты</content>
+  <content>DataProcessor.TrBNatsMonitoring</content>
+  <content>ChartOfCharacteristicTypes.Тест</content>
   <parentSubsystem>Subsystem.TrB</parentSubsystem>
 </mdclass:Subsystem>

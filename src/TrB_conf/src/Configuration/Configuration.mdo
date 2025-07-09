@@ -855,6 +855,7 @@
   <commonTemplates>CommonTemplate.СтруктураПодчиненности</commonTemplates>
   <filterCriteria>FilterCriterion.СвязанныеДокументы</filterCriteria>
   <commonModules>CommonModule.GoogleПереводчик</commonModules>
+  <commonModules>CommonModule.TrBNATSКоннектор</commonModules>
   <commonModules>CommonModule.TrBTest</commonModules>
   <commonModules>CommonModule.TrBЗапросыTinkoff</commonModules>
   <commonModules>CommonModule.TrBОбщегоНазначения</commonModules>
@@ -999,6 +1000,7 @@
   <commonModules>CommonModule.КалендарныеГрафикиЛокализация</commonModules>
   <commonModules>CommonModule.КалендарныеГрафикиПереопределяемый</commonModules>
   <commonModules>CommonModule.КалендарныеГрафикиСлужебный</commonModules>
+  <commonModules>CommonModule.Коннектор</commonModules>
   <commonModules>CommonModule.КонструкторФормул</commonModules>
   <commonModules>CommonModule.КонструкторФормулВызовСервера</commonModules>
   <commonModules>CommonModule.КонструкторФормулКлиент</commonModules>
@@ -2077,6 +2079,7 @@
   <commonForms>CommonForm.ФормаОтчета</commonForms>
   <commonForms>CommonForm.ФормаПоиска</commonForms>
   <commonForms>CommonForm.ЭлектроннаяПодпись</commonForms>
+  <catalogs>Catalog.TrBNATSСервера</catalogs>
   <catalogs>Catalog.TrBShare</catalogs>
   <catalogs>Catalog.TrBВалюты</catalogs>
   <catalogs>Catalog.TrBСписокИнструментов</catalogs>
@@ -2329,6 +2332,7 @@
   <reports>Report.УниверсальныйОтчет</reports>
   <reports>Report.УчастникиГруппДоступа</reports>
   <reports>Report.УчастникиГруппПользователей</reports>
+  <dataProcessors>DataProcessor.TrBNatsMonitoring</dataProcessors>
   <dataProcessors>DataProcessor.TrBТесты</dataProcessors>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>
   <dataProcessors>DataProcessor.АктивныеПользователи</dataProcessors>
@@ -2399,6 +2403,7 @@
   <dataProcessors>DataProcessor.УправлениеИтогамиИАгрегатами</dataProcessors>
   <dataProcessors>DataProcessor.УправлениеПодключениемDSS</dataProcessors>
   <dataProcessors>DataProcessor.УстановкаОбновлений</dataProcessors>
+  <informationRegisters>InformationRegister.TrBGeneralInformationNATS</informationRegisters>
   <informationRegisters>InformationRegister.TrBИсторическиеДанныеИнструментов</informationRegisters>
   <informationRegisters>InformationRegister.АдминистративнаяИерархия</informationRegisters>
   <informationRegisters>InformationRegister.АдресныеОбъекты</informationRegisters>
@@ -2587,6 +2592,7 @@
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</chartsOfCharacteristicTypes>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач</chartsOfCharacteristicTypes>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.РазделыДатЗапретаИзменения</chartsOfCharacteristicTypes>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.Тест</chartsOfCharacteristicTypes>
   <businessProcesses>BusinessProcess.Задание</businessProcesses>
   <tasks>Task.ЗадачаИсполнителя</tasks>
 </mdclass:Configuration>

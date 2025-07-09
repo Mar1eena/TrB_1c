@@ -8,5 +8,6 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>InformationRegister.TrBИсторическиеДанныеИнструментов</content>
+  <content>InformationRegister.TrBGeneralInformationNATS</content>
   <parentSubsystem>Subsystem.TrB</parentSubsystem>
 </mdclass:Subsystem>

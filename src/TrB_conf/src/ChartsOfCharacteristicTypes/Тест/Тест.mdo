@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f4654cf-b349-4732-ad07-6723abb38c65">
+  <producedTypes>
+    <objectType typeId="390f3377-464f-41a7-b408-d2831adaf3d3" valueTypeId="03af58f2-022e-42c3-b827-e305f31db1b6"/>
+    <refType typeId="d5ec6dd0-93b6-4122-8f75-eb2e08823893" valueTypeId="e0e1d6bb-95ac-4898-9b4b-056811988cf7"/>
+    <selectionType typeId="1d2c9843-35cf-4b83-8360-cab5e466e5f2" valueTypeId="153a6af1-7187-43ea-a246-d78f877d4d96"/>
+    <listType typeId="a1e5b7c8-17d7-493a-94bd-3f24c78d98c7" valueTypeId="17c7724a-5dca-4f63-8b5b-a188c6e7b145"/>
+    <managerType typeId="953e708c-8f4e-4826-b527-ae9999ca27c2" valueTypeId="7233d4bf-91a4-48bf-b3b5-bf3d18de59b2"/>
+    <containerType typeId="293df8ec-b478-47d3-a558-6959995e086e" valueTypeId="3bc28b76-632b-4525-936f-088083cec536"/>
+  </producedTypes>
+  <name>Тест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тест</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.Тест.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.Тест.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>ChartOfCharacteristicTypesRef.Тест</types>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefinedDataUpdate>DontAutoUpdate</predefinedDataUpdate>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="93bc9ce4-e700-47b4-baf5-a96b27e6e166">
+    <name>Сервер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:ChartOfCharacteristicTypes>
